@@ -60,24 +60,69 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Business Management Section (Replacing Hero) -->
+  <section class="management-section" id="management">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <span class="hero-kicker">Our Business Divisions</span>
-          <h1 class="hero-title">Two Businesses. One Commitment to Excellence.</h1>
-          <p class="hero-subtitle">
-            Delivering FMCG distribution and specialized chemical supply solutions through two dedicated business divisions.
-          </p>
-          <div class="hero-actions">
-            <a href="#divisions" class="btn btn-primary btn-lg">Explore Divisions</a>
-            <a href="#contact" class="btn btn-outline btn-lg">Direct Inquiry</a>
+      <div class="management-header">
+        <span class="section-kicker">Business Leadership</span>
+        <h1 class="section-title">Two Businesses. Dedicated Leadership.</h1>
+        <p class="section-description">
+          Baburam Trading and Om Sai Enterprise are independently managed commercial entities, providing specialized market execution, transparent operations, and long-term customer partnerships.
+        </p>
+      </div>
+
+      <div class="management-grid">
+        <!-- Profile 1: Baburam Trading -->
+        <article class="management-card">
+          <div class="management-photo-area">
+            <!-- Authentic portrait placeholder: user can add authentic photo here -->
+            <div class="management-photo-placeholder" aria-label="Authentic Photograph Placeholder - Baburam Trading Management">
+              <svg class="placeholder-avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <div class="placeholder-title">Authentic Photograph – Management</div>
+              <div class="placeholder-note">Baburam Trading</div>
+            </div>
           </div>
-        </div>
-        <div class="hero-media">
-          <img src="assets/images/corporate/hero.jpg" alt="Commercial Trade and Operations Logistics" />
-        </div>
+          <div class="management-card-body">
+            <span class="management-role-badge badge-fmcg">Management – Baburam Trading</span>
+            <h2 class="management-business-name">Baburam Trading</h2>
+            <div class="management-category category-fmcg">FMCG Distribution</div>
+            <p class="management-desc">
+              Directing FMCG supply operations, wholesale partnerships, and consumer goods distribution networks across regional retail markets.
+            </p>
+            <div class="management-card-action">
+              <a href="fmcg/index.html" class="btn btn-outline btn-sm">Explore Baburam Trading</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Profile 2: Om Sai Enterprise -->
+        <article class="management-card">
+          <div class="management-photo-area">
+            <!-- Authentic portrait placeholder: user can add authentic photo here -->
+            <div class="management-photo-placeholder" aria-label="Authentic Photograph Placeholder - Om Sai Enterprise Management">
+              <svg class="placeholder-avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <div class="placeholder-title">Authentic Photograph – Management</div>
+              <div class="placeholder-note">Om Sai Enterprise</div>
+            </div>
+          </div>
+          <div class="management-card-body">
+            <span class="management-role-badge badge-chemicals">Management – Om Sai Enterprise</span>
+            <h2 class="management-business-name">Om Sai Enterprise</h2>
+            <div class="management-category category-chemicals">Textile &amp; Industrial Chemical Trading</div>
+            <p class="management-desc">
+              Overseeing technical chemical sourcing, industrial grade deliveries, and specialized formulations for textile processing facilities and manufacturers.
+            </p>
+            <div class="management-card-action">
+              <a href="chemicals/index.html" class="btn btn-outline btn-sm">Explore Om Sai Enterprise</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -96,42 +141,34 @@
       <div class="division-cards-grid">
         <!-- Card 1: Baburam Trading -->
         <article class="division-card">
-          <div class="division-card-media">
-            <img src="assets/images/fmcg/warehouse.jpg" alt="Baburam Trading FMCG Distribution" loading="lazy" />
+          <div class="division-card-logo-area">
+            <img src="assets/logos/baburam-trading.png" alt="Baburam Trading Logo" class="division-card-logo" />
           </div>
           <div class="division-card-body">
-            <div class="division-logo-bar">
-              <div class="logo-container-light" style="height: 52px; padding: 6px 12px;">
-                <img src="assets/logos/baburam-trading.png" alt="Baburam Trading Logo" style="max-height: 42px;" />
-              </div>
-            </div>
-            <h3 class="division-card-title">FMCG Distribution</h3>
+            <h3 class="division-card-name">Baburam Trading</h3>
+            <div class="division-card-category category-fmcg">FMCG Distribution</div>
             <p class="division-card-desc">
               Distribution of consumer products through an organized market network and reliable supply operations.
             </p>
-            <div>
-              <a href="fmcg/index.html" class="btn btn-primary btn-block">Explore Baburam Trading</a>
+            <div class="division-card-action">
+              <a href="fmcg/index.html" class="btn btn-block btn-fmcg">Explore Baburam Trading</a>
             </div>
           </div>
         </article>
 
         <!-- Card 2: Om Sai Enterprise -->
         <article class="division-card">
-          <div class="division-card-media">
-            <img src="assets/images/chemicals/facility.jpg" alt="Om Sai Enterprise Chemical Trading" loading="lazy" />
+          <div class="division-card-logo-area">
+            <img src="assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="division-card-logo" />
           </div>
           <div class="division-card-body">
-            <div class="division-logo-bar">
-              <div class="logo-container-dark" style="height: 52px; padding: 6px 14px;">
-                <img src="assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" style="max-height: 42px;" />
-              </div>
-            </div>
-            <h3 class="division-card-title">Chemical Trading</h3>
+            <h3 class="division-card-name">Om Sai Enterprise</h3>
+            <div class="division-card-category category-chemicals">Chemical Trading</div>
             <p class="division-card-desc">
               Supply of textile and industrial chemicals for various manufacturing applications.
             </p>
-            <div>
-              <a href="chemicals/index.html" class="btn btn-primary btn-block" style="background-color: #0754B5;">Explore Om Sai Enterprise</a>
+            <div class="division-card-action">
+              <a href="chemicals/index.html" class="btn btn-block btn-chemicals">Explore Om Sai Enterprise</a>
             </div>
           </div>
         </article>

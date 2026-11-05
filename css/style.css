@@ -349,68 +349,155 @@ button, input, textarea, select {
   width: 100%;
 }
 
-/* Hero Section */
-.hero {
+/* Management Section (Executive Profiles) */
+.management-section {
   position: relative;
-  padding: 90px 0 80px 0;
-  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-subtle) 100%);
+  padding: 64px 0 72px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFD 100%);
   border-bottom: 1px solid var(--border-color);
 }
 
-.hero-grid {
+.management-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px auto;
+}
+
+.management-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
 }
 
-.hero-content {
-  max-width: 580px;
-}
-
-.hero-kicker {
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--secondary);
-  margin-bottom: 16px;
-}
-
-.hero-title {
-  margin-bottom: 20px;
-  color: var(--text-main);
-}
-
-.hero-subtitle {
-  font-size: 1.125rem;
-  color: var(--text-muted);
-  margin-bottom: 32px;
-  line-height: 1.7;
-}
-
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.hero-media {
-  position: relative;
+.management-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   box-shadow: var(--shadow-subtle);
-  border: 1px solid var(--border-color);
-  background-color: #E2E8F0;
-  aspect-ratio: 16 / 10;
+  transition: var(--transition);
 }
 
-.hero-media img {
+.management-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(16, 43, 80, 0.2);
+}
+
+.management-photo-area {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-color: #F1F5F9;
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.management-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+}
+
+.management-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(145deg, #F8FAFC 0%, #E8EEF5 100%);
+  color: var(--corporate-muted);
+  text-align: center;
+  user-select: none;
+}
+
+.placeholder-avatar-icon {
+  width: 68px;
+  height: 68px;
+  color: #94A3B8;
+  margin-bottom: 12px;
+}
+
+.placeholder-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.placeholder-note {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.management-card-body {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.management-role-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 5px 12px;
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+}
+
+.badge-fmcg {
+  background-color: rgba(18, 61, 140, 0.08);
+  color: #123D8C;
+  border: 1px solid rgba(18, 61, 140, 0.2);
+}
+
+.badge-chemicals {
+  background-color: rgba(7, 84, 181, 0.08);
+  color: #0754B5;
+  border: 1px solid rgba(7, 84, 181, 0.2);
+}
+
+.management-business-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+
+.management-category {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.management-desc {
+  font-size: 0.975rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.management-card-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* Business Selection Cards (Homepage Marquee) */
@@ -438,6 +525,30 @@ button, input, textarea, select {
   border-color: rgba(16, 43, 80, 0.2);
 }
 
+.division-card-logo-area {
+  height: 200px;
+  padding: 32px 28px;
+  background-color: #FAFCFE;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.division-card-logo {
+  max-height: 96px;
+  max-width: 82%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.division-card:hover .division-card-logo {
+  transform: scale(1.04);
+}
+
 .division-card-media {
   position: relative;
   height: 240px;
@@ -463,6 +574,30 @@ button, input, textarea, select {
   flex-grow: 1;
 }
 
+.division-card-name {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.division-card-category {
+  font-size: 0.925rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.category-fmcg {
+  color: #123D8C;
+}
+
+.category-chemicals {
+  color: #0754B5;
+}
+
 .division-logo-bar {
   margin-bottom: 24px;
   display: flex;
@@ -480,6 +615,32 @@ button, input, textarea, select {
   line-height: 1.65;
   margin-bottom: 28px;
   flex-grow: 1;
+}
+
+.division-card-action {
+  margin-top: auto;
+}
+
+.btn-fmcg {
+  background-color: #123D8C;
+  color: #FFFFFF;
+}
+
+.btn-fmcg:hover {
+  background-color: #0E306E;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(18, 61, 140, 0.25);
+}
+
+.btn-chemicals {
+  background-color: #0754B5;
+  color: #FFFFFF;
+}
+
+.btn-chemicals:hover {
+  background-color: #05408D;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(7, 84, 181, 0.25);
 }
 
 /* Feature/Value Props Grid */

@@ -35,13 +35,17 @@
     padding-bottom: 56px;
   }
 
-  .hero {
-    padding: 60px 0 50px 0;
+  .management-section {
+    padding: 48px 0;
   }
 
-  .hero-grid {
+  .management-grid {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 28px;
+  }
+
+  .management-photo-area {
+    height: 250px;
   }
 
   .division-cards-grid {
@@ -164,6 +168,20 @@
 
   .division-card-body {
     padding: 24px 20px;
+  }
+
+  .division-card-logo-area {
+    height: 170px;
+    padding: 20px 16px;
+  }
+
+  .division-card-logo {
+    max-height: 75px;
+    max-width: 88%;
+  }
+
+  .division-card-name {
+    font-size: 1.4rem;
   }
 
   .modal-dialog {
