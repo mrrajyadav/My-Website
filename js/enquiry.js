@@ -1,22 +1,25 @@
 /**
  * Baburam Trading & Om Sai Enterprise
- * Static Trade Enquiry Engine (WhatsApp Click-to-Chat & Mailto)
+ * Static Trade Enquiry Engine
+ * - Zero double entry
+ * - Validated WhatsApp & Mailto encoding
+ * - Respects configuration status (NO FAKE FALLBACKS)
+ * - Clear disclosure: opens external application, no fake database
  */
 
 (function () {
   'use strict';
 
-  // State
   let currentEnquiry = {
-    division: 'baburamTrading', // 'baburamTrading' | 'omSaiEnterprise'
+    division: 'baburamTrading',
     divisionLabel: 'Baburam Trading (FMCG Distribution)',
     productId: '',
     productName: '',
     category: ''
   };
 
-  // Open Enquiry Modal
-  window.openEnquiry = function (divisionKey, productId, productName, category) {
+  // Open Enquiry Modal (optionally with pre-filled fields from another form)
+  window.openEnquiry = function (divisionKey, productId, productName, category, prefilled) {
     currentEnquiry.division = divisionKey || 'baburamTrading';
     currentEnquiry.productId = productId || '';
     currentEnquiry.productName = productName || 'General Trade Inquiry';
@@ -38,17 +41,27 @@
 
     if (divisionEl) divisionEl.textContent = currentEnquiry.divisionLabel;
     if (productEl) {
-      if (currentEnquiry.productId) {
-        productEl.textContent = `${currentEnquiry.productName} (Code: ${currentEnquiry.productId})`;
-      } else {
-        productEl.textContent = 'General Business & Distribution Inquiry';
-      }
+      productEl.textContent = currentEnquiry.productId
+        ? `${currentEnquiry.productName} (Code: ${currentEnquiry.productId})`
+        : currentEnquiry.productName;
     }
     if (hiddenProduct) hiddenProduct.value = currentEnquiry.productId;
 
-    // Reset message preview & alerts
+    // If prefilled data provided, fill them in
+    if (prefilled) {
+      if (prefilled.name && document.getElementById('enquiryName')) document.getElementById('enquiryName').value = prefilled.name;
+      if (prefilled.company && document.getElementById('enquiryCompany')) document.getElementById('enquiryCompany').value = prefilled.company;
+      if (prefilled.phone && document.getElementById('enquiryPhone')) document.getElementById('enquiryPhone').value = prefilled.phone;
+      if (prefilled.email && document.getElementById('enquiryEmail')) document.getElementById('enquiryEmail').value = prefilled.email;
+      if (prefilled.message && document.getElementById('enquiryMessage')) document.getElementById('enquiryMessage').value = prefilled.message;
+    }
+
+    // Reset alert
     const alertBox = document.getElementById('modalAlertBox');
-    if (alertBox) alertBox.style.display = 'none';
+    if (alertBox) {
+      alertBox.style.display = 'none';
+      alertBox.textContent = '';
+    }
 
     modal.classList.add('is-open');
     document.body.style.overflow = 'hidden';
@@ -62,111 +75,186 @@
     document.body.style.overflow = '';
   };
 
-  // Send WhatsApp Action
-  window.sendWhatsAppEnquiry = function () {
-    const form = document.getElementById('enquiryForm');
-    if (!form) return;
+  // Common Direct Submission Engine used by both Modal and Inline Page Forms
+  window.processTradeEnquiry = async function (options) {
+    const {
+      division,
+      productId,
+      productName,
+      name,
+      company,
+      phone,
+      email,
+      requirement,
+      channel, // 'whatsapp' | 'email'
+      alertElementId
+    } = options;
 
-    const name = (document.getElementById('enquiryName')?.value || '').trim();
-    const company = (document.getElementById('enquiryCompany')?.value || '').trim();
-    const phone = (document.getElementById('enquiryPhone')?.value || '').trim();
-    const email = (document.getElementById('enquiryEmail')?.value || '').trim();
-    const message = (document.getElementById('enquiryMessage')?.value || '').trim();
+    function showAlert(text, type) {
+      if (alertElementId) {
+        const el = document.getElementById(alertElementId);
+        if (el) {
+          el.textContent = text;
+          el.style.display = 'block';
+          if (type === 'error') {
+            el.style.backgroundColor = '#FDF2F2';
+            el.style.color = '#991B1B';
+            el.style.border = '1px solid #F87171';
+          } else {
+            el.style.backgroundColor = '#F0FDF4';
+            el.style.color = '#166534';
+            el.style.border = '1px solid #86EFAC';
+          }
+        }
+      } else {
+        alert(text);
+      }
+    }
 
     // Validation
-    if (!name || !company || !phone) {
-      showModalAlert('Please fill in your Name, Company Name, and Contact Number.', 'error');
-      return;
+    const trimmedName = (name || '').trim();
+    const trimmedCompany = (company || '').trim();
+    const trimmedPhone = (phone || '').trim();
+    const trimmedEmail = (email || '').trim();
+    const trimmedReq = (requirement || '').trim();
+
+    if (!trimmedName) {
+      showAlert('Please enter your full name.', 'error');
+      return false;
+    }
+    if (!trimmedCompany) {
+      showAlert('Please enter your business or company name.', 'error');
+      return false;
+    }
+    if (!trimmedPhone || trimmedPhone.replace(/\D/g, '').length < 8) {
+      showAlert('Please enter a valid contact phone or WhatsApp number (at least 8 digits).', 'error');
+      return false;
+    }
+    if (trimmedEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+      showAlert('Please enter a valid email address, or leave it blank.', 'error');
+      return false;
     }
 
-    // Lookup destination WhatsApp number
-    let destNumber = '919876543210';
-    if (window.APP_CONFIG && window.APP_CONFIG[currentEnquiry.division]) {
-      destNumber = window.APP_CONFIG[currentEnquiry.division].whatsappNumber;
-    } else if (currentEnquiry.division === 'omSaiEnterprise') {
-      destNumber = '919876543211';
+    // Fetch and verify configuration
+    const config = await window.getConfig();
+    const divConfig = config ? config[division] : null;
+
+    if (!divConfig || !divConfig.isConfigured) {
+      showAlert(
+        `Contact information for ${divConfig ? divConfig.name : division} is currently being updated in data/company-config.json. Please contact the administrator directly.`,
+        'error'
+      );
+      return false;
     }
 
-    // Build structured message
-    const lines = [
-      `*Trade Enquiry - ${currentEnquiry.divisionLabel}*`,
-      `---------------------------------`,
-      currentEnquiry.productId ? `*Product:* ${currentEnquiry.productName} (Ref: ${currentEnquiry.productId})` : `*Subject:* General Partnership & Supply Enquiry`,
-      `*Contact Person:* ${name}`,
-      `*Company:* ${company}`,
-      `*Phone:* ${phone}`,
-      email ? `*Email:* ${email}` : '',
-      message ? `*Requirement Details:* ${message}` : '*Requirement:* Please share availability, minimum order quantity (MOQ), and commercial terms.'
-    ].filter(Boolean);
+    const divisionName = divConfig.name || (division === 'baburamTrading' ? 'Baburam Trading' : 'Om Sai Enterprise');
 
-    const fullMessage = lines.join('\n');
-    const encoded = encodeURIComponent(fullMessage);
-    const whatsappUrl = `https://wa.me/${destNumber}?text=${encoded}`;
+    if (channel === 'whatsapp') {
+      const destNumber = (divConfig.whatsappNumber || '').replace(/\D/g, '');
+      if (!destNumber) {
+        showAlert(`WhatsApp contact number for ${divisionName} is not yet configured. Please use email or check back shortly.`, 'error');
+        return false;
+      }
 
-    // Show confirmation and open link
-    showModalAlert('Opening WhatsApp with your pre-filled inquiry. You can review the details before sending directly to our trade desk.', 'success');
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    }, 400);
+      const lines = [
+        `*Trade Enquiry - ${divisionName}*`,
+        `---------------------------------`,
+        productName ? `*Subject/Product:* ${productName} ${productId ? `(Code: ${productId})` : ''}` : `*Subject:* Commercial Supply & Distribution`,
+        `*Contact Person:* ${trimmedName}`,
+        `*Company Name:* ${trimmedCompany}`,
+        `*Phone:* ${trimmedPhone}`,
+        trimmedEmail ? `*Email:* ${trimmedEmail}` : '',
+        `*Requirement:* ${trimmedReq || 'Please provide commercial terms, availability, and ordering details.'}`
+      ].filter(Boolean);
+
+      const encoded = encodeURIComponent(lines.join('\n'));
+      const whatsappUrl = `https://wa.me/${destNumber}?text=${encoded}`;
+
+      showAlert('Opening WhatsApp with your prefilled enquiry. Please click Send in WhatsApp to complete your message.', 'success');
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      }, 350);
+      return true;
+
+    } else if (channel === 'email') {
+      const destEmail = (divConfig.email || '').trim();
+      if (!destEmail) {
+        showAlert(`Official email for ${divisionName} is not yet configured. Please check back shortly.`, 'error');
+        return false;
+      }
+
+      const subject = `Trade Enquiry: ${productName || 'B2B Sourcing'} - ${trimmedCompany}`;
+      const body = `Dear Sales Desk,
+
+I would like to submit a formal trade enquiry with ${divisionName}.
+
+Subject / Product: ${productName || 'General Trade Inquiry'} ${productId ? `(Code: ${productId})` : ''}
+Company: ${trimmedCompany}
+Contact Person: ${trimmedName}
+Phone Number: ${trimmedPhone}
+Email: ${trimmedEmail || 'N/A'}
+
+Requirement Details:
+${trimmedReq || 'Please share product specifications, availability, and commercial terms.'}
+
+Note: Sent from static corporate website inquiry desk.`;
+
+      const mailtoUrl = `mailto:${destEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      showAlert('Opening your email application with the prefilled inquiry. Please review and press Send.', 'success');
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 350);
+      return true;
+    }
+
+    return false;
   };
 
-  // Send Mailto Action
+  // Modal Submit Handlers
+  window.sendWhatsAppEnquiry = function () {
+    const name = document.getElementById('enquiryName')?.value;
+    const company = document.getElementById('enquiryCompany')?.value;
+    const phone = document.getElementById('enquiryPhone')?.value;
+    const email = document.getElementById('enquiryEmail')?.value;
+    const requirement = document.getElementById('enquiryMessage')?.value;
+    const productId = document.getElementById('enquiryProductId')?.value || currentEnquiry.productId;
+
+    window.processTradeEnquiry({
+      division: currentEnquiry.division,
+      productId: productId,
+      productName: currentEnquiry.productName,
+      name,
+      company,
+      phone,
+      email,
+      requirement,
+      channel: 'whatsapp',
+      alertElementId: 'modalAlertBox'
+    });
+  };
+
   window.sendEmailEnquiry = function () {
-    const name = (document.getElementById('enquiryName')?.value || '').trim();
-    const company = (document.getElementById('enquiryCompany')?.value || '').trim();
-    const phone = (document.getElementById('enquiryPhone')?.value || '').trim();
-    const email = (document.getElementById('enquiryEmail')?.value || '').trim();
-    const message = (document.getElementById('enquiryMessage')?.value || '').trim();
+    const name = document.getElementById('enquiryName')?.value;
+    const company = document.getElementById('enquiryCompany')?.value;
+    const phone = document.getElementById('enquiryPhone')?.value;
+    const email = document.getElementById('enquiryEmail')?.value;
+    const requirement = document.getElementById('enquiryMessage')?.value;
+    const productId = document.getElementById('enquiryProductId')?.value || currentEnquiry.productId;
 
-    if (!name || !company) {
-      showModalAlert('Please provide at least your Name and Company Name.', 'error');
-      return;
-    }
-
-    let destEmail = 'distribution@baburamtrading.com';
-    if (window.APP_CONFIG && window.APP_CONFIG[currentEnquiry.division]) {
-      destEmail = window.APP_CONFIG[currentEnquiry.division].email;
-    } else if (currentEnquiry.division === 'omSaiEnterprise') {
-      destEmail = 'inquiry@omsaienterprise.com';
-    }
-
-    const subject = `Trade Inquiry: ${currentEnquiry.productName || 'B2B Sourcing'} - ${company}`;
-    const body = `Dear Sales Team,
-
-I would like to submit a formal trade inquiry with ${currentEnquiry.divisionLabel}.
-
-Product / Subject: ${currentEnquiry.productName} ${currentEnquiry.productId ? `(Code: ${currentEnquiry.productId})` : ''}
-Company Name: ${company}
-Contact Person: ${name}
-Phone Number: ${phone}
-Email: ${email}
-
-Requirements / Scope:
-${message || 'Please provide technical specifications, packaging sizes, delivery timelines, and commercial details.'}
-
-Best regards,
-${name}
-${company}`;
-
-    const mailtoUrl = `mailto:${destEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
+    window.processTradeEnquiry({
+      division: currentEnquiry.division,
+      productId: productId,
+      productName: currentEnquiry.productName,
+      name,
+      company,
+      phone,
+      email,
+      requirement,
+      channel: 'email',
+      alertElementId: 'modalAlertBox'
+    });
   };
-
-  function showModalAlert(text, type) {
-    const alertBox = document.getElementById('modalAlertBox');
-    if (!alertBox) return;
-    alertBox.textContent = text;
-    alertBox.style.display = 'block';
-    if (type === 'error') {
-      alertBox.style.backgroundColor = '#FDF2F2';
-      alertBox.style.color = '#991B1B';
-      alertBox.style.border = '1px solid #F87171';
-    } else {
-      alertBox.style.backgroundColor = '#F0FDF4';
-      alertBox.style.color = '#166534';
-      alertBox.style.border = '1px solid #86EFAC';
-    }
-  }
 
   // Close on backdrop click & ESC key
   document.addEventListener('keydown', e => {

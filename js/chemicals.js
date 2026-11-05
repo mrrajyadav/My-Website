@@ -1,29 +1,38 @@
 /**
- * Om Sai Enterprise - Chemicals Specialist Scripts
+ * Om Sai Enterprise - Chemicals Contact & RFQ Script
+ * Directly processes chemical quote requests without double entry
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Quote & TDS Request Form handler
   const chemForm = document.getElementById('chemicalQuoteForm');
-  if (chemForm) {
-    chemForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('chemName')?.value || '';
-      const company = document.getElementById('chemCompany')?.value || '';
-      const phone = document.getElementById('chemPhone')?.value || '';
-      const industry = document.getElementById('chemIndustry')?.value || 'Textile';
-      const notes = document.getElementById('chemNotes')?.value || '';
+  if (!chemForm) return;
 
-      if (!name || !company || !phone) {
-        alert('Please fill in your Name, Company, and Contact Number.');
-        return;
-      }
+  window.submitChemicalQuote = function (channel) {
+    const name = document.getElementById('chemName')?.value;
+    const company = document.getElementById('chemCompany')?.value;
+    const phone = document.getElementById('chemPhone')?.value;
+    const email = document.getElementById('chemEmail')?.value;
+    const industry = document.getElementById('chemIndustry')?.value || 'Industrial Manufacturing';
+    const notes = document.getElementById('chemNotes')?.value;
 
-      window.openEnquiry('omSaiEnterprise', 'QUOTE-REQ', `Chemical Sourcing Quote (${industry})`, 'Industrial Supply');
-      const msgField = document.getElementById('enquiryMessage');
-      if (msgField) {
-        msgField.value = `Industrial Quote Request for ${industry} sector. Details: ${notes}`;
-      }
+    const fullMessage = `RFQ Requirement (${industry}): ${notes || 'Requesting commercial price quotation and product availability.'}`;
+
+    window.processTradeEnquiry({
+      division: 'omSaiEnterprise',
+      productId: 'CHEM-RFQ',
+      productName: `Industrial Quote Request (${industry})`,
+      name,
+      company,
+      phone,
+      email,
+      requirement: fullMessage,
+      channel: channel,
+      alertElementId: 'chemContactAlert'
     });
-  }
+  };
+
+  chemForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.submitChemicalQuote('whatsapp');
+  });
 });

@@ -1,52 +1,41 @@
 {
   "general": {
     "siteTitle": "Baburam Trading & Om Sai Enterprise",
-    "description": "Two Independent Businesses. FMCG Distribution and Industrial & Textile Chemical Trading.",
-    "established": "Commercial Trading & Distribution",
-    "supportEmail": "contact@baburamtrading-omsaienterprise.com",
-    "businessHours": "Monday – Saturday: 9:00 AM – 6:30 PM (IST)",
-    "whatsappCountryCode": "91"
+    "siteUrl": "",
+    "description": "Two Independent Businesses: Baburam Trading (FMCG Distribution) and Om Sai Enterprise (Textile & Industrial Chemical Trading).",
+    "businessHours": "Monday – Saturday: 9:00 AM – 6:30 PM",
+    "countryCode": ""
   },
   "baburamTrading": {
     "name": "Baburam Trading",
     "division": "FMCG Distribution",
     "tagline": "Connecting Brands. Empowering Markets.",
+    "isConfigured": false,
+    "whatsappNumber": "",
+    "whatsappDisplay": "",
+    "email": "",
+    "phone": "",
+    "address": "",
     "primaryColor": "#123D8C",
     "secondaryColor": "#008C43",
     "backgroundColor": "#F7F9F7",
     "textColor": "#263238",
-    "logoPath": "assets/logos/baburam-trading.png",
-    "whatsappNumber": "919876543210",
-    "whatsappDisplay": "+91 98765 43210",
-    "email": "distribution@baburamtrading.com",
-    "phone": "+91 98765 43210",
-    "address": "Commercial Trade Hub, FMCG Wholesale Market (Configurable in data/company-config.json)",
-    "operations": [
-      "Retail Network Distribution",
-      "Direct Store Delivery (DSD)",
-      "Wholesale Bulk Trade",
-      "Stockist & Channel Logistics"
-    ]
+    "logoPath": "assets/logos/baburam-trading.png"
   },
   "omSaiEnterprise": {
     "name": "Om Sai Enterprise",
     "tagline": "Chemicals Specialist",
-    "division": "Textile & Industrial Chemical Trading",
+    "division": "Textile and Industrial Chemical Trading",
+    "isConfigured": false,
+    "whatsappNumber": "",
+    "whatsappDisplay": "",
+    "email": "",
+    "phone": "",
+    "address": "",
     "primaryColor": "#0754B5",
     "secondaryColor": "#087F38",
     "backgroundColor": "#F4F7FA",
     "textColor": "#202B36",
-    "logoPath": "assets/logos/om-sai-enterprise.jpeg",
-    "whatsappNumber": "919876543211",
-    "whatsappDisplay": "+91 98765 43211",
-    "email": "inquiry@omsaienterprise.com",
-    "phone": "+91 98765 43211",
-    "address": "Industrial Chemical Estate, Trade Zone (Configurable in data/company-config.json)",
-    "operations": [
-      "Textile Pre-Treatment & Dyeing Chemistry",
-      "Fabric Finishing Formulations",
-      "Bulk Industrial Sourcing & Supply",
-      "Technical Sourcing Support"
-    ]
+    "logoPath": "assets/logos/om-sai-enterprise.jpeg"
   }
 }

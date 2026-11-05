@@ -1,5 +1,8 @@
 import path from 'path';
+import {fileURLToPath} from 'url';
 import {defineConfig} from 'vite';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
   return {
@@ -27,6 +30,7 @@ export default defineConfig(() => {
           chemIndustrial: path.resolve(__dirname, 'chemicals/industrial-chemicals.html'),
           chemDetails: path.resolve(__dirname, 'chemicals/product-details.html'),
           chemContact: path.resolve(__dirname, 'chemicals/contact.html'),
+          notFound: path.resolve(__dirname, '404.html'),
         },
       },
     },

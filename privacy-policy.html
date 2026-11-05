@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy | Baburam Trading & Om Sai Enterprise</title>
-  <meta name="description" content="Privacy Policy for Baburam Trading and Om Sai Enterprise corporate websites." />
+  <meta name="description" content="Privacy Policy for Baburam Trading (FMCG Distribution) and Om Sai Enterprise (Chemicals Specialist) corporate website." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
@@ -12,32 +13,39 @@
   <header class="site-header">
     <div class="container">
       <div class="header-brand-dual">
-        <a href="index.html" class="logo-item">
+        <a href="index.html" class="logo-item" title="Baburam Trading">
           <div class="logo-container-light">
             <img src="assets/logos/baburam-trading.png" alt="Baburam Trading Logo" class="logo-img" />
           </div>
         </a>
         <span class="brand-divider" aria-hidden="true"></span>
-        <a href="index.html" class="logo-item">
+        <a href="index.html" class="logo-item" title="Om Sai Enterprise">
           <div class="logo-container-dark">
             <img src="assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
           </div>
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="fmcg/index.html" class="nav-link">Baburam Trading (FMCG)</a>
         <a href="chemicals/index.html" class="nav-link">Om Sai Enterprise (Chemicals)</a>
       </nav>
       <div class="header-actions">
         <a href="index.html#contact" class="btn btn-outline btn-sm">Contact Desk</a>
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
 
   <main class="section">
     <div class="container" style="max-width: 860px;">
-      <span class="section-kicker">Corporate Governance</span>
+      <span class="section-kicker">Corporate Transparency</span>
       <h1 style="margin-bottom: 24px;">Privacy Policy</h1>
       <p style="margin-bottom: 32px; font-size: 0.9375rem; color: var(--text-muted);">
         Effective Date: November 2026
@@ -45,30 +53,34 @@
 
       <div style="display: flex; flex-direction: column; gap: 24px; font-size: 0.975rem; line-height: 1.7; color: var(--text-main);">
         <section>
-          <h3 style="margin-bottom: 8px;">1. Information We Collect</h3>
+          <h3 style="margin-bottom: 8px;">1. Static Architecture & No Server Database</h3>
           <p>
-            This website functions as a static corporate showcase and trade inquiry platform. We do not maintain server-side user tracking databases, cookies, or telemetry trackers. Information submitted through our direct inquiry forms (such as contact person name, company name, phone number, and commercial requirements) is transmitted strictly via client-side channels (such as WhatsApp or standard email clients) directly to our trade desks.
+            This website operates as a pure static informational website. We do not operate a backend user database, do not create customer accounts, and do not track users across the web.
           </p>
         </section>
 
         <section>
-          <h3 style="margin-bottom: 8px;">2. Use of Information</h3>
+          <h3 style="margin-bottom: 8px;">2. External Communication Applications (WhatsApp & Email)</h3>
           <p>
-            Any trade inquiry details provided voluntarily by commercial clients and partners are utilized solely for responding to distribution requests, providing price quotations, verifying technical specifications (TDS/SDS), and managing B2B customer relationships.
+            When you use the enquiry features on this website:
+          </p>
+          <ul style="list-style: disc; margin-left: 24px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
+            <li><strong>WhatsApp Actions:</strong> Selecting WhatsApp opens the external WhatsApp web or mobile application with your prefilled product enquiry. No enquiry data is captured or saved on our website servers. The message is transmitted only when you click "Send" within WhatsApp.</li>
+            <li><strong>Email Actions:</strong> Selecting Email opens your device's default email client (via a standard <code>mailto:</code> link) with a structured message draft. Transmission occurs through your own email provider.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 style="margin-bottom: 8px;">3. Cookies and Tracking</h3>
+          <p>
+            This static website does not set analytical tracking cookies, advertising pixels, or third-party profiling scripts.
           </p>
         </section>
 
         <section>
-          <h3 style="margin-bottom: 8px;">3. Confidentiality of Commercial Data</h3>
+          <h3 style="margin-bottom: 8px;">4. B2B Commercial Data Use</h3>
           <p>
-            Neither Baburam Trading nor Om Sai Enterprise sells, rents, or leases trade inquiries to third parties. All distributor communications and supplier details remain confidential.
-          </p>
-        </section>
-
-        <section>
-          <h3 style="margin-bottom: 8px;">4. Contact & Inquiries</h3>
-          <p>
-            For questions regarding this privacy statement or our commercial handling practices, please contact our administrative desk through the official contact points listed on this portal.
+            Information communicated directly by trade partners (such as contact name, company name, phone, and product inquiries) is used solely by Baburam Trading or Om Sai Enterprise to respond to commercial distribution inquiries, discuss order requirements, or share verified technical specifications. We do not sell or lease trade information.
           </p>
         </section>
       </div>
@@ -90,5 +102,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

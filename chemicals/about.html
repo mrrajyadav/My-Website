@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Om Sai Enterprise | Chemicals Specialist</title>
-  <meta name="description" content="Discover Om Sai Enterprise's chemical trading capabilities, sourcing standards, and industrial partnerships." />
+  <title>About Us | Om Sai Enterprise - Chemicals Specialist</title>
+  <meta name="description" content="Discover Om Sai Enterprise's chemical trading capabilities, sourcing standards, and industrial client support." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Chemicals Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About Us</a>
         <a href="products.html" class="nav-link">Products</a>
@@ -33,7 +34,7 @@
       </nav>
       <div class="header-actions">
         <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'ABOUT-QUOTE', 'Quote Request', 'Chemicals')">Request a Quote</button>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -51,15 +52,15 @@
           <span class="section-kicker">About Om Sai Enterprise</span>
           <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Dedicated Chemical Trading & Sourcing</h1>
           <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Om Sai Enterprise operates as an industrial and textile chemical trading specialist. We facilitate the procurement, distribution, and reliable batch supply of specialty textile auxiliaries and essential chemical commodities.
+            Om Sai Enterprise operates as an industrial and textile chemical trading specialist. We facilitate the procurement, distribution, and reliable supply of specialty textile auxiliaries and industrial chemical commodities.
           </p>
           <div style="display: flex; gap: 16px;">
-            <a href="products.html" class="btn btn-primary">Browse Formulations</a>
-            <a href="contact.html" class="btn btn-outline">Direct Commercial RFQ</a>
+            <a href="products.html" class="btn btn-primary">Browse Catalogue</a>
+            <a href="contact.html" class="btn btn-outline">Commercial Enquiry</a>
           </div>
         </div>
         <div class="hero-media">
-          <img src="../assets/images/chemicals/facility.jpg" alt="Chemical Processing Operations" />
+          <img src="../assets/images/chemicals/facility.jpg" alt="Chemical Sourcing Operations" />
         </div>
       </div>
     </div>
@@ -69,47 +70,48 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-kicker">Operational Disciplines</span>
-        <h2 class="section-title">Industrial Chemical Supply Capabilities</h2>
+        <span class="section-kicker">Operational Standards</span>
+        <h2 class="section-title">Chemical Trading & Supply Standards</h2>
         <p class="section-description">
-          Our trade activities adhere to strict industrial chemical handling and verification standards.
+          Our trading activities adhere to disciplined chemical sourcing and documentation protocols.
         </p>
       </div>
 
       <div class="values-grid">
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Source Authenticity</h3>
-          <p class="value-desc">Procuring raw materials and specialized auxiliaries strictly from verified manufacturers and synthesis plants.</p>
+          <h3 class="value-title" style="color: var(--chem-primary);">Source Reliability</h3>
+          <p class="value-desc">Procuring raw materials and specialized chemical auxiliaries from reputable industrial chemical producers.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">Technical Documentation</h3>
-          <p class="value-desc">Providing genuine batch certificates of analysis (COA), Technical Data Sheets (TDS), and safety instructions.</p>
+          <p class="value-desc">Facilitating manufacturer Technical Data Sheets (TDS) and Safety Data Sheets (SDS) upon verified trade enquiry.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">Application Matching</h3>
-          <p class="value-desc">Assisting textile processors and manufacturing engineers in selecting formulations suited for specific machinery and pH requirements.</p>
+          <p class="value-desc">Helping textile processors and industrial manufacturing clients identify the appropriate chemical grades for their processes.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">Secure Logistics</h3>
-          <p class="value-desc">Safe transport compliance with proper UN-certified drum/carboy packaging, reducing spillage risk.</p>
+          <p class="value-desc">Careful coordination of standard carboy, drum, and bulk container handling for industrial deliveries.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Om Sai Enterprise - Chemical Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject / Item:</strong>
           <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Chemical Sourcing Inquiry</span>
           <input type="hidden" id="enquiryProductId" value="" />
         </div>
@@ -117,30 +119,30 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Full Name *</label>
-              <input type="text" id="enquiryName" class="form-control" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="enquiryCompany">Company Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" required />
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Company or mill name" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email</label>
-              <input type="email" id="enquiryEmail" class="form-control" />
+              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="email@company.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Message / Requirement</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+            <label class="form-label" for="enquiryMessage">Message / Requirement Details</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify your requirement..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
-            <button type="button" class="btn btn-outline btn-block" onclick="sendEmailEnquiry()">Email</button>
+            <button type="button" class="btn btn-outline btn-block" onclick="sendEmailEnquiry()">Email RFQ</button>
           </div>
         </form>
       </div>

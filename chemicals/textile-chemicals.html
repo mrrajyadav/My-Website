@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Textile Chemicals | Om Sai Enterprise - Chemicals Specialist</title>
-  <meta name="description" content="Specialized textile processing chemicals supplied by Om Sai Enterprise. Wetting agents, scouring auxiliaries, reactive dye fixatives, optical brighteners, and silicone softeners." />
+  <meta name="description" content="Textile processing chemicals and specialty auxiliaries supplied by Om Sai Enterprise. Wetting agents, fixatives, brighteners, and softeners." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Chemicals Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
         <a href="products.html" class="nav-link">Products</a>
@@ -33,7 +34,7 @@
       </nav>
       <div class="header-actions">
         <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'TEXTILE-RFQ', 'Textile Chemical Inquiry', 'Textile Chemicals')">Enquire Now</button>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -51,7 +52,7 @@
           <span class="section-kicker">Specialized Chemistry</span>
           <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Textile Processing Chemicals</h1>
           <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            High-performance auxiliaries and finishing agents engineered for cotton, polyester, and blended textile wet processing. Enhancing dye uptake, wet fastness, and fabric handle.
+            Chemical auxiliaries and finishing agents for cotton, polyester, and blended textile wet processing. Assisting processing mills with quality dye uptake, fastness, and fabric handle.
           </p>
           <div style="display: flex; gap: 16px;">
             <a href="#textile-grid" class="btn btn-primary">View Textile Products</a>
@@ -69,29 +70,29 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-kicker">Wet Processing Sequence</span>
-        <h2 class="section-title">Chemical Formulations by Process Stage</h2>
+        <span class="section-kicker">Processing Stages</span>
+        <h2 class="section-title">Chemical Solutions by Process Stage</h2>
         <p class="section-description">
-          We provide batch-reliable chemical solutions across all primary textile manufacturing phases.
+          We provide chemical sourcing across all primary textile wet processing phases.
         </p>
       </div>
 
       <div class="values-grid">
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">1. Pre-Treatment Auxiliaries</h3>
-          <p class="value-desc">Wetting agents, desizing catalysts, non-foaming scouring agents, and peroxide stabilizers for uniform fabric preparation.</p>
+          <p class="value-desc">Wetting agents, desizing aids, scouring auxiliaries, and stabilizers for uniform fabric preparation.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">2. Dyeing & Printing Auxiliaries</h3>
-          <p class="value-desc">Formaldehyde-free dye fixing agents, leveling agents, and dispersing compounds improving rub and wash fastness.</p>
+          <p class="value-desc">Dye fixing agents, leveling aids, and dispersing compounds improving wet and wash fastness.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">3. Optical Brighteners (OBA)</h3>
-          <p class="value-desc">Fluorescent whitening agents for cellulosic and polyester fibers with neutral-to-violet shades.</p>
+          <p class="value-desc">Fluorescent whitening agents for cellulosic and synthetic fibers producing clean, neutral-to-bluish white tones.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--chem-primary);">4. Finishing & Softeners</h3>
-          <p class="value-desc">Cationic softener flakes, non-ionic emulsions, and micro-silicone fluids delivering premium tactile drapability.</p>
+          <p class="value-desc">Cationic softener flakes, non-ionic emulsions, and micro-silicone fluids delivering desired tactile softness.</p>
         </div>
       </div>
     </div>
@@ -108,25 +109,26 @@
         <a href="products.html" class="btn btn-outline btn-sm">All Products Catalogue &rarr;</a>
       </div>
 
-      <div class="products-grid" id="productsGrid">
-        <!-- Rendered by js/products.js -->
+      <div class="products-grid" id="textileGrid">
+        <!-- Rendered safely via js/products.js -->
       </div>
     </div>
   </section>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Om Sai Enterprise - Chemical Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject / Item:</strong>
           <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Textile Chemical Sourcing</span>
           <input type="hidden" id="enquiryProductId" value="" />
         </div>
@@ -134,26 +136,26 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Contact Name *</label>
-              <input type="text" id="enquiryName" class="form-control" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="enquiryCompany">Mill / Company Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" required />
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Company or mill name" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email</label>
-              <input type="email" id="enquiryEmail" class="form-control" />
+              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="contact@company.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Fabric Processing Details & Drum Requirements</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+            <label class="form-label" for="enquiryMessage">Processing Details & Packaging Preferences</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify fabric type, process requirements, or expected volume..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
@@ -181,11 +183,7 @@
   <script src="../js/enquiry.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Initialize with 'Textile Chemicals' category pre-selected
-      initProductCatalogue('chemicals', 'productsGrid', null).then(() => {
-        const filterAll = document.querySelector('[data-category="all"]');
-        // Let user see textile chemicals
-      });
+      initProductCatalogue('chemicals', 'textileGrid', null);
     });
   </script>
 </body>

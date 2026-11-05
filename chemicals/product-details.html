@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chemical Details | Om Sai Enterprise</title>
-  <meta name="description" content="View brief technical overview, standard packaging, and request verified Technical Data Sheets (TDS) and commercial quotes." />
+  <meta name="description" content="View verified chemical product overview and request Technical Data Sheets (TDS) and commercial quotes directly from Om Sai Enterprise." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Chemicals Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
         <a href="products.html" class="nav-link active">Products</a>
@@ -33,7 +34,7 @@
       </nav>
       <div class="header-actions">
         <a href="products.html" class="btn btn-outline btn-sm">&larr; Back to Catalogue</a>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -52,38 +53,32 @@
           <img id="detailImage" src="../assets/images/chemicals/facility.jpg" alt="Chemical Formulation" style="width: 100%; height: auto; object-fit: cover;" />
         </div>
 
-        <!-- Info Column -->
+        <!-- Info Column: Only Product Name, Category, Short Description, and Enquiry Button -->
         <div class="detail-info">
           <div class="product-meta-unboxed" id="detailMeta" style="margin-bottom: 12px;">
-            <span>Specialty Chemistry</span> <span aria-hidden="true">·</span> <span>Industrial Grade</span>
+            Chemical Trading Division
           </div>
 
           <h1 id="detailTitle" style="font-size: 2rem; margin-bottom: 16px; color: var(--chem-primary);">Loading Chemical...</h1>
           
-          <p id="detailDesc" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Please wait while product data is fetched.
+          <p id="detailDesc" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 28px;">
+            Please wait while product details are loaded.
           </p>
 
-          <table class="detail-table">
-            <tbody id="detailTableBody">
-              <!-- Dynamically populated -->
-            </tbody>
-          </table>
-
-          <div class="compliance-callout" style="margin: 20px 0;">
-            <div class="compliance-icon">
+          <div class="compliance-callout" style="margin-bottom: 28px;">
+            <div class="compliance-icon" aria-hidden="true">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
-            <div style="font-size: 0.875rem; color: var(--chem-text); line-height: 1.6;">
-              <strong>TDS & Safety Compliance:</strong> Complete physical/chemical properties, pH values, batch Certificate of Analysis (COA), Technical Data Sheet (TDS), and Safety Data Sheet (SDS) are provided upon verified enterprise inquiry.
+            <div style="font-size: 0.9375rem; color: var(--chem-text); line-height: 1.6;">
+              <strong>TDS & Commercial Sourcing:</strong> Full Technical Data Sheets (TDS), Safety Data Sheets (SDS), packaging options (carboys, drums, bulk), and commercial price quotations are provided upon direct business enquiry.
             </div>
           </div>
 
-          <div style="display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap;">
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
             <button type="button" class="btn btn-primary btn-lg" id="detailEnquiryBtn">
-              Enquire Now / Request TDS
+              Contact for Complete Details / Request TDS
             </button>
             <a href="contact.html" class="btn btn-outline btn-lg">
               Sales Desk
@@ -95,17 +90,17 @@
   </main>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Om Sai Enterprise - Chemical Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
           <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Chemical Formulation:</strong>
           <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Chemical Name</span>
@@ -115,26 +110,26 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Contact Person *</label>
-              <input type="text" id="enquiryName" class="form-control" placeholder="Full name" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryCompany">Manufacturing Enterprise *</label>
-              <input type="text" id="enquiryCompany" class="form-control" placeholder="Mill / Company name" required />
+              <label class="form-label" for="enquiryCompany">Company / Mill Name *</label>
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Company or mill name" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" placeholder="+91 98765 43211" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email Address</label>
+              <label class="form-label" for="enquiryEmail">Email Address (Optional)</label>
               <input type="email" id="enquiryEmail" class="form-control" placeholder="procurement@company.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Target Application & Required Volume (MT / Drums)</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify processing application, drum or bulk carboy preferences, or TDS request..."></textarea>
+            <label class="form-label" for="enquiryMessage">Target Application & Expected Volume</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify application, drum/carboy preferences, or TDS request..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>

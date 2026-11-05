@@ -1,0 +1,21 @@
+{
+  "instructions": "This file contains the reference JSON structure for adding verified products to data/fmcg-products.json and data/chemical-products.json. Do not populate fictional products. Only add verified products provided by the business owner.",
+  "fmcgProductExample": {
+    "id": "FMCG-001",
+    "name": "Verified Product Name",
+    "brand": "Verified Brand Name",
+    "category": "Packaged Foods",
+    "image": "assets/images/fmcg/products.jpg",
+    "shortDescription": "Short verified description of the consumer goods product.",
+    "status": "active"
+  },
+  "chemicalProductExample": {
+    "id": "CHEM-001",
+    "name": "Verified Chemical Formulation Name",
+    "category": "Textile Chemicals",
+    "subCategory": "Pre-Treatment",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Short verified description of the traded chemical product.",
+    "status": "active"
+  }
+}

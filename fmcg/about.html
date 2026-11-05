@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Baburam Trading | FMCG Distribution Specialists</title>
-  <meta name="description" content="Learn about Baburam Trading's FMCG distribution infrastructure, market reach, warehousing capabilities, and retail channel relationships." />
+  <title>About Us | Baburam Trading - FMCG Distribution</title>
+  <meta name="description" content="Learn about Baburam Trading's FMCG distribution infrastructure, market reach, warehousing operations, and retail channel relationships." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/fmcg.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/baburam-trading.png" alt="Baburam Trading Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="FMCG Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About Us</a>
         <a href="brands.html" class="nav-link">Our Brands</a>
@@ -32,7 +33,7 @@
       </nav>
       <div class="header-actions">
         <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('baburamTrading', 'PARTNER', 'Distributor Partnership', 'FMCG')">Become Our Partner</button>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -50,7 +51,7 @@
           <span class="section-kicker">About Baburam Trading</span>
           <h1 style="color: var(--fmcg-primary); margin-bottom: 20px;">Dedicated to Organized FMCG Distribution</h1>
           <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Baburam Trading operates as an organized FMCG supply and channel distribution partner. We connect high-demand consumer goods with retail counters, departmental outlets, and wholesale hubs.
+            Baburam Trading operates as an organized FMCG supply and channel distribution partner. We connect high-demand consumer goods with retail counters, supermarkets, and wholesale hubs.
           </p>
           <div style="display: flex; gap: 16px;">
             <a href="products.html" class="btn btn-primary">Browse Catalogue</a>
@@ -58,7 +59,7 @@
           </div>
         </div>
         <div class="hero-media">
-          <img src="../assets/images/fmcg/warehouse.jpg" alt="Distribution Operations" />
+          <img src="../assets/images/fmcg/warehouse.jpg" alt="FMCG Distribution Operations" />
         </div>
       </div>
     </div>
@@ -68,47 +69,48 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-kicker">Supply Architecture</span>
+        <span class="section-kicker">Supply Coordination</span>
         <h2 class="section-title">Core Operating Capabilities</h2>
         <p class="section-description">
-          Our distribution operations are structured to remove supply friction between brand manufacturers and the retail floor.
+          Our distribution operations are structured to coordinate seamless product movement between brand owners and retail points.
         </p>
       </div>
 
       <div class="values-grid">
         <div class="value-card">
           <h3 class="value-title" style="color: var(--fmcg-primary);">Organized Channel Networks</h3>
-          <p class="value-desc">Established relationships with regional trade outlets, supermarkets, grocers, and modern retail formats.</p>
+          <p class="value-desc">Established distribution coordination with retail outlets, supermarkets, grocers, and regional store formats.</p>
         </div>
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--fmcg-primary);">Inventory Disciplines</h3>
-          <p class="value-desc">Systematic batch tracking, standard shelf-life controls, and secure warehousing to eliminate product spoilage.</p>
+          <h3 class="value-title" style="color: var(--fmcg-primary);">Inventory Management</h3>
+          <p class="value-desc">Systematic stock tracking, batch organization, and secure warehousing to safeguard product packaging integrity.</p>
         </div>
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--fmcg-primary);">Direct Dispatch Logistics</h3>
-          <p class="value-desc">Scheduled order fulfillment ensuring consistent restocking cycles that maintain high retail on-shelf availability.</p>
+          <h3 class="value-title" style="color: var(--fmcg-primary);">Timely Restocking</h3>
+          <p class="value-desc">Structured fulfillment schedules designed to support steady retail product availability.</p>
         </div>
         <div class="value-card">
           <h3 class="value-title" style="color: var(--fmcg-primary);">Trade Integrity</h3>
-          <p class="value-desc">Transparent billing, accurate reconciliations, and strict adherence to fair commercial terms for all stakeholders.</p>
+          <p class="value-desc">Transparent billing, accurate order processing, and strict adherence to professional commercial commitments.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Baburam Trading - Distribution Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Baburam Trading - Distribution Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Baburam Trading (FMCG)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject / Item:</strong>
           <span id="modalProductLabel" style="color: var(--fmcg-primary); font-weight: 600;">Distribution Partnership</span>
           <input type="hidden" id="enquiryProductId" value="" />
         </div>
@@ -116,26 +118,26 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Full Name *</label>
-              <input type="text" id="enquiryName" class="form-control" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="enquiryCompany">Company Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" required />
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Company or business name" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email</label>
-              <input type="email" id="enquiryEmail" class="form-control" />
+              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="email@company.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Message / Requirement</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+            <label class="form-label" for="enquiryMessage">Message / Requirement Details</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify your requirement..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>

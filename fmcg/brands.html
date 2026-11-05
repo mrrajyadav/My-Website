@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Brands | Baburam Trading - FMCG Distribution</title>
-  <meta name="description" content="Discover the FMCG consumer brands distributed through Baburam Trading's authorized market network." />
+  <meta name="description" content="Brand collaboration and FMCG product partnerships with Baburam Trading." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/fmcg.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/baburam-trading.png" alt="Baburam Trading Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="FMCG Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
         <a href="brands.html" class="nav-link active">Our Brands</a>
@@ -32,7 +33,7 @@
       </nav>
       <div class="header-actions">
         <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('baburamTrading', 'BRAND-PARTNER', 'Brand Partnership Inquiry', 'FMCG')">Partner With Us</button>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -47,85 +48,49 @@
     <div class="container">
       <div class="section-header">
         <span class="section-kicker">Brand Partnerships</span>
-        <h1 class="section-title">Consumer Brands in Our Network</h1>
+        <h1 class="section-title">FMCG Brand Collaboration</h1>
         <p class="section-description">
-          We collaborate with consumer product manufacturers across staple foods, refreshments, wellness teas, and personal hygiene lines.
+          Baburam Trading works with consumer product manufacturers looking to establish or expand their retail distribution footprint.
         </p>
       </div>
 
-      <div class="brands-grid">
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Nature's Harvest</div>
-          <div class="brand-category-label">Packaged Foods & Staples</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Semolina pastas, wholesome cereals, and packaged pantry provisions.</p>
+      <!-- Professional Empty State for Brands -->
+      <div style="background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 56px 28px; text-align: center; max-width: 760px; margin: 0 auto;">
+        <div style="width: 48px; height: 48px; margin: 0 auto 16px auto; border-radius: var(--radius-sm); background-color: var(--bg-subtle); display: flex; align-items: center; justify-content: center; color: var(--fmcg-primary);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
         </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Vitality</div>
-          <div class="brand-category-label">Cold-Pressed Beverages</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Natural juices and cold-chain beverage formats for modern retail.</p>
+        <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--fmcg-primary);">Brand Portfolio Updating</h3>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; margin-bottom: 28px;">
+          Product information is currently being updated. Please contact our team for product details and availability.
+        </p>
+        <div>
+          <button type="button" class="btn btn-primary" onclick="openEnquiry('baburamTrading', 'BRAND-PROPOSAL', 'Brand Distribution Proposal', 'FMCG')">
+            Submit Brand Distribution Proposal
+          </button>
         </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Roast & Co.</div>
-          <div class="brand-category-label">Specialty Coffee</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Whole bean and fresh roasted blends for gourmet and grocery shelves.</p>
-        </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Botanical Brew</div>
-          <div class="brand-category-label">Herbal Teas & Infusions</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Pure whole leaf teas packaged for wellness-focused consumers.</p>
-        </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Arisen's</div>
-          <div class="brand-category-label">Breakfast & Cereals</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Nutritious granola clusters and healthy snack formulations.</p>
-        </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Eco-Glow</div>
-          <div class="brand-category-label">Personal Hygiene & Care</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Botanical body washes and gentle skin cleansing essentials.</p>
-        </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">Nature's Path</div>
-          <div class="brand-category-label">Oral Hygiene</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Herbal toothpastes and daily personal care products.</p>
-        </div>
-
-        <div class="brand-card">
-          <div class="brand-placeholder-badge">The Spice Co.</div>
-          <div class="brand-category-label">Culinary Seasonings</div>
-          <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 10px;">Packaged pure herbs and aromatic seasoning shakers.</p>
-        </div>
-      </div>
-
-      <div class="notice-box" style="margin-top: 48px; text-align: center;">
-        <h4 style="margin-bottom: 8px;">Are You a Brand Principal Seeking Distribution?</h4>
-        <p style="margin-bottom: 16px;">We welcome FMCG manufacturers looking to establish or strengthen their distribution footprint across regional retail channels.</p>
-        <button type="button" class="btn btn-primary" onclick="openEnquiry('baburamTrading', 'BRAND-COLLAB', 'New Brand Principal Collaboration', 'FMCG')">
-          Submit Brand Distribution Proposal
-        </button>
       </div>
     </div>
   </main>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Baburam Trading - Distribution Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Baburam Trading - Distribution Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Baburam Trading (FMCG)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Inquiry Subject:</strong>
           <span id="modalProductLabel" style="color: var(--fmcg-primary); font-weight: 600;">Brand Partnership</span>
           <input type="hidden" id="enquiryProductId" value="" />
         </div>
@@ -133,26 +98,26 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Full Name *</label>
-              <input type="text" id="enquiryName" class="form-control" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="enquiryCompany">Brand / Enterprise Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" required />
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Brand or company name" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email</label>
-              <input type="email" id="enquiryEmail" class="form-control" />
+              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="contact@brand.com" />
             </div>
           </div>
           <div class="form-group">
             <label class="form-label" for="enquiryMessage">Brand Profile & Distribution Requirements</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify product categories or distribution area..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>

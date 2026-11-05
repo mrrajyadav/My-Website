@@ -36,6 +36,7 @@ Deployable directly without any server build step to:
 
 ```
 ├── index.html                   # Main Corporate Portal Homepage
+├── 404.html                     # Custom 404 Error Handler Page
 ├── privacy-policy.html          # Corporate Privacy Policy
 ├── terms.html                   # Commercial Terms & Conditions
 │
@@ -96,10 +97,11 @@ Deployable directly without any server build step to:
 
 All contact information is centralized in **`data/company-config.json`**.
 
-To update the WhatsApp numbers, phone numbers, or corporate email:
+When verified details are ready to be published:
 1. Open `data/company-config.json`.
-2. Edit `whatsappNumber` (e.g. `919876543210`), `email`, or `phone`.
-3. All WhatsApp click-to-chat buttons and mailto links across all pages will immediately use the updated information!
+2. Set `"isConfigured": true` for the division.
+3. Add verified `whatsappNumber` (e.g. `919876543210`), `email`, `phone`, and `address`.
+4. When `isConfigured` is `false`, the website safely shows a professional "contact unavailable" advisory without publishing any unverified information or broken fallback numbers.
 
 ---
 
@@ -108,6 +110,7 @@ To update the WhatsApp numbers, phone numbers, or corporate email:
 Product information is decoupled from HTML in structured JSON:
 - FMCG products: `data/fmcg-products.json`
 - Chemicals: `data/chemical-products.json`
+- A reference schema is provided in `data/sample-products-template.json`
 
 Example product record:
 ```json

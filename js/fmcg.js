@@ -1,30 +1,38 @@
 /**
- * Baburam Trading - FMCG Scripts
+ * Baburam Trading - FMCG Contact & Partnership Script
+ * Directly processes enquiry from the contact page without double entry
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Direct FMCG Partnership Form handler
-  const partnerForm = document.getElementById('fmcgPartnerForm');
-  if (partnerForm) {
-    partnerForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('partnerName')?.value || '';
-      const company = document.getElementById('partnerCompany')?.value || '';
-      const phone = document.getElementById('partnerPhone')?.value || '';
-      const channel = document.getElementById('partnerChannel')?.value || 'Retailer';
-      const notes = document.getElementById('partnerNotes')?.value || '';
+  const fmcgForm = document.getElementById('fmcgPartnerForm');
+  if (!fmcgForm) return;
 
-      if (!name || !company || !phone) {
-        alert('Please fill in your Name, Company, and Contact Number.');
-        return;
-      }
+  window.submitFMCGContact = function (channel) {
+    const name = document.getElementById('partnerName')?.value;
+    const company = document.getElementById('partnerCompany')?.value;
+    const phone = document.getElementById('partnerPhone')?.value;
+    const email = document.getElementById('partnerEmail')?.value;
+    const channelType = document.getElementById('partnerChannel')?.value || 'General Retail';
+    const notes = document.getElementById('partnerNotes')?.value;
 
-      // Pre-fill enquiry modal or WhatsApp
-      window.openEnquiry('baburamTrading', 'PARTNERSHIP', `Distributor Partnership (${channel})`, 'Business Collaboration');
-      const msgField = document.getElementById('enquiryMessage');
-      if (msgField) {
-        msgField.value = `Partnership Proposal: Distribution Channel: ${channel}. Message: ${notes}`;
-      }
+    const fullMessage = `Partnership Proposal (${channelType}): ${notes || 'Interested in FMCG retail distribution partnership.'}`;
+
+    window.processTradeEnquiry({
+      division: 'baburamTrading',
+      productId: 'FMCG-PARTNER',
+      productName: `Distributor Partnership (${channelType})`,
+      name,
+      company,
+      phone,
+      email,
+      requirement: fullMessage,
+      channel: channel,
+      alertElementId: 'fmcgContactAlert'
     });
-  }
+  };
+
+  fmcgForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    window.submitFMCGContact('whatsapp');
+  });
 });

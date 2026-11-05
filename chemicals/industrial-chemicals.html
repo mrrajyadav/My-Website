@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Industrial Chemicals | Om Sai Enterprise - Chemicals Specialist</title>
-  <meta name="description" content="Industrial chemicals and basic chemical commodities supplied by Om Sai Enterprise. Caustic soda flakes, glacial acetic acid, hydrogen peroxide, and specialty anti-foam emulsions." />
+  <meta name="description" content="Industrial chemicals and basic chemical commodities supplied by Om Sai Enterprise. Caustic soda flakes, glacial acetic acid, hydrogen peroxide, and anti-foam emulsions." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Chemicals Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
         <a href="products.html" class="nav-link">Products</a>
@@ -33,7 +34,7 @@
       </nav>
       <div class="header-actions">
         <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'IND-RFQ', 'Industrial Chemical Inquiry', 'Industrial Chemicals')">Enquire Now</button>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -49,9 +50,9 @@
       <div class="hero-grid">
         <div>
           <span class="section-kicker">Industrial Commodities</span>
-          <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Industrial Chemicals & Bulk Reagents</h1>
+          <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Industrial Chemicals & Commodities</h1>
           <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Supply of high-purity basic inorganics, organic acids, bleaching agents, and process additives for manufacturing operations, water treatment plants, and synthesis facilities.
+            Supply of basic inorganics, organic acids, bleaching chemicals, and process additives for manufacturing operations, water treatment, and synthesis facilities.
           </p>
           <div style="display: flex; gap: 16px;">
             <a href="#industrial-grid" class="btn btn-primary">Explore Products</a>
@@ -59,7 +60,7 @@
           </div>
         </div>
         <div class="hero-media">
-          <img src="../assets/images/chemicals/facility.jpg" alt="Industrial Chemical Storage and Facility" />
+          <img src="../assets/images/chemicals/facility.jpg" alt="Industrial Chemical Storage and Supply" />
         </div>
       </div>
     </div>
@@ -69,29 +70,29 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-kicker">Core Chemical Commodities</span>
-        <h2 class="section-title">Essential Processing Chemicals</h2>
+        <span class="section-kicker">Chemical Commodities</span>
+        <h2 class="section-title">Essential Industrial Chemicals</h2>
         <p class="section-description">
-          We trade in industry-standard technical grades with verified purity levels and standardized industrial packaging.
+          We trade in standard technical grades with verified documentation and standardized industrial packaging.
         </p>
       </div>
 
       <div class="values-grid">
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Caustic Soda (NaOH 99.5%)</h3>
-          <p class="value-desc">High-grade rayoned flakes packed in 25kg / 50kg moisture-barrier bags for neutralization, saponification, and scouring.</p>
+          <h3 class="value-title" style="color: var(--chem-primary);">Caustic Soda Flakes</h3>
+          <p class="value-desc">Supplied in standard moisture-barrier bags for pH neutralization, industrial cleaning, and chemical synthesis.</p>
         </div>
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Glacial Acetic Acid (99.85%)</h3>
-          <p class="value-desc">Pure clear technical grade available in 30kg carboys, 200kg drums, and bulk tankers for dye neutralizing and buffer systems.</p>
+          <h3 class="value-title" style="color: var(--chem-primary);">Glacial Acetic Acid</h3>
+          <p class="value-desc">Supplied in dedicated carboys, drums, or bulk container packaging for chemical processing and industrial buffering.</p>
         </div>
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Hydrogen Peroxide (50%)</h3>
-          <p class="value-desc">Stabilized technical-grade oxidizer in dedicated HM-HDPE packaging for industrial bleaching and effluent treatment.</p>
+          <h3 class="value-title" style="color: var(--chem-primary);">Hydrogen Peroxide</h3>
+          <p class="value-desc">Supplied in dedicated industrial packaging for bleaching, oxidation, and wastewater treatment processes.</p>
         </div>
         <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Silicone Anti-Foam Emulsions</h3>
-          <p class="value-desc">Fast-acting defoaming agents formulated for high-turbulence effluent treatment plants and chemical synthesis tanks.</p>
+          <h3 class="value-title" style="color: var(--chem-primary);">Anti-Foam Emulsions</h3>
+          <p class="value-desc">Foam suppression formulations for effluent treatment plants (ETP) and industrial washing systems.</p>
         </div>
       </div>
     </div>
@@ -108,25 +109,26 @@
         <a href="products.html" class="btn btn-outline btn-sm">All Products Catalogue &rarr;</a>
       </div>
 
-      <div class="products-grid" id="productsGrid">
-        <!-- Rendered by js/products.js -->
+      <div class="products-grid" id="industrialGrid">
+        <!-- Rendered safely via js/products.js -->
       </div>
     </div>
   </section>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Om Sai Enterprise - Chemical Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject / Item:</strong>
           <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Industrial Chemical Sourcing</span>
           <input type="hidden" id="enquiryProductId" value="" />
         </div>
@@ -134,26 +136,26 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryName">Contact Name *</label>
-              <input type="text" id="enquiryName" class="form-control" required />
+              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
             </div>
             <div class="form-group">
               <label class="form-label" for="enquiryCompany">Plant / Company Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" required />
+              <input type="text" id="enquiryCompany" class="form-control" placeholder="Manufacturing company" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email</label>
-              <input type="email" id="enquiryEmail" class="form-control" />
+              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="procurement@company.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Product Grade & Expected Quantity</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+            <label class="form-label" for="enquiryMessage">Product Details & Expected Tonnage</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify chemical grade or packaging preference..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
@@ -181,7 +183,7 @@
   <script src="../js/enquiry.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      initProductCatalogue('chemicals', 'productsGrid', null);
+      initProductCatalogue('chemicals', 'industrialGrid', null);
     });
   </script>
 </body>

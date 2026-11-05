@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Details | Baburam Trading</title>
-  <meta name="description" content="View product specifications, packaging units, and distribution details for consumer packaged goods." />
+  <meta name="description" content="View verified consumer goods product information. Inquire directly with Baburam Trading for complete trade specifications and availability." />
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/fmcg.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
@@ -18,7 +19,7 @@
           <img src="../assets/logos/baburam-trading.png" alt="Baburam Trading Logo" class="logo-img" />
         </div>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="FMCG Navigation">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About Us</a>
         <a href="brands.html" class="nav-link">Our Brands</a>
@@ -32,7 +33,7 @@
       </nav>
       <div class="header-actions">
         <a href="products.html" class="btn btn-outline btn-sm">&larr; Back to Catalogue</a>
-        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -48,37 +49,31 @@
       <div class="detail-grid">
         <!-- Media Column -->
         <div class="detail-gallery">
-          <img id="detailImage" src="../assets/images/fmcg/products.jpg" alt="FMCG Product" style="width: 100%; height: auto; object-fit: cover;" />
+          <img id="detailImage" src="../assets/images/fmcg/warehouse.jpg" alt="FMCG Product" style="width: 100%; height: auto; object-fit: cover;" />
         </div>
 
-        <!-- Info Column -->
+        <!-- Info Column: Only Product Name, Category, Short Description, and Enquiry Button -->
         <div class="detail-info">
           <div class="product-meta-unboxed" id="detailMeta" style="margin-bottom: 12px;">
-            <span>Partner Brand</span> <span aria-hidden="true">·</span> <span>Packaged Goods</span>
+            Consumer Goods Distribution
           </div>
 
           <h1 id="detailTitle" style="font-size: 2rem; margin-bottom: 16px; color: var(--fmcg-primary);">Loading Product...</h1>
           
-          <p id="detailDesc" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Please wait while product specifications are fetched.
+          <p id="detailDesc" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 28px;">
+            Please wait while product details are loaded.
           </p>
 
-          <table class="detail-table">
-            <tbody id="detailTableBody">
-              <!-- Dynamically populated -->
-            </tbody>
-          </table>
-
-          <div class="notice-box">
-            <strong>Commercial Note:</strong> Public pricing is withheld to protect registered retailer and distributor margins. Complete commercial terms, price slabs, and minimum order quantities are shared upon direct inquiry.
+          <div class="notice-box" style="margin-bottom: 28px;">
+            <strong>Commercial Note:</strong> Complete product specifications, pack configurations, minimum order quantities, and commercial terms are provided upon direct business enquiry with our sales desk.
           </div>
 
-          <div style="display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap;">
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
             <button type="button" class="btn btn-primary btn-lg" id="detailEnquiryBtn">
-              Contact for Details
+              Contact for Complete Details
             </button>
             <a href="contact.html" class="btn btn-outline btn-lg">
-              Channel Inquiry
+              Sales Desk
             </a>
           </div>
         </div>
@@ -87,17 +82,17 @@
   </main>
 
   <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-dialog">
       <div class="modal-header">
         <div>
-          <h3 class="modal-title">Baburam Trading - Product Enquiry</h3>
+          <h3 class="modal-title" id="modalTitle">Baburam Trading - Product Enquiry</h3>
           <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Baburam Trading (FMCG)</div>
         </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
         <div class="modal-product-summary">
           <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Product:</strong>
           <span id="modalProductLabel" style="color: var(--fmcg-primary); font-weight: 600;">Product Name</span>
@@ -117,16 +112,16 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" placeholder="+91 98765 43210" required />
+              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email Address</label>
-              <input type="email" id="enquiryEmail" class="form-control" placeholder="name@store.com" />
+              <label class="form-label" for="enquiryEmail">Email Address (Optional)</label>
+              <input type="email" id="enquiryEmail" class="form-control" placeholder="store@domain.com" />
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Estimated Order Quantity & Location</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Case quantities, frequency of orders, delivery area..."></textarea>
+            <label class="form-label" for="enquiryMessage">Specific Requirement / Order Details</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify expected quantities or delivery area..."></textarea>
           </div>
           <div class="enquiry-action-cluster">
             <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
