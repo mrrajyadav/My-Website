@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Quote Request | Om Sai Enterprise</title>
+  <meta name="description" content="Contact Om Sai Enterprise for textile chemicals and industrial chemical trading, bulk sourcing, and technical specifications." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/chemicals.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body class="theme-chem">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-item" title="Om Sai Enterprise">
+        <div class="logo-container-dark">
+          <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="textile-chemicals.html" class="nav-link">Textile Chemicals</a>
+        <a href="industrial-chemicals.html" class="nav-link">Industrial Chemicals</a>
+        <a href="#industries" class="nav-link">Industries We Serve</a>
+        <a href="contact.html" class="nav-link active">Contact Us</a>
+        <a href="../index.html" class="nav-link" style="color: var(--corporate-muted); font-size: 0.875rem;">&larr; Corporate Portal</a>
+        <div class="mobile-cta-item">
+          <button type="button" class="btn btn-primary btn-block" onclick="openEnquiry('omSaiEnterprise', 'RFQ-CONTACT', 'Chemical RFQ', 'Chemicals')">Request Quote</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'RFQ-CONTACT', 'Chemical RFQ', 'Chemicals')">Request Quote</button>
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Industries We Serve Section -->
+  <section class="section section-subtle" id="industries">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Manufacturing Sectors</span>
+        <h1 class="section-title">Industries We Serve</h1>
+        <p class="section-description">
+          Supplying consistent chemical formulations across varied industrial manufacturing and wet processing operations.
+        </p>
+      </div>
+
+      <div class="industry-grid">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">Textile Processing Mills</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">Continuous dyeing ranges, jigger/jet machines, stenter finishing, and yarn mercerizing plants.</p>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">Garment Washing Units</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">Enzymatic washing, fabric softening, desizing baths, and siliconization for export garment houses.</p>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">Effluent Treatment (ETP)</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">pH neutralization reagents, defoamers, and coagulating aids for industrial wastewater compliance.</p>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">Paper & Packaging Plants</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">Pulp bleaching chemicals, caustic soda, sizing reagents, and process foam suppressors.</p>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">General Chemical Synthesis</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">Reliable raw chemical intermediates for batch blenders and specialty compounders.</p>
+        </div>
+
+        <div class="industry-card">
+          <div class="industry-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="industry-title" style="font-size: 1.15rem; margin-bottom: 8px;">Dyeing & Printing Houses</h3>
+          <p class="industry-desc" style="color: var(--text-muted); font-size: 0.9375rem;">Rotary printing auxiliaries, thickeners, binder emulsions, and high-fastness fixatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & RFQ Form Section -->
+  <section class="section" id="contact-form">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div>
+          <span class="section-kicker">Chemicals Desk</span>
+          <h2 class="section-title">Commercial Trade Contact</h2>
+          <p class="section-description" style="margin-bottom: 32px;">
+            Inquire directly for batch availability, packaging options (carboys, drums, IBC), technical documentation, and commercial pricing.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="background-color: #FFFFFF; padding: 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--chem-primary); margin-bottom: 8px;">Chemicals Trading Desk</h4>
+              <p style="font-size: 0.9375rem; margin-bottom: 6px;"><strong>Phone / WhatsApp:</strong> +91 98765 43211 (Configurable)</p>
+              <p style="font-size: 0.9375rem; margin-bottom: 6px;"><strong>Email:</strong> inquiry@omsaienterprise.com</p>
+              <p style="font-size: 0.9375rem;"><strong>Hours:</strong> Monday – Saturday: 9:00 AM – 6:30 PM (IST)</p>
+            </div>
+
+            <div style="background-color: #FFFFFF; padding: 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--chem-primary); margin-bottom: 8px;">Industrial Chemical Storage Depot</h4>
+              <p style="font-size: 0.9375rem; color: var(--text-muted); line-height: 1.6;">
+                Industrial Chemical Estate & Bulk Dispatch Hub<br />
+                (Actual depot location can be configured in <code>data/company-config.json</code>)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RFQ Form -->
+        <div class="contact-card">
+          <h3 style="margin-bottom: 8px;">Request a Quote / RFQ</h3>
+          <p style="font-size: 0.9125rem; color: var(--text-muted); margin-bottom: 24px;">
+            Submit your industrial chemical requirement. You can send it directly via WhatsApp or official email.
+          </p>
+
+          <form id="chemicalQuoteForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="chemName">Contact Person *</label>
+                <input type="text" id="chemName" class="form-control" placeholder="Full name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="chemCompany">Company / Mill Name *</label>
+                <input type="text" id="chemCompany" class="form-control" placeholder="Manufacturing company" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="chemPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="chemPhone" class="form-control" placeholder="+91 98765 43211" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="chemIndustry">Industry Sector</label>
+                <select id="chemIndustry" class="form-control">
+                  <option value="Textile Processing & Dyeing">Textile Processing & Dyeing</option>
+                  <option value="Garment Washing / Finishing">Garment Washing / Finishing</option>
+                  <option value="Effluent Treatment (ETP)">Effluent Treatment (ETP)</option>
+                  <option value="Paper & Packaging">Paper & Packaging</option>
+                  <option value="Industrial Chemical Synthesis">Industrial Chemical Synthesis</option>
+                  <option value="Wholesale Chemical Trading">Wholesale Chemical Trading</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="chemNotes">Chemical Requirement & Estimated Volume</label>
+              <textarea id="chemNotes" class="form-control" rows="3" placeholder="Specify products (e.g. Caustic Soda, Dye Fixer), required tonnage, packaging..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              Proceed to Send Chemical RFQ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Enquiry Modal -->
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
+        </div>
+        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div class="modal-product-summary">
+          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject:</strong>
+          <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Chemical Sourcing Inquiry</span>
+          <input type="hidden" id="enquiryProductId" value="" />
+        </div>
+        <form id="enquiryForm" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="enquiryName">Full Name *</label>
+              <input type="text" id="enquiryName" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enquiryCompany">Company Name *</label>
+              <input type="text" id="enquiryCompany" class="form-control" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
+              <input type="tel" id="enquiryPhone" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enquiryEmail">Email</label>
+              <input type="email" id="enquiryEmail" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="enquiryMessage">Message / Requirement</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="enquiry-action-cluster">
+            <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
+            <button type="button" class="btn btn-outline btn-block" onclick="sendEmailEnquiry()">Email</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 Om Sai Enterprise. Chemicals Specialist Division. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms.html" class="footer-link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/enquiry.js"></script>
+  <script src="../js/chemicals.js"></script>
+</body>
+</html>

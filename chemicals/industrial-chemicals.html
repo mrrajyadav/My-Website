@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Chemicals | Om Sai Enterprise - Chemicals Specialist</title>
+  <meta name="description" content="Industrial chemicals and basic chemical commodities supplied by Om Sai Enterprise. Caustic soda flakes, glacial acetic acid, hydrogen peroxide, and specialty anti-foam emulsions." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/chemicals.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body class="theme-chem">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-item" title="Om Sai Enterprise">
+        <div class="logo-container-dark">
+          <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="textile-chemicals.html" class="nav-link">Textile Chemicals</a>
+        <a href="industrial-chemicals.html" class="nav-link active">Industrial Chemicals</a>
+        <a href="contact.html#industries" class="nav-link">Industries We Serve</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="../index.html" class="nav-link" style="color: var(--corporate-muted); font-size: 0.875rem;">&larr; Corporate Portal</a>
+        <div class="mobile-cta-item">
+          <button type="button" class="btn btn-primary btn-block" onclick="openEnquiry('omSaiEnterprise', 'IND-RFQ', 'Industrial Chemical Inquiry', 'Industrial Chemicals')">Enquire Now</button>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'IND-RFQ', 'Industrial Chemical Inquiry', 'Industrial Chemicals')">Enquire Now</button>
+        <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section-subtle">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-kicker">Industrial Commodities</span>
+          <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Industrial Chemicals & Bulk Reagents</h1>
+          <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
+            Supply of high-purity basic inorganics, organic acids, bleaching agents, and process additives for manufacturing operations, water treatment plants, and synthesis facilities.
+          </p>
+          <div style="display: flex; gap: 16px;">
+            <a href="#industrial-grid" class="btn btn-primary">Explore Products</a>
+            <button type="button" class="btn btn-outline" onclick="openEnquiry('omSaiEnterprise', 'IND-QUOTE', 'Bulk Industrial Quote Request', 'Industrial Chemicals')">Request Tonnage Quote</button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="../assets/images/chemicals/facility.jpg" alt="Industrial Chemical Storage and Facility" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commodity Highlights -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-kicker">Core Chemical Commodities</span>
+        <h2 class="section-title">Essential Processing Chemicals</h2>
+        <p class="section-description">
+          We trade in industry-standard technical grades with verified purity levels and standardized industrial packaging.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <h3 class="value-title" style="color: var(--chem-primary);">Caustic Soda (NaOH 99.5%)</h3>
+          <p class="value-desc">High-grade rayoned flakes packed in 25kg / 50kg moisture-barrier bags for neutralization, saponification, and scouring.</p>
+        </div>
+        <div class="value-card">
+          <h3 class="value-title" style="color: var(--chem-primary);">Glacial Acetic Acid (99.85%)</h3>
+          <p class="value-desc">Pure clear technical grade available in 30kg carboys, 200kg drums, and bulk tankers for dye neutralizing and buffer systems.</p>
+        </div>
+        <div class="value-card">
+          <h3 class="value-title" style="color: var(--chem-primary);">Hydrogen Peroxide (50%)</h3>
+          <p class="value-desc">Stabilized technical-grade oxidizer in dedicated HM-HDPE packaging for industrial bleaching and effluent treatment.</p>
+        </div>
+        <div class="value-card">
+          <h3 class="value-title" style="color: var(--chem-primary);">Silicone Anti-Foam Emulsions</h3>
+          <p class="value-desc">Fast-acting defoaming agents formulated for high-turbulence effluent treatment plants and chemical synthesis tanks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid for Industrial Chemicals -->
+  <section class="section section-subtle" id="industrial-grid">
+    <div class="container">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; flex-wrap: wrap; gap: 20px;">
+        <div>
+          <span class="section-kicker">Industrial Catalogue</span>
+          <h2 class="section-title">Industrial Chemical Products</h2>
+        </div>
+        <a href="products.html" class="btn btn-outline btn-sm">All Products Catalogue &rarr;</a>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered by js/products.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Enquiry Modal -->
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Om Sai Enterprise - Chemical Enquiry</h3>
+          <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
+        </div>
+        <button type="button" class="modal-close" onclick="closeEnquiry()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px;"></div>
+        <div class="modal-product-summary">
+          <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Industrial Chemical Sourcing</span>
+          <input type="hidden" id="enquiryProductId" value="" />
+        </div>
+        <form id="enquiryForm" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="enquiryName">Contact Name *</label>
+              <input type="text" id="enquiryName" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enquiryCompany">Plant / Company Name *</label>
+              <input type="text" id="enquiryCompany" class="form-control" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
+              <input type="tel" id="enquiryPhone" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="enquiryEmail">Email</label>
+              <input type="email" id="enquiryEmail" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="enquiryMessage">Product Grade & Expected Quantity</label>
+            <textarea id="enquiryMessage" class="form-control" rows="3"></textarea>
+          </div>
+          <div class="enquiry-action-cluster">
+            <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
+            <button type="button" class="btn btn-outline btn-block" onclick="sendEmailEnquiry()">Email RFQ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 Om Sai Enterprise. Chemicals Specialist Division. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms.html" class="footer-link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/enquiry.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initProductCatalogue('chemicals', 'productsGrid', null);
+    });
+  </script>
+</body>
+</html>

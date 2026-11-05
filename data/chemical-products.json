@@ -1,0 +1,110 @@
+[
+  {
+    "id": "CHEM-001",
+    "name": "Textile Pre-Treatment Scouring Agent",
+    "category": "Textile Chemicals",
+    "subCategory": "Pre-Treatment",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Concentrated wetting and scouring formulation engineered to remove natural oils, waxes, and sizing impurities from cotton and blended yarn/fabrics.",
+    "application": "Desizing, scouring, and wetting baths for textile processing mills.",
+    "packaging": "50 kg & 200 kg HDPE Barrels",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-002",
+    "name": "Formaldehyde-Free Reactive Dye Fixing Agent",
+    "category": "Textile Chemicals",
+    "subCategory": "Dyeing Auxiliaries",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Cationic fixing chemical designed to enhance wet fastness, wash fastness, and water contact fastness on reactive and direct dyed cellulosic fibers.",
+    "application": "Exhaust and continuous dyeing finishing lines for woven and knit fabrics.",
+    "packaging": "50 kg & 200 kg Drums",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-003",
+    "name": "Cationic Flake Fabric Softener",
+    "category": "Textile Chemicals",
+    "subCategory": "Finishing Chemicals",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Soluble softening flakes that confer a supple, full-bodied handle and anti-static surface properties to knitted and woven textiles.",
+    "application": "Stenter finishing, garment washing, and package yarn softening.",
+    "packaging": "25 kg Multi-Wall Paper / Poly Bags",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-004",
+    "name": "Silicone Softening Micro-Emulsion",
+    "category": "Textile Chemicals",
+    "subCategory": "Finishing Chemicals",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Hydrophilic amino-functional silicone fluid formulated for deep fiber penetration, imparting silky drapability without yellowing.",
+    "application": "High-grade suiting, shirting, terry towels, and technical textiles.",
+    "packaging": "50 kg & 120 kg Carboys",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-005",
+    "name": "Optical Brightening Agent (OBA) for Cellulosics",
+    "category": "Textile Chemicals",
+    "subCategory": "Bleaching & Whitening",
+    "image": "assets/images/chemicals/textile.jpg",
+    "shortDescription": "Stilbene-derivative fluorescent whitening auxiliary producing brilliant neutral-to-bluish white tones on cotton and cellulosic blends.",
+    "application": "Exhaust dyeing, peroxide bleaching baths, and padding systems.",
+    "packaging": "30 kg & 50 kg Sealed Containers",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-006",
+    "name": "Industrial Caustic Soda Flakes (Sodium Hydroxide 99.5%)",
+    "category": "Industrial Chemicals",
+    "subCategory": "Inorganic Basics",
+    "image": "assets/images/chemicals/facility.jpg",
+    "shortDescription": "High-purity sodium hydroxide flakes used widely across chemical synthesis, neutralization, saponification, and industrial processing.",
+    "application": "pH correction, water treatment, paper manufacturing, soap production, textile mercerization.",
+    "packaging": "25 kg / 50 kg Polypropylene Bags with Inner Liner",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-007",
+    "name": "Glacial Acetic Acid (99.85% Purity)",
+    "category": "Industrial Chemicals",
+    "subCategory": "Organic Acids",
+    "image": "assets/images/chemicals/facility.jpg",
+    "shortDescription": "Technical-grade clear colorless organic acid utilized as an industrial reagent, dye bath buffer, and synthesis intermediate.",
+    "application": "Dye neutralization, acetate production, chemical synthesis, industrial washing.",
+    "packaging": "30 kg Carboys / 200 kg Drums / Bulk Tankers",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-008",
+    "name": "Hydrogen Peroxide (50% w/w Technical Grade)",
+    "category": "Industrial Chemicals",
+    "subCategory": "Oxidizing Agents",
+    "image": "assets/images/chemicals/facility.jpg",
+    "shortDescription": "Stabilized liquid oxidizing agent for bleaching, sanitizing, and industrial effluent treatment processes.",
+    "application": "Textile bleaching, paper pulp processing, industrial oxidation, wastewater odor control.",
+    "packaging": "30 kg / 50 kg HM-HDPE Cans & Intermediate Bulk Containers (IBC)",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  },
+  {
+    "id": "CHEM-009",
+    "name": "Silicone Defoamer & Anti-Foam Emulsion",
+    "category": "Industrial Chemicals",
+    "subCategory": "Specialty Additives",
+    "image": "assets/images/chemicals/facility.jpg",
+    "shortDescription": "Rapid knockdown and long-lasting foam suppression compound active in both acidic and alkaline aqueous systems.",
+    "application": "Effluent treatment plants (ETP), industrial washing, chemical mixing, textile jet dyeing.",
+    "packaging": "50 kg & 200 kg Drums",
+    "documentation": "TDS, SDS, and batch COA available upon verified business enquiry",
+    "status": "active"
+  }
+]

@@ -1,0 +1,122 @@
+/* ==========================================================================
+   OM SAI ENTERPRISE - CHEMICALS SPECIALIST DIVISION STYLES
+   Color System:
+   Primary: #0754B5
+   Secondary: #087F38
+   Background: #F4F7FA
+   Text: #202B36
+   ========================================================================== */
+
+:root {
+  --chem-primary: #0754B5;
+  --chem-primary-dark: #053E87;
+  --chem-secondary: #087F38;
+  --chem-secondary-dark: #06602B;
+  --chem-bg: #F4F7FA;
+  --chem-text: #202B36;
+  --chem-border: #D5DFEB;
+
+  /* Division Overrides */
+  --primary: var(--chem-primary);
+  --primary-hover: var(--chem-primary-dark);
+  --secondary: var(--chem-secondary);
+  --bg-page: var(--chem-bg);
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #EBF1F7;
+  --text-main: var(--chem-text);
+  --border-color: var(--chem-border);
+}
+
+body.theme-chem {
+  background-color: var(--chem-bg);
+  color: var(--chem-text);
+}
+
+/* Chemicals Header Customization */
+.theme-chem .site-header {
+  border-bottom: 2px solid var(--chem-primary);
+}
+
+.theme-chem .nav-link:hover,
+.theme-chem .nav-link.active {
+  color: var(--chem-primary);
+}
+
+.theme-chem .nav-link.active::after {
+  background-color: var(--chem-primary);
+}
+
+/* Chemical Application Pill List */
+.chem-application-box {
+  background-color: #EAF2FB;
+  border: 1px solid #C4D9F0;
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+.chem-application-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--chem-primary);
+  margin-bottom: 6px;
+}
+
+.chem-application-text {
+  font-size: 0.9375rem;
+  color: var(--chem-text);
+  line-height: 1.5;
+}
+
+/* Chemical Industry Grid */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.industry-card {
+  background: #FFFFFF;
+  border: 1px solid var(--chem-border);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.industry-card:hover {
+  border-color: var(--chem-primary);
+  box-shadow: var(--shadow-subtle);
+  transform: translateY(-2px);
+}
+
+.industry-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: #E4F2E8;
+  color: var(--chem-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* TDS / SDS Verification Notice */
+.compliance-callout {
+  background: #FFFFFF;
+  border: 1px solid var(--chem-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.compliance-icon {
+  flex-shrink: 0;
+  color: var(--chem-primary);
+  margin-top: 2px;
+}

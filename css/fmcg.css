@@ -1,0 +1,126 @@
+/* ==========================================================================
+   BABURAM TRADING - FMCG DISTRIBUTION DIVISION STYLES
+   Color System:
+   Primary: #123D8C
+   Secondary: #008C43
+   Background: #F7F9F7
+   Text: #263238
+   ========================================================================== */
+
+:root {
+  --fmcg-primary: #123D8C;
+  --fmcg-primary-dark: #0D2D68;
+  --fmcg-secondary: #008C43;
+  --fmcg-secondary-dark: #006B33;
+  --fmcg-bg: #F7F9F7;
+  --fmcg-text: #263238;
+  --fmcg-border: #DCE5DC;
+
+  /* Division Overrides */
+  --primary: var(--fmcg-primary);
+  --primary-hover: var(--fmcg-primary-dark);
+  --secondary: var(--fmcg-secondary);
+  --bg-page: var(--fmcg-bg);
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #EDF3ED;
+  --text-main: var(--fmcg-text);
+  --border-color: var(--fmcg-border);
+}
+
+body.theme-fmcg {
+  background-color: var(--fmcg-bg);
+  color: var(--fmcg-text);
+}
+
+/* FMCG Header Customizations */
+.theme-fmcg .site-header {
+  border-bottom: 2px solid var(--fmcg-primary);
+}
+
+.theme-fmcg .nav-link:hover,
+.theme-fmcg .nav-link.active {
+  color: var(--fmcg-primary);
+}
+
+.theme-fmcg .nav-link.active::after {
+  background-color: var(--fmcg-primary);
+}
+
+/* Distribution Network Map & Grid */
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.network-card {
+  background: #FFFFFF;
+  border: 1px solid var(--fmcg-border);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.network-card:hover {
+  border-color: var(--fmcg-primary);
+  box-shadow: var(--shadow-subtle);
+  transform: translateY(-2px);
+}
+
+.network-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: #E8F3EB;
+  color: var(--fmcg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.network-title {
+  font-size: 1.15rem;
+  color: var(--fmcg-text);
+  margin-bottom: 10px;
+}
+
+/* Partner Brands Showcase */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.brand-card {
+  background: #FFFFFF;
+  border: 1px solid var(--fmcg-border);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.brand-card:hover {
+  border-color: var(--fmcg-secondary);
+  box-shadow: var(--shadow-subtle);
+}
+
+.brand-placeholder-badge {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--fmcg-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.brand-category-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}

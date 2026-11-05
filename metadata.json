@@ -1,0 +1,6 @@
+{
+  "name": "Baburam Trading & Om Sai Enterprise",
+  "description": "Corporate website for Baburam Trading (FMCG Distribution) and Om Sai Enterprise (Chemicals Specialist - Textile & Industrial Chemical Trading).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

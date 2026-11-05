@@ -1,0 +1,178 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN SYSTEM
+   Breakpoints:
+   - Laptop: 1024px
+   - Tablet: 768px
+   - Mobile: 320px - 767px
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hero {
+    padding: 60px 0 50px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .division-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .network-grid,
+  .industry-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .enquiry-action-cluster {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile Navigation Drawer */
+  .mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 16px 24px rgba(10, 28, 52, 0.08);
+    display: none;
+    z-index: 998;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  .main-nav .mobile-cta-item {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-brand-dual {
+    gap: 8px;
+  }
+
+  .brand-divider {
+    height: 20px;
+  }
+
+  .logo-img {
+    max-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .division-card-body {
+    padding: 24px 20px;
+  }
+
+  .modal-dialog {
+    padding: 0;
+    margin: 12px;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding: 20px;
+  }
+}
