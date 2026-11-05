@@ -22,4 +22,9 @@ if (fs.existsSync('assets')) {
   fs.cpSync('assets', path.join(distDir, 'assets'), { recursive: true });
 }
 
-console.log('✓ Successfully copied static assets (js, data, assets) to dist/');
+// Copy css directory for direct static serving
+if (fs.existsSync('css')) {
+  fs.cpSync('css', path.join(distDir, 'css'), { recursive: true });
+}
+
+console.log('✓ Successfully copied static assets (js, css, data, assets) to dist/');

@@ -1,0 +1,698 @@
+/* ==========================================================================
+   OM SAI ENTERPRISE - HOMEPAGE SPECIFIC STYLES
+   Scope: chemicals/index.html only
+   Brand Colors:
+     Primary Blue:   #0754B5
+     Dark Blue:      #053E87
+     Secondary Green:#087F38
+     Background:     #F4F7FA
+     Main Text:      #202B36
+   ========================================================================== */
+
+/* Page Wrapper */
+.page-chem-home {
+  background-color: var(--chem-bg, #F4F7FA);
+  color: var(--chem-text, #202B36);
+}
+
+/* ==========================================================================
+   SECTION 1: HERO SECTION
+   ========================================================================== */
+.chem-home-hero {
+  position: relative;
+  padding: 64px 0 72px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F7FA 100%);
+  border-bottom: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-home-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.chem-home-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chem-home-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--chem-secondary, #087F38);
+  background-color: rgba(8, 127, 56, 0.08);
+  border: 1px solid rgba(8, 127, 56, 0.2);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.chem-home-kicker::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--chem-secondary, #087F38);
+}
+
+.chem-home-hero-title {
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.chem-home-hero-desc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4A5B6D;
+  margin-bottom: 32px;
+  max-width: 580px;
+}
+
+.chem-home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+/* IndiaMART Brand Button Style */
+.btn-indiamart {
+  background-color: #00732C;
+  color: #FFFFFF !important;
+  border: 1px solid #005A22;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+}
+
+.btn-indiamart:hover {
+  background-color: #005A22;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(0, 115, 44, 0.25);
+  transform: translateY(-1px);
+}
+
+.chem-home-hero-media {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(7, 84, 181, 0.09);
+  border: 1px solid var(--chem-border, #D5DFEB);
+  background-color: #FFFFFF;
+}
+
+.chem-home-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.chem-home-hero-media:hover .chem-home-hero-img {
+  transform: scale(1.02);
+}
+
+.chem-home-media-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(5, 62, 135, 0.88);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.chem-home-media-badge-text {
+  font-weight: 600;
+}
+
+.chem-home-media-badge-sub {
+  font-size: 0.775rem;
+  color: #D5DFEB;
+}
+
+/* ==========================================================================
+   SECTION 2: CHEMICAL CATEGORIES
+   ========================================================================== */
+.chem-home-categories {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.chem-home-section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 52px auto;
+}
+
+.chem-home-section-title {
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-top: 10px;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.chem-home-section-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #55687D;
+}
+
+.chem-home-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+.chem-home-category-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.chem-home-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(7, 84, 181, 0.1);
+  border-color: rgba(7, 84, 181, 0.4);
+}
+
+.chem-home-category-media {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  background-color: #E6EFF8;
+}
+
+.chem-home-category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.chem-home-category-card:hover .chem-home-category-img {
+  transform: scale(1.04);
+}
+
+.chem-home-category-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: var(--chem-primary-dark, #053E87);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+.chem-home-category-body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.chem-home-category-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 12px;
+}
+
+.chem-home-category-desc {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: #55687D;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.chem-home-category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.chem-home-category-pill {
+  font-size: 0.8125rem;
+  color: var(--chem-primary-dark, #053E87);
+  background-color: #EAF2FB;
+  border: 1px solid #C8DCF0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   SECTION 3: PRODUCT PORTFOLIO
+   ========================================================================== */
+.chem-home-portfolio {
+  padding: 80px 0;
+  background-color: var(--chem-bg, #F4F7FA);
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-home-portfolio-compact-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 44px 40px;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(7, 84, 181, 0.04);
+}
+
+.chem-home-portfolio-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.chem-home-portfolio-prompt-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin-bottom: 10px;
+}
+
+.chem-home-portfolio-prompt-text {
+  font-size: 1.05rem;
+  color: #55687D;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto 28px auto;
+}
+
+.chem-home-portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   SECTION 4: INDUSTRIES WE SERVE
+   ========================================================================== */
+.chem-home-industries {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-home-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.chem-home-industry-card {
+  background-color: #FAFCFE;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.chem-home-industry-card:hover {
+  background-color: #FFFFFF;
+  border-color: var(--chem-primary, #0754B5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(7, 84, 181, 0.07);
+}
+
+.chem-home-industry-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.chem-home-industry-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin-bottom: 8px;
+}
+
+.chem-home-industry-desc {
+  font-size: 0.9125rem;
+  line-height: 1.6;
+  color: #55687D;
+}
+
+/* ==========================================================================
+   SECTION 5: WHY CHOOSE OM SAI ENTERPRISE
+   ========================================================================== */
+.chem-home-values {
+  padding: 80px 0;
+  background-color: var(--chem-bg, #F4F7FA);
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-home-values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.chem-home-value-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 10px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.chem-home-value-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(7, 84, 181, 0.06);
+}
+
+.chem-home-value-num {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--chem-secondary, #087F38);
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.chem-home-value-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.chem-home-value-desc {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: #55687D;
+}
+
+/* ==========================================================================
+   SECTION 6: BUSINESS ENQUIRY CTA
+   ========================================================================== */
+.chem-home-enquiry {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #053E87 0%, #0754B5 100%);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.chem-home-enquiry-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.chem-home-enquiry-title {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.chem-home-enquiry-desc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #E2ECF8;
+  margin-bottom: 36px;
+}
+
+.chem-home-enquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-enquiry-white {
+  background-color: #FFFFFF;
+  color: var(--chem-primary-dark, #053E87) !important;
+  font-weight: 700;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-enquiry-white:hover {
+  background-color: #F4F7FA;
+  color: var(--chem-primary, #0754B5) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn-enquiry-outline {
+  background-color: transparent;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-enquiry-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   SECTION 7: PROFESSIONAL FOOTER
+   ========================================================================== */
+.chem-home-footer {
+  background-color: #0E1824;
+  color: #9AB0C7;
+  padding: 64px 0 28px 0;
+  border-top: 1px solid #1C2D42;
+}
+
+.chem-home-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.chem-home-footer-brand-desc {
+  font-size: 0.9125rem;
+  line-height: 1.65;
+  color: #8C9FB5;
+  margin-top: 16px;
+  max-width: 320px;
+}
+
+.chem-home-footer-col-title {
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+}
+
+.chem-home-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chem-home-footer-link {
+  color: #8C9FB5;
+  text-decoration: none;
+  font-size: 0.9125rem;
+  transition: color 0.2s ease;
+}
+
+.chem-home-footer-link:hover {
+  color: #FFFFFF;
+}
+
+.chem-home-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+  border-top: 1px solid #1C2D42;
+  font-size: 0.84rem;
+  color: #6C8299;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chem-home-footer-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS FOR HOMEPAGE
+   ========================================================================== */
+
+/* Laptop & Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .chem-home-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .chem-home-hero-img {
+    height: 360px;
+  }
+
+  .chem-home-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chem-home-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chem-home-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .chem-home-hero {
+    padding: 48px 0;
+  }
+
+  .chem-home-categories,
+  .chem-home-portfolio,
+  .chem-home-industries,
+  .chem-home-values,
+  .chem-home-enquiry {
+    padding: 56px 0;
+  }
+
+  .chem-home-categories-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .chem-home-category-media {
+    height: 200px;
+  }
+
+  .chem-home-industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chem-home-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chem-home-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chem-home-hero-actions .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chem-home-portfolio-compact-card {
+    padding: 32px 20px;
+  }
+
+  .chem-home-portfolio-actions {
+    flex-direction: column;
+  }
+
+  .chem-home-portfolio-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chem-home-enquiry-actions {
+    flex-direction: column;
+  }
+
+  .chem-home-enquiry-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chem-home-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .chem-home-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small Mobile (430px and below) */
+@media (max-width: 430px) {
+  .chem-home-hero-title {
+    font-size: 1.85rem;
+  }
+
+  .chem-home-category-body {
+    padding: 24px 20px;
+  }
+
+  .chem-home-hero-img {
+    height: 260px;
+  }
+
+  .chem-home-media-badge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

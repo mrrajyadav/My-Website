@@ -266,6 +266,11 @@ button, input, textarea, select {
   border-radius: 2px;
 }
 
+/* Mobile CTA is hidden on desktop, only shown inside mobile navigation drawer */
+.mobile-cta-item {
+  display: none !important;
+}
+
 /* Header Action */
 .header-actions {
   display: flex;
