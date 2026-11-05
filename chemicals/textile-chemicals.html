@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Textile Chemicals | Om Sai Enterprise - Chemicals Specialist</title>
   <meta name="description" content="Textile processing chemicals and specialty auxiliaries supplied by Om Sai Enterprise. Wetting agents, fixatives, brighteners, and softeners." />
+  <link rel="canonical" href="https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals.html" />
+  <meta property="og:title" content="Textile Chemicals | Om Sai Enterprise" />
+  <meta property="og:description" content="Specialty textile auxiliaries for wet processing, pre-treatment, dyeing, optical brightening, and fabric softening." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals.html" />
+  <meta property="og:image" content="https://mrrajyadav.github.io/My-Website/assets/logos/om-sai-enterprise.jpeg" />
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
@@ -183,7 +189,11 @@
   <script src="../js/enquiry.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      initProductCatalogue('chemicals', 'textileGrid', null);
+      initProductCatalogue({
+        division: 'chemicals',
+        containerId: 'textileGrid',
+        categoryFilter: 'Textile Chemicals'
+      });
     });
   </script>
 </body>

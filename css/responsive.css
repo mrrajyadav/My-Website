@@ -112,6 +112,12 @@
     display: flex;
   }
 
+  body.theme-chem .main-nav {
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
   .nav-link {
     width: 100%;
     padding: 10px 0;

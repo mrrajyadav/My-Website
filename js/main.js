@@ -86,12 +86,18 @@
       const divData = config[divisionKey];
       if (!divData) return;
 
-      const isConfigured = Boolean(divData.isConfigured && (divData.phone || divData.email || divData.whatsappNumber));
+      const hasAnyField = Boolean(
+        divData.isConfigured &&
+        ((divData.phone && divData.phone.trim()) ||
+         (divData.email && divData.email.trim()) ||
+         (divData.address && divData.address.trim()) ||
+         (divData.whatsappNumber && divData.whatsappNumber.trim()))
+      );
 
       const statusBox = el.querySelector('.contact-status-notice');
       const infoList = el.querySelector('.contact-info-list');
 
-      if (!isConfigured) {
+      if (!hasAnyField) {
         if (statusBox) {
           statusBox.textContent = 'Contact details are currently being updated. Please use the enquiry desk below to send your trade requirement.';
           statusBox.style.display = 'block';
@@ -107,9 +113,35 @@
         const emailEl = el.querySelector('[data-field="email"]');
         const addressEl = el.querySelector('[data-field="address"]');
 
-        if (phoneEl && divData.phone) phoneEl.textContent = divData.phone;
-        if (emailEl && divData.email) emailEl.textContent = divData.email;
-        if (addressEl && divData.address) addressEl.textContent = divData.address;
+        if (phoneEl) {
+          const row = phoneEl.closest('li') || phoneEl;
+          if (divData.phone && divData.phone.trim()) {
+            phoneEl.textContent = divData.phone.trim();
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        }
+
+        if (emailEl) {
+          const row = emailEl.closest('li') || emailEl;
+          if (divData.email && divData.email.trim()) {
+            emailEl.textContent = divData.email.trim();
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        }
+
+        if (addressEl) {
+          const row = addressEl.closest('li') || addressEl;
+          if (divData.address && divData.address.trim()) {
+            addressEl.textContent = divData.address.trim();
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        }
       }
     });
   }

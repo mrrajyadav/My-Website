@@ -1,6 +1,7 @@
 /**
  * Om Sai Enterprise - Chemicals Contact & RFQ Script
  * Directly processes chemical quote requests without double entry
+ * Integrates popup-blocker safe tab handling and native form validation
  */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -8,6 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!chemForm) return;
 
   window.submitChemicalQuote = function (channel) {
+    if (typeof chemForm.reportValidity === 'function' && !chemForm.reportValidity()) {
+      return;
+    }
+
+    let newTab = null;
+    if (channel === 'whatsapp') {
+      try {
+        newTab = window.open('about:blank', '_blank');
+      } catch (e) {
+        newTab = null;
+      }
+    }
+
     const name = document.getElementById('chemName')?.value;
     const company = document.getElementById('chemCompany')?.value;
     const phone = document.getElementById('chemPhone')?.value;
@@ -27,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
       email,
       requirement: fullMessage,
       channel: channel,
-      alertElementId: 'chemContactAlert'
+      alertElementId: 'chemContactAlert',
+      newTab: newTab
     });
   };
 
