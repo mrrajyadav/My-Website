@@ -214,8 +214,8 @@ button, input, textarea, select {
 .logo-container-dark {
   height: 44px;
   padding: 4px 10px;
-  background-color: #0B1320;
-  border: 1px solid #1E2D42;
+  background-color: #FFFFFF;
+  border: 1px solid var(--corporate-border);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
