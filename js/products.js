@@ -186,9 +186,14 @@
     });
   }
 
+  let selectedStage = 'all';
+  let selectedFunction = 'all';
+  let selectedFibre = 'all';
+  let selectedApplication = 'all';
+
   // Setup Search Input with dynamic debounce/input listener
   function setupSearchInput() {
-    const searchInput = document.getElementById('productSearchInput');
+    const searchInput = document.getElementById('productSearchInput') || document.getElementById('textileSearchInput');
     if (!searchInput) return;
 
     // Remove any cloned duplicate listeners
@@ -203,16 +208,65 @@
 
   // Clear search and reset view
   window.clearProductSearch = function () {
-    const searchInput = document.getElementById('productSearchInput');
+    const searchInput = document.getElementById('productSearchInput') || document.getElementById('textileSearchInput');
     if (searchInput) searchInput.value = '';
     searchQuery = '';
+
+    const stageSel = document.getElementById('filterStageSelect');
+    if (stageSel) { stageSel.value = 'all'; selectedStage = 'all'; }
+    const funcSel = document.getElementById('filterFunctionSelect');
+    if (funcSel) { funcSel.value = 'all'; selectedFunction = 'all'; }
+    const fibreSel = document.getElementById('filterFibreSelect');
+    if (fibreSel) { fibreSel.value = 'all'; selectedFibre = 'all'; }
+    const appSel = document.getElementById('filterApplicationSelect');
+    if (appSel) { appSel.value = 'all'; selectedApplication = 'all'; }
+
     renderProducts(activeGridId);
   };
+
+  // Setup Textile Multi-filter Select Dropdowns if present
+  function setupTextileFilterSelects() {
+    const stageSel = document.getElementById('filterStageSelect');
+    const funcSel = document.getElementById('filterFunctionSelect');
+    const fibreSel = document.getElementById('filterFibreSelect');
+    const appSel = document.getElementById('filterApplicationSelect');
+    const clearBtn = document.getElementById('clearFiltersBtn');
+
+    if (stageSel) {
+      stageSel.addEventListener('change', (e) => {
+        selectedStage = e.target.value.toLowerCase().trim();
+        renderProducts(activeGridId);
+      });
+    }
+    if (funcSel) {
+      funcSel.addEventListener('change', (e) => {
+        selectedFunction = e.target.value.toLowerCase().trim();
+        renderProducts(activeGridId);
+      });
+    }
+    if (fibreSel) {
+      fibreSel.addEventListener('change', (e) => {
+        selectedFibre = e.target.value.toLowerCase().trim();
+        renderProducts(activeGridId);
+      });
+    }
+    if (appSel) {
+      appSel.addEventListener('change', (e) => {
+        selectedApplication = e.target.value.toLowerCase().trim();
+        renderProducts(activeGridId);
+      });
+    }
+    if (clearBtn) {
+      clearBtn.addEventListener('click', window.clearProductSearch);
+    }
+  }
 
   // Render Product Cards Grid safely
   function renderProducts(containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
+
+    setupTextileFilterSelects();
 
     container.innerHTML = '';
 
@@ -227,11 +281,12 @@
 
     // If whole catalogue or locked category has 0 published active products -> Condition A
     if (pool.length === 0) {
+      updateFilterCount(0, 0);
       renderEmptyCatalogue(containerId, 'empty');
       return;
     }
 
-    // Filter by active category tab and search query
+    // Filter by active category tab, multi-filter dropdowns and search query
     const filtered = pool.filter(item => {
       const matchesCategory = currentCategory === 'all' ||
         item.category.toLowerCase() === currentCategory.toLowerCase() ||
@@ -239,16 +294,50 @@
 
       if (!matchesCategory) return false;
 
+      // Stage filter
+      if (selectedStage !== 'all') {
+        const itemStage = String(item.processingStage || item.stage || item.subCategory || '').toLowerCase();
+        if (!itemStage.includes(selectedStage)) return false;
+      }
+
+      // Function filter
+      if (selectedFunction !== 'all') {
+        const itemFunc = String(item.productFunction || item.function || item.name || item.shortDescription || '').toLowerCase();
+        if (!itemFunc.includes(selectedFunction)) return false;
+      }
+
+      // Fibre filter
+      if (selectedFibre !== 'all') {
+        const itemFibres = String(item.fibreType || item.fibres || item.shortDescription || '').toLowerCase();
+        if (!itemFibres.includes(selectedFibre) && !itemFibres.includes('blended') && !itemFibres.includes('all')) return false;
+      }
+
+      // Application filter
+      if (selectedApplication !== 'all') {
+        const itemApps = String(item.fabricApplication || item.application || item.shortDescription || '').toLowerCase();
+        if (!itemApps.includes(selectedApplication)) return false;
+      }
+
       if (!searchQuery) return true;
 
       const nameMatch = item.name.toLowerCase().includes(searchQuery);
-      const brandMatch = item.brand.toLowerCase().includes(searchQuery);
-      const descMatch = item.shortDescription.toLowerCase().includes(searchQuery);
+      const brandMatch = item.brand ? item.brand.toLowerCase().includes(searchQuery) : false;
+      const descMatch = item.shortDescription ? item.shortDescription.toLowerCase().includes(searchQuery) : false;
       const catMatch = item.category.toLowerCase().includes(searchQuery);
-      const subCatMatch = item.subCategory.toLowerCase().includes(searchQuery);
+      const subCatMatch = item.subCategory ? item.subCategory.toLowerCase().includes(searchQuery) : false;
+      const funcMatch = item.productFunction ? String(item.productFunction).toLowerCase().includes(searchQuery) : false;
+      const stageMatch = item.processingStage ? String(item.processingStage).toLowerCase().includes(searchQuery) : false;
 
-      return nameMatch || brandMatch || descMatch || catMatch || subCatMatch;
+      // Synonym mapping: e.g. peroxide killer <-> catalase
+      let synonymMatch = false;
+      if (searchQuery.includes('killer') || searchQuery.includes('catalase')) {
+        synonymMatch = item.name.toLowerCase().includes('peroxide') || item.name.toLowerCase().includes('catalase');
+      }
+
+      return nameMatch || brandMatch || descMatch || catMatch || subCatMatch || funcMatch || stageMatch || synonymMatch;
     });
+
+    updateFilterCount(filtered.length, pool.length);
 
     // If catalogue has items but search returned nothing -> Condition B (No Match)
     if (filtered.length === 0) {
@@ -312,22 +401,29 @@
       detailLink.href = `${detailPage}?id=${encodeURIComponent(item.id)}`;
       actionsDiv.appendChild(detailLink);
 
-      const contactBtn = document.createElement('button');
-      contactBtn.type = 'button';
-      contactBtn.className = 'btn btn-primary btn-sm';
+      const contactBtn = document.createElement('a');
+      contactBtn.className = 'btn btn-indiamart btn-sm';
       contactBtn.style.flex = '1';
-      contactBtn.textContent = 'Contact for Details';
-      contactBtn.addEventListener('click', function () {
-        if (typeof window.openEnquiry === 'function') {
-          window.openEnquiry(divisionKey, item.id, item.name, item.category);
-        }
-      });
+      contactBtn.textContent = 'Enquire';
+      contactBtn.href = 'https://www.indiamart.com/om-saienterprise-surat/';
+      contactBtn.target = '_blank';
+      contactBtn.rel = 'noopener noreferrer';
       actionsDiv.appendChild(contactBtn);
 
       bodyDiv.appendChild(actionsDiv);
       card.appendChild(bodyDiv);
       container.appendChild(card);
     });
+  }
+
+  function updateFilterCount(showing, total) {
+    const countEl = document.getElementById('filterResultCount');
+    if (!countEl) return;
+    if (total === 0) {
+      countEl.textContent = 'Sourcing on request';
+    } else {
+      countEl.textContent = `Showing ${showing} of ${total} products`;
+    }
   }
 
   /**
@@ -339,55 +435,89 @@
     const container = document.getElementById(containerId);
     if (!container) return;
 
+    const isTextilePage = containerId === 'textileGrid' || window.location.pathname.includes('textile-chemicals');
     const divisionName = activeDivision === 'fmcg' ? 'Baburam Trading' : 'Om Sai Enterprise';
     const divisionKey = activeDivision === 'fmcg' ? 'baburamTrading' : 'omSaiEnterprise';
 
     if (reason === 'no-match') {
       container.innerHTML = `
-        <div style="grid-column: 1 / -1; padding: 48px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
-          <div style="width: 48px; height: 48px; margin: 0 auto 16px auto; border-radius: var(--radius-sm); background-color: var(--bg-subtle); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+        <div style="grid-column: 1 / -1; padding: 48px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--chem-border, #D5DFEB); border-radius: 14px;">
+          <div style="width: 52px; height: 52px; margin: 0 auto 16px auto; border-radius: 50%; background-color: rgba(7, 84, 181, 0.08); display: flex; align-items: center; justify-content: center; color: var(--chem-primary, #0754B5);">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               <line x1="8" y1="11" x2="14" y2="11"></line>
             </svg>
           </div>
-          <h4 style="margin-bottom: 8px; font-size: 1.25rem;">No Matching Products Found</h4>
-          <p style="color: var(--text-muted); font-size: 1rem; max-width: 520px; margin: 0 auto 20px auto; line-height: 1.6;">
-            No matching products found. Try another chemical name or category.
+          <h4 style="margin-bottom: 8px; font-size: 1.25rem; color: var(--chem-primary, #0754B5); font-weight: 700;">No Matching Chemical Products Found</h4>
+          <p style="color: #586A7D; font-size: 0.95rem; max-width: 540px; margin: 0 auto 20px auto; line-height: 1.6;">
+            No verified products matched your active filter or search keywords. Clear filters or share your custom chemical sourcing requirement.
           </p>
           <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
             <button type="button" class="btn btn-outline" onclick="window.clearProductSearch()">
-              Clear Search
+              Clear Filters
             </button>
-            <button type="button" class="btn btn-primary" onclick="window.openEnquiry('${divisionKey}', '', 'Custom Chemical Sourcing Request', '')">
-              Inquire for Custom Sourcing
-            </button>
+            <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart">
+              Inquire for Custom Chemical Sourcing
+            </a>
           </div>
         </div>
       `;
     } else {
-      // Condition A: Catalogue is updating
-      container.innerHTML = `
-        <div style="grid-column: 1 / -1; padding: 56px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
-          <div style="width: 48px; height: 48px; margin: 0 auto 16px auto; border-radius: var(--radius-sm); background-color: var(--bg-subtle); display: flex; align-items: center; justify-content: center; color: var(--primary);">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="12" y1="8" x2="12" y2="12"></line>
-              <line x1="12" y1="16" x2="12.01" y2="16"></line>
-            </svg>
+      // Condition A: Catalogue is updating / empty database
+      if (isTextilePage) {
+        container.innerHTML = `
+          <div class="chem-tex-empty-card" style="grid-column: 1 / -1;">
+            <div class="chem-tex-empty-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 2v7.31"></path>
+                <path d="M14 9.3V1.99"></path>
+                <path d="M8.5 2h7"></path>
+                <path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path>
+                <path d="M5.52 16h12.96"></path>
+              </svg>
+            </div>
+            <h3 class="chem-tex-empty-title">Looking for a specific textile chemical?</h3>
+            <p class="chem-tex-empty-text">
+              Om Sai Enterprise supports textile processing mills, dyeing houses, and printing units with chemical sourcing. Share your technical requirements, fabric specs, or volume requirements for commercial trade enquiries.
+            </p>
+            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+              <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Enquire on IndiaMART
+              </a>
+              <a href="contact.html" class="btn btn-outline btn-lg">
+                Contact Sourcing Desk
+              </a>
+            </div>
           </div>
-          <h4 style="margin-bottom: 8px; font-size: 1.25rem;">Product Information Updating</h4>
-          <p style="color: var(--text-muted); font-size: 1rem; max-width: 580px; margin: 0 auto 24px auto; line-height: 1.6;">
-            Product catalogue is currently being updated. Please contact ${divisionName} for product availability.
-          </p>
-          <div>
-            <button type="button" class="btn btn-primary" onclick="window.openEnquiry('${divisionKey}', '', 'Catalogue Inquiry', '')">
-              Contact ${divisionName} for Details
-            </button>
+        `;
+      } else {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; padding: 56px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+            <div style="width: 48px; height: 48px; margin: 0 auto 16px auto; border-radius: var(--radius-sm); background-color: var(--bg-subtle); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h4 style="margin-bottom: 8px; font-size: 1.25rem;">Product Information Updating</h4>
+            <p style="color: var(--text-muted); font-size: 1rem; max-width: 580px; margin: 0 auto 24px auto; line-height: 1.6;">
+              Product catalogue is currently being updated. Please contact ${divisionName} for product availability.
+            </p>
+            <div>
+              <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart">
+                Enquire on IndiaMART
+              </a>
+            </div>
           </div>
-        </div>
-      `;
+        `;
+      }
     }
   }
 

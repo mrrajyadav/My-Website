@@ -1,0 +1,309 @@
+[
+  {
+    "id": "CAT-A",
+    "code": "YARN-SIZING",
+    "name": "Fibre, Yarn, Spinning and Sizing Chemicals",
+    "slug": "yarn-spinning-sizing",
+    "processStage": "Fibre / Yarn Preparation",
+    "description": "Formulations and lubricants used during fibre processing, yarn spinning, warping, and warp sizing to reduce friction, prevent static, and protect yarn during high-speed weaving.",
+    "chemicalFamilies": [
+      "Spinning Lubricants",
+      "Fibre Spin Finishes",
+      "Antistatic Agents",
+      "Knitting Oils",
+      "Modified Starch Sizing Agents",
+      "Polyvinyl Alcohol (PVA)",
+      "Acrylic Sizing Polymers",
+      "Size Binders & Wax Emulsions"
+    ],
+    "keyApplications": [
+      "Ring spinning & rotor spinning",
+      "Warp yarn preparation on sizing machines",
+      "Circular and flat knitting lubrication",
+      "Starch and synthetic blend weaving protection"
+    ],
+    "buyerEvaluationNotes": "Evaluated based on yarn friction coefficient reduction, ease of desizing in subsequent wet processing, COD/BOD load during washing, and thermal stability during weaving."
+  },
+  {
+    "id": "CAT-B",
+    "code": "PRETREATMENT",
+    "name": "Textile Pretreatment Chemicals",
+    "slug": "pretreatment-chemicals",
+    "processStage": "Pretreatment & Preparation",
+    "description": "Essential chemical auxiliaries used in fabric desizing, scouring, degreasing, and chelating to remove natural impurities, seed coats, waxes, and sizing agents prior to dyeing or printing.",
+    "chemicalFamilies": [
+      "Wetting & Penetrating Agents",
+      "Textile Scouring Detergents",
+      "Degreasing & Emulsifying Agents",
+      "Amylase Desizing Enzymes",
+      "Pectinase Bio-scouring Enzymes",
+      "Sequestering & Chelating Agents",
+      "Anti-Creasing & Anti-Rope Lubricants"
+    ],
+    "keyApplications": [
+      "Continuous bleaching ranges (CBR)",
+      "Soft-flow and jet processing machines",
+      "Knit and woven fabric preparation baths",
+      "Mercerising and causticising liquors"
+    ],
+    "buyerEvaluationNotes": "Evaluated by Draves wetting speed, wax and oil saponification efficiency, residual size rating (Tegewa scale), calcium/magnesium chelation capacity, and low-foaming profile under high liquor agitation."
+  },
+  {
+    "id": "CAT-C",
+    "code": "BLEACHING",
+    "name": "Textile Bleaching Chemicals",
+    "slug": "bleaching-chemicals",
+    "processStage": "Bleaching & Whiteness Preparation",
+    "description": "Formulations used in oxidative and reductive bleaching to destroy natural coloring matter in fibres and achieve uniform base whiteness before dyeing or optical brightening.",
+    "chemicalFamilies": [
+      "Hydrogen Peroxide (Industrial Concentration)",
+      "Organic Non-Silicate Peroxide Stabilisers",
+      "Sodium Silicate Stabilising Systems",
+      "Bleaching Wetting Agents",
+      "Peroxide Killers (Catalase Enzymes)",
+      "Reducing Bleaching Systems (Sodium Hydrosulphite alternatives)"
+    ],
+    "keyApplications": [
+      "Cotton yarn and knit bleaching",
+      "Continuous bleaching ranges for woven fabrics",
+      "Peroxide neutralisation baths prior to reactive dyeing",
+      "Full-white finish fabric production"
+    ],
+    "buyerEvaluationNotes": "Evaluated by peroxide decomposition rate control, preservation of fibre tensile strength, absence of silicate scale build-up in machinery, and complete elimination of residual peroxide to prevent dye reduction."
+  },
+  {
+    "id": "CAT-D",
+    "code": "DYEING-AUX",
+    "name": "Textile Dyeing Auxiliaries",
+    "slug": "dyeing-auxiliaries",
+    "processStage": "Dyeing & Coloration",
+    "description": "Specialised chemical additives that regulate dye bath conditions, promote uniform liquor penetration, control dye migration, and prevent batch unlevelness across diverse fibre types and machinery.",
+    "chemicalFamilies": [
+      "Levelling Agents for Reactive, Disperse & Acid Dyes",
+      "Dispersing Agents for Synthetic Dyes",
+      "Acid Buffers & Acid Donors",
+      "Alkali Donors & pH Regulators",
+      "Dye Carriers for Polyester Dyeing",
+      "Anti-Migration Agents for Continuous Dyeing",
+      "Dyeing Lubricants & Deaerators"
+    ],
+    "keyApplications": [
+      "Exhaust dyeing in jet, overflow, and package yarn machines",
+      "Thermosol continuous dyeing ranges",
+      "High-temperature (HT) polyester dyeing at 130°C",
+      "Cotton reactive dyeing in soft-flow machines"
+    ],
+    "buyerEvaluationNotes": "Evaluated by dye retarder/migrating balance, strike rate control, high-temperature emulsion stability, oligomer dispersion in polyester dyeing, and compatibility with specific dye ionic classes."
+  },
+  {
+    "id": "CAT-E",
+    "code": "DYES-COLORANTS",
+    "name": "Textile Dyes and Colourants",
+    "slug": "dyes-and-colourants",
+    "processStage": "Coloration Family (Distinct from Auxiliaries)",
+    "description": "Chromophoric colourant molecules that chemically bond or physically disperse within textile fibres. Treated as a distinct product family separate from processing auxiliaries.",
+    "chemicalFamilies": [
+      "Reactive Dyes (Cold & Warm Brand, Bifunctional, High Exhaustion)",
+      "Disperse Dyes (Low, Medium & High Energy)",
+      "Acid & Metal-Complex Dyes",
+      "Direct Dyes for Cellulosics",
+      "Vat Dyes & Solubilised Vat Systems",
+      "Sulphur Dyes",
+      "Pigment Colour Dispersions"
+    ],
+    "keyApplications": [
+      "Cellulosic fibre coloration",
+      "Polyester, acetate, and triacetate coloration",
+      "Polyamide (Nylon) and wool coloration",
+      "Garment piece dyeing and printing pastes"
+    ],
+    "buyerEvaluationNotes": "Evaluated by light fastness, wash fastness (ISO 105-C06), rubbing fastness, perspiration fastness, exhaustion rate, fixation percentage, and shade consistency from lot to lot."
+  },
+  {
+    "id": "CAT-F",
+    "code": "PRINTING",
+    "name": "Textile Printing Chemicals",
+    "slug": "printing-chemicals",
+    "processStage": "Textile Printing",
+    "description": "Polymeric thickeners, film-forming binders, crosslinking agents, and auxiliaries that control print paste rheology, prevent paste bleeding, and fix pigments or reactive dyes on fabric surfaces.",
+    "chemicalFamilies": [
+      "Sodium Alginate Natural Thickeners",
+      "Synthetic Inverse Acrylic Emulsion Thickeners",
+      "Modified Tamarind & Guar Thickeners",
+      "Self-Crosslinking Acrylic Pigment Binders",
+      "Polyurethane (PU) Elastic Binders",
+      "Melamine & Isocyanate Crosslinkers",
+      "Print Defoamers & Deaerating Auxiliaries"
+    ],
+    "keyApplications": [
+      "Rotary screen printing on cotton and knits",
+      "Flatbed printing tables and automatic flat screen machines",
+      "Pigment printing for home textiles and dress materials",
+      "Discharge and resist printing techniques"
+    ],
+    "buyerEvaluationNotes": "Evaluated by paste viscosity yield, pattern edge sharpness, soft handle after binder curing, washing and crocking fastness, screen choke resistance, and runnability at high squeegee speeds."
+  },
+  {
+    "id": "CAT-G",
+    "code": "AFTER-TREATMENT",
+    "name": "After-treatment and Washing Chemicals",
+    "slug": "after-treatment-washing",
+    "processStage": "Post-Dyeing & Washing-Off",
+    "description": "Chemicals designed to remove unfixed surface dyes, neutralise residual processing alkali/acid, prevent re-deposition during rinsing, and chemically fix dyes to maximise wet and wash fastness.",
+    "chemicalFamilies": [
+      "Polymeric Washing-Off / Soaping Agents",
+      "Formaldehyde-Free Cationic Dye Fixing Agents",
+      "Reduction Clearing Agents for Disperse Dyes",
+      "Anti-Back-Staining Agents for Garments",
+      "Wet Rubbing Fastness Improvers",
+      "Machine Cleaning & Stripping Agents"
+    ],
+    "keyApplications": [
+      "Post-reactive dyeing soaping sequences",
+      "Reduction clearing of dyed polyester at 70-80°C",
+      "Direct dye fixation for apparel fabrics",
+      "Garment wash cycles to prevent pocket/label staining"
+    ],
+    "buyerEvaluationNotes": "Evaluated by wash fastness improvement (ISO 105-C06), reduction in wash-off bath cycles to conserve water and steam, non-impairment of original shade tone, and absence of formaldehyde emissions."
+  },
+  {
+    "id": "CAT-H",
+    "code": "OBA-WHITENING",
+    "name": "Optical Brighteners and Whitening Agents",
+    "slug": "optical-brighteners",
+    "processStage": "Whiteness Enhancement",
+    "description": "Fluorescent whitening agents (FWAs) that absorb invisible ultraviolet radiation and re-emit it in the visible blue-violet spectrum, counteracting natural yellowness to yield brilliant white finishes.",
+    "chemicalFamilies": [
+      "Stilbene-Based Cellulosic Optical Brighteners",
+      "Disulphonated & Tetrasulphonated Cotton OBAs",
+      "Coumarin & Benzoxazole Polyester OBAs",
+      "Polyamide (Nylon) & Wool Optical Brighteners",
+      "High-Temperature Stable OBAs for Synthetic Blends",
+      "Optical Brightener Boosters & Shading Tints"
+    ],
+    "keyApplications": [
+      "Exhaust application on bleached cotton knits and yarns",
+      "Padding and stenter thermofixation on polyester and synthetic blends",
+      "Combined peroxide bleaching and brightening baths",
+      "Medical, hospitality, and shirting textiles requiring high CIE whiteness index"
+    ],
+    "buyerEvaluationNotes": "Evaluated by Berger and Ganz whiteness index, greening/yellowing threshold concentration (over-brightening limit), light fastness, and compatibility with peroxide or resin baths."
+  },
+  {
+    "id": "CAT-I",
+    "code": "SOFTENERS-FINISH",
+    "name": "Textile Softening and Finishing Chemicals",
+    "slug": "softening-and-finishing",
+    "processStage": "Tactile & Mechanical Finishing",
+    "description": "Functional emulsions and fatty conditioning compounds applied during final fabric stenter or exhaust finishing to impart desired softness, drape, bulk, smoothness, and sewability.",
+    "chemicalFamilies": [
+      "Cationic Softener Flakes and Pastes",
+      "Nonionic Fatty Acid Softeners",
+      "Amino-Functional Silicone Micro & Macro Emulsions",
+      "Hydrophilic Modified Polyether Silicone Fluids",
+      "High-Density Polyethylene (HDPE) Wax Emulsions",
+      "Easy-Care Resins (DMDHEU) & Catalysts",
+      "Sewability & Yarn Sliding Lubricants"
+    ],
+    "keyApplications": [
+      "Stenter pad-dry-cure finishing of wovens and knits",
+      "Exhaust softening in winches and soft-flow machines",
+      "Toweling and knitwear requiring instant water absorbency",
+      "Garment laundry tumble finishing"
+    ],
+    "buyerEvaluationNotes": "Evaluated by surface smoothness (hand-feel), shade alteration/yellowing index upon stenter drying, rewettability (water droplet absorption time), tear strength preservation, and shear stability in padding mangles."
+  },
+  {
+    "id": "CAT-J",
+    "code": "FUNCTIONAL-FINISH",
+    "name": "Functional and Specialty Finishes",
+    "slug": "functional-finishes",
+    "processStage": "Performance Finishing",
+    "description": "High-performance chemical finishes that impart specific functional properties such as water repellence, antistatic dissipation, soil release, moisture management, or flame resistance.",
+    "chemicalFamilies": [
+      "Fluorine-Free / PFAS-Free Water Repellents",
+      "Moisture-Management & Wicking Auxiliaries",
+      "Durable Antistatic Finishing Agents",
+      "Soil-Release Polymers",
+      "Phenolic Yellowing Preventers (PYP)",
+      "Antimicrobial Textile Protection Auxiliaries",
+      "Flame Retardant Chemical Additives"
+    ],
+    "keyApplications": [
+      "Outdoor activewear and sportswear",
+      "Workwear and protective industrial uniforms",
+      "Automotive and technical textile fabrics",
+      "Home furnishings and contract drapery"
+    ],
+    "buyerEvaluationNotes": "Evaluated against standard test methods (AATCC 22 spray rating, AATCC 76 surface resistivity, ISO wash durability). Requires verified documentation regarding chemical restrictions and regulatory conformance."
+  },
+  {
+    "id": "CAT-K",
+    "code": "DENIM-GARMENT",
+    "name": "Garment Washing and Denim Chemicals",
+    "slug": "denim-garment-washing",
+    "processStage": "Garment & Denim Processing",
+    "description": "Enzymes, fading auxiliaries, anti-back-staining polymers, and specialty washing chemicals formulated for industrial laundry machines and denim finishing.",
+    "chemicalFamilies": [
+      "Neutral & Acid Cellulase Bio-Washing Enzymes",
+      "Amylase Enzymes for Garment Desizing",
+      "Denim Anti-Back-Staining Polymeric Agents",
+      "Potassium Permanganate Neutralisers & Stripping Agents",
+      "Garment Softeners & Silicones for Laundry",
+      "Ozone and Laser Compatible Processing Aids"
+    ],
+    "keyApplications": [
+      "Denim stone-wash alternatives (enzyme abrasion)",
+      "Garment overdyeing and vintage fading effects",
+      "Towel and casualwear bio-polishing to eliminate surface hairiness",
+      "Industrial garment wash houses"
+    ],
+    "buyerEvaluationNotes": "Evaluated by abrasion contrast, indigo back-staining prevention on white pocket bags and weft yarns, fabric tensile and tear strength retention, and operating pH/temperature tolerance."
+  },
+  {
+    "id": "CAT-L",
+    "code": "COATING-TECH",
+    "name": "Textile Coating, Lamination and Technical Textile Chemicals",
+    "slug": "coating-and-technical-textiles",
+    "processStage": "Coating & Technical Textiles",
+    "description": "Polymer compounds, adhesives, and additives applied as surface coatings or bonding layers to create impermeable, reinforced, or specialty technical fabrics.",
+    "chemicalFamilies": [
+      "Water-Based Polyurethane (PUD) Coating Polymers",
+      "Self-Crosslinking Acrylic Coating Emulsions",
+      "Coating Thickeners & Rheology Modifiers",
+      "Isocyanate & Carbodiimide Crosslinkers",
+      "Hot-Melt & Reactive PUR Lamination Adhesives",
+      "Adhesion Promoters for Synthetic Substrates"
+    ],
+    "keyApplications": [
+      "Waterproof breathable textile coatings",
+      "Blackout curtain and upholstery back-coatings",
+      "Fabric-to-fabric and membrane lamination",
+      "Industrial conveyor, tarpaulin, and protective textiles"
+    ],
+    "buyerEvaluationNotes": "Evaluated by hydrostatic head pressure resistance, peel bond strength, flexibility at sub-zero temperatures, breathability (water vapour transmission rate), and wash/dry-clean durability."
+  },
+  {
+    "id": "CAT-M",
+    "code": "ETP-WATER",
+    "name": "Textile Water and Effluent Treatment Chemicals",
+    "slug": "textile-water-and-effluent-treatment",
+    "processStage": "ETP & Utility Water Treatment",
+    "description": "Industrial wastewater chemicals used in textile processing mills to decolourise dye effluent, neutralise pH, coagulate suspended solids, and condition boiler or cooling tower water.",
+    "chemicalFamilies": [
+      "Colour Removal / Decolourising Polymers (Dicyandiamide resin)",
+      "Inorganic Coagulants (Polyaluminium Chloride, Ferric Chloride)",
+      "Polyacrylamide Flocculants (Anionic & Cationic)",
+      "ETP Antifoams and Defoamers",
+      "Reverse Osmosis (RO) Antiscalants & Membrane Cleaners",
+      "pH Neutralisation Acids & Alkalis"
+    ],
+    "keyApplications": [
+      "Textile processing mill effluent treatment plants (ETP)",
+      "Zero Liquid Discharge (ZLD) recovery systems",
+      "Raw process water softening and filtration",
+      "High-colour reactive dye wastewater treatment"
+    ],
+    "buyerEvaluationNotes": "Evaluated by COD/BOD reduction efficiency, colour removal percentage, sludge volume generation, settling rate in clarifiers, and RO membrane flux recovery."
+  }
+]

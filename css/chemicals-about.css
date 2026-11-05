@@ -1,0 +1,999 @@
+/* ==========================================================================
+   OM SAI ENTERPRISE - ABOUT US SPECIFIC STYLES
+   Scope: chemicals/about.html only (scoped under .page-chem-about)
+   Brand Colors:
+     Primary Blue:     #0754B5
+     Dark Blue:        #053E87
+     Secondary Green:  #087F38
+     Page Background:  #F4F7FA
+     Light Background: #EBF1F7
+     Main Text:        #202B36
+     Secondary Text:   #586A7D
+     Border:           #D5DFEB
+     White:            #FFFFFF
+   ========================================================================== */
+
+/* Page Wrapper */
+.page-chem-about {
+  background-color: var(--chem-bg, #F4F7FA);
+  color: var(--chem-text, #202B36);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SECTION 2: ABOUT HERO
+   ========================================================================== */
+.chem-about-hero {
+  position: relative;
+  padding: 68px 0 76px 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F4F7FA 100%);
+  border-bottom: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 0.82fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.chem-about-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--chem-secondary, #087F38);
+  background-color: rgba(8, 127, 56, 0.08);
+  border: 1px solid rgba(8, 127, 56, 0.22);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.chem-about-kicker::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--chem-secondary, #087F38);
+}
+
+.chem-about-hero-title {
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.18;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.chem-about-hero-desc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4A5B6D;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.chem-about-hero-subtext {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #586A7D;
+  margin-bottom: 32px;
+  max-width: 580px;
+}
+
+.chem-about-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+/* Hero Brand Showcase Card (Replacing Stock Facility Image) */
+.chem-about-hero-brand-card {
+  position: relative;
+  height: 430px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(7, 84, 181, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.chem-about-hero-brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px rgba(7, 84, 181, 0.12);
+  border-color: rgba(7, 84, 181, 0.35);
+}
+
+.chem-about-hero-logo-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 36px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFD 100%);
+}
+
+.chem-about-hero-logo {
+  max-height: 220px;
+  max-width: 88%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(7, 84, 181, 0.08));
+  transition: transform 0.4s ease;
+}
+
+.chem-about-hero-brand-card:hover .chem-about-hero-logo {
+  transform: scale(1.03);
+}
+
+.chem-about-hero-brand-footer {
+  background: #F4F7FA;
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.chem-about-brand-tagline {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  display: block;
+}
+
+.chem-about-brand-sub {
+  font-size: 0.8125rem;
+  color: #586A7D;
+  font-weight: 500;
+  display: block;
+  margin-top: 2px;
+}
+
+.chem-about-brand-badge {
+  background-color: rgba(8, 127, 56, 0.1);
+  color: var(--chem-secondary, #087F38);
+  border: 1px solid rgba(8, 127, 56, 0.22);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.chem-about-hero-media {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(7, 84, 181, 0.09);
+  border: 1px solid var(--chem-border, #D5DFEB);
+  background-color: #FFFFFF;
+}
+
+.chem-about-hero-img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.chem-about-hero-media:hover .chem-about-hero-img {
+  transform: scale(1.02);
+}
+
+.chem-about-media-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(5, 62, 135, 0.9);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.chem-about-media-badge-title {
+  font-weight: 600;
+}
+
+.chem-about-media-badge-note {
+  font-size: 0.775rem;
+  color: #D5DFEB;
+}
+
+/* ==========================================================================
+   SECTION 3: WHO WE ARE
+   ========================================================================== */
+.chem-about-overview {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.chem-about-overview-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 52px;
+  align-items: start;
+}
+
+.chem-about-section-header {
+  margin-bottom: 24px;
+}
+
+.chem-about-section-title {
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-top: 10px;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+
+.chem-about-overview-text p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #4A5B6D;
+  margin-bottom: 20px;
+}
+
+.chem-about-info-panel {
+  background-color: #FAFCFE;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: 0 8px 24px rgba(7, 84, 181, 0.04);
+}
+
+.chem-about-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-panel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chem-about-panel-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin: 0;
+}
+
+.chem-about-panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chem-about-panel-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2D3D4E;
+}
+
+.chem-about-panel-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(8, 127, 56, 0.12);
+  color: var(--chem-secondary, #087F38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: OUR BUSINESS FOCUS
+   ========================================================================== */
+.chem-about-focus {
+  padding: 80px 0;
+  background-color: var(--chem-bg, #F4F7FA);
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+.chem-about-focus-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.chem-about-focus-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(7, 84, 181, 0.1);
+  border-color: rgba(7, 84, 181, 0.4);
+}
+
+.chem-about-focus-media {
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+  background-color: #E6EFF8;
+}
+
+.chem-about-focus-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.chem-about-focus-card:hover .chem-about-focus-img {
+  transform: scale(1.04);
+}
+
+.chem-about-focus-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: var(--chem-primary-dark, #053E87);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+.chem-about-focus-body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.chem-about-focus-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 12px;
+}
+
+.chem-about-focus-desc {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: #55687D;
+  margin-bottom: 22px;
+}
+
+.chem-about-product-groups {
+  margin-bottom: 28px;
+  flex-grow: 1;
+}
+
+.chem-about-group-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4A5B6D;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.chem-about-pill-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chem-about-pill {
+  font-size: 0.8125rem;
+  color: var(--chem-primary-dark, #053E87);
+  background-color: #EAF2FB;
+  border: 1px solid #C8DCF0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   SECTION 5: HOW WE APPROACH A CHEMICAL ENQUIRY
+   ========================================================================== */
+.chem-about-process {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.chem-about-process-step {
+  background-color: #FAFCFE;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.chem-about-process-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(7, 84, 181, 0.08);
+  border-color: rgba(7, 84, 181, 0.4);
+}
+
+.chem-about-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chem-about-step-num {
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--chem-secondary, #087F38);
+}
+
+.chem-about-step-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chem-about-step-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.chem-about-step-desc {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: #55687D;
+}
+
+/* ==========================================================================
+   SECTION 6: BUSINESS PRINCIPLES
+   ========================================================================== */
+.chem-about-principles {
+  padding: 80px 0;
+  background-color: var(--chem-bg, #F4F7FA);
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.chem-about-principle-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.chem-about-principle-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(7, 84, 181, 0.06);
+}
+
+.chem-about-principle-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: rgba(8, 127, 56, 0.1);
+  color: var(--chem-secondary, #087F38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.chem-about-principle-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.chem-about-principle-desc {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: #55687D;
+}
+
+/* ==========================================================================
+   SECTION 7: TEXTILE & INDUSTRIAL APPLICATION FOCUS
+   ========================================================================== */
+.chem-about-applications {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-app-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  margin-top: 48px;
+}
+
+.chem-about-app-card {
+  background-color: #FAFCFE;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chem-about-app-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.badge-textile-app {
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  border: 1px solid #C8DCF0;
+}
+
+.badge-industrial-app {
+  background-color: #EBF7EE;
+  color: var(--chem-secondary, #087F38);
+  border: 1px solid #C4E8CD;
+}
+
+.chem-about-app-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin-bottom: 12px;
+}
+
+.chem-about-app-desc {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: #55687D;
+  margin-bottom: 24px;
+}
+
+.chem-about-app-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chem-about-app-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: #2D3D4E;
+  font-weight: 500;
+}
+
+.chem-about-app-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-blue {
+  background-color: var(--chem-primary, #0754B5);
+}
+
+.dot-green {
+  background-color: var(--chem-secondary, #087F38);
+}
+
+/* ==========================================================================
+   SECTION 8: DOCUMENTATION & PRODUCT INFORMATION
+   ========================================================================== */
+.chem-about-documentation {
+  padding: 80px 0;
+  background-color: var(--chem-bg, #F4F7FA);
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+}
+
+.chem-about-doc-box {
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 12px;
+  padding: 44px 40px;
+  box-shadow: 0 8px 24px rgba(7, 84, 181, 0.04);
+}
+
+.chem-about-doc-intro {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #4A5B6D;
+  margin-bottom: 32px;
+  max-width: 860px;
+}
+
+.chem-about-doc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.chem-about-doc-item {
+  background-color: #FAFCFE;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 8px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chem-about-doc-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background-color: #EAF2FB;
+  color: var(--chem-primary, #0754B5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.chem-about-doc-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--chem-text, #202B36);
+  margin-bottom: 8px;
+}
+
+.chem-about-doc-desc {
+  font-size: 0.8875rem;
+  line-height: 1.55;
+  color: #55687D;
+}
+
+.chem-about-doc-note {
+  background-color: #EAF2FB;
+  border-left: 4px solid var(--chem-primary, #0754B5);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9125rem;
+  color: #2D3D4E;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   SECTION 9: BUSINESS ENQUIRY CTA
+   ========================================================================== */
+.chem-about-enquiry {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #053E87 0%, #0754B5 100%);
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.chem-about-enquiry-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.chem-about-enquiry-title {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.chem-about-enquiry-desc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #E2ECF8;
+  margin-bottom: 36px;
+}
+
+.chem-about-enquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SECTION 10: PROFESSIONAL FOOTER
+   ========================================================================== */
+.chem-about-footer {
+  background-color: #0E1824;
+  color: #9AB0C7;
+  padding: 64px 0 28px 0;
+  border-top: 1px solid #1C2D42;
+}
+
+.chem-about-footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.chem-about-footer-brand-desc {
+  font-size: 0.9125rem;
+  line-height: 1.65;
+  color: #8C9FB5;
+  margin-top: 16px;
+  max-width: 320px;
+}
+
+.chem-about-footer-col-title {
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+}
+
+.chem-about-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chem-about-footer-link {
+  color: #8C9FB5;
+  text-decoration: none;
+  font-size: 0.9125rem;
+  transition: color 0.2s ease;
+}
+
+.chem-about-footer-link:hover {
+  color: #FFFFFF;
+}
+
+.chem-about-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+  border-top: 1px solid #1C2D42;
+  font-size: 0.84rem;
+  color: #6C8299;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chem-about-footer-legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ========================================================================== */
+
+/* Laptop & Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  .chem-about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .chem-about-hero-img {
+    height: 360px;
+  }
+
+  .chem-about-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .chem-about-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chem-about-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chem-about-doc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chem-about-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .chem-about-hero {
+    padding: 48px 0;
+  }
+
+  .chem-about-overview,
+  .chem-about-focus,
+  .chem-about-process,
+  .chem-about-principles,
+  .chem-about-applications,
+  .chem-about-documentation,
+  .chem-about-enquiry {
+    padding: 56px 0;
+  }
+
+  .chem-about-focus-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .chem-about-focus-media {
+    height: 200px;
+  }
+
+  .chem-about-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chem-about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chem-about-app-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .chem-about-doc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chem-about-doc-box {
+    padding: 28px 20px;
+  }
+
+  .chem-about-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chem-about-hero-actions .btn {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chem-about-enquiry-actions {
+    flex-direction: column;
+  }
+
+  .chem-about-enquiry-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .chem-about-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .chem-about-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small Mobile (430px and below) */
+@media (max-width: 430px) {
+  .chem-about-hero-title {
+    font-size: 1.85rem;
+  }
+
+  .chem-about-focus-body {
+    padding: 24px 20px;
+  }
+
+  .chem-about-hero-img {
+    height: 260px;
+  }
+
+  .chem-about-media-badge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  .chem-about-hero-img,
+  .chem-about-focus-card,
+  .chem-about-focus-img,
+  .chem-about-process-step,
+  .chem-about-principle-card,
+  .btn-indiamart {
+    transition: none !important;
+    transform: none !important;
+  }
+}

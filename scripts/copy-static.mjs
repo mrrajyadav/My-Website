@@ -27,4 +27,9 @@ if (fs.existsSync('css')) {
   fs.cpSync('css', path.join(distDir, 'css'), { recursive: true });
 }
 
-console.log('✓ Successfully copied static assets (js, css, data, assets) to dist/');
+// Copy generated static textile chemicals pages
+if (fs.existsSync('chemicals/textile-chemicals')) {
+  fs.cpSync('chemicals/textile-chemicals', path.join(distDir, 'chemicals/textile-chemicals'), { recursive: true });
+}
+
+console.log('✓ Successfully copied static assets (js, css, data, assets, textile-chemicals) to dist/');

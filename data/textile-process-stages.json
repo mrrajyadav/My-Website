@@ -1,0 +1,125 @@
+[
+  {
+    "stageNumber": 1,
+    "slug": "yarn-prep-sizing",
+    "name": "Fibre / Yarn Preparation & Sizing",
+    "kicker": "STAGE 01 — PREPARATION",
+    "description": "Conditioning raw fibres, spinning yarns, and applying protective sizing coatings to warp yarns to withstand mechanical abrasion during weaving.",
+    "processObjectives": "Reduce yarn friction, minimise hairiness, impart tensile strength to warp ends, and eliminate static electricity.",
+    "typicalAuxiliaryFamilies": [
+      "Spinning Lubricants",
+      "Antistatic Agents",
+      "Starch & Synthetic Sizing Polymers",
+      "Size Binders & Lubricating Waxes"
+    ],
+    "categorySlug": "yarn-spinning-sizing"
+  },
+  {
+    "stageNumber": 2,
+    "slug": "pretreatment",
+    "name": "Pretreatment & Desizing",
+    "kicker": "STAGE 02 — CLEANING & SCOURING",
+    "description": "Removing sizing chemicals, natural waxes, pectins, and lubricating oils from raw fabrics to render fibres hydrophilic and uniformly absorbent.",
+    "processObjectives": "Complete size removal (Tegewa rating > 6), saponification of natural cotton waxes, high liquor penetration, and absence of crease marks.",
+    "typicalAuxiliaryFamilies": [
+      "Enzymatic Desizing Agents",
+      "Wetting & Penetrating Agents",
+      "Scouring Detergents",
+      "Chelating & Sequestering Agents",
+      "Anti-Creasing Lubricants"
+    ],
+    "categorySlug": "pretreatment-chemicals"
+  },
+  {
+    "stageNumber": 3,
+    "slug": "bleaching",
+    "name": "Bleaching & Whiteness Preparation",
+    "kicker": "STAGE 03 — WHITENING",
+    "description": "Oxidative destruction of natural yellow colouring pigments in cotton and cellulosic fibres using controlled hydrogen peroxide baths.",
+    "processObjectives": "Uniform baseline whiteness, preservation of fibre degree of polymerisation (DP), absence of catalytic pinholes, and complete destruction of residual peroxide.",
+    "typicalAuxiliaryFamilies": [
+      "Hydrogen Peroxide",
+      "Non-Silicate Peroxide Stabilisers",
+      "Bleaching Wetting Agents",
+      "Catalase Peroxide Killers"
+    ],
+    "categorySlug": "bleaching-chemicals"
+  },
+  {
+    "stageNumber": 4,
+    "slug": "dyeing",
+    "name": "Dyeing & Coloration",
+    "kicker": "STAGE 04 — COLORATION",
+    "description": "Applying reactive, disperse, acid, direct, or vat colourants across exhaust or continuous machinery under tightly controlled pH and temperature conditions.",
+    "processObjectives": "Level dye exhaustion, prevention of unlevel strike, uniform diffusion inside fibre cores, and high shade reproducibility.",
+    "typicalAuxiliaryFamilies": [
+      "Levelling Agents",
+      "Dispersing Agents",
+      "Acid Buffers & Donors",
+      "Anti-Migration Agents",
+      "Dye Bath Lubricants & Deaerators"
+    ],
+    "categorySlug": "dyeing-auxiliaries"
+  },
+  {
+    "stageNumber": 5,
+    "slug": "printing",
+    "name": "Textile Printing",
+    "kicker": "STAGE 05 — PATTERN PRINTING",
+    "description": "Localised application of coloured paste containing pigments or reactive dyes using rotary screens, flat screens, or digital printing systems.",
+    "processObjectives": "Sharp pattern outlines, high print yield, soft surface touch, screen choke resistance, and durable film crosslinking.",
+    "typicalAuxiliaryFamilies": [
+      "Sodium Alginate & Acrylic Thickeners",
+      "Self-Crosslinking Pigment Binders",
+      "Crosslinking Catalysts",
+      "Anti-Migration & Humectants"
+    ],
+    "categorySlug": "printing-chemicals"
+  },
+  {
+    "stageNumber": 6,
+    "slug": "after-treatment",
+    "name": "After-treatment & Washing-Off",
+    "kicker": "STAGE 06 — FASTNESS FIXATION",
+    "description": "Thorough washing sequences and chemical fixation designed to remove hydrolysed/unfixed dye molecules and lock colourants into the fibre matrix.",
+    "processObjectives": "High washing and rubbing fastness (ISO 105), prevention of dye re-deposition, and reduction of rinsing water cycles.",
+    "typicalAuxiliaryFamilies": [
+      "Polymeric Soaping Agents",
+      "Cationic Dye Fixing Agents",
+      "Reduction Clearing Agents for Synthetics",
+      "Anti-Back-Staining Agents"
+    ],
+    "categorySlug": "after-treatment-washing"
+  },
+  {
+    "stageNumber": 7,
+    "slug": "finishing",
+    "name": "Fabric Softening & Finishing",
+    "kicker": "STAGE 07 — TACTILE FINISHING",
+    "description": "Application of conditioning emulsions, silicones, and easy-care resins on stenter frames to achieve specified hand-feel, drape, and dimensional stability.",
+    "processObjectives": "Target surface softness (silky, bulky, or dry touch), high rewettability where required, minimal stenter yellowing, and tear strength retention.",
+    "typicalAuxiliaryFamilies": [
+      "Cationic Softeners",
+      "Amino Silicone Micro Emulsions",
+      "Hydrophilic Silicone Softeners",
+      "HDPE Wax Emulsions",
+      "Easy-Care Resins"
+    ],
+    "categorySlug": "softening-and-finishing"
+  },
+  {
+    "stageNumber": 8,
+    "slug": "garment-special",
+    "name": "Garment Washing / Special Processing",
+    "kicker": "STAGE 08 — SPECIALTY PROCESSING",
+    "description": "Industrial garment wash house treatments including enzymatic bio-polishing, denim fading, functional finishing (water repellence, moisture wicking), and effluent treatment.",
+    "processObjectives": "Consistent wash effects, elimination of surface fuzz, specialized technical performance (water/soil resistance), and compliant effluent discharge.",
+    "typicalAuxiliaryFamilies": [
+      "Cellulase Enzymes",
+      "Fluorine-Free Water Repellents",
+      "Wicking Auxiliaries",
+      "ETP Decolourising Polymers"
+    ],
+    "categorySlug": "denim-garment-washing"
+  }
+]

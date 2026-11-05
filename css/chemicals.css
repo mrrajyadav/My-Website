@@ -37,6 +37,17 @@ body.theme-chem {
   border-bottom: 2px solid var(--chem-primary);
 }
 
+.theme-chem .logo-container-dark {
+  height: 48px;
+  padding: 2px 6px;
+  background-color: transparent;
+  border: none;
+}
+
+.theme-chem .logo-container-dark .logo-img {
+  max-height: 44px;
+}
+
 .theme-chem .nav-link:hover,
 .theme-chem .nav-link.active {
   color: var(--chem-primary);

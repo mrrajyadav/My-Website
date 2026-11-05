@@ -1,0 +1,4049 @@
+[
+  {
+    "id": "CHEM-TEX-001",
+    "num": 1,
+    "slug": "textile-wetting-agent",
+    "name": "Textile Wetting Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Wetting",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Textile Wetting Agent for Textile",
+      "Industrial Textile Wetting Agent",
+      "Textile Processing Textile Wetting Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving wetting requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-002",
+    "num": 2,
+    "slug": "textile-penetrating-agent",
+    "name": "Textile Penetrating Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Wetting",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric"
+    ],
+    "synonyms": [
+      "Textile Penetrating Agent for Textile",
+      "Industrial Textile Penetrating Agent",
+      "Textile Processing Textile Penetrating Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving wetting requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-003",
+    "num": 3,
+    "slug": "textile-scouring-agent",
+    "name": "Textile Scouring Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Scouring",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Wool",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Textile Scouring Agent for Textile",
+      "Industrial Textile Scouring Agent",
+      "Textile Processing Textile Scouring Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving scouring requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-004",
+    "num": 4,
+    "slug": "textile-detergent",
+    "name": "Textile Detergent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Scouring",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Nylon",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric"
+    ],
+    "synonyms": [
+      "Textile Detergent for Textile",
+      "Industrial Textile Detergent",
+      "Textile Processing Textile Detergent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving scouring requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-005",
+    "num": 5,
+    "slug": "textile-desizing-agent",
+    "name": "Textile Desizing Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Desizing",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Denim"
+    ],
+    "synonyms": [
+      "Textile Desizing Agent for Textile",
+      "Industrial Textile Desizing Agent",
+      "Textile Processing Textile Desizing Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving desizing requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-006",
+    "num": 6,
+    "slug": "amylase-desizing-enzyme",
+    "name": "Amylase Desizing Enzyme",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Desizing",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Denim"
+    ],
+    "synonyms": [
+      "Amylase Desizing Enzyme for Textile",
+      "Industrial Amylase Desizing Enzyme",
+      "Textile Processing Amylase Desizing Enzyme"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving desizing requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-007",
+    "num": 7,
+    "slug": "degreasing-agent",
+    "name": "Degreasing Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Scouring",
+    "applicableFibres": [
+      "Cotton",
+      "Synthetics",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Woven Fabric"
+    ],
+    "synonyms": [
+      "Degreasing Agent for Textile",
+      "Industrial Degreasing Agent",
+      "Textile Processing Degreasing Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving scouring requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-008",
+    "num": 8,
+    "slug": "pectinase-enzyme",
+    "name": "Pectinase Enzyme",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Scouring",
+    "applicableFibres": [
+      "Cotton",
+      "Linen"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Pectinase Enzyme for Textile",
+      "Industrial Pectinase Enzyme",
+      "Textile Processing Pectinase Enzyme"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving scouring requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-009",
+    "num": 9,
+    "slug": "textile-sequestering-agent",
+    "name": "Textile Sequestering Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Sequestering",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Textile Sequestering Agent for Textile",
+      "Industrial Textile Sequestering Agent",
+      "Textile Processing Textile Sequestering Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving sequestering requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-010",
+    "num": 10,
+    "slug": "textile-chelating-agent",
+    "name": "Textile Chelating Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Sequestering",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric"
+    ],
+    "synonyms": [
+      "Textile Chelating Agent for Textile",
+      "Industrial Textile Chelating Agent",
+      "Textile Processing Textile Chelating Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving sequestering requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-011",
+    "num": 11,
+    "slug": "peroxide-stabiliser",
+    "name": "Peroxide Stabiliser",
+    "category": "Bleaching Chemicals",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Stabilising",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Peroxide Stabiliser for Textile",
+      "Industrial Peroxide Stabiliser",
+      "Textile Processing Peroxide Stabiliser"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving stabilising requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-012",
+    "num": 12,
+    "slug": "textile-bleaching-auxiliary",
+    "name": "Textile Bleaching Auxiliary",
+    "category": "Bleaching Chemicals",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Stabilising",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric"
+    ],
+    "synonyms": [
+      "Textile Bleaching Auxiliary for Textile",
+      "Industrial Textile Bleaching Auxiliary",
+      "Textile Processing Textile Bleaching Auxiliary"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving stabilising requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-013",
+    "num": 13,
+    "slug": "peroxide-killer",
+    "name": "Peroxide Killer",
+    "category": "Bleaching Chemicals",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Bleaching Neutralisation",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Peroxide Killer for Textile",
+      "Industrial Peroxide Killer",
+      "Textile Processing Peroxide Killer"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving bleaching neutralisation requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-014",
+    "num": 14,
+    "slug": "catalase-enzyme",
+    "name": "Catalase Enzyme",
+    "category": "Bleaching Chemicals",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Bleaching Neutralisation",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Catalase Enzyme for Textile",
+      "Industrial Catalase Enzyme",
+      "Textile Processing Catalase Enzyme"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving bleaching neutralisation requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-015",
+    "num": 15,
+    "slug": "alkali-neutraliser",
+    "name": "Alkali Neutraliser",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Neutralising",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Knitted Fabric"
+    ],
+    "synonyms": [
+      "Alkali Neutraliser for Textile",
+      "Industrial Alkali Neutraliser",
+      "Textile Processing Alkali Neutraliser"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving neutralising requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-016",
+    "num": 16,
+    "slug": "acid-neutraliser",
+    "name": "Acid Neutraliser",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Neutralising",
+    "applicableFibres": [
+      "Wool",
+      "Synthetics"
+    ],
+    "fabricApplications": [
+      "Yarn Processing",
+      "Woven Fabric"
+    ],
+    "synonyms": [
+      "Acid Neutraliser for Textile",
+      "Industrial Acid Neutraliser",
+      "Textile Processing Acid Neutraliser"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving neutralising requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-017",
+    "num": 17,
+    "slug": "mercerising-auxiliary",
+    "name": "Mercerising Auxiliary",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Wetting",
+    "applicableFibres": [
+      "Cotton"
+    ],
+    "fabricApplications": [
+      "Woven Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Mercerising Auxiliary for Textile",
+      "Industrial Mercerising Auxiliary",
+      "Textile Processing Mercerising Auxiliary"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving wetting requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-018",
+    "num": 18,
+    "slug": "anti-creasing-agent",
+    "name": "Anti-Creasing Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Lubricating",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Polyester",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Woven Fabric"
+    ],
+    "synonyms": [
+      "Anti-Creasing Agent for Textile",
+      "Industrial Anti-Creasing Agent",
+      "Textile Processing Anti-Creasing Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving lubricating requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-019",
+    "num": 19,
+    "slug": "anti-rope-mark-agent",
+    "name": "Anti-Rope-Mark Agent",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Lubricating",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Soft-Flow Knits",
+      "Woven Fabric"
+    ],
+    "synonyms": [
+      "Anti-Rope-Mark Agent for Textile",
+      "Industrial Anti-Rope-Mark Agent",
+      "Textile Processing Anti-Rope-Mark Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving lubricating requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-020",
+    "num": 20,
+    "slug": "textile-defoamer",
+    "name": "Textile Defoamer",
+    "category": "Pretreatment Chemicals",
+    "processStages": [
+      "Pretreatment"
+    ],
+    "productFunction": "Defoaming",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Jet Dyeing",
+      "Continuous Ranges"
+    ],
+    "synonyms": [
+      "Textile Defoamer for Textile",
+      "Industrial Textile Defoamer",
+      "Textile Processing Textile Defoamer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving defoaming requirements in textile pretreatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-021",
+    "num": 21,
+    "slug": "textile-levelling-agent",
+    "name": "Textile Levelling Agent",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Levelling",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Nylon",
+      "Acrylic",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Woven Fabric",
+      "Yarn Processing"
+    ],
+    "synonyms": [
+      "Textile Levelling Agent for Textile",
+      "Industrial Textile Levelling Agent",
+      "Textile Processing Textile Levelling Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving levelling requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-022",
+    "num": 22,
+    "slug": "textile-dispersing-agent",
+    "name": "Textile Dispersing Agent",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Dispersing",
+    "applicableFibres": [
+      "Polyester",
+      "Acetate",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "HT Dyeing",
+      "Thermosol Ranges"
+    ],
+    "synonyms": [
+      "Textile Dispersing Agent for Textile",
+      "Industrial Textile Dispersing Agent",
+      "Textile Processing Textile Dispersing Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving dispersing requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-023",
+    "num": 23,
+    "slug": "dyeing-wetting-agent",
+    "name": "Dyeing Wetting Agent",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Wetting",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Exhaust Dyeing",
+      "Continuous Dyeing"
+    ],
+    "synonyms": [
+      "Dyeing Wetting Agent for Textile",
+      "Industrial Dyeing Wetting Agent",
+      "Textile Processing Dyeing Wetting Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving wetting requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-024",
+    "num": 24,
+    "slug": "acid-buffer",
+    "name": "Acid Buffer",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "pH Regulation",
+    "applicableFibres": [
+      "Polyester",
+      "Nylon",
+      "Wool"
+    ],
+    "fabricApplications": [
+      "Disperse Dyeing",
+      "Acid Dyeing"
+    ],
+    "synonyms": [
+      "Acid Buffer for Textile",
+      "Industrial Acid Buffer",
+      "Textile Processing Acid Buffer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving ph regulation requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-025",
+    "num": 25,
+    "slug": "alkali-buffer",
+    "name": "Alkali Buffer",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "pH Regulation",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose"
+    ],
+    "fabricApplications": [
+      "Reactive Dyeing"
+    ],
+    "synonyms": [
+      "Alkali Buffer for Textile",
+      "Industrial Alkali Buffer",
+      "Textile Processing Alkali Buffer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving ph regulation requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-026",
+    "num": 26,
+    "slug": "acid-donor",
+    "name": "Acid Donor",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "pH Regulation",
+    "applicableFibres": [
+      "Nylon",
+      "Wool"
+    ],
+    "fabricApplications": [
+      "Exhaust Dyeing"
+    ],
+    "synonyms": [
+      "Acid Donor for Textile",
+      "Industrial Acid Donor",
+      "Textile Processing Acid Donor"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving ph regulation requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-027",
+    "num": 27,
+    "slug": "alkali-donor",
+    "name": "Alkali Donor",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "pH Regulation",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose"
+    ],
+    "fabricApplications": [
+      "Reactive Continuous Dyeing"
+    ],
+    "synonyms": [
+      "Alkali Donor for Textile",
+      "Industrial Alkali Donor",
+      "Textile Processing Alkali Donor"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving ph regulation requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-028",
+    "num": 28,
+    "slug": "dye-carrier",
+    "name": "Dye Carrier",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Carrier Dyeing",
+    "applicableFibres": [
+      "Polyester",
+      "Triacetate",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Atmospheric Winch Dyeing"
+    ],
+    "synonyms": [
+      "Dye Carrier for Textile",
+      "Industrial Dye Carrier",
+      "Textile Processing Dye Carrier"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving carrier dyeing requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-029",
+    "num": 29,
+    "slug": "dye-fixing-agent",
+    "name": "Dye Fixing Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Fixing",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Woven Fabric",
+      "Garments"
+    ],
+    "synonyms": [
+      "Dye Fixing Agent for Textile",
+      "Industrial Dye Fixing Agent",
+      "Textile Processing Dye Fixing Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving fixing requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-030",
+    "num": 30,
+    "slug": "anti-migration-agent",
+    "name": "Anti-Migration Agent",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Anti-Migration",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Pad-Dry-Thermosol",
+      "Continuous Ranges"
+    ],
+    "synonyms": [
+      "Anti-Migration Agent for Textile",
+      "Industrial Anti-Migration Agent",
+      "Textile Processing Anti-Migration Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving anti-migration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-031",
+    "num": 31,
+    "slug": "dyeing-lubricant",
+    "name": "Dyeing Lubricant",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Lubricating",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Nylon",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Jet Dyeing",
+      "Overflow Winches"
+    ],
+    "synonyms": [
+      "Dyeing Lubricant for Textile",
+      "Industrial Dyeing Lubricant",
+      "Textile Processing Dyeing Lubricant"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving lubricating requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-032",
+    "num": 32,
+    "slug": "deaerator",
+    "name": "Deaerator",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Deaeration",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Yarn Packages"
+    ],
+    "fabricApplications": [
+      "Package Yarn Dyeing",
+      "Beam Dyeing"
+    ],
+    "synonyms": [
+      "Deaerator for Textile",
+      "Industrial Deaerator",
+      "Textile Processing Deaerator"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving deaeration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-033",
+    "num": 33,
+    "slug": "dyeing-defoamer",
+    "name": "Dyeing Defoamer",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Defoaming",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Jet Machines",
+      "Overflow Winches"
+    ],
+    "synonyms": [
+      "Dyeing Defoamer for Textile",
+      "Industrial Dyeing Defoamer",
+      "Textile Processing Dyeing Defoamer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving defoaming requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-034",
+    "num": 34,
+    "slug": "reduction-clearing-agent",
+    "name": "Reduction Clearing Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Washing-off",
+    "applicableFibres": [
+      "Polyester",
+      "Polyester Blends"
+    ],
+    "fabricApplications": [
+      "Post-Disperse Wash",
+      "Continuous Ranges"
+    ],
+    "synonyms": [
+      "Reduction Clearing Agent for Textile",
+      "Industrial Reduction Clearing Agent",
+      "Textile Processing Reduction Clearing Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving washing-off requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-035",
+    "num": 35,
+    "slug": "polyester-oligomer-remover",
+    "name": "Polyester Oligomer Remover",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Dispersing",
+    "applicableFibres": [
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "HT Dyeing",
+      "Yarn Package Dyeing"
+    ],
+    "synonyms": [
+      "Polyester Oligomer Remover for Textile",
+      "Industrial Polyester Oligomer Remover",
+      "Textile Processing Polyester Oligomer Remover"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving dispersing requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-036",
+    "num": 36,
+    "slug": "dyeing-process-regulator",
+    "name": "Dyeing Process Regulator",
+    "category": "Dyeing Auxiliaries",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Levelling",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Rapid Dyeing Cycles"
+    ],
+    "synonyms": [
+      "Dyeing Process Regulator for Textile",
+      "Industrial Dyeing Process Regulator",
+      "Textile Processing Dyeing Process Regulator"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving levelling requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-037",
+    "num": 37,
+    "slug": "reactive-dyes",
+    "name": "Reactive Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Exhaust Dyeing",
+      "Continuous Dyeing",
+      "Printing"
+    ],
+    "synonyms": [
+      "Reactive Dyes for Textile",
+      "Industrial Reactive Dyes",
+      "Textile Processing Reactive Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-038",
+    "num": 38,
+    "slug": "disperse-dyes",
+    "name": "Disperse Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Polyester",
+      "Acetate",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "HT Dyeing",
+      "Thermosol",
+      "Sublimation"
+    ],
+    "synonyms": [
+      "Disperse Dyes for Textile",
+      "Industrial Disperse Dyes",
+      "Textile Processing Disperse Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-039",
+    "num": 39,
+    "slug": "direct-dyes",
+    "name": "Direct Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Jute"
+    ],
+    "fabricApplications": [
+      "Atmospheric Dyeing",
+      "Paper/Textile"
+    ],
+    "synonyms": [
+      "Direct Dyes for Textile",
+      "Industrial Direct Dyes",
+      "Textile Processing Direct Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-040",
+    "num": 40,
+    "slug": "acid-dyes",
+    "name": "Acid Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Nylon",
+      "Wool",
+      "Silk"
+    ],
+    "fabricApplications": [
+      "Apparel Dyeing",
+      "Swimwear"
+    ],
+    "synonyms": [
+      "Acid Dyes for Textile",
+      "Industrial Acid Dyes",
+      "Textile Processing Acid Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-041",
+    "num": 41,
+    "slug": "basic-dyes",
+    "name": "Basic Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Acrylic",
+      "Cationic Dyeable Polyester"
+    ],
+    "fabricApplications": [
+      "Knitwear",
+      "Blankets"
+    ],
+    "synonyms": [
+      "Basic Dyes for Textile",
+      "Industrial Basic Dyes",
+      "Textile Processing Basic Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-042",
+    "num": 42,
+    "slug": "vat-dyes",
+    "name": "Vat Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Cotton",
+      "Linen"
+    ],
+    "fabricApplications": [
+      "Workwear",
+      "Hospitality Uniforms",
+      "Yarn"
+    ],
+    "synonyms": [
+      "Vat Dyes for Textile",
+      "Industrial Vat Dyes",
+      "Textile Processing Vat Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-043",
+    "num": 43,
+    "slug": "sulphur-dyes",
+    "name": "Sulphur Dyes",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Denim Warp",
+      "Heavy Canvas"
+    ],
+    "synonyms": [
+      "Sulphur Dyes for Textile",
+      "Industrial Sulphur Dyes",
+      "Textile Processing Sulphur Dyes"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-044",
+    "num": 44,
+    "slug": "pigment-colourants",
+    "name": "Pigment Colourants",
+    "category": "Textile Dyes and Colourants",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "All Fibre Types",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Pigment Printing",
+      "Exhaust Garment Tinting"
+    ],
+    "synonyms": [
+      "Pigment Colourants for Textile",
+      "Industrial Pigment Colourants",
+      "Textile Processing Pigment Colourants"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-045",
+    "num": 45,
+    "slug": "textile-printing-thickener",
+    "name": "Textile Printing Thickener",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Rotary Screen Printing",
+      "Flatbed Printing",
+      "Table Printing"
+    ],
+    "synonyms": [
+      "Textile Printing Thickener for Textile",
+      "Industrial Textile Printing Thickener",
+      "Textile Processing Textile Printing Thickener"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-046",
+    "num": 46,
+    "slug": "sodium-alginate-thickener",
+    "name": "Sodium Alginate Thickener",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose"
+    ],
+    "fabricApplications": [
+      "Reactive Dye Printing"
+    ],
+    "synonyms": [
+      "Sodium Alginate Thickener for Textile",
+      "Industrial Sodium Alginate Thickener",
+      "Textile Processing Sodium Alginate Thickener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-047",
+    "num": 47,
+    "slug": "guar-gum-thickener",
+    "name": "Guar Gum Thickener",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Nylon",
+      "Wool",
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "Acid & Disperse Printing"
+    ],
+    "synonyms": [
+      "Guar Gum Thickener for Textile",
+      "Industrial Guar Gum Thickener",
+      "Textile Processing Guar Gum Thickener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-048",
+    "num": 48,
+    "slug": "cmc-thickener",
+    "name": "CMC Thickener",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Cellulosics",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Printing Pastes"
+    ],
+    "synonyms": [
+      "CMC Thickener for Textile",
+      "Industrial CMC Thickener",
+      "Textile Processing CMC Thickener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-049",
+    "num": 49,
+    "slug": "synthetic-printing-thickener",
+    "name": "Synthetic Printing Thickener",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blends"
+    ],
+    "fabricApplications": [
+      "Pigment Printing"
+    ],
+    "synonyms": [
+      "Synthetic Printing Thickener for Textile",
+      "Industrial Synthetic Printing Thickener",
+      "Textile Processing Synthetic Printing Thickener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-050",
+    "num": 50,
+    "slug": "pigment-printing-binder",
+    "name": "Pigment Printing Binder",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Binding",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Home Textiles",
+      "Apparel Printing"
+    ],
+    "synonyms": [
+      "Pigment Printing Binder for Textile",
+      "Industrial Pigment Printing Binder",
+      "Textile Processing Pigment Printing Binder"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving binding requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-051",
+    "num": 51,
+    "slug": "acrylic-textile-binder",
+    "name": "Acrylic Textile Binder",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Binding",
+    "applicableFibres": [
+      "Cotton",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Pigment Screen Printing"
+    ],
+    "synonyms": [
+      "Acrylic Textile Binder for Textile",
+      "Industrial Acrylic Textile Binder",
+      "Textile Processing Acrylic Textile Binder"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving binding requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-052",
+    "num": 52,
+    "slug": "pu-printing-binder",
+    "name": "PU Printing Binder",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Binding",
+    "applicableFibres": [
+      "Knitted Fabric",
+      "Elastic Textiles"
+    ],
+    "fabricApplications": [
+      "Soft Elastic Prints"
+    ],
+    "synonyms": [
+      "PU Printing Binder for Textile",
+      "Industrial PU Printing Binder",
+      "Textile Processing PU Printing Binder"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving binding requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-053",
+    "num": 53,
+    "slug": "textile-crosslinker",
+    "name": "Textile Crosslinker",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Crosslinking",
+    "applicableFibres": [
+      "Cotton",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Pigment Print Fixation"
+    ],
+    "synonyms": [
+      "Textile Crosslinker for Textile",
+      "Industrial Textile Crosslinker",
+      "Textile Processing Textile Crosslinker"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving crosslinking requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-054",
+    "num": 54,
+    "slug": "printing-catalyst",
+    "name": "Printing Catalyst",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Crosslinking",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Pigment Print Curing"
+    ],
+    "synonyms": [
+      "Printing Catalyst for Textile",
+      "Industrial Printing Catalyst",
+      "Textile Processing Printing Catalyst"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving crosslinking requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-055",
+    "num": 55,
+    "slug": "printing-emulsifier",
+    "name": "Printing Emulsifier",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Emulsifying",
+    "applicableFibres": [
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Emulsion Print Systems"
+    ],
+    "synonyms": [
+      "Printing Emulsifier for Textile",
+      "Industrial Printing Emulsifier",
+      "Textile Processing Printing Emulsifier"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving emulsifying requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-056",
+    "num": 56,
+    "slug": "printing-humectant",
+    "name": "Printing Humectant",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Humectant",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "Screen Choke Prevention"
+    ],
+    "synonyms": [
+      "Printing Humectant for Textile",
+      "Industrial Printing Humectant",
+      "Textile Processing Printing Humectant"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving humectant requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-057",
+    "num": 57,
+    "slug": "printing-defoamer",
+    "name": "Printing Defoamer",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Defoaming",
+    "applicableFibres": [
+      "All Fibres"
+    ],
+    "fabricApplications": [
+      "High-Speed Rotary Pastes"
+    ],
+    "synonyms": [
+      "Printing Defoamer for Textile",
+      "Industrial Printing Defoamer",
+      "Textile Processing Printing Defoamer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving defoaming requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-058",
+    "num": 58,
+    "slug": "anti-migration-agent",
+    "name": "Anti-Migration Agent",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Anti-Migration",
+    "applicableFibres": [
+      "Cotton",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Pad-Print Sequences"
+    ],
+    "synonyms": [
+      "Anti-Migration Agent for Textile",
+      "Industrial Anti-Migration Agent",
+      "Textile Processing Anti-Migration Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving anti-migration requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-059",
+    "num": 59,
+    "slug": "specialty-printing-modifier",
+    "name": "Specialty Printing Modifier",
+    "category": "Printing Chemicals",
+    "processStages": [
+      "Printing"
+    ],
+    "productFunction": "Special Effects",
+    "applicableFibres": [
+      "Cotton",
+      "Denim",
+      "Knits"
+    ],
+    "fabricApplications": [
+      "Discharge & Resist Prints"
+    ],
+    "synonyms": [
+      "Specialty Printing Modifier for Textile",
+      "Industrial Specialty Printing Modifier",
+      "Textile Processing Specialty Printing Modifier"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving special effects requirements in textile printing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-060",
+    "num": 60,
+    "slug": "textile-soaping-agent",
+    "name": "Textile Soaping Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Washing-off",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Post-Reactive Wash",
+      "Continuous Wash Ranges"
+    ],
+    "synonyms": [
+      "Textile Soaping Agent for Textile",
+      "Industrial Textile Soaping Agent",
+      "Textile Processing Textile Soaping Agent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving washing-off requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-061",
+    "num": 61,
+    "slug": "washing-off-agent",
+    "name": "Washing-Off Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Washing-off",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Exhaust Soaping",
+      "Woven Wash Ranges"
+    ],
+    "synonyms": [
+      "Washing-Off Agent for Textile",
+      "Industrial Washing-Off Agent",
+      "Textile Processing Washing-Off Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving washing-off requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-062",
+    "num": 62,
+    "slug": "post-dyeing-detergent",
+    "name": "Post-Dyeing Detergent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Washing-off",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Piece Dye Washing"
+    ],
+    "synonyms": [
+      "Post-Dyeing Detergent for Textile",
+      "Industrial Post-Dyeing Detergent",
+      "Textile Processing Post-Dyeing Detergent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving washing-off requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-063",
+    "num": 63,
+    "slug": "anti-back-staining-agent",
+    "name": "Anti-Back-Staining Agent",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Anti-back-staining",
+    "applicableFibres": [
+      "Cotton",
+      "Denim"
+    ],
+    "fabricApplications": [
+      "Denim Enzyme Wash",
+      "Garment Laundry"
+    ],
+    "synonyms": [
+      "Anti-Back-Staining Agent for Textile",
+      "Industrial Anti-Back-Staining Agent",
+      "Textile Processing Anti-Back-Staining Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving anti-back-staining requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-064",
+    "num": 64,
+    "slug": "textile-stain-remover",
+    "name": "Textile Stain Remover",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Spotting",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blends"
+    ],
+    "fabricApplications": [
+      "Inspection & Mending"
+    ],
+    "synonyms": [
+      "Textile Stain Remover for Textile",
+      "Industrial Textile Stain Remover",
+      "Textile Processing Textile Stain Remover"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving spotting requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-065",
+    "num": 65,
+    "slug": "colour-stripping-agent",
+    "name": "Colour Stripping Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Stripping",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Rework & Shade Correction"
+    ],
+    "synonyms": [
+      "Colour Stripping Agent for Textile",
+      "Industrial Colour Stripping Agent",
+      "Textile Processing Colour Stripping Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving stripping requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-066",
+    "num": 66,
+    "slug": "textile-machine-cleaning-agent",
+    "name": "Textile Machine Cleaning Agent",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Cleaning",
+    "applicableFibres": [
+      "Process Machinery"
+    ],
+    "fabricApplications": [
+      "Jet Cleaning",
+      "Stenter Cleaners"
+    ],
+    "synonyms": [
+      "Textile Machine Cleaning Agent for Textile",
+      "Industrial Textile Machine Cleaning Agent",
+      "Textile Processing Textile Machine Cleaning Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving cleaning requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-067",
+    "num": 67,
+    "slug": "rubbing-fastness-improver",
+    "name": "Rubbing Fastness Improver",
+    "category": "After-treatment & Washing",
+    "processStages": [
+      "After-treatment"
+    ],
+    "productFunction": "Fastness Improvement",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics",
+      "Denim"
+    ],
+    "fabricApplications": [
+      "Deep Shade Finishing",
+      "Pigment Prints"
+    ],
+    "synonyms": [
+      "Rubbing Fastness Improver for Textile",
+      "Industrial Rubbing Fastness Improver",
+      "Textile Processing Rubbing Fastness Improver"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving fastness improvement requirements in textile after-treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-068",
+    "num": 68,
+    "slug": "cotton-optical-brightener",
+    "name": "Cotton Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Knit Finishing",
+      "Yarn Bleaching"
+    ],
+    "synonyms": [
+      "Cotton Optical Brightener for Textile",
+      "Industrial Cotton Optical Brightener",
+      "Textile Processing Cotton Optical Brightener"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-069",
+    "num": 69,
+    "slug": "polyester-optical-brightener",
+    "name": "Polyester Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Polyester",
+      "Synthetic Blends"
+    ],
+    "fabricApplications": [
+      "Thermosol",
+      "HT Exhaust"
+    ],
+    "synonyms": [
+      "Polyester Optical Brightener for Textile",
+      "Industrial Polyester Optical Brightener",
+      "Textile Processing Polyester Optical Brightener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-070",
+    "num": 70,
+    "slug": "nylon-optical-brightener",
+    "name": "Nylon Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Nylon / Polyamide"
+    ],
+    "fabricApplications": [
+      "Lingerie & Activewear"
+    ],
+    "synonyms": [
+      "Nylon Optical Brightener for Textile",
+      "Industrial Nylon Optical Brightener",
+      "Textile Processing Nylon Optical Brightener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-071",
+    "num": 71,
+    "slug": "acrylic-optical-brightener",
+    "name": "Acrylic Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Dyeing"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Acrylic"
+    ],
+    "fabricApplications": [
+      "Knitwear & Blankets"
+    ],
+    "synonyms": [
+      "Acrylic Optical Brightener for Textile",
+      "Industrial Acrylic Optical Brightener",
+      "Textile Processing Acrylic Optical Brightener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile dyeing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-072",
+    "num": 72,
+    "slug": "wool-optical-brightener",
+    "name": "Wool Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Wool",
+      "Silk"
+    ],
+    "fabricApplications": [
+      "Wool Finishing"
+    ],
+    "synonyms": [
+      "Wool Optical Brightener for Textile",
+      "Industrial Wool Optical Brightener",
+      "Textile Processing Wool Optical Brightener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-073",
+    "num": 73,
+    "slug": "cellulosic-optical-brightener",
+    "name": "Cellulosic Optical Brightener",
+    "category": "Optical Brighteners",
+    "processStages": [
+      "Bleaching"
+    ],
+    "productFunction": "Brightening",
+    "applicableFibres": [
+      "Viscose",
+      "Modal",
+      "Lyocell"
+    ],
+    "fabricApplications": [
+      "Continuous Padding",
+      "Exhaust"
+    ],
+    "synonyms": [
+      "Cellulosic Optical Brightener for Textile",
+      "Industrial Cellulosic Optical Brightener",
+      "Textile Processing Cellulosic Optical Brightener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving brightening requirements in textile bleaching operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-074",
+    "num": 74,
+    "slug": "cationic-textile-softener",
+    "name": "Cationic Textile Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Acrylic",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Knitted Fabric",
+      "Woven Fabric",
+      "Towel Finishing"
+    ],
+    "synonyms": [
+      "Cationic Textile Softener for Textile",
+      "Industrial Cationic Textile Softener",
+      "Textile Processing Cationic Textile Softener"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-075",
+    "num": 75,
+    "slug": "nonionic-textile-softener",
+    "name": "Nonionic Textile Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Resin Finishing",
+      "Pure White Fabrics"
+    ],
+    "synonyms": [
+      "Nonionic Textile Softener for Textile",
+      "Industrial Nonionic Textile Softener",
+      "Textile Processing Nonionic Textile Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-076",
+    "num": 76,
+    "slug": "anionic-textile-softener",
+    "name": "Anionic Textile Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Specialty Finishes"
+    ],
+    "synonyms": [
+      "Anionic Textile Softener for Textile",
+      "Industrial Anionic Textile Softener",
+      "Textile Processing Anionic Textile Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-077",
+    "num": 77,
+    "slug": "amphoteric-textile-softener",
+    "name": "Amphoteric Textile Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Wool",
+      "Blends"
+    ],
+    "fabricApplications": [
+      "Sensitive Touch Fabrics"
+    ],
+    "synonyms": [
+      "Amphoteric Textile Softener for Textile",
+      "Industrial Amphoteric Textile Softener",
+      "Textile Processing Amphoteric Textile Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-078",
+    "num": 78,
+    "slug": "silicone-textile-softener",
+    "name": "Silicone Textile Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Viscose",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Apparel Knits",
+      "Shirting",
+      "Denim"
+    ],
+    "synonyms": [
+      "Silicone Textile Softener for Textile",
+      "Industrial Silicone Textile Softener",
+      "Textile Processing Silicone Textile Softener"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-079",
+    "num": 79,
+    "slug": "amino-silicone-softener",
+    "name": "Amino Silicone Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Knits"
+    ],
+    "fabricApplications": [
+      "Ultra-Soft Apparel"
+    ],
+    "synonyms": [
+      "Amino Silicone Softener for Textile",
+      "Industrial Amino Silicone Softener",
+      "Textile Processing Amino Silicone Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-080",
+    "num": 80,
+    "slug": "micro-silicone-emulsion",
+    "name": "Micro Silicone Emulsion",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Fine Knits",
+      "Microfibre"
+    ],
+    "fabricApplications": [
+      "Deep Penetration Softening"
+    ],
+    "synonyms": [
+      "Micro Silicone Emulsion for Textile",
+      "Industrial Micro Silicone Emulsion",
+      "Textile Processing Micro Silicone Emulsion"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-081",
+    "num": 81,
+    "slug": "macro-silicone-emulsion",
+    "name": "Macro Silicone Emulsion",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Denim",
+      "Heavy Twills"
+    ],
+    "fabricApplications": [
+      "Surface Hand Modification"
+    ],
+    "synonyms": [
+      "Macro Silicone Emulsion for Textile",
+      "Industrial Macro Silicone Emulsion",
+      "Textile Processing Macro Silicone Emulsion"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-082",
+    "num": 82,
+    "slug": "hydrophilic-silicone-softener",
+    "name": "Hydrophilic Silicone Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Towels"
+    ],
+    "fabricApplications": [
+      "Absorbent Towels",
+      "Activewear"
+    ],
+    "synonyms": [
+      "Hydrophilic Silicone Softener for Textile",
+      "Industrial Hydrophilic Silicone Softener",
+      "Textile Processing Hydrophilic Silicone Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-083",
+    "num": 83,
+    "slug": "hydrophobic-silicone-softener",
+    "name": "Hydrophobic Silicone Softener",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Outerwear",
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "Water Shedding Feel"
+    ],
+    "synonyms": [
+      "Hydrophobic Silicone Softener for Textile",
+      "Industrial Hydrophobic Silicone Softener",
+      "Textile Processing Hydrophobic Silicone Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-084",
+    "num": 84,
+    "slug": "polyethylene-emulsion",
+    "name": "Polyethylene Emulsion",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Lubricating",
+    "applicableFibres": [
+      "Cotton",
+      "Blended Fibres"
+    ],
+    "fabricApplications": [
+      "Sewability Improvement",
+      "Tear Strength"
+    ],
+    "synonyms": [
+      "Polyethylene Emulsion for Textile",
+      "Industrial Polyethylene Emulsion",
+      "Textile Processing Polyethylene Emulsion"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving lubricating requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-085",
+    "num": 85,
+    "slug": "textile-wax-emulsion",
+    "name": "Textile Wax Emulsion",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Lubricating",
+    "applicableFibres": [
+      "Cotton",
+      "Wool",
+      "Yarns"
+    ],
+    "fabricApplications": [
+      "Yarn Waxing",
+      "Sewing Threads"
+    ],
+    "synonyms": [
+      "Textile Wax Emulsion for Textile",
+      "Industrial Textile Wax Emulsion",
+      "Textile Processing Textile Wax Emulsion"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving lubricating requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-086",
+    "num": 86,
+    "slug": "easy-care-resin",
+    "name": "Easy-Care Resin",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Easy-Care",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Linen"
+    ],
+    "fabricApplications": [
+      "Anti-Crease Shirting",
+      "Form Retention"
+    ],
+    "synonyms": [
+      "Easy-Care Resin for Textile",
+      "Industrial Easy-Care Resin",
+      "Textile Processing Easy-Care Resin"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving easy-care requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-087",
+    "num": 87,
+    "slug": "textile-crosslinker",
+    "name": "Textile Crosslinker",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Crosslinking",
+    "applicableFibres": [
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "DMDHEU Resin Baths"
+    ],
+    "synonyms": [
+      "Textile Crosslinker for Textile",
+      "Industrial Textile Crosslinker",
+      "Textile Processing Textile Crosslinker"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving crosslinking requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-088",
+    "num": 88,
+    "slug": "resin-catalyst",
+    "name": "Resin Catalyst",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Catalysis",
+    "applicableFibres": [
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Stenter Curing Activation"
+    ],
+    "synonyms": [
+      "Resin Catalyst for Textile",
+      "Industrial Resin Catalyst",
+      "Textile Processing Resin Catalyst"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving catalysis requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-089",
+    "num": 89,
+    "slug": "anti-pilling-agent",
+    "name": "Anti-Pilling Agent",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Pilling Prevention",
+    "applicableFibres": [
+      "Polyester",
+      "Cotton Blends",
+      "Wool"
+    ],
+    "fabricApplications": [
+      "Knitted Sweaters",
+      "Fleece"
+    ],
+    "synonyms": [
+      "Anti-Pilling Agent for Textile",
+      "Industrial Anti-Pilling Agent",
+      "Textile Processing Anti-Pilling Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving pilling prevention requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-090",
+    "num": 90,
+    "slug": "anti-snag-agent",
+    "name": "Anti-Snag Agent",
+    "category": "Softeners & Finishing",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Snag Prevention",
+    "applicableFibres": [
+      "Filament Synthetics"
+    ],
+    "fabricApplications": [
+      "Sportswear Knits"
+    ],
+    "synonyms": [
+      "Anti-Snag Agent for Textile",
+      "Industrial Anti-Snag Agent",
+      "Textile Processing Anti-Snag Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving snag prevention requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-091",
+    "num": 91,
+    "slug": "soil-release-finish",
+    "name": "Soil-Release Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Soil Release",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Workwear"
+    ],
+    "fabricApplications": [
+      "Industrial Uniforms",
+      "Tablecloths"
+    ],
+    "synonyms": [
+      "Soil-Release Finish for Textile",
+      "Industrial Soil-Release Finish",
+      "Textile Processing Soil-Release Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving soil release requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-092",
+    "num": 92,
+    "slug": "textile-water-repellent",
+    "name": "Textile Water Repellent",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Water Repellency",
+    "applicableFibres": [
+      "Polyester",
+      "Nylon",
+      "Cotton",
+      "Blends"
+    ],
+    "fabricApplications": [
+      "Outerwear",
+      "Rainwear",
+      "Umbrellas"
+    ],
+    "synonyms": [
+      "Textile Water Repellent for Textile",
+      "Industrial Textile Water Repellent",
+      "Textile Processing Textile Water Repellent"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving water repellency requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-093",
+    "num": 93,
+    "slug": "textile-oil-repellent",
+    "name": "Textile Oil Repellent",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Oil Repellency",
+    "applicableFibres": [
+      "Workwear",
+      "Synthetics"
+    ],
+    "fabricApplications": [
+      "Protective Uniforms"
+    ],
+    "synonyms": [
+      "Textile Oil Repellent for Textile",
+      "Industrial Textile Oil Repellent",
+      "Textile Processing Textile Oil Repellent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving oil repellency requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-094",
+    "num": 94,
+    "slug": "pfas-free-water-repellent-system",
+    "name": "PFAS-Free Water Repellent System",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Water Repellency",
+    "applicableFibres": [
+      "Polyester",
+      "Polyamide",
+      "Cotton"
+    ],
+    "fabricApplications": [
+      "Eco-Compliant Sportswear",
+      "Jackets"
+    ],
+    "synonyms": [
+      "PFAS-Free Water Repellent System for Textile",
+      "Industrial PFAS-Free Water Repellent System",
+      "Textile Processing PFAS-Free Water Repellent System"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving water repellency requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-095",
+    "num": 95,
+    "slug": "textile-antistatic-agent",
+    "name": "Textile Antistatic Agent",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Antistatic",
+    "applicableFibres": [
+      "Polyester",
+      "Nylon",
+      "Acrylic"
+    ],
+    "fabricApplications": [
+      "Cleanroom Apparel",
+      "Linings"
+    ],
+    "synonyms": [
+      "Textile Antistatic Agent for Textile",
+      "Industrial Textile Antistatic Agent",
+      "Textile Processing Textile Antistatic Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving antistatic requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-096",
+    "num": 96,
+    "slug": "hydrophilic-finish",
+    "name": "Hydrophilic Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Moisture Management",
+    "applicableFibres": [
+      "Polyester",
+      "Synthetic Blends"
+    ],
+    "fabricApplications": [
+      "Athletic Wear",
+      "Undergarments"
+    ],
+    "synonyms": [
+      "Hydrophilic Finish for Textile",
+      "Industrial Hydrophilic Finish",
+      "Textile Processing Hydrophilic Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving moisture management requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-097",
+    "num": 97,
+    "slug": "moisture-management-finish",
+    "name": "Moisture-Management Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Wicking",
+    "applicableFibres": [
+      "Polyester",
+      "Nylon",
+      "Knits"
+    ],
+    "fabricApplications": [
+      "Performance Sportswear"
+    ],
+    "synonyms": [
+      "Moisture-Management Finish for Textile",
+      "Industrial Moisture-Management Finish",
+      "Textile Processing Moisture-Management Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving wicking requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-098",
+    "num": 98,
+    "slug": "wicking-finish",
+    "name": "Wicking Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Wicking",
+    "applicableFibres": [
+      "Synthetic Knits"
+    ],
+    "fabricApplications": [
+      "Gym Wear",
+      "Running Apparel"
+    ],
+    "synonyms": [
+      "Wicking Finish for Textile",
+      "Industrial Wicking Finish",
+      "Textile Processing Wicking Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving wicking requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-099",
+    "num": 99,
+    "slug": "antimicrobial-textile-finish",
+    "name": "Antimicrobial Textile Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Antimicrobial",
+    "applicableFibres": [
+      "Cotton",
+      "Synthetics",
+      "Blends"
+    ],
+    "fabricApplications": [
+      "Hospital Linens",
+      "Socks",
+      "Underwear"
+    ],
+    "synonyms": [
+      "Antimicrobial Textile Finish for Textile",
+      "Industrial Antimicrobial Textile Finish",
+      "Textile Processing Antimicrobial Textile Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving antimicrobial requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-100",
+    "num": 100,
+    "slug": "anti-odour-finish",
+    "name": "Anti-Odour Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Odour Control",
+    "applicableFibres": [
+      "Synthetics",
+      "Cotton"
+    ],
+    "fabricApplications": [
+      "Sportswear",
+      "Workwear"
+    ],
+    "synonyms": [
+      "Anti-Odour Finish for Textile",
+      "Industrial Anti-Odour Finish",
+      "Textile Processing Anti-Odour Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving odour control requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-101",
+    "num": 101,
+    "slug": "uv-protective-finish",
+    "name": "UV-Protective Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "UV Protection",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "Sun-Protective Clothing",
+      "Canopies"
+    ],
+    "synonyms": [
+      "UV-Protective Finish for Textile",
+      "Industrial UV-Protective Finish",
+      "Textile Processing UV-Protective Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving uv protection requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-102",
+    "num": 102,
+    "slug": "flame-retardant-finish",
+    "name": "Flame-Retardant Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Flame Retardancy",
+    "applicableFibres": [
+      "Cotton",
+      "Polyester",
+      "Cellulosics"
+    ],
+    "fabricApplications": [
+      "Curtains",
+      "Contract Upholstery",
+      "Workwear"
+    ],
+    "synonyms": [
+      "Flame-Retardant Finish for Textile",
+      "Industrial Flame-Retardant Finish",
+      "Textile Processing Flame-Retardant Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving flame retardancy requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-103",
+    "num": 103,
+    "slug": "wrinkle-resistant-finish",
+    "name": "Wrinkle-Resistant Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Crease Resistance",
+    "applicableFibres": [
+      "Cotton",
+      "Linen"
+    ],
+    "fabricApplications": [
+      "Formal Shirting",
+      "Trousers"
+    ],
+    "synonyms": [
+      "Wrinkle-Resistant Finish for Textile",
+      "Industrial Wrinkle-Resistant Finish",
+      "Textile Processing Wrinkle-Resistant Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving crease resistance requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-104",
+    "num": 104,
+    "slug": "anti-yellowing-agent",
+    "name": "Anti-Yellowing Agent",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Yellowing Prevention",
+    "applicableFibres": [
+      "Polyamide",
+      "Elastane Blends"
+    ],
+    "fabricApplications": [
+      "White Swimwear",
+      "Moulded Bras"
+    ],
+    "synonyms": [
+      "Anti-Yellowing Agent for Textile",
+      "Industrial Anti-Yellowing Agent",
+      "Textile Processing Anti-Yellowing Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving yellowing prevention requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-105",
+    "num": 105,
+    "slug": "phenolic-yellowing-preventer",
+    "name": "Phenolic Yellowing Preventer",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Yellowing Prevention",
+    "applicableFibres": [
+      "Nylon",
+      "Elastane",
+      "Fine Whites"
+    ],
+    "fabricApplications": [
+      "Export Packaging Storage Protection"
+    ],
+    "synonyms": [
+      "Phenolic Yellowing Preventer for Textile",
+      "Industrial Phenolic Yellowing Preventer",
+      "Textile Processing Phenolic Yellowing Preventer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving yellowing prevention requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-106",
+    "num": 106,
+    "slug": "stain-repellent-finish",
+    "name": "Stain-Repellent Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Stain Resistance",
+    "applicableFibres": [
+      "Cotton Blends",
+      "Polyester"
+    ],
+    "fabricApplications": [
+      "School Uniforms",
+      "Casual Slacks"
+    ],
+    "synonyms": [
+      "Stain-Repellent Finish for Textile",
+      "Industrial Stain-Repellent Finish",
+      "Textile Processing Stain-Repellent Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving stain resistance requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-107",
+    "num": 107,
+    "slug": "abrasion-resistant-finish",
+    "name": "Abrasion-Resistant Finish",
+    "category": "Functional Finishes",
+    "processStages": [
+      "Finishing"
+    ],
+    "productFunction": "Abrasion Resistance",
+    "applicableFibres": [
+      "Cotton",
+      "Synthetic Blends"
+    ],
+    "fabricApplications": [
+      "Heavy Workwear",
+      "Backpack Fabric"
+    ],
+    "synonyms": [
+      "Abrasion-Resistant Finish for Textile",
+      "Industrial Abrasion-Resistant Finish",
+      "Textile Processing Abrasion-Resistant Finish"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving abrasion resistance requirements in textile finishing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-108",
+    "num": 108,
+    "slug": "neutral-cellulase-enzyme",
+    "name": "Neutral Cellulase Enzyme",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Enzymatic Abrasion",
+    "applicableFibres": [
+      "Cotton Denim"
+    ],
+    "fabricApplications": [
+      "Denim Laundry",
+      "Vintage Fading"
+    ],
+    "synonyms": [
+      "Neutral Cellulase Enzyme for Textile",
+      "Industrial Neutral Cellulase Enzyme",
+      "Textile Processing Neutral Cellulase Enzyme"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving enzymatic abrasion requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-109",
+    "num": 109,
+    "slug": "acid-cellulase-enzyme",
+    "name": "Acid Cellulase Enzyme",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Bio-Polishing",
+    "applicableFibres": [
+      "Cotton Knits",
+      "T-Shirts"
+    ],
+    "fabricApplications": [
+      "Hairiness Elimination",
+      "Soft Wash"
+    ],
+    "synonyms": [
+      "Acid Cellulase Enzyme for Textile",
+      "Industrial Acid Cellulase Enzyme",
+      "Textile Processing Acid Cellulase Enzyme"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving bio-polishing requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-110",
+    "num": 110,
+    "slug": "bio-polishing-enzyme",
+    "name": "Bio-Polishing Enzyme",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Bio-Polishing",
+    "applicableFibres": [
+      "Cotton",
+      "Viscose",
+      "Modal"
+    ],
+    "fabricApplications": [
+      "Pill-Resistant Knits"
+    ],
+    "synonyms": [
+      "Bio-Polishing Enzyme for Textile",
+      "Industrial Bio-Polishing Enzyme",
+      "Textile Processing Bio-Polishing Enzyme"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving bio-polishing requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-111",
+    "num": 111,
+    "slug": "garment-washing-detergent",
+    "name": "Garment Washing Detergent",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Scouring",
+    "applicableFibres": [
+      "Denim",
+      "Garments"
+    ],
+    "fabricApplications": [
+      "Industrial Laundry Wash"
+    ],
+    "synonyms": [
+      "Garment Washing Detergent for Textile",
+      "Industrial Garment Washing Detergent",
+      "Textile Processing Garment Washing Detergent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving scouring requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-112",
+    "num": 112,
+    "slug": "denim-washing-auxiliary",
+    "name": "Denim Washing Auxiliary",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Special Effects",
+    "applicableFibres": [
+      "Denim"
+    ],
+    "fabricApplications": [
+      "Stone-Free Washing"
+    ],
+    "synonyms": [
+      "Denim Washing Auxiliary for Textile",
+      "Industrial Denim Washing Auxiliary",
+      "Textile Processing Denim Washing Auxiliary"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving special effects requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-113",
+    "num": 113,
+    "slug": "indigo-stripping-system",
+    "name": "Indigo Stripping System",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Stripping",
+    "applicableFibres": [
+      "Denim"
+    ],
+    "fabricApplications": [
+      "Laser/Ozone Wash Fading"
+    ],
+    "synonyms": [
+      "Indigo Stripping System for Textile",
+      "Industrial Indigo Stripping System",
+      "Textile Processing Indigo Stripping System"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving stripping requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-114",
+    "num": 114,
+    "slug": "garment-softener",
+    "name": "Garment Softener",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Softening",
+    "applicableFibres": [
+      "Denim",
+      "Casual Garments"
+    ],
+    "fabricApplications": [
+      "Garment Tumble Finishing"
+    ],
+    "synonyms": [
+      "Garment Softener for Textile",
+      "Industrial Garment Softener",
+      "Textile Processing Garment Softener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving softening requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-115",
+    "num": 115,
+    "slug": "garment-finishing-resin",
+    "name": "Garment Finishing Resin",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "3D Effects",
+    "applicableFibres": [
+      "Denim"
+    ],
+    "fabricApplications": [
+      "3D Whisker & Crease Baking"
+    ],
+    "synonyms": [
+      "Garment Finishing Resin for Textile",
+      "Industrial Garment Finishing Resin",
+      "Textile Processing Garment Finishing Resin"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving 3d effects requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-116",
+    "num": 116,
+    "slug": "tinting-agent",
+    "name": "Tinting Agent",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Denim"
+    ],
+    "fabricApplications": [
+      "Dirty Wash & Vintage Tints"
+    ],
+    "synonyms": [
+      "Tinting Agent for Textile",
+      "Industrial Tinting Agent",
+      "Textile Processing Tinting Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-117",
+    "num": 117,
+    "slug": "enzyme-stabiliser",
+    "name": "Enzyme Stabiliser",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Enzyme Stabilization",
+    "applicableFibres": [
+      "Formulation Chemical"
+    ],
+    "fabricApplications": [
+      "Laundry Chemical Blending"
+    ],
+    "synonyms": [
+      "Enzyme Stabiliser for Textile",
+      "Industrial Enzyme Stabiliser",
+      "Textile Processing Enzyme Stabiliser"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving enzyme stabilization requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-118",
+    "num": 118,
+    "slug": "enzyme-inhibitor",
+    "name": "Enzyme Inhibitor",
+    "category": "Garment & Denim Chemicals",
+    "processStages": [
+      "Garment Washing"
+    ],
+    "productFunction": "Enzyme Deactivation",
+    "applicableFibres": [
+      "Cotton Denim"
+    ],
+    "fabricApplications": [
+      "Strength Loss Prevention"
+    ],
+    "synonyms": [
+      "Enzyme Inhibitor for Textile",
+      "Industrial Enzyme Inhibitor",
+      "Textile Processing Enzyme Inhibitor"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving enzyme deactivation requirements in textile garment washing operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-119",
+    "num": 119,
+    "slug": "pu-coating-resin",
+    "name": "PU Coating Resin",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Coating Polymer",
+    "applicableFibres": [
+      "Polyester",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Waterproof Breathable Jackets",
+      "Tents"
+    ],
+    "synonyms": [
+      "PU Coating Resin for Textile",
+      "Industrial PU Coating Resin",
+      "Textile Processing PU Coating Resin"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving coating polymer requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-120",
+    "num": 120,
+    "slug": "acrylic-coating-polymer",
+    "name": "Acrylic Coating Polymer",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Coating Polymer",
+    "applicableFibres": [
+      "Polyester",
+      "Cotton Blends"
+    ],
+    "fabricApplications": [
+      "Blackout Curtains",
+      "Awnings"
+    ],
+    "synonyms": [
+      "Acrylic Coating Polymer for Textile",
+      "Industrial Acrylic Coating Polymer",
+      "Textile Processing Acrylic Coating Polymer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coating polymer requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-121",
+    "num": 121,
+    "slug": "silicone-coating-system",
+    "name": "Silicone Coating System",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Coating Polymer",
+    "applicableFibres": [
+      "Glass Fibre",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Airbags",
+      "Architectural Membranes"
+    ],
+    "synonyms": [
+      "Silicone Coating System for Textile",
+      "Industrial Silicone Coating System",
+      "Textile Processing Silicone Coating System"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coating polymer requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-122",
+    "num": 122,
+    "slug": "coating-thickener",
+    "name": "Coating Thickener",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Thickening",
+    "applicableFibres": [
+      "Coating Compounds"
+    ],
+    "fabricApplications": [
+      "Knife-over-Roll Coating"
+    ],
+    "synonyms": [
+      "Coating Thickener for Textile",
+      "Industrial Coating Thickener",
+      "Textile Processing Coating Thickener"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving thickening requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-123",
+    "num": 123,
+    "slug": "coating-crosslinker",
+    "name": "Coating Crosslinker",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Crosslinking",
+    "applicableFibres": [
+      "Polymer Resins"
+    ],
+    "fabricApplications": [
+      "Coating Wash Durability"
+    ],
+    "synonyms": [
+      "Coating Crosslinker for Textile",
+      "Industrial Coating Crosslinker",
+      "Textile Processing Coating Crosslinker"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving crosslinking requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-124",
+    "num": 124,
+    "slug": "coating-catalyst",
+    "name": "Coating Catalyst",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Catalysis",
+    "applicableFibres": [
+      "Polymer Resins"
+    ],
+    "fabricApplications": [
+      "Thermal Curing Ovens"
+    ],
+    "synonyms": [
+      "Coating Catalyst for Textile",
+      "Industrial Coating Catalyst",
+      "Textile Processing Coating Catalyst"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving catalysis requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-125",
+    "num": 125,
+    "slug": "adhesion-promoter",
+    "name": "Adhesion Promoter",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Adhesion",
+    "applicableFibres": [
+      "High-Tenacity Polyester",
+      "Nylon"
+    ],
+    "fabricApplications": [
+      "Tarpaulins",
+      "Inflatables"
+    ],
+    "synonyms": [
+      "Adhesion Promoter for Textile",
+      "Industrial Adhesion Promoter",
+      "Textile Processing Adhesion Promoter"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving adhesion requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-126",
+    "num": 126,
+    "slug": "textile-lamination-adhesive",
+    "name": "Textile Lamination Adhesive",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Lamination"
+    ],
+    "productFunction": "Adhesion",
+    "applicableFibres": [
+      "Membranes",
+      "Fabrics"
+    ],
+    "fabricApplications": [
+      "3-Layer Softshell Laminates"
+    ],
+    "synonyms": [
+      "Textile Lamination Adhesive for Textile",
+      "Industrial Textile Lamination Adhesive",
+      "Textile Processing Textile Lamination Adhesive"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving adhesion requirements in textile lamination operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-127",
+    "num": 127,
+    "slug": "pu-lamination-adhesive",
+    "name": "PU Lamination Adhesive",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Lamination"
+    ],
+    "productFunction": "Adhesion",
+    "applicableFibres": [
+      "PTFE / TPU Membranes"
+    ],
+    "fabricApplications": [
+      "Medical & Outdoor Laminates"
+    ],
+    "synonyms": [
+      "PU Lamination Adhesive for Textile",
+      "Industrial PU Lamination Adhesive",
+      "Textile Processing PU Lamination Adhesive"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving adhesion requirements in textile lamination operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-128",
+    "num": 128,
+    "slug": "hot-melt-textile-adhesive",
+    "name": "Hot-Melt Textile Adhesive",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Lamination"
+    ],
+    "productFunction": "Adhesion",
+    "applicableFibres": [
+      "Apparel Interlinings"
+    ],
+    "fabricApplications": [
+      "Fusible Interlining Bonding"
+    ],
+    "synonyms": [
+      "Hot-Melt Textile Adhesive for Textile",
+      "Industrial Hot-Melt Textile Adhesive",
+      "Textile Processing Hot-Melt Textile Adhesive"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving adhesion requirements in textile lamination operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-129",
+    "num": 129,
+    "slug": "coating-defoamer",
+    "name": "Coating Defoamer",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Defoaming",
+    "applicableFibres": [
+      "Coating Compounds"
+    ],
+    "fabricApplications": [
+      "Pin-Hole Prevention"
+    ],
+    "synonyms": [
+      "Coating Defoamer for Textile",
+      "Industrial Coating Defoamer",
+      "Textile Processing Coating Defoamer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving defoaming requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-130",
+    "num": 130,
+    "slug": "textile-pigment-dispersion",
+    "name": "Textile Pigment Dispersion",
+    "category": "Coating & Technical Textiles",
+    "processStages": [
+      "Coating"
+    ],
+    "productFunction": "Coloration",
+    "applicableFibres": [
+      "Coating Polymers"
+    ],
+    "fabricApplications": [
+      "Pigmented Coating Pastes"
+    ],
+    "synonyms": [
+      "Textile Pigment Dispersion for Textile",
+      "Industrial Textile Pigment Dispersion",
+      "Textile Processing Textile Pigment Dispersion"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving coloration requirements in textile coating operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-131",
+    "num": 131,
+    "slug": "etp-coagulant",
+    "name": "ETP Coagulant",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "Coagulation",
+    "applicableFibres": [
+      "Textile Wastewater"
+    ],
+    "fabricApplications": [
+      "Mill ETP Primary Clarifiers"
+    ],
+    "synonyms": [
+      "ETP Coagulant for Textile",
+      "Industrial ETP Coagulant",
+      "Textile Processing ETP Coagulant"
+    ],
+    "status": "active",
+    "publicationStatus": "approved",
+    "shortDescription": "Commercial chemical auxiliary serving coagulation requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-132",
+    "num": 132,
+    "slug": "etp-flocculant",
+    "name": "ETP Flocculant",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "Flocculation",
+    "applicableFibres": [
+      "Textile Wastewater"
+    ],
+    "fabricApplications": [
+      "Secondary Clarifiers & Sludge Press"
+    ],
+    "synonyms": [
+      "ETP Flocculant for Textile",
+      "Industrial ETP Flocculant",
+      "Textile Processing ETP Flocculant"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving flocculation requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-133",
+    "num": 133,
+    "slug": "wastewater-decolourising-agent",
+    "name": "Wastewater Decolourising Agent",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "Decolourisation",
+    "applicableFibres": [
+      "Dyehouse Wastewater"
+    ],
+    "fabricApplications": [
+      "Reactive & Disperse Dye Removal"
+    ],
+    "synonyms": [
+      "Wastewater Decolourising Agent for Textile",
+      "Industrial Wastewater Decolourising Agent",
+      "Textile Processing Wastewater Decolourising Agent"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving decolourisation requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-134",
+    "num": 134,
+    "slug": "etp-defoamer",
+    "name": "ETP Defoamer",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "Defoaming",
+    "applicableFibres": [
+      "Aeration Tanks"
+    ],
+    "fabricApplications": [
+      "Biological Aeration Froth Suppression"
+    ],
+    "synonyms": [
+      "ETP Defoamer for Textile",
+      "Industrial ETP Defoamer",
+      "Textile Processing ETP Defoamer"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving defoaming requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-135",
+    "num": 135,
+    "slug": "ph-correction-chemical",
+    "name": "pH Correction Chemical",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "pH Neutralisation",
+    "applicableFibres": [
+      "Textile Wastewater"
+    ],
+    "fabricApplications": [
+      "Effluent Equalisation Tanks"
+    ],
+    "synonyms": [
+      "pH Correction Chemical for Textile",
+      "Industrial pH Correction Chemical",
+      "Textile Processing pH Correction Chemical"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving ph neutralisation requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-136",
+    "num": 136,
+    "slug": "sludge-conditioner",
+    "name": "Sludge Conditioner",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Effluent Treatment"
+    ],
+    "productFunction": "Dewatering",
+    "applicableFibres": [
+      "ETP Sludge"
+    ],
+    "fabricApplications": [
+      "Filter Press Dewatering"
+    ],
+    "synonyms": [
+      "Sludge Conditioner for Textile",
+      "Industrial Sludge Conditioner",
+      "Textile Processing Sludge Conditioner"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving dewatering requirements in textile effluent treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-137",
+    "num": 137,
+    "slug": "ro-antiscalant",
+    "name": "RO Antiscalant",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Water Treatment"
+    ],
+    "productFunction": "Antiscaling",
+    "applicableFibres": [
+      "Process Water"
+    ],
+    "fabricApplications": [
+      "ZLD Reverse Osmosis Plants"
+    ],
+    "synonyms": [
+      "RO Antiscalant for Textile",
+      "Industrial RO Antiscalant",
+      "Textile Processing RO Antiscalant"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving antiscaling requirements in textile water treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-138",
+    "num": 138,
+    "slug": "membrane-cleaning-chemical",
+    "name": "Membrane Cleaning Chemical",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Water Treatment"
+    ],
+    "productFunction": "Cleaning",
+    "applicableFibres": [
+      "RO Membranes"
+    ],
+    "fabricApplications": [
+      "Acid/Alkali CIP Cleaning Cycles"
+    ],
+    "synonyms": [
+      "Membrane Cleaning Chemical for Textile",
+      "Industrial Membrane Cleaning Chemical",
+      "Textile Processing Membrane Cleaning Chemical"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving cleaning requirements in textile water treatment operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-139",
+    "num": 139,
+    "slug": "boiler-water-treatment-chemical",
+    "name": "Boiler Water Treatment Chemical",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Utility Water"
+    ],
+    "productFunction": "Scale/Corrosion Inhibition",
+    "applicableFibres": [
+      "Steam Boilers"
+    ],
+    "fabricApplications": [
+      "Steam Generation in Dyehouses"
+    ],
+    "synonyms": [
+      "Boiler Water Treatment Chemical for Textile",
+      "Industrial Boiler Water Treatment Chemical",
+      "Textile Processing Boiler Water Treatment Chemical"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving scale/corrosion inhibition requirements in textile utility water operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  },
+  {
+    "id": "CHEM-TEX-140",
+    "num": 140,
+    "slug": "cooling-water-treatment-chemical",
+    "name": "Cooling Water Treatment Chemical",
+    "category": "Water & Effluent Treatment",
+    "processStages": [
+      "Utility Water"
+    ],
+    "productFunction": "Biocide / Scale Control",
+    "applicableFibres": [
+      "Cooling Towers"
+    ],
+    "fabricApplications": [
+      "Compressor and Chiller Circuits"
+    ],
+    "synonyms": [
+      "Cooling Water Treatment Chemical for Textile",
+      "Industrial Cooling Water Treatment Chemical",
+      "Textile Processing Cooling Water Treatment Chemical"
+    ],
+    "status": "review",
+    "publicationStatus": "draft",
+    "shortDescription": "Commercial chemical auxiliary serving biocide / scale control requirements in textile utility water operations.",
+    "isCandidate": true,
+    "commercialEnquiryUrl": "https://www.indiamart.com/om-saienterprise-surat/"
+  }
+]

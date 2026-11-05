@@ -3,31 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Om Sai Enterprise - Chemicals Specialist</title>
-  <meta name="description" content="Discover Om Sai Enterprise's chemical trading capabilities, sourcing standards, and industrial client support." />
+  <title>About Om Sai Enterprise | Textile &amp; Industrial Chemical Trading</title>
+  <meta name="description" content="Learn about Om Sai Enterprise, a chemical trading business focused on textile and industrial chemical sourcing and commercial B2B enquiries." />
   <link rel="canonical" href="https://mrrajyadav.github.io/My-Website/chemicals/about.html" />
-  <meta property="og:title" content="About Us | Om Sai Enterprise - Chemicals Specialist" />
-  <meta property="og:description" content="Learn about Om Sai Enterprise's chemical trading business, specialized sourcing of textile chemicals, and supply standards." />
+  <meta property="og:title" content="About Om Sai Enterprise | Textile &amp; Industrial Chemical Trading" />
+  <meta property="og:description" content="Learn about Om Sai Enterprise, a chemical trading business focused on textile and industrial chemical sourcing and commercial B2B enquiries." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mrrajyadav.github.io/My-Website/chemicals/about.html" />
   <meta property="og:image" content="https://mrrajyadav.github.io/My-Website/assets/logos/om-sai-enterprise.jpeg" />
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/chemicals.css" />
+  <link rel="stylesheet" href="../css/chemicals-about.css" />
   <link rel="stylesheet" href="../css/responsive.css" />
 </head>
-<body class="theme-chem">
+<body class="theme-chem page-chem-about">
 
+  <!-- ========================================================================
+       SECTION 1: HEADER / NAVIGATION
+       ======================================================================== -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo-item" title="Om Sai Enterprise">
+      <!-- Zone 1: Single Brand Logo Lockup -->
+      <a href="index.html" class="logo-item" title="Om Sai Enterprise - Chemicals Specialist">
         <div class="logo-container-dark">
           <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
+
+      <!-- Zone 2: Navigation Links -->
       <nav class="main-nav" aria-label="Chemicals Navigation">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About Us</a>
+        <a href="about.html" class="nav-link active" aria-current="page">About Us</a>
         <a href="products.html" class="nav-link">Products</a>
         <a href="textile-chemicals.html" class="nav-link">Textile Chemicals</a>
         <a href="industrial-chemicals.html" class="nav-link">Industrial Chemicals</a>
@@ -35,11 +44,20 @@
         <a href="contact.html" class="nav-link">Contact Us</a>
         <a href="../index.html" class="nav-link" style="color: var(--corporate-muted); font-size: 0.875rem;">&larr; Corporate Portal</a>
         <div class="mobile-cta-item">
-          <button type="button" class="btn btn-primary btn-block" onclick="openEnquiry('omSaiEnterprise', 'ABOUT-QUOTE', 'Quote Request', 'Chemicals')">Request a Quote</button>
+          <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-block">Enquire on IndiaMART</a>
         </div>
       </nav>
+
+      <!-- Zone 3: Single Primary Action -->
       <div class="header-actions">
-        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiry('omSaiEnterprise', 'ABOUT-QUOTE', 'Quote Request', 'Chemicals')">Request a Quote</button>
+        <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-sm">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Enquire on IndiaMART
+        </a>
         <button type="button" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -51,123 +69,598 @@
     </div>
   </header>
 
-  <section class="section section-subtle">
+  <!-- ========================================================================
+       SECTION 2: PROFESSIONAL ABOUT HERO
+       ======================================================================== -->
+  <section class="chem-about-hero">
     <div class="container">
-      <div class="hero-grid">
-        <div>
-          <span class="section-kicker">About Om Sai Enterprise</span>
-          <h1 style="color: var(--chem-primary); margin-bottom: 20px;">Dedicated Chemical Trading & Sourcing</h1>
-          <p style="font-size: 1.125rem; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px;">
-            Om Sai Enterprise operates as an industrial and textile chemical trading specialist. We facilitate the procurement, distribution, and reliable supply of specialty textile auxiliaries and industrial chemical commodities.
+      <div class="chem-about-hero-grid">
+        <div class="chem-about-hero-content">
+          <span class="chem-about-kicker">ABOUT OM SAI ENTERPRISE</span>
+          <h1 class="chem-about-hero-title">A Chemical Trading Partner for Textile &amp; Industrial Requirements</h1>
+          <p class="chem-about-hero-desc">
+            Om Sai Enterprise is focused on textile and industrial chemical trading, supporting business buyers with chemical sourcing and commercial trade enquiries across relevant processing and manufacturing applications.
           </p>
-          <div style="display: flex; gap: 16px;">
-            <a href="products.html" class="btn btn-primary">Browse Catalogue</a>
-            <a href="contact.html" class="btn btn-outline">Commercial Enquiry</a>
+          <p class="chem-about-hero-subtext">
+            Our business focus brings textile chemical requirements and industrial chemical sourcing together under one dedicated trading identity.
+          </p>
+          <div class="chem-about-hero-actions">
+            <a href="textile-chemicals.html" class="btn btn-primary btn-lg">Explore Textile Chemicals</a>
+            <a href="industrial-chemicals.html" class="btn btn-outline btn-lg">Explore Industrial Chemicals</a>
+            <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Enquire on IndiaMART
+            </a>
           </div>
         </div>
-        <div class="hero-media">
-          <img src="../assets/images/chemicals/facility.jpg" alt="Chemical Sourcing Operations" />
+
+        <div class="chem-about-hero-brand-card">
+          <div class="chem-about-hero-logo-wrap">
+            <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise - Chemicals Specialist Logo" class="chem-about-hero-logo" />
+          </div>
+          <div class="chem-about-hero-brand-footer">
+            <div>
+              <span class="chem-about-brand-tagline">Chemicals Specialist</span>
+              <span class="chem-about-brand-sub">Textile &amp; Industrial Chemical Trading</span>
+            </div>
+            <div class="chem-about-brand-badge">B2B Sourcing</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technical Competencies -->
-  <section class="section">
+  <!-- ========================================================================
+       SECTION 3: WHO WE ARE
+       ======================================================================== -->
+  <section class="chem-about-overview">
     <div class="container">
-      <div class="section-header">
-        <span class="section-kicker">Operational Standards</span>
-        <h2 class="section-title">Chemical Trading & Supply Standards</h2>
-        <p class="section-description">
-          Our trading activities adhere to disciplined chemical sourcing and documentation protocols.
+      <div class="chem-about-overview-grid">
+        <div class="chem-about-overview-text">
+          <div class="chem-about-section-header">
+            <span class="chem-about-kicker">WHO WE ARE</span>
+            <h2 class="chem-about-section-title">Understanding Om Sai Enterprise</h2>
+          </div>
+          <p>
+            Om Sai Enterprise operates in the textile and industrial chemical trading segment. The business focuses on chemical sourcing for commercial buyers involved in textile processing and industrial manufacturing.
+          </p>
+          <p>
+            Through a dedicated chemical trading focus, the business aims to make it easier for buyers to communicate their product requirements, understand relevant specifications and initiate commercial enquiries.
+          </p>
+        </div>
+
+        <div class="chem-about-info-panel">
+          <div class="chem-about-panel-header">
+            <div class="chem-about-panel-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="chem-about-panel-title">Business Focus</h3>
+          </div>
+          <ul class="chem-about-panel-list">
+            <li class="chem-about-panel-item">
+              <span class="chem-about-panel-check" aria-hidden="true">&#10003;</span>
+              <span>Textile Chemical Trading</span>
+            </li>
+            <li class="chem-about-panel-item">
+              <span class="chem-about-panel-check" aria-hidden="true">&#10003;</span>
+              <span>Industrial Chemical Trading</span>
+            </li>
+            <li class="chem-about-panel-item">
+              <span class="chem-about-panel-check" aria-hidden="true">&#10003;</span>
+              <span>B2B Commercial Enquiries</span>
+            </li>
+            <li class="chem-about-panel-item">
+              <span class="chem-about-panel-check" aria-hidden="true">&#10003;</span>
+              <span>Chemical Product Sourcing</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: OUR BUSINESS FOCUS
+       ======================================================================== -->
+  <section class="chem-about-focus">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <span class="chem-about-kicker">OUR BUSINESS FOCUS</span>
+        <h2 class="chem-about-section-title">Two Focused Chemical Trading Categories</h2>
+        <p style="font-size: 1.05rem; color: #55687D; line-height: 1.65;">
+          Our trading focus covers chemical requirements across textile processing and industrial applications.
         </p>
       </div>
 
-      <div class="values-grid">
-        <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Source Reliability</h3>
-          <p class="value-desc">Procuring raw materials and specialized chemical auxiliaries from reputable industrial chemical producers.</p>
+      <div class="chem-about-focus-grid">
+        <!-- Card 1: Textile Chemicals -->
+        <article class="chem-about-focus-card">
+          <div class="chem-about-focus-media">
+            <img src="../assets/images/chemicals/textile.jpg" alt="Textile wet processing and dyeing chemical applications" class="chem-about-focus-img" loading="lazy" />
+            <span class="chem-about-focus-badge">Textile Chemistry</span>
+          </div>
+          <div class="chem-about-focus-body">
+            <h3 class="chem-about-focus-title">Textile Chemicals</h3>
+            <p class="chem-about-focus-desc">
+              Chemical sourcing categories for textile wet processing, dyeing, printing and fabric finishing requirements.
+            </p>
+            <div class="chem-about-product-groups">
+              <span class="chem-about-group-label">Representative Categories (Verification Required):</span>
+              <div class="chem-about-pill-cluster">
+                <span class="chem-about-pill">Pre-Treatment Auxiliaries</span>
+                <span class="chem-about-pill">Wetting Agents</span>
+                <span class="chem-about-pill">Scouring Agents</span>
+                <span class="chem-about-pill">Dye Fixing Agents</span>
+                <span class="chem-about-pill">Optical Brighteners</span>
+                <span class="chem-about-pill">Fabric Softeners</span>
+                <span class="chem-about-pill">Finishing Auxiliaries</span>
+              </div>
+            </div>
+            <div>
+              <a href="textile-chemicals.html" class="btn btn-primary btn-block">Explore Textile Chemicals &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Industrial Chemicals -->
+        <article class="chem-about-focus-card">
+          <div class="chem-about-focus-media">
+            <img src="../assets/images/chemicals/facility.jpg" alt="Industrial chemical storage and processing supply" class="chem-about-focus-img" loading="lazy" />
+            <span class="chem-about-focus-badge">Industrial Chemistry</span>
+          </div>
+          <div class="chem-about-focus-body">
+            <h3 class="chem-about-focus-title">Industrial Chemicals</h3>
+            <p class="chem-about-focus-desc">
+              Chemical sourcing categories for industrial processing, manufacturing and relevant process applications.
+            </p>
+            <div class="chem-about-product-groups">
+              <span class="chem-about-group-label">Representative Categories (Verification Required):</span>
+              <div class="chem-about-pill-cluster">
+                <span class="chem-about-pill">Caustic Soda</span>
+                <span class="chem-about-pill">Acetic Acid</span>
+                <span class="chem-about-pill">Hydrogen Peroxide</span>
+                <span class="chem-about-pill">Defoamers</span>
+                <span class="chem-about-pill">Industrial Process Additives</span>
+              </div>
+            </div>
+            <div>
+              <a href="industrial-chemicals.html" class="btn btn-primary btn-block">Explore Industrial Chemicals &rarr;</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: HOW WE APPROACH A CHEMICAL ENQUIRY
+       ======================================================================== -->
+  <section class="chem-about-process">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <span class="chem-about-kicker">OUR TRADE APPROACH</span>
+        <h2 class="chem-about-section-title">A Clear Approach to Commercial Chemical Enquiries</h2>
+        <p style="font-size: 1.05rem; color: #55687D; line-height: 1.65;">
+          A structured trade enquiry sequence to ensure transparent product specification review and commercial discussion.
+        </p>
+      </div>
+
+      <div class="chem-about-process-grid">
+        <!-- Step 1 -->
+        <div class="chem-about-process-step">
+          <div class="chem-about-step-top">
+            <span class="chem-about-step-num">STEP 01</span>
+            <div class="chem-about-step-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+          <h3 class="chem-about-step-title">Understand the Requirement</h3>
+          <p class="chem-about-step-desc">
+            Understand the buyer's required chemical, application, quantity and intended use.
+          </p>
         </div>
-        <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Technical Documentation</h3>
-          <p class="value-desc">Facilitating manufacturer Technical Data Sheets (TDS) and Safety Data Sheets (SDS) upon verified trade enquiry.</p>
+
+        <!-- Step 2 -->
+        <div class="chem-about-process-step">
+          <div class="chem-about-step-top">
+            <span class="chem-about-step-num">STEP 02</span>
+            <div class="chem-about-step-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+          </div>
+          <h3 class="chem-about-step-title">Review Product Specifications</h3>
+          <p class="chem-about-step-desc">
+            Identify the relevant grade, concentration and technical requirements based on the buyer's enquiry.
+          </p>
         </div>
-        <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Application Matching</h3>
-          <p class="value-desc">Helping textile processors and industrial manufacturing clients identify the appropriate chemical grades for their processes.</p>
+
+        <!-- Step 3 -->
+        <div class="chem-about-process-step">
+          <div class="chem-about-step-top">
+            <span class="chem-about-step-num">STEP 03</span>
+            <div class="chem-about-step-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+          </div>
+          <h3 class="chem-about-step-title">Confirm Available Information</h3>
+          <p class="chem-about-step-desc">
+            Confirm the applicable product details, availability and supporting manufacturer documentation where available.
+          </p>
         </div>
-        <div class="value-card">
-          <h3 class="value-title" style="color: var(--chem-primary);">Secure Logistics</h3>
-          <p class="value-desc">Careful coordination of standard carboy, drum, and bulk container handling for industrial deliveries.</p>
+
+        <!-- Step 4 -->
+        <div class="chem-about-process-step">
+          <div class="chem-about-step-top">
+            <span class="chem-about-step-num">STEP 04</span>
+            <div class="chem-about-step-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+          </div>
+          <h3 class="chem-about-step-title">Commercial Discussion</h3>
+          <p class="chem-about-step-desc">
+            Discuss quotation, packaging, order quantity and applicable commercial terms.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Enquiry Modal -->
-  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div>
-          <h3 class="modal-title" id="modalTitle">Om Sai Enterprise - Chemical Enquiry</h3>
-          <div style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 4px;" id="modalDivisionLabel">Om Sai Enterprise (Chemicals)</div>
-        </div>
-        <button type="button" class="modal-close" onclick="closeEnquiry()" aria-label="Close modal">&times;</button>
+  <!-- ========================================================================
+       SECTION 6: BUSINESS PRINCIPLES
+       ======================================================================== -->
+  <section class="chem-about-principles">
+    <div class="container">
+      <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+        <span class="chem-about-kicker">OUR APPROACH</span>
+        <h2 class="chem-about-section-title">What Matters in Chemical Trading</h2>
+        <p style="font-size: 1.05rem; color: #55687D; line-height: 1.65;">
+          Practical, transparent principles that guide our communication and commercial trade engagements.
+        </p>
       </div>
-      <div class="modal-body">
-        <div id="modalAlertBox" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
-        <div class="modal-product-summary">
-          <strong style="display: block; margin-bottom: 4px; color: var(--text-main);">Selected Subject / Item:</strong>
-          <span id="modalProductLabel" style="color: var(--chem-primary); font-weight: 600;">Chemical Sourcing Inquiry</span>
-          <input type="hidden" id="enquiryProductId" value="" />
+
+      <div class="chem-about-principles-grid">
+        <!-- Principle 1 -->
+        <div class="chem-about-principle-card">
+          <div class="chem-about-principle-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <h3 class="chem-about-principle-title">Clear Product Information</h3>
+          <p class="chem-about-principle-desc">
+            Help buyers communicate product names, grades, applications and required specifications clearly.
+          </p>
         </div>
-        <form id="enquiryForm" onsubmit="event.preventDefault();">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="enquiryName">Full Name *</label>
-              <input type="text" id="enquiryName" class="form-control" placeholder="Contact person name" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="enquiryCompany">Company Name *</label>
-              <input type="text" id="enquiryCompany" class="form-control" placeholder="Company or mill name" required />
-            </div>
+
+        <!-- Principle 2 -->
+        <div class="chem-about-principle-card">
+          <div class="chem-about-principle-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            </svg>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="enquiryPhone">Phone / WhatsApp *</label>
-              <input type="tel" id="enquiryPhone" class="form-control" placeholder="Contact phone number" required />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="enquiryEmail">Email (Optional)</label>
-              <input type="email" id="enquiryEmail" class="form-control" placeholder="email@company.com" />
-            </div>
+          <h3 class="chem-about-principle-title">Requirement-Based Enquiries</h3>
+          <p class="chem-about-principle-desc">
+            Understand the buyer's actual application, quantity and packaging requirements before commercial discussions.
+          </p>
+        </div>
+
+        <!-- Principle 3 -->
+        <div class="chem-about-principle-card">
+          <div class="chem-about-principle-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
           </div>
-          <div class="form-group">
-            <label class="form-label" for="enquiryMessage">Message / Requirement Details</label>
-            <textarea id="enquiryMessage" class="form-control" rows="3" placeholder="Please specify your requirement..."></textarea>
+          <h3 class="chem-about-principle-title">Documentation Awareness</h3>
+          <p class="chem-about-principle-desc">
+            Recognise the importance of manufacturer TDS, SDS and applicable technical information when available.
+          </p>
+        </div>
+
+        <!-- Principle 4 -->
+        <div class="chem-about-principle-card">
+          <div class="chem-about-principle-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
           </div>
-          <div class="enquiry-action-cluster">
-            <button type="button" class="btn btn-secondary btn-block" onclick="sendWhatsAppEnquiry()">WhatsApp</button>
-            <button type="button" class="btn btn-outline btn-block" onclick="sendEmailEnquiry()">Email RFQ</button>
-          </div>
-        </form>
+          <h3 class="chem-about-principle-title">Commercial Transparency</h3>
+          <p class="chem-about-principle-desc">
+            Keep product specifications, availability, packaging and pricing discussions clear during the enquiry process.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer class="site-footer">
+  <!-- ========================================================================
+       SECTION 7: TEXTILE & INDUSTRIAL APPLICATION FOCUS
+       ======================================================================== -->
+  <section class="chem-about-applications">
     <div class="container">
-      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+      <div style="text-align: center; max-width: 740px; margin: 0 auto;">
+        <span class="chem-about-kicker">APPLICATION DOMAINS</span>
+        <h2 class="chem-about-section-title">Chemical Requirements Across Industrial Applications</h2>
+        <p style="font-size: 1.05rem; color: #55687D; line-height: 1.65;">
+          Identifying chemical sourcing needs across dedicated textile processing stages and manufacturing operations.
+        </p>
+      </div>
+
+      <div class="chem-about-app-grid">
+        <!-- Area 1: Textile Processing -->
+        <div class="chem-about-app-card">
+          <span class="chem-about-app-badge badge-textile-app">Textile Processing</span>
+          <h3 class="chem-about-app-title">Wet Processing &amp; Fabric Finishing</h3>
+          <p class="chem-about-app-desc">
+            Sourcing chemical auxiliaries supporting various wet processing steps in textile mills:
+          </p>
+          <ul class="chem-about-app-list">
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-blue" aria-hidden="true"></span>
+              <span><strong>Pre-treatment:</strong> Desizing, scouring, and wetting auxiliaries</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-blue" aria-hidden="true"></span>
+              <span><strong>Dyeing:</strong> Leveling agents and reactive dye fixing formulations</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-blue" aria-hidden="true"></span>
+              <span><strong>Printing:</strong> Synthetic thickeners and binder emulsions</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-blue" aria-hidden="true"></span>
+              <span><strong>Washing:</strong> Garment wash chemicals and biopolishing aids</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-blue" aria-hidden="true"></span>
+              <span><strong>Finishing:</strong> Cationic and non-ionic fabric softening formulations</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Area 2: Industrial Processing -->
+        <div class="chem-about-app-card">
+          <span class="chem-about-app-badge badge-industrial-app">Industrial Processing</span>
+          <h3 class="chem-about-app-title">Industrial Chemical Supply</h3>
+          <p class="chem-about-app-desc">
+            Sourcing bulk inorganics and functional process reagents for industrial operations:
+          </p>
+          <ul class="chem-about-app-list">
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-green" aria-hidden="true"></span>
+              <span><strong>Manufacturing Processes:</strong> Chemical intermediates and batch raw materials</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-green" aria-hidden="true"></span>
+              <span><strong>Industrial Cleaning:</strong> Alkaline and acid-based process cleaners</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-green" aria-hidden="true"></span>
+              <span><strong>Water Treatment:</strong> Coagulants, flocculants, and scale inhibitors</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-green" aria-hidden="true"></span>
+              <span><strong>Effluent Treatment (ETP):</strong> pH neutralizers and industrial defoamers</span>
+            </li>
+            <li class="chem-about-app-item">
+              <span class="chem-about-app-dot dot-green" aria-hidden="true"></span>
+              <span><strong>Process Operations:</strong> Acetic Acid, Caustic Soda, and Hydrogen Peroxide</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 8: DOCUMENTATION & PRODUCT INFORMATION
+       ======================================================================== -->
+  <section class="chem-about-documentation">
+    <div class="container">
+      <div class="chem-about-doc-box">
+        <div class="chem-about-section-header">
+          <span class="chem-about-kicker">TECHNICAL COMPLIANCE</span>
+          <h2 class="chem-about-section-title">Product Information &amp; Technical Documentation</h2>
+        </div>
+        <p class="chem-about-doc-intro">
+          Industrial chemical procurement requires clear product specifications and safe handling information. Technical documents such as Technical Data Sheets (TDS), Safety Data Sheets (SDS) and applicable manufacturer specifications can help buyers review relevant product information.
+        </p>
+
+        <div class="chem-about-doc-grid">
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Technical Data Sheets (TDS)</h3>
+            <p class="chem-about-doc-desc">Manufacturer physical properties, ionic nature, pH range, and general application instructions.</p>
+          </div>
+
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Safety Data Sheets (SDS)</h3>
+            <p class="chem-about-doc-desc">Manufacturer hazard classifications, handling guidelines, storage safety, and spill precautions.</p>
+          </div>
+
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Grade &amp; Concentration</h3>
+            <p class="chem-about-doc-desc">Clarification of technical, commercial, or process concentrations as stated by producers.</p>
+          </div>
+
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Packaging Information</h3>
+            <p class="chem-about-doc-desc">Standard industrial container configurations (carboys, drums, intermediate bulk containers).</p>
+          </div>
+
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Manufacturer Specifications</h3>
+            <p class="chem-about-doc-desc">Primary producer technical specifications and Certificate of Analysis (COA) where provided.</p>
+          </div>
+
+          <div class="chem-about-doc-item">
+            <div class="chem-about-doc-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="chem-about-doc-name">Commercial Availability</h3>
+            <p class="chem-about-doc-desc">Stock status, dispatch turnaround, and applicable minimum order quantities (MOQs).</p>
+          </div>
+        </div>
+
+        <div class="chem-about-doc-note">
+          <strong>Important Sourcing Distinction:</strong> Om Sai Enterprise operates strictly as an independent chemical trading and sourcing partner. We facilitate manufacturer-issued documentation (TDS, SDS, COA) provided by primary chemical producers upon trade enquiry. Om Sai Enterprise does not operate an in-house laboratory, nor do we issue independent laboratory test reports.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 9: BUSINESS ENQUIRY CTA
+       ======================================================================== -->
+  <section class="chem-about-enquiry">
+    <div class="container">
+      <div class="chem-about-enquiry-inner">
+        <h2 class="chem-about-enquiry-title">Looking for a Chemical Sourcing Partner?</h2>
+        <p class="chem-about-enquiry-desc">
+          Share your textile or industrial chemical requirement and initiate a commercial discussion with Om Sai Enterprise.
+        </p>
+        <div class="chem-about-enquiry-actions">
+          <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Enquire on IndiaMART
+          </a>
+          <a href="products.html" class="btn btn-enquiry-white btn-lg">
+            Explore Our Products &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 10: PROFESSIONAL FOOTER
+       ======================================================================== -->
+  <footer class="chem-about-footer">
+    <div class="container">
+      <div class="chem-about-footer-grid">
+        <!-- Brand Column -->
+        <div>
+          <div class="logo-container-dark" style="height: 44px; display: inline-flex; margin-bottom: 16px;">
+            <img src="../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" style="max-height: 34px;" />
+          </div>
+          <p class="chem-about-footer-brand-desc">
+            Om Sai Enterprise operates as a specialized textile and industrial chemical trading company, connecting manufacturing units with reliable chemical sourcing.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="chem-about-footer-col-title">Chemicals Division</h4>
+          <ul class="chem-about-footer-links">
+            <li><a href="index.html" class="chem-about-footer-link">Home</a></li>
+            <li><a href="about.html" class="chem-about-footer-link">About Us</a></li>
+            <li><a href="products.html" class="chem-about-footer-link">Products Catalogue</a></li>
+            <li><a href="textile-chemicals.html" class="chem-about-footer-link">Textile Chemicals</a></li>
+            <li><a href="industrial-chemicals.html" class="chem-about-footer-link">Industrial Chemicals</a></li>
+            <li><a href="contact.html" class="chem-about-footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Corporate Portal Links -->
+        <div>
+          <h4 class="chem-about-footer-col-title">Corporate Portal</h4>
+          <ul class="chem-about-footer-links">
+            <li><a href="../index.html" class="chem-about-footer-link">Corporate Portal</a></li>
+            <li><a href="../fmcg/index.html" class="chem-about-footer-link">Baburam Trading (FMCG)</a></li>
+            <li><a href="../privacy-policy.html" class="chem-about-footer-link">Privacy Policy</a></li>
+            <li><a href="../terms.html" class="chem-about-footer-link">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Verified B2B Trade Profile -->
+        <div>
+          <h4 class="chem-about-footer-col-title">Verified Business Profile</h4>
+          <p style="font-size: 0.875rem; line-height: 1.6; color: #8C9FB5; margin-bottom: 14px;">
+            Visit the Om Sai Enterprise IndiaMART business profile for commercial information and enquiries.
+          </p>
+          <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            IndiaMART Profile
+          </a>
+        </div>
+      </div>
+
+      <div class="chem-about-footer-bottom">
         <div>&copy; 2026 Om Sai Enterprise. Chemicals Specialist Division. All rights reserved.</div>
-        <div class="footer-legal-links">
-          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
-          <a href="../terms.html" class="footer-link">Terms</a>
+        <div class="chem-about-footer-legal-links">
+          <a href="../privacy-policy.html" class="chem-about-footer-link">Privacy Policy</a>
+          <a href="../terms.html" class="chem-about-footer-link">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="../js/main.js"></script>
-  <script src="../js/enquiry.js"></script>
 </body>
 </html>

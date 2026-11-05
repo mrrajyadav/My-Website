@@ -1,0 +1,2528 @@
+# MASTER IMPLEMENTATION PROMPT
+# OM SAI ENTERPRISE — COMPLETE TEXTILE CHEMICALS WEBSITE, PRODUCT CATALOGUE & SEO ARCHITECTURE
+
+## ROLE
+
+Act as a Senior Textile Chemical Industry Researcher, Textile Processing Specialist, B2B Website Architect, Senior UI/UX Designer, Technical SEO Specialist and Senior Vanilla JavaScript Developer.
+
+Your responsibility is to research, plan, design and implement a comprehensive Textile Chemicals section for:
+
+**Om Sai Enterprise — Chemicals Specialist**
+
+This is a real B2B chemical trading business website. The objective is to help textile mills, processing houses, dyeing units, printing units, garment manufacturers and industrial buyers discover relevant chemicals, understand their applications and submit commercial enquiries.
+
+Do not create a generic chemical catalogue.
+
+Build a technically informative, commercially useful, search-engine-friendly textile chemicals platform.
+
+The work must include:
+
+1. Complete textile chemical category architecture.
+2. Processing-stage classification.
+3. Detailed product information.
+4. Individual product detail pages.
+5. Searchable product catalogue.
+6. Category and application filters.
+7. Unique SEO for every published product page.
+8. Structured data where appropriate.
+9. Internal linking architecture.
+10. Responsive design.
+11. Static page generation compatible with the existing project.
+12. Technical and functional testing.
+
+Do not stop after producing a plan. Implement the actual changes in the repository.
+
+---
+
+# PART 1 — PROJECT AND BUSINESS CONTEXT
+
+## 1.1 Existing Repository
+
+GitHub repository:
+
+https://github.com/mrrajyadav/My-Website
+
+Business:
+
+**Om Sai Enterprise**
+
+Business positioning:
+
+**Textile & Industrial Chemical Trading**
+
+Website technology:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- JSON
+- Vite
+- Static website architecture
+
+Existing website sections:
+
+- Corporate Portal
+- Baburam Trading — FMCG Distribution
+- Om Sai Enterprise — Chemicals Specialist
+
+This task is exclusively for the Om Sai Enterprise Textile Chemicals section.
+
+Do not modify:
+- FMCG pages.
+- Corporate Portal homepage.
+- Unrelated business pages.
+- Shared functionality unnecessarily.
+
+## 1.2 Existing Important Files
+
+First inspect the latest version of these files:
+
+### Textile Chemicals
+- `chemicals/textile-chemicals.html`
+
+### Other Chemicals Pages
+- `chemicals/index.html`
+- `chemicals/about.html`
+- `chemicals/products.html`
+- `chemicals/industrial-chemicals.html`
+- `chemicals/product-details.html`
+- `chemicals/contact.html`
+
+### CSS
+- `css/style.css`
+- `css/chemicals.css`
+- `css/chemicals-home.css`
+- `css/responsive.css`
+
+### JavaScript
+- `js/main.js`
+- `js/products.js`
+- `js/enquiry.js`
+- `js/chemicals.js`
+
+### Data
+- `data/chemical-products.json`
+- `data/company-config.json`
+
+### Build
+- `package.json`
+- `vite.config.js`, if present.
+- `scripts/copy-static.mjs`, if present.
+- `scripts/clean.mjs`, if present.
+
+Do not assume the existing files are unchanged. Inspect the latest pushed code before making any changes.
+
+Understand the existing website design system, navigation, product catalogue engine, enquiry handling, assets, relative paths and Vite build process.
+
+## 1.3 Current Business Data Conditions
+
+Current known configuration:
+
+`data/company-config.json`
+
+Om Sai Enterprise currently has:
+
+- `isConfigured: false`
+- WhatsApp number: empty
+- Official email: empty
+- Phone: empty
+- Address: empty
+
+Current chemical catalogue:
+
+`data/chemical-products.json`
+
+Currently:
+
+```json
+[]
+```
+
+Business profile:
+
+https://www.indiamart.com/om-saienterprise-surat/
+
+Use this IndiaMART profile as the external commercial enquiry destination until verified official WhatsApp/email details are available.
+
+Do not invent business contact information.
+
+Do not assume all textile chemical categories mentioned in this task are products sold by Om Sai Enterprise.
+
+This distinction is mandatory.
+
+---
+
+# PART 2 — RESEARCH AND TECHNICAL ACCURACY
+
+Before implementation, research textile chemical categories and applications.
+
+Use reliable sources such as:
+
+- Textile processing textbooks and educational institutions.
+- INFLIBNET.
+- Government textile-processing publications.
+- Recognised textile chemical manufacturers.
+- Manufacturer technical documents.
+- GOTS official documentation.
+- ZDHC official documentation.
+- OEKO-TEX official documentation.
+- Relevant textile industry technical publications.
+
+Use manufacturer websites as technical references, not as proof that Om Sai Enterprise is authorised to distribute their products.
+
+Verify chemical roles and distinguish between:
+
+1. Chemical products.
+2. Textile dyes and colourants.
+3. Processing auxiliaries.
+4. Formulation ingredients.
+5. Industrial utility chemicals.
+6. Wastewater treatment chemicals.
+7. Functional finishing chemicals.
+
+Do not classify every textile-related substance as a textile auxiliary.
+
+Dyes and pigments must be treated as a separate product family from processing auxiliaries.
+
+Do not present generic product information as actual Om Sai Enterprise product specifications.
+
+For important technical claims, keep a source-reference record in the project's internal research/documentation files.
+
+---
+
+# PART 3 — COMPLETE TEXTILE CHEMICAL CATEGORY TAXONOMY
+
+Create a comprehensive product and category architecture covering the following areas.
+
+The categories below represent the broader textile chemical market and potential website information architecture.
+
+They are not an assertion of current Om Sai Enterprise inventory.
+
+## CATEGORY A — Fibre, Yarn, Spinning and Sizing Chemicals
+
+Include:
+
+1. Spinning lubricants.
+2. Fibre spin finishes.
+3. Antistatic agents for fibres.
+4. Yarn lubricants.
+5. Knitting oils.
+6. Warping lubricants.
+7. Sizing agents.
+8. Starch-based sizing systems.
+9. PVA sizing agents.
+10. Acrylic sizing polymers.
+11. CMC-based sizing agents.
+12. Sizing additives.
+13. Size binders.
+14. Wax emulsions.
+15. Desizing chemicals.
+16. Enzymatic desizing products.
+
+Explain:
+
+- What the product does.
+- Which fibre/yarn processes use it.
+- Why it is necessary.
+- Its position in textile manufacturing.
+- How a buyer evaluates it.
+
+## CATEGORY B — Textile Pretreatment Chemicals
+
+Include:
+
+1. Textile wetting agents.
+2. Penetrating agents.
+3. Scouring agents.
+4. Textile detergents.
+5. Degreasing agents.
+6. Emulsifying agents.
+7. Desizing agents.
+8. Amylase desizing enzymes.
+9. Pectinase enzymes.
+10. Chelating agents.
+11. Sequestering agents.
+12. Dispersing agents.
+13. Protective colloids.
+14. Anti-creasing agents.
+15. Anti-rope-mark agents.
+16. Oil and stain removers.
+17. Mercerising auxiliaries.
+18. Alkali neutralisers.
+19. Acid neutralisers.
+20. Pretreatment stabilisers.
+21. Processing defoamers.
+22. Washing auxiliaries.
+
+For each category, explain its function in the pretreatment process and why fabric preparation is important before dyeing or printing.
+
+## CATEGORY C — Textile Bleaching Chemicals
+
+Include:
+
+1. Hydrogen peroxide.
+2. Peroxide stabilisers.
+3. Bleaching wetting agents.
+4. Bleaching detergents.
+5. Bleaching auxiliaries.
+6. Bleach activators.
+7. Sodium silicate-based stabilising systems.
+8. Non-silicate peroxide stabilisers.
+9. Peroxide killers.
+10. Catalase enzymes.
+11. Sodium chlorite-based systems.
+12. Reducing bleaching systems.
+13. Bleaching neutralising agents.
+14. Bleaching process defoamers.
+
+Explain:
+
+- What bleaching does.
+- Why whiteness preparation is required.
+- Which systems are used for suitable fibre types.
+- Why peroxide stabilisation matters.
+- Why residual peroxide removal is important.
+- How the selection depends on fibre and equipment.
+
+Do not supply generic dosage or temperature recommendations.
+
+## CATEGORY D — Textile Dyeing Auxiliaries
+
+Include:
+
+1. Dyeing wetting agents.
+2. Leveling agents.
+3. Dispersing agents.
+4. Sequestering agents.
+5. Chelating agents.
+6. Acid buffers.
+7. Alkaline buffers.
+8. Acid donors.
+9. Alkali donors.
+10. Dye carriers.
+11. Dye solubilising agents.
+12. Dyeing lubricants.
+13. Anti-creasing agents.
+14. Anti-migration agents.
+15. Deaerators.
+16. Defoamers.
+17. Dye fixing agents.
+18. Dyeing process regulators.
+19. Electrolytes used in suitable dyeing systems.
+20. Reduction clearing chemicals.
+21. Polyester oligomer removers.
+22. Dyeing machine cleaning chemicals.
+23. Anti-frosting auxiliaries.
+
+Explain the difference between:
+
+- Reactive dyeing auxiliaries.
+- Disperse dyeing auxiliaries.
+- Acid dyeing auxiliaries.
+- Direct dyeing auxiliaries.
+- Vat dyeing auxiliaries.
+- Sulphur dyeing auxiliaries.
+
+Do not imply that all auxiliaries work with every dye class.
+
+## CATEGORY E — Textile Dyes and Colourants
+
+This is a separate classification from textile auxiliaries.
+
+Include:
+
+1. Reactive dyes.
+2. Disperse dyes.
+3. Direct dyes.
+4. Acid dyes.
+5. Basic/cationic dyes.
+6. Vat dyes.
+7. Sulphur dyes.
+8. Pigment colourants.
+9. Solubilised vat dye systems.
+10. Specialty textile colourants.
+
+Explain the difference between a dye and an auxiliary.
+
+Do not assume any particular dye brand, shade range, fastness grade or availability.
+
+## CATEGORY F — Textile Printing Chemicals
+
+Include:
+
+1. Sodium alginate thickeners.
+2. Guar gum thickeners.
+3. CMC thickeners.
+4. Synthetic/acrylic thickeners.
+5. Emulsion thickeners.
+6. Pigment printing binders.
+7. Acrylic binders.
+8. PU binders.
+9. Crosslinking agents.
+10. Catalysts.
+11. Emulsifiers.
+12. Wetting agents.
+13. Humectants.
+14. Urea and suitable substitutes.
+15. Anti-migration agents.
+16. Defoamers.
+17. Print modifiers.
+18. Discharge printing auxiliaries.
+19. Resist printing chemicals.
+20. Foil printing adhesives.
+21. Flock adhesives.
+22. Specialty effect binders.
+
+Explain:
+
+- Reactive printing.
+- Pigment printing.
+- Discharge printing.
+- Resist printing.
+- Specialty printing.
+
+Explain the purpose of thickeners, binders, crosslinkers and catalysts.
+
+## CATEGORY G — After-treatment and Washing Chemicals
+
+Include:
+
+1. Soaping agents.
+2. Washing-off agents.
+3. Post-dyeing detergents.
+4. Reduction clearing agents.
+5. Neutralising agents.
+6. Dye fixing agents.
+7. Anti-back-staining agents.
+8. Stain removers.
+9. Colour stripping agents.
+10. Machine cleaning chemicals.
+11. Rubbing fastness improvers.
+12. Chlorine fastness improvers.
+13. After-treatment defoamers.
+
+Explain when each product is used after dyeing, printing or garment processing and which problem it is intended to address.
+
+## CATEGORY H — Optical Brighteners and Whitening Agents
+
+Include:
+
+1. Cotton optical brighteners.
+2. Cellulosic optical brighteners.
+3. Polyester optical brighteners.
+4. Nylon/polyamide optical brighteners.
+5. Acrylic optical brighteners.
+6. Wool optical brighteners.
+7. Compatible blended-fibre optical brighteners.
+8. Optical brightener boosters.
+9. Blueing agents.
+10. Specialty fluorescent whitening agents.
+
+Explain:
+
+- What optical brighteners do.
+- How fluorescence improves perceived whiteness.
+- Why different fibre types need different optical brightener systems.
+- Which processing stages can use them.
+- Why compatibility with fibre and application method is important.
+
+## CATEGORY I — Textile Softening and Finishing Chemicals
+
+Include:
+
+1. Cationic softeners.
+2. Nonionic softeners.
+3. Anionic softeners.
+4. Amphoteric softeners.
+5. Silicone softeners.
+6. Amino silicone softeners.
+7. Micro silicone emulsions.
+8. Macro silicone emulsions.
+9. Hydrophilic silicone softeners.
+10. Hydrophobic silicone softeners.
+11. Silicone fluids.
+12. Polyethylene emulsions.
+13. Wax emulsions.
+14. Textile lubricants.
+15. Stiffening agents.
+16. Easy-care resins.
+17. Crosslinkers.
+18. Resin catalysts.
+19. Anti-pilling agents.
+20. Anti-snag agents.
+21. Soil-release finishes.
+
+Explain the differences between softener types, their fabric-handle effects and their compatibility considerations.
+
+## CATEGORY J — Functional and Specialty Finishes
+
+Include:
+
+1. Water-repellent finishes.
+2. Oil-repellent finishes.
+3. PFAS-free repellent systems.
+4. Antistatic finishes.
+5. Hydrophilic finishes.
+6. Moisture-management finishes.
+7. Wicking finishes.
+8. Antimicrobial finishes.
+9. Anti-odour finishes.
+10. UV-protective finishes.
+11. Flame-retardant finishes.
+12. Wrinkle-resistant finishes.
+13. Anti-yellowing agents.
+14. Phenolic yellowing preventers.
+15. Colour-deepening agents.
+16. Anti-slip finishes.
+17. Tear-strength improvers.
+18. Abrasion-resistant finishes.
+19. Insect-repellent finishes.
+20. Fragrance finishes.
+21. Stain-repellent finishes.
+22. Multi-functional finishing systems.
+
+Explain the intended functional result and relevant textile applications.
+
+IMPORTANT:
+
+Do not claim:
+- Antimicrobial effectiveness without applicable evidence.
+- Flame-retardant certification without applicable testing.
+- PFAS-free status without manufacturer documentation.
+- UV protection ratings without validated test data.
+- Regulatory compliance without actual product documentation.
+
+## CATEGORY K — Garment Washing and Denim Chemicals
+
+Include:
+
+1. Neutral cellulase enzymes.
+2. Acid cellulase enzymes.
+3. Bio-polishing enzymes.
+4. Amylase enzymes.
+5. Garment washing detergents.
+6. Denim washing auxiliaries.
+7. Anti-back-staining agents.
+8. Indigo stripping systems.
+9. Bleaching auxiliaries.
+10. Peroxide neutralisers.
+11. Garment softeners.
+12. Tinting agents.
+13. Garment finishing resins.
+14. Enzyme stabilisers.
+15. Enzyme inhibitors.
+16. Special effect auxiliaries.
+17. Stone-wash alternatives and compatible systems.
+
+Explain:
+
+- Bio-washing.
+- Denim fading.
+- Desizing.
+- Anti-back-staining.
+- Enzymatic treatment.
+- Garment finishing.
+
+## CATEGORY L — Textile Coating, Lamination and Technical Textile Chemicals
+
+Include:
+
+1. PU coating resins.
+2. Acrylic coating polymers.
+3. Silicone coating systems.
+4. Coating thickeners.
+5. Crosslinkers.
+6. Catalysts.
+7. Adhesion promoters.
+8. Wetting agents.
+9. Defoamers.
+10. Flame-retardant additives.
+11. Water-repellent systems.
+12. Anti-blocking agents.
+13. Pigment dispersions.
+14. PU laminating adhesives.
+15. Hot-melt adhesives.
+16. Textile lamination adhesives.
+
+Explain the difference between coating, printing, lamination and conventional textile finishing.
+
+## CATEGORY M — Textile Water and Effluent Treatment Chemicals
+
+This is a related category, not necessarily a core textile process-auxiliary category.
+
+Include:
+
+1. Coagulants.
+2. Flocculants.
+3. Decolourising agents.
+4. pH correction chemicals.
+5. ETP defoamers.
+6. Sludge conditioners.
+7. RO antiscalants.
+8. Membrane cleaning chemicals.
+9. Boiler-water treatment chemicals.
+10. Cooling-water treatment chemicals.
+
+Keep this category clearly separated and link to the Industrial Chemicals section where appropriate.
+
+---
+
+# PART 4 — CATEGORY ARCHITECTURE AND WEBSITE INFORMATION HIERARCHY
+
+Build the Textile Chemicals section as a structured B2B product discovery platform.
+
+Recommended architecture:
+
+```text
+chemicals/
+│
+├── textile-chemicals.html
+│
+└── textile-chemicals/
+    │
+    ├── pretreatment-chemicals/
+    │   ├── index.html
+    │   ├── wetting-agent/
+    │   ├── scouring-agent/
+    │   ├── desizing-agent/
+    │   ├── sequestering-agent/
+    │   ├── peroxide-stabilizer/
+    │   └── peroxide-killer/
+    │
+    ├── dyeing-auxiliaries/
+    │   ├── index.html
+    │   ├── levelling-agent/
+    │   ├── dispersing-agent/
+    │   ├── dye-fixing-agent/
+    │   └── anti-creasing-agent/
+    │
+    ├── printing-chemicals/
+    │   ├── index.html
+    │   ├── printing-thickener/
+    │   ├── pigment-binder/
+    │   └── crosslinker/
+    │
+    ├── after-treatment/
+    │   ├── index.html
+    │   ├── soaping-agent/
+    │   ├── washing-off-agent/
+    │   └── anti-back-staining-agent/
+    │
+    ├── optical-brighteners/
+    │   ├── index.html
+    │   ├── cotton-optical-brightener/
+    │   └── polyester-optical-brightener/
+    │
+    ├── finishing-chemicals/
+    │   ├── index.html
+    │   ├── cationic-softener/
+    │   ├── silicone-softener/
+    │   ├── amino-silicone-softener/
+    │   └── hydrophilic-softener/
+    │
+    ├── functional-finishes/
+    │   ├── index.html
+    │   ├── water-repellent/
+    │   ├── moisture-management/
+    │   └── antistatic-finish/
+    │
+    ├── denim-garment-chemicals/
+    │   ├── index.html
+    │   ├── cellulase-enzyme/
+    │   ├── bio-polishing-enzyme/
+    │   └── denim-anti-back-staining-agent/
+    │
+    └── coating-technical-textiles/
+        ├── index.html
+        ├── pu-coating-resin/
+        └── textile-lamination-adhesive/
+```
+
+This is a scalable proposed URL architecture.
+
+Do not create hundreds of thin or repetitive public pages.
+
+Generate individual public product pages only when the product has verified identity, useful unique information and publication approval.
+
+Unverified products may remain in an internal research/knowledge dataset.
+
+---
+
+# PART 5 — TEXTILE CHEMICALS LANDING PAGE DESIGN
+
+Redesign:
+
+`chemicals/textile-chemicals.html`
+
+The design must be consistent with the latest redesigned Chemicals homepage.
+
+Existing brand colours:
+
+- Primary Blue: `#0754B5`
+- Dark Blue: `#053E87`
+- Secondary Green: `#087F38`
+- Background: `#F4F7FA`
+- Light Background: `#EBF1F7`
+- Main Text: `#202B36`
+- Secondary Text: `#586A7D`
+- Border: `#D5DFEB`
+
+Use a premium industrial B2B appearance.
+
+Avoid excessive animations and generic templates.
+
+## SECTION 1 — Header
+
+Use existing Chemicals navigation.
+
+Navigation:
+- Home
+- About Us
+- Products
+- Textile Chemicals
+- Industrial Chemicals
+- Industries We Serve
+- Contact Us
+- Corporate Portal
+
+Requirements:
+- Correct active state.
+- Om Sai Enterprise logo.
+- Proper desktop spacing.
+- Mobile hamburger navigation.
+- Single desktop CTA.
+- Mobile CTA visible inside drawer.
+
+Use IndiaMART as the primary external enquiry channel:
+
+https://www.indiamart.com/om-saienterprise-surat/
+
+## SECTION 2 — Textile Chemicals Hero
+
+Kicker:
+
+TEXTILE CHEMICALS SPECIALIST
+
+H1:
+
+**Textile Chemicals & Processing Auxiliaries**
+
+Suggested supporting content:
+
+"Explore chemical categories for textile pretreatment, dyeing, printing, washing, finishing and specialised fabric applications."
+
+Add a second concise paragraph:
+
+"Understand the function of different textile chemicals, their processing stages and important selection considerations for textile manufacturing requirements."
+
+Buttons:
+
+1. Browse Textile Chemical Categories.
+2. Explore Product Catalogue.
+3. Enquire on IndiaMART.
+
+Image:
+- Professional textile wet-processing image.
+- Dyeing or finishing machinery.
+- Fabric processing.
+- Textile industrial environment.
+
+Do not depict stock images as actual Om Sai Enterprise facilities.
+
+## SECTION 3 — Textile Processing Journey
+
+Heading:
+
+**Textile Chemical Applications Across Processing Stages**
+
+Create an illustrated process sequence:
+
+1. Fibre / Yarn Preparation.
+2. Pretreatment.
+3. Bleaching.
+4. Dyeing.
+5. Printing.
+6. After-treatment.
+7. Finishing.
+8. Garment Washing / Special Processing.
+
+Each stage should have:
+- Short description.
+- Common chemical groups.
+- What the process achieves.
+- Relevant category links.
+
+Make the sequence responsive.
+
+Desktop:
+Use horizontal timeline or process journey.
+
+Mobile:
+Use vertical timeline or stacked cards.
+
+## SECTION 4 — Browse Chemical Categories
+
+Heading:
+
+**Explore Textile Chemical Categories**
+
+Supporting text:
+
+"Browse textile processing chemicals by their function and manufacturing stage."
+
+Create category cards for:
+
+1. Fibre, Yarn & Sizing Chemicals.
+2. Pretreatment Chemicals.
+3. Bleaching Chemicals.
+4. Dyeing Auxiliaries.
+5. Textile Dyes & Colourants.
+6. Printing Chemicals.
+7. After-treatment & Washing Chemicals.
+8. Optical Brighteners.
+9. Softeners & Finishing Chemicals.
+10. Functional Finishes.
+11. Denim & Garment Washing Chemicals.
+12. Coating & Technical Textile Chemicals.
+13. Water & Effluent Treatment Chemicals.
+
+Each card must have:
+- Name.
+- Useful description.
+- Main chemical families.
+- Relevant image or icon.
+- Explore Category CTA.
+- Correct internal link.
+
+Do not turn every possible chemical into a large homepage card.
+
+The category cards must lead to structured category sections or dedicated category pages.
+
+## SECTION 5 — Product Catalogue
+
+Heading:
+
+**Textile Chemicals Product Catalogue**
+
+Create a searchable and filterable product catalogue.
+
+Filter by:
+
+### Processing Stage
+- Pretreatment
+- Bleaching
+- Dyeing
+- Printing
+- After-treatment
+- Finishing
+- Garment Washing
+- Technical Textiles
+
+### Product Function
+- Wetting
+- Scouring
+- Desizing
+- Sequestering
+- Stabilising
+- Levelling
+- Dispersing
+- Fixing
+- Softening
+- Washing-off
+- Anti-back-staining
+- Printing
+- Coating
+
+### Fibre Type
+- Cotton
+- Viscose
+- Polyester
+- Nylon / Polyamide
+- Wool
+- Acrylic
+- Blended Fibres
+
+### Application
+- Woven Fabric
+- Knitted Fabric
+- Denim
+- Garments
+- Home Textiles
+- Technical Textiles
+
+Search should recognise:
+- Chemical name.
+- Common product name.
+- Synonyms.
+- Processing stage.
+- Product function.
+- Fibre type.
+
+Example:
+Searching "Peroxide Killer" should also find a verified catalase enzyme product that serves that function.
+
+However, synonym mapping must not imply every catalase enzyme is interchangeable with every peroxide killer.
+
+### Product Card Requirements
+
+Each product card must display:
+
+- Product name.
+- Product category.
+- Short unique description.
+- Relevant image or neutral placeholder.
+- Verified product details button.
+- Enquiry action.
+
+Only active and approved product records may appear in the commercial catalogue.
+
+Do not show inactive products.
+
+Do not show unverified stock availability.
+
+### Empty Catalogue Behaviour
+
+Current chemical product JSON may be empty.
+
+When no verified products exist, display a professional informative empty state:
+
+"Looking for a specific textile chemical?"
+
+"Share your chemical requirement with Om Sai Enterprise through our business enquiry profile."
+
+CTA:
+
+Enquire on IndiaMART.
+
+Do not show a huge empty grid or fictional products.
+
+## SECTION 6 — Chemical Selection Guide
+
+Heading:
+
+**How to Select the Right Textile Chemical**
+
+Explain the following selection factors:
+
+1. Fibre composition.
+2. Fabric construction.
+3. Processing stage.
+4. Dye class.
+5. Processing machinery.
+6. Water quality and hardness.
+7. Bath pH and temperature requirements.
+8. Ionic compatibility.
+9. Foam characteristics.
+10. Desired final fabric performance.
+11. Manufacturer specifications.
+12. Applicable regulatory restrictions.
+
+Create an easy-to-understand buyer guide.
+
+Do not provide unverified chemical dosage or processing recipes.
+
+## SECTION 7 — Chemical Categories by Fibre
+
+Heading:
+
+**Textile Chemicals by Fibre Type**
+
+Create sections for:
+
+### Cotton and Cellulosic Fibres
+Typical categories:
+- Desizing agents.
+- Scouring agents.
+- Wetting agents.
+- Peroxide stabilisers.
+- Bleaching auxiliaries.
+- Reactive dyeing auxiliaries.
+- Soaping agents.
+- Cellulosic optical brighteners.
+- Softeners.
+
+### Polyester
+Typical categories:
+- Dispersing agents.
+- Levelling agents.
+- Dye carriers where applicable.
+- Reduction clearing agents.
+- Oligomer removers.
+- Polyester optical brighteners.
+- Compatible finishing auxiliaries.
+
+### Nylon / Polyamide
+Typical categories:
+- Acid dyeing auxiliaries.
+- Levelling systems.
+- pH control agents.
+- Polyamide-compatible optical brighteners.
+- Selected finishing chemicals.
+
+### Wool
+Typical categories:
+- Wool-compatible detergents.
+- Dyeing levelling agents.
+- Acid dyeing auxiliaries.
+- Wool-compatible finishing agents.
+
+### Blended Fabrics
+Typical categories:
+- Compatible dyeing auxiliaries.
+- Dispersing and levelling systems.
+- pH-control chemicals.
+- Finishing auxiliaries.
+
+Clearly explain that different blends and process combinations require specific chemical selection.
+
+## SECTION 8 — FAQs
+
+Create a useful FAQ section answering:
+
+1. What are textile chemicals?
+2. What are textile auxiliaries?
+3. Which chemicals are used in textile pretreatment?
+4. Which chemicals are used in cotton scouring?
+5. What is a textile wetting agent?
+6. What is the difference between a wetting agent and a scouring agent?
+7. What is a peroxide stabiliser?
+8. What is a peroxide killer?
+9. Why are sequestering agents used in textile processing?
+10. What are levelling agents used for?
+11. What is the difference between a dye and an auxiliary?
+12. Which chemicals are used in reactive dyeing?
+13. What are textile printing thickeners?
+14. What is a pigment printing binder?
+15. What is a textile soaping agent?
+16. What is the purpose of a dye fixing agent?
+17. What is a silicone softener?
+18. What is the difference between cationic and nonionic softeners?
+19. Which chemicals are used in denim washing?
+20. What information should a buyer provide when requesting a textile chemical quotation?
+
+Answers must be accurate, useful and non-repetitive.
+
+Use semantic HTML details/summary or an accessible accordion.
+
+Do not add FAQ structured data merely to gain rich search snippets. Follow current search engine eligibility rules.
+
+## SECTION 9 — DOCUMENTATION AND RESPONSIBLE CHEMICAL SELECTION
+
+Heading:
+
+**Product Information & Technical Documentation**
+
+Explain the importance of:
+
+- Technical Data Sheet (TDS).
+- Safety Data Sheet (SDS).
+- Manufacturer specifications.
+- Chemical grade.
+- Concentration.
+- Application information.
+- Storage and handling.
+- Restricted-substance documentation where relevant.
+
+Keep manufacturer-issued documentation separate from trader-issued documents.
+
+Do not claim Om Sai Enterprise holds certifications or issues its own laboratory test results unless verified.
+
+## SECTION 10 — FINAL B2B ENQUIRY
+
+Heading:
+
+**Discuss Your Textile Chemical Requirements**
+
+Description:
+
+"Share your textile processing requirements and initiate a commercial discussion with Om Sai Enterprise."
+
+CTA:
+
+Enquire on IndiaMART.
+
+Use the supplied official business profile link.
+
+Do not use unconfigured WhatsApp/email channels.
+
+## SECTION 11 — Footer
+
+Maintain consistency with the redesigned Chemicals homepage.
+
+Include:
+- Om Sai Enterprise identity.
+- Chemicals navigation.
+- Textile Chemicals.
+- Industrial Chemicals.
+- Products.
+- About Us.
+- Contact.
+- Corporate Portal.
+- Baburam Trading.
+- Privacy Policy.
+- Terms.
+- IndiaMART business profile.
+
+Do not invent contact details or working hours.
+
+---
+
+# PART 6 — INDIVIDUAL PRODUCT PAGE ARCHITECTURE
+
+This is one of the most important parts of the project.
+
+Every verified and approved product should have its own SEO-friendly product detail page.
+
+Do not rely only on a generic URL such as:
+
+`product-details.html?id=CHEM-TEX-001`
+
+A query-parameter product detail system can remain as a compatibility fallback, but the preferred SEO architecture is unique static product URLs.
+
+Example:
+
+```text
+/chemicals/textile-chemicals/pretreatment-chemicals/wetting-agent/
+/chemicals/textile-chemicals/pretreatment-chemicals/scouring-agent/
+/chemicals/textile-chemicals/dyeing-auxiliaries/levelling-agent/
+/chemicals/textile-chemicals/printing-chemicals/pigment-binder/
+/chemicals/textile-chemicals/finishing-chemicals/silicone-softener/
+```
+
+Use static HTML product pages generated during the build process from approved JSON records.
+
+## 6.1 Individual Product Page Content Structure
+
+Every product page must have its own unique content.
+
+Use the following page layout.
+
+### 1. Breadcrumb Navigation
+
+Example:
+
+Home > Textile Chemicals > Pretreatment Chemicals > Wetting Agent
+
+### 2. Product Hero
+
+Display:
+- Product category.
+- Product name.
+- Clear product function.
+- Short unique description.
+- Relevant image or neutral placeholder.
+- Primary commercial enquiry CTA.
+
+### 3. Product Overview
+
+Explain:
+- What the chemical is.
+- Its purpose in textile processing.
+- Its basic technical function.
+- Which process stage uses it.
+
+Avoid generic content repeated across all products.
+
+### 4. When Is It Used?
+
+Explain the exact processing stage.
+
+Examples:
+- Pretreatment.
+- Scouring.
+- Bleaching.
+- Dyeing.
+- Printing.
+- Washing.
+- Finishing.
+- Garment processing.
+
+### 5. Why Is It Used?
+
+Explain the process requirement or problem the chemical addresses.
+
+Examples:
+- Improve wetting.
+- Remove impurities.
+- Control pH.
+- Improve dye distribution.
+- Remove unfixed dye.
+- Reduce redeposition.
+- Improve soft hand feel.
+- Control foam.
+
+The reason must be specific to that product.
+
+### 6. How Does It Work?
+
+Explain the mechanism at a commercially useful, technically accurate level.
+
+Do not invent reaction chemistry.
+
+### 7. Suitable Fibre Types
+
+Where relevant, explain suitability for:
+
+- Cotton.
+- Viscose.
+- Polyester.
+- Nylon.
+- Wool.
+- Acrylic.
+- Blends.
+
+Do not mark every fibre as compatible.
+
+Only show fibres supported by reliable product information.
+
+### 8. Suitable Fabric and Applications
+
+Examples:
+- Woven fabric.
+- Knitted fabric.
+- Denim.
+- Garments.
+- Home textiles.
+- Technical textiles.
+
+Only show relevant applications.
+
+### 9. Processing Method
+
+Where applicable explain the difference between:
+- Exhaust processing.
+- Continuous processing.
+- Padding.
+- Batch processing.
+- Pad-batch.
+- Garment washing.
+
+Do not claim universal compatibility.
+
+### 10. Important Selection Parameters
+
+Where applicable discuss:
+
+- Ionic nature.
+- pH compatibility.
+- Temperature compatibility.
+- Foam profile.
+- Solubility.
+- Water hardness.
+- Electrolyte tolerance.
+- Fibre compatibility.
+- Dye-class compatibility.
+- Process-machine compatibility.
+- Finish requirements.
+
+Explain how to evaluate these parameters without inventing product-specific specifications.
+
+### 11. Product Specifications
+
+Only show actual manufacturer-documented fields.
+
+Potential fields:
+- Appearance.
+- Ionic nature.
+- pH.
+- Solubility.
+- Active matter.
+- Chemical concentration.
+- Recommended storage.
+- Packaging.
+- Shelf life.
+- Applicable standards.
+
+If a value is unavailable, omit it or state that it must be confirmed from the manufacturer TDS.
+
+Never invent a specification merely to fill a table.
+
+### 12. Compatibility and Process Considerations
+
+Explain:
+- What chemical combinations need checking.
+- Where ionic incompatibility may occur.
+- Why pH and temperature matter.
+- Which process variables buyers should confirm.
+
+Do not give unsupported chemical mixing instructions.
+
+### 13. Application Guidance
+
+Present manufacturer-specific process recommendations only where an actual TDS or other reliable primary document supports them.
+
+Never invent:
+- Dosage.
+- Temperature.
+- Treatment duration.
+- Chemical ratios.
+- Bath conditions.
+- Guaranteed performance.
+
+When no verified recommendations are available, write:
+
+"Application conditions should be confirmed from the specific manufacturer's Technical Data Sheet and process requirements."
+
+### 14. Safety and Storage
+
+Use relevant manufacturer SDS information.
+
+Do not invent shelf life or storage temperature.
+
+Include proper safety documentation notice.
+
+### 15. Technical Documentation
+
+Provide:
+- TDS request.
+- SDS request.
+- Manufacturer specifications, if available.
+- COA information, only if available for the actual product/batch.
+
+### 16. Commercial Enquiry
+
+Use product-specific enquiry information:
+
+- Product name.
+- Product category.
+- Requested quantity.
+- Application.
+- Fibre type.
+- Fabric type.
+- Packaging preference.
+- Contact details.
+
+Primary CTA:
+
+Enquire on IndiaMART.
+
+### 17. Related Products
+
+Show genuinely related products from the same or adjacent processing stages.
+
+Use verified product relationships.
+
+### 18. Product FAQs
+
+Every published product page should have 4–8 relevant questions where useful.
+
+Each answer must be unique to that particular chemical.
+
+Avoid duplicate FAQs across every product page.
+
+### 19. Sources / Technical Basis
+
+For content research, keep the source reference record in internal data/documentation.
+
+Do not display fabricated citations or links.
+
+Where appropriate, identify whether the technical detail comes from a specific manufacturer document.
+
+---
+
+# PART 7 — INITIAL INDIVIDUAL PRODUCT PAGE CANDIDATE LIST
+
+Prepare SEO-ready product content records and page-generation capability for the following broad candidate products.
+
+These are research candidates, not confirmed Om Sai Enterprise inventory.
+
+The implementation must support all of them, but only approved records may become public indexable product pages.
+
+## 7.1 Pretreatment
+
+1. Textile Wetting Agent.
+2. Textile Penetrating Agent.
+3. Textile Scouring Agent.
+4. Textile Detergent.
+5. Textile Desizing Agent.
+6. Amylase Desizing Enzyme.
+7. Degreasing Agent.
+8. Pectinase Enzyme.
+9. Textile Sequestering Agent.
+10. Textile Chelating Agent.
+11. Peroxide Stabiliser.
+12. Textile Bleaching Auxiliary.
+13. Peroxide Killer.
+14. Catalase Enzyme.
+15. Alkali Neutraliser.
+16. Acid Neutraliser.
+17. Mercerising Auxiliary.
+18. Anti-Creasing Agent.
+19. Anti-Rope-Mark Agent.
+20. Textile Defoamer.
+
+## 7.2 Dyeing Auxiliaries
+
+21. Textile Levelling Agent.
+22. Textile Dispersing Agent.
+23. Dyeing Wetting Agent.
+24. Acid Buffer.
+25. Alkali Buffer.
+26. Acid Donor.
+27. Alkali Donor.
+28. Dye Carrier.
+29. Dye Fixing Agent.
+30. Anti-Migration Agent.
+31. Dyeing Lubricant.
+32. Deaerator.
+33. Dyeing Defoamer.
+34. Reduction Clearing Agent.
+35. Polyester Oligomer Remover.
+36. Dyeing Process Regulator.
+
+## 7.3 Dyes and Colourants
+
+37. Reactive Dyes.
+38. Disperse Dyes.
+39. Direct Dyes.
+40. Acid Dyes.
+41. Basic Dyes.
+42. Vat Dyes.
+43. Sulphur Dyes.
+44. Pigment Colourants.
+
+Keep this product family separate from chemical auxiliaries.
+
+## 7.4 Printing
+
+45. Textile Printing Thickener.
+46. Sodium Alginate Thickener.
+47. Guar Gum Thickener.
+48. CMC Thickener.
+49. Synthetic Printing Thickener.
+50. Pigment Printing Binder.
+51. Acrylic Textile Binder.
+52. PU Printing Binder.
+53. Textile Crosslinker.
+54. Printing Catalyst.
+55. Printing Emulsifier.
+56. Printing Humectant.
+57. Printing Defoamer.
+58. Anti-Migration Agent.
+59. Specialty Printing Modifier.
+
+## 7.5 After-treatment
+
+60. Textile Soaping Agent.
+61. Washing-Off Agent.
+62. Post-Dyeing Detergent.
+63. Anti-Back-Staining Agent.
+64. Textile Stain Remover.
+65. Colour Stripping Agent.
+66. Textile Machine Cleaning Agent.
+67. Rubbing Fastness Improver.
+
+## 7.6 Optical Brighteners
+
+68. Cotton Optical Brightener.
+69. Polyester Optical Brightener.
+70. Nylon Optical Brightener.
+71. Acrylic Optical Brightener.
+72. Wool Optical Brightener.
+73. Cellulosic Optical Brightener.
+
+## 7.7 Softeners and Finishing
+
+74. Cationic Textile Softener.
+75. Nonionic Textile Softener.
+76. Anionic Textile Softener.
+77. Amphoteric Textile Softener.
+78. Silicone Textile Softener.
+79. Amino Silicone Softener.
+80. Micro Silicone Emulsion.
+81. Macro Silicone Emulsion.
+82. Hydrophilic Silicone Softener.
+83. Hydrophobic Silicone Softener.
+84. Polyethylene Emulsion.
+85. Textile Wax Emulsion.
+86. Easy-Care Resin.
+87. Textile Crosslinker.
+88. Resin Catalyst.
+89. Anti-Pilling Agent.
+90. Anti-Snag Agent.
+91. Soil-Release Finish.
+
+## 7.8 Functional Finishes
+
+92. Textile Water Repellent.
+93. Textile Oil Repellent.
+94. PFAS-Free Water Repellent System.
+95. Textile Antistatic Agent.
+96. Hydrophilic Finish.
+97. Moisture-Management Finish.
+98. Wicking Finish.
+99. Antimicrobial Textile Finish.
+100. Anti-Odour Finish.
+101. UV-Protective Finish.
+102. Flame-Retardant Finish.
+103. Wrinkle-Resistant Finish.
+104. Anti-Yellowing Agent.
+105. Phenolic Yellowing Preventer.
+106. Stain-Repellent Finish.
+107. Abrasion-Resistant Finish.
+
+## 7.9 Garment and Denim
+
+108. Neutral Cellulase Enzyme.
+109. Acid Cellulase Enzyme.
+110. Bio-Polishing Enzyme.
+111. Garment Washing Detergent.
+112. Denim Washing Auxiliary.
+113. Indigo Stripping System.
+114. Garment Softener.
+115. Garment Finishing Resin.
+116. Tinting Agent.
+117. Enzyme Stabiliser.
+118. Enzyme Inhibitor.
+
+## 7.10 Coating and Technical Textiles
+
+119. PU Coating Resin.
+120. Acrylic Coating Polymer.
+121. Silicone Coating System.
+122. Coating Thickener.
+123. Coating Crosslinker.
+124. Coating Catalyst.
+125. Adhesion Promoter.
+126. Textile Lamination Adhesive.
+127. PU Lamination Adhesive.
+128. Hot-Melt Textile Adhesive.
+129. Coating Defoamer.
+130. Textile Pigment Dispersion.
+
+## 7.11 Water and Effluent Treatment
+
+131. ETP Coagulant.
+132. ETP Flocculant.
+133. Wastewater Decolourising Agent.
+134. ETP Defoamer.
+135. pH Correction Chemical.
+136. Sludge Conditioner.
+137. RO Antiscalant.
+138. Membrane Cleaning Chemical.
+139. Boiler Water Treatment Chemical.
+140. Cooling Water Treatment Chemical.
+
+This is an initial broad taxonomy of product candidates. Consolidate genuinely overlapping products into product families when appropriate. Do not force 140 thin pages into the live website.
+
+---
+
+# PART 8 — PRODUCT PAGE SEO STRATEGY
+
+SEO must be implemented at three levels.
+
+## 8.1 Level One: Main Textile Chemicals Page
+
+Suggested title:
+
+`Textile Chemicals & Auxiliaries for Wet Processing | Om Sai Enterprise`
+
+Suggested H1:
+
+`Textile Chemicals and Processing Auxiliaries`
+
+Suggested meta description:
+
+`Explore textile processing chemicals and auxiliaries for pretreatment, dyeing, printing, washing and finishing applications. Contact Om Sai Enterprise for commercial enquiries.`
+
+Primary keywords:
+- Textile Chemicals.
+- Textile Auxiliaries.
+- Textile Processing Chemicals.
+
+Secondary keywords:
+- Textile Chemical Trading.
+- Textile Wet Processing Chemicals.
+- Textile Pretreatment Chemicals.
+- Textile Dyeing Auxiliaries.
+- Textile Finishing Chemicals.
+- Textile Printing Chemicals.
+
+## 8.2 Level Two: Category Pages
+
+Create category pages when enough unique and useful content exists.
+
+Suggested category URLs:
+
+```text
+/chemicals/textile-chemicals/pretreatment-chemicals/
+/chemicals/textile-chemicals/dyeing-auxiliaries/
+/chemicals/textile-chemicals/printing-chemicals/
+/chemicals/textile-chemicals/after-treatment-chemicals/
+/chemicals/textile-chemicals/optical-brighteners/
+/chemicals/textile-chemicals/finishing-chemicals/
+/chemicals/textile-chemicals/functional-finishes/
+/chemicals/textile-chemicals/denim-garment-chemicals/
+/chemicals/textile-chemicals/coating-technical-textiles/
+```
+
+Each category page must have:
+
+- Unique title.
+- Unique H1.
+- Unique meta description.
+- Unique canonical URL.
+- Introduction.
+- Category explanation.
+- Applications.
+- Relevant products.
+- Selection guidance.
+- Unique FAQs.
+- Links to related categories.
+- Link to the main Textile Chemicals page.
+- Commercial enquiry CTA.
+
+Do not create a category page with just a heading and a repeated list.
+
+## 8.3 Level Three: Individual Product Pages
+
+Each approved product page must have:
+
+- Unique URL.
+- Unique SEO title.
+- Unique H1.
+- Unique meta description.
+- Canonical URL.
+- Open Graph tags.
+- Product-specific content.
+- Breadcrumbs.
+- Related product links.
+- Product-specific FAQs.
+- Unique image alt text.
+
+Example:
+
+Title:
+
+`Textile Wetting Agent | Pretreatment Chemical | Om Sai Enterprise`
+
+H1:
+
+`Textile Wetting Agent`
+
+Meta description:
+
+`Understand the role of textile wetting agents in pretreatment and wet processing, including applications, fibre compatibility and product selection considerations.`
+
+Example target keywords:
+
+Primary:
+- Textile Wetting Agent.
+
+Secondary:
+- Textile Penetrating Agent.
+- Wetting Agent for Fabric.
+- Textile Pretreatment Wetting Agent.
+
+Avoid keyword stuffing.
+
+Use natural language and genuine technical explanations.
+
+## 8.4 Product Keyword Mapping
+
+Build a keyword map for individual product candidates.
+
+Examples:
+
+| Product | Primary keyword |
+|---|---|
+| Wetting Agent | Textile Wetting Agent |
+| Scouring Agent | Textile Scouring Agent |
+| Desizing Agent | Textile Desizing Agent |
+| Peroxide Stabiliser | Textile Peroxide Stabiliser |
+| Peroxide Killer | Textile Peroxide Killer |
+| Sequestering Agent | Textile Sequestering Agent |
+| Levelling Agent | Textile Levelling Agent |
+| Dispersing Agent | Textile Dispersing Agent |
+| Dye Fixing Agent | Textile Dye Fixing Agent |
+| Washing-Off Agent | Textile Washing-Off Agent |
+| Printing Thickener | Textile Printing Thickener |
+| Pigment Binder | Textile Pigment Printing Binder |
+| Cationic Softener | Cationic Textile Softener |
+| Silicone Softener | Silicone Softener for Textile |
+| Cotton Optical Brightener | Optical Brightener for Cotton |
+| Cellulase Enzyme | Cellulase Enzyme for Denim |
+| Anti-Back-Staining Agent | Textile Anti-Back-Staining Agent |
+
+Generate a full keyword map for all 140 candidates in an internal SEO research file.
+
+Do not publish all candidate URLs simply because keyword targets exist.
+
+Keyword relevance and product availability must be verified.
+
+## 8.5 Location SEO
+
+Do not automatically put Surat/Gujarat in every title and URL.
+
+Only use geographic SEO pages when:
+- Official business location is confirmed.
+- Actual trading/service territory is confirmed.
+- Unique useful local information exists.
+
+Potential future keywords:
+- Textile Chemicals Supplier in Surat.
+- Textile Chemicals Trader in Gujarat.
+- Textile Processing Chemicals in India.
+
+Do not falsely imply physical premises, local stock or nationwide delivery.
+
+---
+
+# PART 9 — STRUCTURED DATA AND TECHNICAL SEO
+
+Implement accurate structured data.
+
+### Main landing page
+Use appropriate:
+- WebPage.
+- BreadcrumbList.
+- ItemList where the actual list content supports it.
+
+### Category page
+Use appropriate:
+- CollectionPage.
+- BreadcrumbList.
+- ItemList.
+
+### Product detail page
+Use `Product` structured data only when the page is genuinely about a specific identified product and required properties are supported.
+
+Do not add:
+- Fake price.
+- Fake availability.
+- Fake rating.
+- Fake reviews.
+- Fake SKU.
+- Fake manufacturer.
+- Fake certifications.
+
+Do not use misleading Offer markup.
+
+Use Organization identity only when real company details are available.
+
+Do not generate fictional LocalBusiness markup.
+
+Follow current Google structured data guidelines.
+
+## 9.1 Canonical URLs
+
+Use the verified production domain and correct repository base path.
+
+Current project uses GitHub Pages-style canonical URLs:
+
+`https://mrrajyadav.github.io/My-Website/`
+
+Inspect the actual deployment configuration before changing canonical URLs.
+
+Do not invent a custom domain.
+
+Each page must have its own canonical URL.
+
+Avoid:
+- Duplicate canonical tags.
+- Canonical pointing to the generic detail page.
+- Incorrect relative canonical links.
+- Canonical URLs containing unnecessary query parameters.
+
+## 9.2 Sitemap
+
+Generate or update an XML sitemap containing:
+
+- Main Chemicals page.
+- Textile Chemicals landing page.
+- Approved category pages.
+- Approved individual product pages.
+- Other relevant canonical Chemicals pages.
+
+Exclude:
+- Draft pages.
+- Inactive product pages.
+- Noindex pages.
+- Duplicate URL variants.
+- Unpublished candidate pages.
+
+Ensure sitemap URLs match canonical URLs.
+
+Inspect the existing `robots.txt` and update only if needed.
+
+## 9.3 Internal Linking
+
+Create a logical linking hierarchy:
+
+```text
+Chemicals Homepage
+       |
+       v
+Textile Chemicals
+       |
+       v
+Category Pages
+       |
+       v
+Individual Product Pages
+       |
+       v
+Related Products
+```
+
+Also link individual products to:
+- Their category.
+- Related processing stages.
+- Fibre-specific guides.
+- Relevant FAQs.
+- Contact/IndiaMART.
+
+Use descriptive anchor text.
+
+Avoid generic repeated "Click Here" links.
+
+---
+
+# PART 10 — JSON DATA ARCHITECTURE
+
+The current product engine uses basic product fields.
+
+Expand it carefully without breaking FMCG functionality.
+
+Keep the existing chemical product data compatible where possible.
+
+Recommended proposed structure:
+
+```json
+{
+  "id": "CHEM-TEX-001",
+  "slug": "textile-wetting-agent",
+  "name": "Textile Wetting Agent",
+  "category": "Textile Chemicals",
+  "subCategory": "Pretreatment Chemicals",
+
+  "status": "draft",
+  "publicationStatus": "draft",
+
+  "brand": "",
+  "manufacturer": "",
+  "image": "",
+
+  "shortDescription": "",
+  "description": "",
+
+  "productFunction": "",
+  "whenUsed": "",
+  "whyUsed": "",
+  "howItWorks": "",
+
+  "processingStages": [],
+  "applicableFibres": [],
+  "fabricApplications": [],
+  "processTypes": [],
+
+  "selectionCriteria": [],
+  "compatibilityNotes": [],
+
+  "technicalProperties": {},
+
+  "packaging": [],
+  "technicalDocuments": [],
+
+  "storageAndSafety": "",
+
+  "seo": {
+    "title": "",
+    "description": "",
+    "canonicalPath": "",
+    "primaryKeyword": "",
+    "secondaryKeywords": []
+  },
+
+  "faqs": [],
+
+  "relatedProducts": [],
+
+  "sources": [],
+
+  "lastReviewed": ""
+}
+```
+
+This is a proposed data schema.
+
+### Important Status Separation
+
+Use clear lifecycle states:
+
+- `draft`: internal research only.
+- `review`: awaiting owner/technical review.
+- `approved`: approved business and technical content.
+- `active`: approved and published commercial product.
+- `inactive`: removed from active catalogue.
+- `discontinued`: historical product not currently marketed.
+
+Do not treat a generic `active` status as confirmation of live stock.
+
+A product page must not be indexable or included in the sitemap unless its publication requirements are met.
+
+### Create Separate Data Files Where Appropriate
+
+Recommended:
+
+```text
+data/
+  chemical-products.json
+  textile-chemical-categories.json
+  textile-process-stages.json
+  textile-product-candidates.json
+  textile-seo-keywords.json
+```
+
+Keep the actual public business inventory separate from educational taxonomy and unverified market candidates.
+
+Do not confuse research candidates with the live product catalogue.
+
+---
+
+# PART 11 — STATIC PRODUCT PAGE GENERATION
+
+The website is a static Vite project.
+
+Build an automated static product page generator.
+
+Recommended script:
+
+`scripts/generate-textile-product-pages.mjs`
+
+The generator should:
+
+1. Read the approved product data.
+2. Validate mandatory product fields.
+3. Skip draft, review, inactive and discontinued products.
+4. Generate one static HTML page per approved product.
+5. Insert unique page title.
+6. Insert unique meta description.
+7. Insert canonical URL.
+8. Insert Open Graph metadata.
+9. Generate breadcrumbs.
+10. Render product-specific content.
+11. Render applicable technical data only.
+12. Render product-specific FAQs.
+13. Render related product links.
+14. Generate enquiry links.
+15. Use correct relative asset paths.
+16. Generate appropriate structured data.
+17. Prevent duplicate slugs.
+18. Validate internal links.
+19. Prevent duplicate canonical URLs.
+20. Report skipped products and missing information.
+
+### Vite Integration
+
+Inspect the actual existing Vite build pipeline.
+
+Do not assume generated files will automatically enter the deployment output.
+
+Implement the generator at the correct stage.
+
+One possible approach is to generate the static HTML under the existing `public/` structure before the Vite build so the pages are copied into the final output.
+
+However, check the existing `scripts/copy-static.mjs` and deployment path first.
+
+Do not break:
+- Existing FMCG pages.
+- Chemicals pages.
+- Corporate portal.
+- CSS files.
+- JavaScript files.
+- Assets.
+- Relative links.
+
+Generated nested HTML pages must resolve CSS, JavaScript, images and internal links correctly on the actual GitHub Pages base path.
+
+### Generated HTML Quality
+
+Each generated page must contain useful initial HTML content.
+
+Do not depend entirely on JavaScript to inject the entire product page into an empty container.
+
+Product pages should work as static HTML even when JavaScript is disabled, except optional interactive controls.
+
+Do not generate hundreds of nearly identical indexable pages.
+
+Quality and unique information take priority over quantity.
+
+---
+
+# PART 12 — PRODUCT SEARCH AND FILTER ENGINE
+
+Upgrade the existing catalogue engine carefully.
+
+Current file:
+
+`js/products.js`
+
+Do not break its existing FMCG compatibility.
+
+The textile catalogue should support:
+
+1. Search by product name.
+2. Search by synonym.
+3. Search by function.
+4. Filter by processing stage.
+5. Filter by category.
+6. Filter by fibre type.
+7. Filter by application.
+8. Reset all filters.
+9. Active product count.
+10. Empty state.
+11. No-result state.
+12. Product detail navigation.
+13. Product-specific enquiry action.
+
+Use efficient JavaScript and avoid excessive DOM rebuilding.
+
+Ensure filters work together correctly.
+
+Example:
+
+Buyer selects:
+- Processing Stage: Pretreatment.
+- Fibre Type: Cotton.
+- Function: Wetting.
+
+Only matching approved products should show.
+
+Ensure keyboard and accessibility support.
+
+---
+
+# PART 13 — INDIVIDUAL PRODUCT PAGE SEO CONTENT GENERATION
+
+Create a reusable product content/template system.
+
+Each product page's SEO content must be specific to the product.
+
+Example:
+
+### Textile Wetting Agent
+
+What:
+A chemical auxiliary designed to improve wetting and liquor contact in compatible textile processes.
+
+When:
+Used in applicable pretreatment and wet-processing operations.
+
+Why:
+Helps improve the contact of aqueous processing liquor with the textile material.
+
+Suitable applications:
+Only the fibre and fabric applications confirmed for the relevant formulation.
+
+Buyer considerations:
+- Ionic nature.
+- Foam characteristics.
+- pH compatibility.
+- Water hardness tolerance.
+- Temperature compatibility.
+- Compatibility with other bath components.
+
+### Textile Scouring Agent
+
+What:
+A cleaning auxiliary used in suitable textile scouring processes.
+
+When:
+During pretreatment.
+
+Why:
+Helps remove oils, waxes and other process-related impurities.
+
+Buyer considerations:
+- Fibre type.
+- Fabric construction.
+- Impurity load.
+- Process equipment.
+- Compatibility with subsequent bleaching/dyeing.
+
+### Textile Peroxide Stabiliser
+
+What:
+An auxiliary used in compatible peroxide bleaching systems.
+
+When:
+During hydrogen peroxide bleaching.
+
+Why:
+Helps control peroxide decomposition.
+
+Buyer considerations:
+- Stabilisation mechanism.
+- Water hardness.
+- Fibre type.
+- Process conditions.
+- Manufacturer instructions.
+
+### Textile Levelling Agent
+
+What:
+A dyeing auxiliary used to support uniform dye uptake in compatible systems.
+
+When:
+During suitable dyeing processes.
+
+Why:
+Helps manage dye distribution and reduce unevenness.
+
+Buyer considerations:
+- Dye class.
+- Fibre type.
+- Ionic compatibility.
+- Dyeing method.
+- Temperature profile.
+
+### Textile Soaping Agent
+
+What:
+An after-treatment auxiliary used in compatible washing-off processes.
+
+When:
+After reactive dyeing and other suitable dyeing operations.
+
+Why:
+Helps remove unfixed and residual dye.
+
+Buyer considerations:
+- Dye class.
+- Fabric type.
+- Washing process.
+- Temperature and pH conditions.
+
+### Silicone Softener
+
+What:
+A silicone-based textile finishing auxiliary.
+
+When:
+During compatible fabric finishing.
+
+Why:
+Used to obtain selected smooth and soft hand-feel characteristics.
+
+Buyer considerations:
+- Silicone chemistry.
+- Hydrophilic/hydrophobic behaviour.
+- Emulsion type.
+- Compatibility with fabric and application method.
+
+### Textile Printing Thickener
+
+What:
+A rheology-control chemical used in textile printing paste.
+
+When:
+During printing paste preparation.
+
+Why:
+Helps obtain suitable viscosity and pattern definition.
+
+Buyer considerations:
+- Printing process.
+- Fibre and dye/colourant system.
+- Print paste formulation.
+- Required print characteristics.
+
+These are content examples, not universal product specifications.
+
+Use accurate manufacturer information for actual product pages.
+
+---
+
+# PART 14 — PERFORMANCE, MOBILE AND ACCESSIBILITY
+
+Test the page on:
+
+- 1440px desktop.
+- 1280px desktop.
+- 1024px laptop/tablet.
+- 768px tablet.
+- 430px mobile.
+- 390px mobile.
+- 360px mobile.
+- 320px small mobile.
+
+Requirements:
+
+- No horizontal scroll.
+- Proper hero layout.
+- Readable product cards.
+- Responsive process timeline.
+- Accessible filter controls.
+- Search input usable on mobile.
+- Clear category navigation.
+- Proper touch targets.
+- No clipped text.
+- Consistent buttons.
+- Optimised images.
+- Lazy loading below the fold.
+- Reduced motion support.
+- No unnecessary animation.
+- Proper keyboard focus.
+
+Use semantic HTML.
+
+Maintain correct heading hierarchy.
+
+One H1 per page.
+
+---
+
+# PART 15 — TECHNICAL AND CHEMICAL SAFETY CONTENT RULES
+
+This section is mandatory.
+
+Never invent:
+
+- Dosage.
+- Temperature.
+- Treatment time.
+- pH range.
+- Chemical concentration.
+- Active matter.
+- Product purity.
+- Packaging size.
+- Manufacturer.
+- Brand.
+- Shelf life.
+- Stock availability.
+- Price.
+- Product certifications.
+- Performance guarantees.
+
+Only display such values when supported by the specific product manufacturer's verified documentation.
+
+Different suppliers can sell similarly named products with different formulations and technical characteristics.
+
+Do not assume products are interchangeable.
+
+Do not recommend mixing chemicals without verified compatibility information.
+
+For regulated/restricted substances or functional finishes, verify applicable laws and standard requirements.
+
+Keep GOTS, ZDHC, OEKO-TEX, bluesign and other compliance statements accurate.
+
+Distinguish:
+- A manufacturer's certification.
+- A product's approval or listing.
+- A trader's own certification.
+- General compliance guidance.
+
+Do not represent one as another.
+
+---
+
+# PART 16 — EDUCATIONAL SEO CONTENT
+
+Build a future-ready blog/guide architecture.
+
+Potential guides:
+
+1. Textile Pretreatment Process Explained.
+2. Chemicals Used in Cotton Processing.
+3. Role of Wetting Agents in Textile Processing.
+4. Scouring Agent vs Textile Detergent.
+5. Peroxide Stabiliser vs Peroxide Killer.
+6. Textile Sequestering Agents and Water Hardness.
+7. Chemicals Used in Reactive Dyeing.
+8. Role of Textile Levelling Agents.
+9. Textile Printing Binders and Thickeners.
+10. Different Types of Textile Softeners.
+11. Silicone Softener vs Non-Silicone Softener.
+12. Textile Chemical Selection by Fibre Type.
+13. Chemicals Used in Denim Washing.
+14. Textile TDS and SDS: What Buyers Should Understand.
+15. Understanding Textile Functional Finishes.
+16. Dyeing Auxiliaries by Dye Class.
+17. How to Select a Textile Wetting Agent.
+18. Understanding Textile After-treatment Chemicals.
+
+Only publish useful articles with unique information and proper review.
+
+Do not mass-produce duplicate pages with keyword substitutions.
+
+Keep blog content separate from actual product availability claims.
+
+---
+
+# PART 17 — INTERNAL DOCUMENTATION
+
+Create:
+
+`docs/textile-chemicals-taxonomy.md`
+
+It must document:
+- All main chemical categories.
+- Subcategories.
+- Product candidate list.
+- Product functions.
+- Processing stages.
+- Related fibres.
+- Category relationships.
+- Related product relationships.
+
+Create:
+
+`docs/textile-chemicals-seo-plan.md`
+
+It must contain:
+- Main landing page SEO.
+- Category URL map.
+- Product URL map.
+- Primary keywords.
+- Secondary keywords.
+- Search intent.
+- Meta title templates.
+- Meta description templates.
+- Internal linking strategy.
+- Sitemap rules.
+- Structured data rules.
+
+Create:
+
+`docs/textile-product-content-verification.md`
+
+It must contain:
+- Claims needing business owner confirmation.
+- Product availability status.
+- Technical documents required.
+- Unverified grades and concentrations.
+- Manufacturer identity checks.
+- Packaging confirmation.
+- Compliance verification requirements.
+
+These documents are for internal project management, not public pages.
+
+---
+
+# PART 18 — BUSINESS CONTENT AND INDIA MART INTEGRATION
+
+Use:
+
+https://www.indiamart.com/om-saienterprise-surat/
+
+This must be the external primary enquiry route until official company communication channels are configured.
+
+All commercial CTA links must use:
+
+- Correct external URL.
+- `target="_blank"`.
+- `rel="noopener noreferrer"`.
+
+Do not use an unconfigured WhatsApp/Email modal as the main textile product enquiry route.
+
+Do not invent product availability or manufacturer authorisation based on the IndiaMART profile URL alone.
+
+If actual products are visible in the profile, match them carefully.
+
+If the profile cannot be accessed, record the information as unverified.
+
+Do not substitute another company with the same business name.
+
+---
+
+# PART 19 — SEO VALIDATION AND QUALITY CONTROL
+
+After implementation check:
+
+### HTML
+- One H1 per page.
+- Correct heading hierarchy.
+- Valid semantic markup.
+- Correct breadcrumbs.
+- No duplicate IDs.
+- No broken links.
+
+### SEO
+- Unique title.
+- Unique description.
+- Unique canonical.
+- Correct Open Graph.
+- Correct robots directives.
+- Correct structured data.
+- Unique page content.
+- Crawlable links.
+- No accidental duplicate URLs.
+- Sitemap includes only approved public pages.
+
+### Product Data
+- Unique IDs.
+- Unique slugs.
+- Valid categories.
+- Valid product statuses.
+- No duplicate records.
+- No invalid image paths.
+- No unapproved page publication.
+- No invented technical fields.
+
+### JavaScript
+- Search works.
+- All filters work together.
+- Reset filters works.
+- Empty state works.
+- No-result state works.
+- Product navigation works.
+- IndiaMART links work.
+- Existing FMCG catalogue remains functional.
+
+### Performance
+- Image sizes optimised.
+- No unnecessary dependencies.
+- No duplicate JavaScript.
+- No unnecessary CSS.
+- No avoidable layout shift.
+- Correct lazy loading.
+
+### Build
+
+Run:
+
+```bash
+npm run build
+```
+
+Resolve all build errors.
+
+### Regression Testing
+
+Ensure the following remain functional:
+
+- `chemicals/index.html`
+- `chemicals/about.html`
+- `chemicals/products.html`
+- `chemicals/industrial-chemicals.html`
+- `chemicals/contact.html`
+- Corporate Portal.
+- FMCG pages.
+
+Do not claim a build or browser test passed unless you actually executed it.
+
+---
+
+# PART 20 — IMPLEMENTATION ORDER
+
+Execute the work in phases.
+
+## Phase 1 — Existing Repository Audit
+
+Understand existing code, data and architecture.
+
+Prepare a concise internal findings report.
+
+## Phase 2 — Textile Chemical Taxonomy
+
+Create the full taxonomy and category relationships.
+
+Keep unverified products separate from the actual business inventory.
+
+## Phase 3 — Textile Chemicals Landing Page
+
+Redesign and implement the complete landing page.
+
+## Phase 4 — Product Catalogue Architecture
+
+Extend JSON schema and search/filter functionality without breaking existing code.
+
+## Phase 5 — Category Pages
+
+Build category pages based on meaningful content and real product relevance.
+
+## Phase 6 — Individual Product Page Template
+
+Implement reusable product detail HTML/CSS structure.
+
+## Phase 7 — Static SEO Product Page Generator
+
+Implement product HTML generation from approved data.
+
+## Phase 8 — SEO and Sitemap
+
+Add:
+- Unique metadata.
+- Canonical.
+- Structured data.
+- Sitemap generation.
+- Internal linking.
+
+## Phase 9 — QA and Testing
+
+Run build, HTML, data, link and responsive checks.
+
+## Phase 10 — Documentation
+
+Update all internal project documentation.
+
+Do not skip phases silently.
+
+---
+
+# PART 21 — FINAL DELIVERY REPORT
+
+After implementation, provide:
+
+1. Summary of repository audit.
+2. Complete textile chemical categories implemented.
+3. Categories and product candidates documented.
+4. Textile landing page design changes.
+5. Product catalogue changes.
+6. Search/filter functionality.
+7. Individual product page architecture.
+8. Number of product records prepared.
+9. Number of approved public product pages generated.
+10. SEO improvements.
+11. Structured data and sitemap status.
+12. Files created.
+13. Files modified.
+14. Build result.
+15. Testing result.
+16. Remaining business information needed.
+17. Remaining unverified product information.
+18. Known limitations.
+
+Include a clear distinction between:
+- Educational categories.
+- Product candidates.
+- Owner-approved products.
+- Published commercial products.
+
+Do not report all taxonomy candidates as active products.
+
+---
+
+# FINAL EXECUTION INSTRUCTIONS
+
+The website must be useful for real textile chemical buyers and procurement teams.
+
+Prioritise:
+
+1. Technical accuracy.
+2. Clear chemical classification.
+3. Detailed product application information.
+4. Unique and useful SEO content.
+5. High-quality B2B UI/UX.
+6. Product discovery and filtering.
+7. Static page performance.
+8. Honest business representation.
+9. Maintainable code architecture.
+10. Future scalability.
+
+Do not create fake inventory.
+
+Do not invent technical specifications.
+
+Do not generate hundreds of thin SEO pages.
+
+Do not break existing website functionality.
+
+Do not modify FMCG or Corporate Portal pages.
+
+Do not merely provide sample HTML or a plan.
+
+Implement the actual changes in the repository and verify them.
+
+**PROJECT SCOPE: OM SAI ENTERPRISE — COMPLETE TEXTILE CHEMICALS SECTION ONLY.**

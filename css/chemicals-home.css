@@ -106,6 +106,87 @@
   transform: translateY(-1px);
 }
 
+/* Hero Brand Showcase Card (Replacing Stock Facility Image) */
+.chem-home-hero-brand-card {
+  position: relative;
+  height: 420px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--chem-border, #D5DFEB);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(7, 84, 181, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.chem-home-hero-brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px rgba(7, 84, 181, 0.12);
+  border-color: rgba(7, 84, 181, 0.35);
+}
+
+.chem-home-hero-logo-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 36px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFD 100%);
+}
+
+.chem-home-hero-logo {
+  max-height: 220px;
+  max-width: 88%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 16px rgba(7, 84, 181, 0.08));
+  transition: transform 0.4s ease;
+}
+
+.chem-home-hero-brand-card:hover .chem-home-hero-logo {
+  transform: scale(1.03);
+}
+
+.chem-home-hero-brand-footer {
+  background: #F4F7FA;
+  border-top: 1px solid var(--chem-border, #D5DFEB);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.chem-home-brand-tagline {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--chem-primary, #0754B5);
+  display: block;
+}
+
+.chem-home-brand-sub {
+  font-size: 0.8125rem;
+  color: #586A7D;
+  font-weight: 500;
+  display: block;
+  margin-top: 2px;
+}
+
+.chem-home-brand-badge {
+  background-color: rgba(8, 127, 56, 0.1);
+  color: var(--chem-secondary, #087F38);
+  border: 1px solid rgba(8, 127, 56, 0.22);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
 .chem-home-hero-media {
   position: relative;
   border-radius: 14px;
@@ -586,6 +667,14 @@
     height: 360px;
   }
 
+  .chem-home-hero-brand-card {
+    height: 360px;
+  }
+
+  .chem-home-hero-logo {
+    max-height: 180px;
+  }
+
   .chem-home-industries-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -688,6 +777,21 @@
 
   .chem-home-hero-img {
     height: 260px;
+  }
+
+  .chem-home-hero-brand-card {
+    height: 290px;
+  }
+
+  .chem-home-hero-logo {
+    max-height: 140px;
+  }
+
+  .chem-home-hero-brand-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 16px;
   }
 
   .chem-home-media-badge {
