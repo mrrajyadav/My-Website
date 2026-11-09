@@ -113,6 +113,53 @@
   </section>
 
   <!-- ========================================================================
+       SECTION 2.5: PROMINENT TEXTILE CHEMICAL FINDER & FAST SEARCH
+       ======================================================================== -->
+  <section class="chem-tex-finder-section" style="background: linear-gradient(180deg, #F0F4FA 0%, #FFFFFF 100%); padding: 36px 0 20px 0; border-bottom: 1px solid var(--chem-border, #D5DFEB);">
+    <div class="container">
+      <div style="max-width: 860px; margin: 0 auto; text-align: center;">
+        <span class="chem-tex-kicker">INTELLIGENT PRODUCT DISCOVERY</span>
+        <h2 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); font-weight: 800; color: var(--chem-primary, #0754B5); margin-bottom: 10px;">
+          Find Textile Chemicals by Name, Application, or CAS / Function
+        </h2>
+        <p style="color: #4A5B6D; font-size: 0.95rem; margin-bottom: 24px;">
+          Search across 140 commercial textile chemicals, processing auxiliaries, and colourants sourced by Om Sai Enterprise, Surat.
+        </p>
+
+        <!-- Prominent Search Box -->
+        <div style="position: relative; max-width: 720px; margin: 0 auto 20px auto; text-align: left;">
+          <div class="chem-tex-search-input-wrap" style="box-shadow: 0 4px 20px rgba(7, 84, 181, 0.12); border: 2px solid #0754B5; border-radius: 12px; background: #FFFFFF; display: flex; align-items: center; padding: 6px 16px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0754B5" stroke-width="2.5" aria-hidden="true" style="margin-right: 12px; flex-shrink: 0;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              id="heroTextileSearchInput"
+              class="chem-tex-search-input"
+              placeholder="Search e.g. 'wetting agent', 'peroxide killer', 'reactive fixative', 'silicone softener'..."
+              aria-label="Search all textile chemicals"
+              style="border: none; padding: 12px 0; font-size: 1.05rem; width: 100%; outline: none;"
+            />
+          </div>
+          <div id="heroSearchSuggestions" style="display: none; position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #FFFFFF; border: 1px solid #D5DFEB; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); z-index: 1000; max-height: 380px; overflow-y: auto;"></div>
+        </div>
+
+        <!-- Quick Filter Tags -->
+        <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; font-size: 0.8125rem;">
+          <span style="color: #6C7D8E; align-self: center; font-weight: 600;">Popular Searches:</span>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='wetting'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Wetting Agents</a>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='peroxide'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Bleach Stabilisers</a>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='levelling'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Levelling Agents</a>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='fixing'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Dye Fixing Agents</a>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='silicone'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Silicone Softeners</a>
+          <a href="#textile-catalogue" onclick="document.getElementById('textileSearchInput').value='alginate'; document.getElementById('textileSearchInput').dispatchEvent(new Event('input'));" class="btn btn-outline btn-sm" style="padding: 4px 10px; font-size: 0.75rem; border-radius: 20px;">Printing Thickeners</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
        SECTION 3: TEXTILE PROCESSING JOURNEY (8 STAGES)
        ======================================================================== -->
   <section class="chem-tex-journey-section" id="journey">
@@ -259,7 +306,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Yarn prep &amp; warp weaving</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./yarn-spinning-sizing/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -279,7 +326,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Woven &amp; knitted preparation</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./pretreatment-chemicals/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -299,7 +346,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Continuous pad &amp; exhaust bleach</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./bleaching-chemicals/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -319,7 +366,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Cotton, poly, nylon dyeing</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./dyeing-auxiliaries/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -339,7 +386,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Distinct colorant classification</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./dyes-and-colourants/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -359,7 +406,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Screen, rotary &amp; table printing</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./printing-chemicals/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -379,7 +426,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Fastness &amp; wash-off optimization</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./after-treatment-washing/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -399,7 +446,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Neutral &amp; bluish brilliant whites</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./optical-brighteners/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -419,7 +466,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Stenter padding &amp; exhaust soft</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./softening-and-finishing/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -439,7 +486,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Specialty technical performance</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./functional-finishes/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -459,7 +506,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Industrial laundry &amp; denim mills</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./denim-garment-washing/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -479,7 +526,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">Coated fabrics &amp; laminates</span>
-            <a href="#textile-catalogue" class="btn btn-outline btn-sm">View in Catalogue &rarr;</a>
+            <a href="./coating-and-technical-textiles/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
 
@@ -499,7 +546,7 @@
           </div>
           <div class="chem-tex-cat-action">
             <span style="font-size: 0.8125rem; color: #586A7D;">ETP &amp; industrial utilities</span>
-            <a href="industrial-chemicals.html" class="btn btn-outline btn-sm">Industrial Section &rarr;</a>
+            <a href="./textile-water-and-effluent-treatment/" class="btn btn-primary btn-sm">Explore Category &rarr;</a>
           </div>
         </article>
       </div>
@@ -527,7 +574,7 @@
       <!-- Multi-Filter Toolbar -->
       <div class="chem-tex-filter-toolbar">
         <!-- Live Search Row -->
-        <div class="chem-tex-search-row">
+        <div class="chem-tex-search-row" style="position: relative;">
           <div class="chem-tex-search-input-wrap">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <circle cx="11" cy="11" r="8"></circle>
@@ -541,23 +588,33 @@
               aria-label="Search textile chemicals"
             />
           </div>
+          <div id="catalogueSearchSuggestions" style="display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: #FFFFFF; border: 1px solid #D5DFEB; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.12); z-index: 100; max-height: 360px; overflow-y: auto;"></div>
         </div>
 
-        <!-- 4 Faceted Select Dropdowns -->
-        <div class="chem-tex-filter-selects-grid">
+        <!-- 5 Faceted Select Dropdowns -->
+        <div class="chem-tex-filter-selects-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+          <!-- Category -->
+          <div class="chem-tex-filter-group">
+            <label class="chem-tex-filter-label" for="filterCategorySelect">Chemical Category</label>
+            <select id="filterCategorySelect" class="chem-tex-filter-select" aria-label="Filter by chemical category">
+              <option value="all">All Categories (A–M)</option>
+            </select>
+          </div>
+
           <!-- Stage -->
           <div class="chem-tex-filter-group">
             <label class="chem-tex-filter-label" for="filterStageSelect">Processing Stage</label>
             <select id="filterStageSelect" class="chem-tex-filter-select" aria-label="Filter by processing stage">
               <option value="all">All Stages</option>
-              <option value="pretreatment">Pretreatment</option>
+              <option value="spinning">Spinning &amp; Sizing</option>
+              <option value="pretreatment">Pretreatment &amp; Scouring</option>
               <option value="bleaching">Bleaching</option>
-              <option value="dyeing">Dyeing</option>
-              <option value="printing">Printing</option>
-              <option value="after-treatment">After-treatment</option>
-              <option value="finishing">Finishing</option>
-              <option value="garment">Garment Washing</option>
-              <option value="technical">Technical Textiles</option>
+              <option value="dyeing">Dyeing &amp; Coloration</option>
+              <option value="printing">Textile Printing</option>
+              <option value="after-treatment">After-treatment &amp; Wash-off</option>
+              <option value="finishing">Softening &amp; Finishing</option>
+              <option value="garment">Garment Washing &amp; Denim</option>
+              <option value="technical">Coating &amp; Technical</option>
             </select>
           </div>
 
@@ -596,24 +653,20 @@
             </select>
           </div>
 
-          <!-- Application -->
+          <!-- Sort Order -->
           <div class="chem-tex-filter-group">
-            <label class="chem-tex-filter-label" for="filterApplicationSelect">Application Sector</label>
-            <select id="filterApplicationSelect" class="chem-tex-filter-select" aria-label="Filter by fabric application">
-              <option value="all">All Applications</option>
-              <option value="woven">Woven Fabrics</option>
-              <option value="knitted">Knitted Fabrics</option>
-              <option value="denim">Denim &amp; Twills</option>
-              <option value="garments">Garment Washing</option>
-              <option value="home">Home Textiles</option>
-              <option value="technical">Technical Textiles</option>
+            <label class="chem-tex-filter-label" for="filterSortSelect">Sort Order</label>
+            <select id="filterSortSelect" class="chem-tex-filter-select" aria-label="Sort product catalogue">
+              <option value="cat-asc">Category Order (A &rarr; M)</option>
+              <option value="name-asc">Product Name (A &rarr; Z)</option>
+              <option value="name-desc">Product Name (Z &rarr; A)</option>
             </select>
           </div>
         </div>
 
         <!-- Filter Count & Reset -->
         <div class="chem-tex-filter-status-row">
-          <span id="filterResultCount" class="chem-tex-filter-count">Sourcing on request</span>
+          <span id="filterResultCount" class="chem-tex-filter-count">Loading textile products...</span>
           <button type="button" id="clearFiltersBtn" class="chem-tex-filter-clear-btn">Clear All Filters</button>
         </div>
       </div>
@@ -1197,16 +1250,7 @@
 
   <!-- Scripts -->
   <script src="../js/main.js"></script>
-  <script src="../js/products.js"></script>
+  <script src="../js/textile-filters.js"></script>
   <script src="../js/enquiry.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      initProductCatalogue({
-        division: 'chemicals',
-        containerId: 'textileGrid',
-        categoryFilter: 'Textile Chemicals'
-      });
-    });
-  </script>
 </body>
 </html>

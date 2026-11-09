@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "node scripts/build-taxonomy-data.mjs && node scripts/generate-textile-product-pages.mjs && vite build && node scripts/copy-static.mjs",
+    "build": "node scripts/validate-textile-data.mjs && node scripts/generate-textile-category-pages.mjs && node scripts/generate-textile-product-pages.mjs && node scripts/generate-textile-sitemap.mjs && vite build && node scripts/copy-static.mjs",
     "preview": "vite preview",
     "clean": "node scripts/clean.mjs",
     "lint": "tsc --noEmit"
