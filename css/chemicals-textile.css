@@ -284,6 +284,12 @@
   flex: 1;
 }
 
+.chem-tex-category-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
 .chem-tex-cat-families {
   margin-bottom: 20px;
   padding: 12px;
@@ -896,6 +902,10 @@
   }
   .chem-tex-search-row {
     flex-direction: column;
+  }
+  .chem-tex-category-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .chem-tex-hero-actions {
     flex-direction: column;

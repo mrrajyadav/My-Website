@@ -27,9 +27,29 @@ if (fs.existsSync('css')) {
   fs.cpSync('css', path.join(distDir, 'css'), { recursive: true });
 }
 
-// Copy generated static textile chemicals pages
-if (fs.existsSync('chemicals/textile-chemicals')) {
-  fs.cpSync('chemicals/textile-chemicals', path.join(distDir, 'chemicals/textile-chemicals'), { recursive: true });
+// Copy public files (_redirects, sitemap.xml, robots.txt, favicon.svg)
+const publicDir = path.resolve('public');
+if (fs.existsSync(publicDir)) {
+  fs.cpSync(publicDir, distDir, { recursive: true });
 }
 
-console.log('✓ Successfully copied static assets (js, css, data, assets, textile-chemicals) to dist/');
+// Copy legacy redirect directories under chemicals/ if generated
+const legacyUrlsPath = path.resolve('data/legacy-urls.json');
+if (fs.existsSync(legacyUrlsPath)) {
+  try {
+    const legacyUrls = JSON.parse(fs.readFileSync(legacyUrlsPath, 'utf8'));
+    for (const item of legacyUrls) {
+      const relPath = (item.legacyPath || item.source || '').replace(/^\//, '');
+      if (relPath && fs.existsSync(relPath)) {
+        const dest = path.join(distDir, relPath);
+        fs.mkdirSync(path.dirname(dest), { recursive: true });
+        fs.cpSync(relPath, dest, { recursive: true });
+      }
+    }
+  } catch (err) {
+    console.warn('Warning copying legacy redirects:', err.message);
+  }
+}
+
+console.log('✓ Successfully copied static assets (js, css, data, assets, textile-chemicals, legacy redirects) to dist/');
+

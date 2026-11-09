@@ -105,54 +105,75 @@ When verified details are ready to be published:
 
 ---
 
-## 5. How to Add or Edit Products
+## 5. Textile Chemicals Discovery Architecture
 
-Product information is decoupled from HTML in structured JSON:
-- FMCG products: `data/fmcg-products.json`
-- Chemicals: `data/chemical-products.json`
-- A reference schema is provided in `data/sample-products-template.json`
+Om Sai Enterprise features an automated, static-site-generated Textile Chemicals catalog engineered as a single source of truth:
 
-Example product record:
-```json
-{
-  "id": "CHEM-010",
-  "name": "Non-Ionic Wetting Agent",
-  "category": "Textile Chemicals",
-  "subCategory": "Pre-Treatment",
-  "image": "assets/images/chemicals/textile.jpg",
-  "shortDescription": "Rapid penetration wetting agent for high-speed continuous scouring ranges.",
-  "application": "Cotton and polyester knit preparation baths.",
-  "packaging": "50 kg HDPE carboys",
-  "documentation": "TDS and SDS available upon verified business enquiry",
-  "status": "active"
-}
+- **Central Master Dataset**: `data/textile-products.json` (140 structured products)
+- **Central Taxonomy**: `data/textile-chemical-categories.json` (13 wet processing categories CAT-A to CAT-M)
+- **Legacy URL Map**: `data/legacy-urls.json` (14 canonical redirect rules)
+
+### Build & Generation Scripts
+```bash
+# 1. Compile master candidate records into canonical dataset
+node scripts/build-master-textile-data.mjs
+
+# 2. Audit and validate schema, references, related IDs, and legacy redirects
+node scripts/validate-textile-data.mjs
+
+# 3. Generate legacy 301 static refresh pages & public/_redirects
+node scripts/generate-legacy-redirects.mjs
+
+# 4. Generate 13 category landing pages (/chemicals/textile-chemicals/{category}/)
+node scripts/generate-textile-category-pages.mjs
+
+# 5. Generate 140 individual product pages (/chemicals/textile-chemicals/{category}/{product}/)
+node scripts/generate-textile-product-pages.mjs
+
+# 6. Generate search-engine compliant XML sitemap with real file modification dates
+node scripts/generate-textile-sitemap.mjs
+
+# Complete one-command build:
+npm run build
 ```
-Setting `"status": "inactive"` will automatically hide the item from the live catalogue without needing code modifications.
 
 ---
 
-## 6. Static Trade Enquiry Workflow
+## 6. Commercial Data & Honesty Policy
+
+In strict accordance with B2B industrial trading principles:
+- **No Fabricated Pricing**: Chemical pricing fluctuates with raw material indices (petrochemical feeds, caustic, ethylene oxide, silicones) and volume brackets. All prices are explicitly stated as "Quotation on Request" (`price: null`).
+- **No Fake Stock / Inventory**: Stock levels are not fabricated with counters. Sourcing lead times and spot availability are confirmed through active commercial desks.
+- **Traceable Literature & Safety**: Technical overviews cite published textile chemistry literature (e.g. Shore, Trotman, Peters, Karmakar). Technical Data Sheets (TDS) and Safety Data Sheets (SDS) are provided upon verified commercial request.
+- **Verified Trade Profile**: Direct integration with verified IndiaMART enterprise profile: `https://www.indiamart.com/om-saienterprise-surat/`.
+
+---
+
+## 7. Static Trade Enquiry & RFQ Workflow
 
 Because this is a pure static website with no backend database dependency:
-- Clicking **"Contact"** or **"Contact for Details"** on any product automatically detects the active division, product code, and product title.
-- The user enters their contact person name, company name, phone, and specific volume requirement.
-- The visitor can select:
-  - **WhatsApp**: Generates an instant `https://wa.me/{number}?text={encoded}` prefilled message ready to send with one click.
-  - **Email**: Generates an official prefilled `mailto:` draft with structured trade inquiry fields.
-- Zero customer data is silently stored in browser `localStorage`, ensuring complete commercial privacy.
+- Clicking **"Enquire"**, **"Request Quotation"**, or **"Contact for Details"** on any product opens an accessible modal or redirects to the verified IndiaMART sourcing desk.
+- Contact inquiries generate structured client-side drafts for WhatsApp or Email.
+- Zero customer or enquiry data is stored on server databases, ensuring complete client privacy.
 
 ---
 
-## 7. Local Development
+## 8. Local Development & Deployment
 
-Run the local dev server:
+Run local development server:
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-Build for static production:
+Typecheck & Lint:
+```bash
+npm run lint
+```
+
+Full Production Build:
 ```bash
 npm run build
 ```
-Output files will be generated into the `dist/` folder.
+Output files will be generated into the `dist/` folder ready for GitHub Pages, Cloudflare Pages, or Netlify.
+

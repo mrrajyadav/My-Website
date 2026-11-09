@@ -26,15 +26,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const company = document.getElementById('chemCompany')?.value;
     const phone = document.getElementById('chemPhone')?.value;
     const email = document.getElementById('chemEmail')?.value;
+    const productName = document.getElementById('chemProductName')?.value?.trim();
+    const grade = document.getElementById('chemGrade')?.value?.trim();
+    const quantity = document.getElementById('chemQuantity')?.value?.trim();
+    const packaging = document.getElementById('chemPackaging')?.value?.trim();
+    const location = document.getElementById('chemLocation')?.value?.trim();
     const industry = document.getElementById('chemIndustry')?.value || 'Industrial Manufacturing';
-    const notes = document.getElementById('chemNotes')?.value;
+    const notes = document.getElementById('chemNotes')?.value?.trim();
+    const tdsRequest = document.getElementById('chemTdsRequest')?.checked;
 
-    const fullMessage = `RFQ Requirement (${industry}): ${notes || 'Requesting commercial price quotation and product availability.'}`;
+    const details = [
+      productName ? `Target Product / Family: ${productName}` : '',
+      grade ? `Required Grade / Concentration: ${grade}` : '',
+      quantity ? `Estimated Volume / Quantity: ${quantity}` : '',
+      packaging ? `Packaging Preference: ${packaging}` : '',
+      location ? `Delivery Destination: ${location}` : '',
+      industry ? `Industry Sector: ${industry}` : '',
+      tdsRequest ? `Documentation Requested: Manufacturer TDS & SDS (Subject to confirmation)` : '',
+      notes ? `Specific Sourcing Scope: ${notes}` : ''
+    ].filter(Boolean).join('\n• ');
+
+    const fullMessage = `Chemical Trade RFQ Details:\n• ${details}`;
 
     window.processTradeEnquiry({
       division: 'omSaiEnterprise',
       productId: 'CHEM-RFQ',
-      productName: `Industrial Quote Request (${industry})`,
+      productName: productName ? `Chemical RFQ - ${productName}` : `Chemical RFQ (${industry})`,
       name,
       company,
       phone,

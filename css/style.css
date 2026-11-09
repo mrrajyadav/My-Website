@@ -198,6 +198,7 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   height: 48px;
+  flex-shrink: 0;
 }
 
 .logo-container-light {
@@ -209,6 +210,7 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .logo-container-dark {
@@ -220,25 +222,29 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .logo-img {
-  max-height: 36px;
+  max-height: 38px;
   width: auto;
   object-fit: contain;
+  display: block;
 }
 
 .brand-divider {
   width: 1px;
   height: 28px;
   background-color: var(--border-color);
+  flex-shrink: 0;
 }
 
 /* Navigation Links */
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 18px;
+  flex-shrink: 1;
 }
 
 .nav-link {

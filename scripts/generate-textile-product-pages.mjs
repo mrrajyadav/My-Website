@@ -280,7 +280,7 @@ products.forEach(prod => {
               </tr>
               <tr>
                 <th>Typical Packaging</th>
-                <td>${esc((comm.packaging || ['50 kg Carbouys', '200 kg HDPE Drums', '1,000 kg IBC Totes']).join(', '))}</td>
+                <td>${esc(comm.packagingNotice || "Packaging subject to confirmation on quotation.")}</td>
               </tr>
               <tr>
                 <th>Synonyms &amp; Search Aliases</th>
@@ -304,9 +304,8 @@ products.forEach(prod => {
           </p>
           <ul style="font-size: 0.8125rem; color: #3B4B5A; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; padding: 0;">
             <li>&check; Technical specification &amp; application support</li>
-            <li>&check; Manufacturer Technical Data Sheet (TDS) on request</li>
-            <li>&check; Batch Certificate of Analysis (COA) per dispatch</li>
-            <li>&check; Standard industrial carboy, drum, and IBC packing</li>
+            <li>&check; Manufacturer Technical Data Sheet (TDS) upon commercial inquiry</li>
+            <li>&check; Packaging &amp; MOQ confirmed on official quotation</li>
             <li>&check; Transparent trade communication via IndiaMART</li>
           </ul>
           <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-block" style="margin-bottom: 10px;">
@@ -409,7 +408,7 @@ products.forEach(prod => {
             ${esc(tc.storageAndHandling || 'Store in original sealed containers under sheltered conditions between 5°C and 35°C.')}
           </p>
           <p style="font-size: 0.85rem; color: #6C7D8E; margin: 0;">
-            <strong>Standard Trade Packaging:</strong> ${esc((comm.packaging || ['50 kg Carbouys', '200 kg HDPE Drums', '1,000 kg IBC Totes']).join(', '))} (Subject to manufacturer dispatch format).
+            <strong>Standard Trade Packaging:</strong> ${esc(comm.packagingNotice || 'Packaging subject to confirmation on quotation.')}
           </p>
         </div>
 
@@ -431,7 +430,7 @@ products.forEach(prod => {
         <!-- 10. Safety & Trader Disclaimer Notice -->
         <div class="chem-tex-doc-disclaimer">
           <strong style="color: #92400E; display: block; margin-bottom: 6px;">Technical Sourcing Guide &amp; Trader Disclosure:</strong>
-          Om Sai Enterprise operates as an independent commercial chemical trading and sourcing enterprise in Surat, Gujarat. Technical descriptions, process stages, and chemical mechanisms provided in this guide serve as technical orientation for mill managers, processing masters, and purchase officers. Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) are issued by original manufacturers. Material safety guidelines, hazard classifications, and personal protective equipment (PPE) recommendations outlined in manufacturer documentation must be strictly observed. Mill pre-trials are recommended prior to bulk production adoption.
+          Technical information on this page is provided for general product education. Actual chemical composition, processing parameters, compatibility, storage conditions and safety requirements must be confirmed against the current manufacturer Technical Data Sheet (TDS) and Safety Data Sheet (SDS) for the offered grade. Om Sai Enterprise operates as a specialized commercial chemical trading and sourcing enterprise in Surat, Gujarat. Material safety guidelines, hazard classifications, and personal protective equipment (PPE) recommendations outlined in manufacturer documentation must be strictly observed. Mill pre-trials are recommended prior to bulk production adoption.
         </div>
 
       </div>

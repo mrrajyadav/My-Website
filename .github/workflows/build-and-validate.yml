@@ -1,0 +1,45 @@
+name: Build & Validate Textile Chemicals Architecture
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Validate Master Textile Dataset & Taxonomy
+        run: node scripts/validate-textile-data.mjs
+
+      - name: Generate Legacy 301 Redirect Pages & Rules
+        run: node scripts/generate-legacy-redirects.mjs
+
+      - name: Generate Textile Category Landing Pages
+        run: node scripts/generate-textile-category-pages.mjs
+
+      - name: Generate 140 Individual Textile Product Pages
+        run: node scripts/generate-textile-product-pages.mjs
+
+      - name: Generate Automated XML Sitemap
+        run: node scripts/generate-textile-sitemap.mjs
+
+      - name: TypeScript Typecheck & Lint
+        run: npm run lint
+
+      - name: Production Vite Build & Static Assembly
+        run: npm run build

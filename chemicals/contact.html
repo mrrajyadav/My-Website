@@ -163,14 +163,15 @@
 
         <!-- RFQ Form -->
         <div class="contact-card">
-          <h3 style="margin-bottom: 8px;">Request a Quote / RFQ</h3>
-          <p style="font-size: 0.9125rem; color: var(--text-muted); margin-bottom: 24px;">
-            Submit your industrial chemical requirement. Select WhatsApp or Email below to send directly.
+          <h3 style="margin-bottom: 8px;">Request a Commercial Quote / RFQ</h3>
+          <p style="font-size: 0.9125rem; color: var(--text-muted); margin-bottom: 20px;">
+            Submit your chemical requirement below. Fields marked with an asterisk (*) are required.
           </p>
 
           <div id="chemContactAlert" style="display: none; padding: 12px 16px; border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 0.875rem;"></div>
 
           <form id="chemicalQuoteForm">
+            <!-- Mandatory Core Contacts -->
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="chemName">Contact Person *</label>
@@ -178,14 +179,14 @@
               </div>
               <div class="form-group">
                 <label class="form-label" for="chemCompany">Company / Mill Name *</label>
-                <input type="text" id="chemCompany" class="form-control" placeholder="Company or mill name" required />
+                <input type="text" id="chemCompany" class="form-control" placeholder="Company or processing mill name" required />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="chemPhone">Phone / WhatsApp *</label>
-                <input type="tel" id="chemPhone" class="form-control" placeholder="Your contact phone" required />
+                <input type="tel" id="chemPhone" class="form-control" placeholder="Contact number with country code" required />
               </div>
               <div class="form-group">
                 <label class="form-label" for="chemEmail">Email Address (Optional)</label>
@@ -193,23 +194,70 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="chemIndustry">Industry Sector</label>
-              <select id="chemIndustry" class="form-control">
-                <option value="Textile Processing & Dyeing">Textile Processing & Dyeing</option>
-                <option value="Garment Washing / Finishing">Garment Washing / Finishing</option>
-                <option value="Effluent Treatment (ETP)">Effluent Treatment (ETP)</option>
-                <option value="Paper & Packaging">Paper & Packaging</option>
-                <option value="Industrial Chemical Blending">Industrial Chemical Blending</option>
-                <option value="Wholesale Chemical Trading">Wholesale Chemical Trading</option>
-              </select>
+            <!-- Chemical & Sourcing Specifications (Optional) -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="chemProductName">Product Name / Chemical Family (Optional)</label>
+                <input type="text" id="chemProductName" class="form-control" placeholder="e.g. Wetting Agent, Acetic Acid, Polyaluminium Chloride" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="chemGrade">Required Grade / Concentration (Optional)</label>
+                <input type="text" id="chemGrade" class="form-control" placeholder="e.g. Technical Grade, 99.5%, Glacial, 50% Active" />
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label" for="chemNotes">Chemical Requirement & Estimated Volume</label>
-              <textarea id="chemNotes" class="form-control" rows="3" placeholder="Specify chemicals, required tonnage, packaging preference, or TDS request..."></textarea>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="chemQuantity">Estimated Quantity / Volume (Optional)</label>
+                <input type="text" id="chemQuantity" class="form-control" placeholder="e.g. 5 MT, 20 Drums, Sample Trial Lot" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="chemPackaging">Packaging Preference (Optional)</label>
+                <select id="chemPackaging" class="form-control">
+                  <option value="Standard / Flexible">Standard / Flexible (Subject to confirmation)</option>
+                  <option value="50 kg Carboys">50 kg Carboys</option>
+                  <option value="200 kg HDPE Drums">200 kg HDPE Drums</option>
+                  <option value="1,000 kg IBC Totes">1,000 kg IBC Totes</option>
+                  <option value="25 kg / 50 kg Bags">25 kg / 50 kg Bags (Powders / Flakes)</option>
+                  <option value="Bulk Tanker">Bulk Tanker Delivery</option>
+                </select>
+              </div>
             </div>
 
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="chemLocation">Delivery Location / Destination City (Optional)</label>
+                <input type="text" id="chemLocation" class="form-control" placeholder="e.g. Surat, Ahmedabad, Tirupur, Bhilwara" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="chemIndustry">Industry Sector (Optional)</label>
+                <select id="chemIndustry" class="form-control">
+                  <option value="Textile Processing & Dyeing">Textile Processing & Dyeing</option>
+                  <option value="Garment Washing / Finishing">Garment Washing / Finishing</option>
+                  <option value="Effluent Treatment (ETP)">Effluent Treatment (ETP)</option>
+                  <option value="Paper & Packaging">Paper & Packaging</option>
+                  <option value="Industrial Chemical Blending">Industrial Chemical Blending</option>
+                  <option value="Wholesale Chemical Trading">Wholesale Chemical Trading</option>
+                  <option value="Other Manufacturing">Other Manufacturing</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Mandatory Requirement Notes -->
+            <div class="form-group">
+              <label class="form-label" for="chemNotes">Chemical Requirement & Commercial Scope *</label>
+              <textarea id="chemNotes" class="form-control" rows="3" placeholder="Provide specific technical parameters, target substrate, current process challenges, or volume schedules..." required></textarea>
+            </div>
+
+            <!-- Technical Document Request Checkbox -->
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text-main); cursor: pointer;">
+                <input type="checkbox" id="chemTdsRequest" style="margin-top: 3px;" />
+                <span>Request manufacturer Technical Data Sheet (TDS) and Safety Data Sheet (SDS) for the offered product and grade (subject to supplier confirmation).</span>
+              </label>
+            </div>
+
+            <!-- Channel Buttons -->
             <div class="enquiry-action-cluster">
               <button type="button" class="btn btn-secondary btn-block" onclick="submitChemicalQuote('whatsapp')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -225,6 +273,11 @@
                 Send via Email
               </button>
             </div>
+
+            <!-- Disclosure Notice -->
+            <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; margin-top: 14px; text-align: center;">
+              <em>Note:</em> Selecting WhatsApp or Email will format your RFQ details into your messaging application so you can review and manually send it. You can also connect directly via our verified profile on <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" style="color: var(--chem-primary); font-weight: 600;">IndiaMART</a>.
+            </p>
           </form>
         </div>
       </div>

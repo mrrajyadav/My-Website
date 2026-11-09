@@ -1,0 +1,100 @@
+[
+  {
+    "legacyPath": "chemicals/textile-chemicals/after-treatment",
+    "destinationPath": "chemicals/textile-chemicals/after-treatment-washing",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/after-treatment-washing/",
+    "title": "After-Treatment & Washing-Off Auxiliaries",
+    "type": "category"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/after-treatment/dye-fixing-agent",
+    "destinationPath": "chemicals/textile-chemicals/after-treatment-washing/polycationic-dye-fixing-agent",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/after-treatment-washing/polycationic-dye-fixing-agent/",
+    "title": "Polycationic Dye Fixing Agent",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/after-treatment/textile-soaping-agent",
+    "destinationPath": "chemicals/textile-chemicals/after-treatment-washing/textile-soaping-agent",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/after-treatment-washing/textile-soaping-agent/",
+    "title": "Textile Soaping Agent",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/coating-technical/pu-coating-resin",
+    "destinationPath": "chemicals/textile-chemicals/coating-and-technical-textiles/water-based-pu-coating-resin",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/coating-and-technical-textiles/water-based-pu-coating-resin/",
+    "title": "Water-Based PU Coating Resin",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/effluent-treatment/etp-coagulant",
+    "destinationPath": "chemicals/textile-chemicals/textile-water-and-effluent-treatment/etp-coagulant-polyaluminium-chloride-dadmac",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/textile-water-and-effluent-treatment/etp-coagulant-polyaluminium-chloride-dadmac/",
+    "title": "ETP Coagulant (Polyaluminium Chloride / DADMAC)",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/finishing-chemicals",
+    "destinationPath": "chemicals/textile-chemicals/softening-and-finishing",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/softening-and-finishing/",
+    "title": "Softening & Finishing Auxiliaries",
+    "type": "category"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/finishing-chemicals/cationic-textile-softener",
+    "destinationPath": "chemicals/textile-chemicals/softening-and-finishing/cationic-softener-flakes",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/softening-and-finishing/cationic-softener-flakes/",
+    "title": "Cationic Softener Flakes",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/finishing-chemicals/cotton-optical-brightener",
+    "destinationPath": "chemicals/textile-chemicals/optical-brighteners/cotton-optical-brightener-disulfonic-stilbene",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/optical-brighteners/cotton-optical-brightener-disulfonic-stilbene/",
+    "title": "Cotton Optical Brightener (Disulfonic Stilbene)",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/finishing-chemicals/silicone-textile-softener",
+    "destinationPath": "chemicals/textile-chemicals/softening-and-finishing/micro-amino-silicone-emulsion",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/softening-and-finishing/micro-amino-silicone-emulsion/",
+    "title": "Micro Amino Silicone Emulsion",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/finishing-chemicals/textile-water-repellent",
+    "destinationPath": "chemicals/textile-chemicals/functional-finishes/textile-water-repellent-c6-fluorocarbon",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/functional-finishes/textile-water-repellent-c6-fluorocarbon/",
+    "title": "Textile Water Repellent (C6 Fluorocarbon)",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/garment-washing/neutral-cellulase-enzyme",
+    "destinationPath": "chemicals/textile-chemicals/denim-garment-washing/neutral-cellulase-enzyme",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/denim-garment-washing/neutral-cellulase-enzyme/",
+    "title": "Neutral Cellulase Enzyme",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/pretreatment-chemicals/peroxide-killer",
+    "destinationPath": "chemicals/textile-chemicals/pretreatment-chemicals/catalase-peroxide-killer",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/pretreatment-chemicals/catalase-peroxide-killer/",
+    "title": "Catalase Peroxide Killer",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/pretreatment-chemicals/peroxide-stabiliser",
+    "destinationPath": "chemicals/textile-chemicals/pretreatment-chemicals/non-silicate-hydrogen-peroxide-stabiliser",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/pretreatment-chemicals/non-silicate-hydrogen-peroxide-stabiliser/",
+    "title": "Non-Silicate Hydrogen Peroxide Stabiliser",
+    "type": "product"
+  },
+  {
+    "legacyPath": "chemicals/textile-chemicals/pretreatment-chemicals/textile-desizing-agent",
+    "destinationPath": "chemicals/textile-chemicals/pretreatment-chemicals/bacterial-alpha-amylase-desizer",
+    "canonicalUrl": "https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/pretreatment-chemicals/bacterial-alpha-amylase-desizer/",
+    "title": "Bacterial Alpha-Amylase Desizer",
+    "type": "product"
+  }
+]

@@ -496,6 +496,45 @@
             </div>
           </div>
         `;
+      } else if (activeDivision === 'chemicals' || containerId === 'industrialGrid') {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; padding: 48px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--chem-border, #D5DFEB); border-radius: var(--radius-md, 12px); box-shadow: 0 4px 16px rgba(7, 84, 181, 0.04);">
+            <div style="width: 52px; height: 52px; margin: 0 auto 16px auto; border-radius: 50%; background-color: rgba(7, 84, 181, 0.08); display: flex; align-items: center; justify-content: center; color: var(--chem-primary, #0754B5);">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <span style="display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--chem-primary, #0754B5); margin-bottom: 6px;">
+              B2B Commercial Sourcing Desk
+            </span>
+            <h4 style="margin-bottom: 12px; font-size: 1.35rem; color: var(--text-main, #202B36); font-weight: 700;">
+              Industrial Chemical Sourcing on Commercial Inquiry
+            </h4>
+            <p style="color: var(--text-muted, #586A7D); font-size: 0.975rem; max-width: 640px; margin: 0 auto 20px auto; line-height: 1.65;">
+              Om Sai Enterprise operates as an active chemical trading and sourcing desk in Surat, Gujarat. We source industrial commodities (including Caustic Soda Flakes, Glacial Acetic Acid, Hydrogen Peroxide, and Process Defoamers) based on specific buyer volume and destination requirements.
+            </p>
+            <div style="background-color: var(--chem-bg, #F4F7FA); border: 1px dashed var(--chem-border, #CBD5E1); border-radius: 8px; padding: 12px 16px; max-width: 560px; margin: 0 auto 24px auto; text-align: left; font-size: 0.85rem; color: #475569; line-height: 1.5;">
+              <strong>Commercial Note:</strong> Chemical specifications, concentrations, packaging formats (carboys, HDPE drums, IBC totes, bulk), and manufacturer documentation (TDS / SDS) are confirmed upon commercial trade quotation. No unverified stock claims are published.
+            </div>
+            <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary">
+                Submit Industrial RFQ
+              </a>
+              <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Enquire on IndiaMART
+              </a>
+              <a href="textile-chemicals.html" class="btn btn-outline">
+                Explore 140+ Textile Chemicals &rarr;
+              </a>
+            </div>
+          </div>
+        `;
       } else {
         container.innerHTML = `
           <div style="grid-column: 1 / -1; padding: 56px 24px; text-align: center; background: #FFFFFF; border: 1px solid var(--border-color); border-radius: var(--radius-md);">
@@ -563,7 +602,21 @@
 
       const divisionKey = activeDivision === 'fmcg' ? 'baburamTrading' : 'omSaiEnterprise';
       const divisionTitle = activeDivision === 'fmcg' ? 'Baburam Trading' : 'Om Sai Enterprise';
-      document.title = `${product.name} | ${divisionTitle}`;
+      document.title = `${product.name} | ${divisionTitle} – Chemicals Specialist`;
+
+      // Dynamic Canonical & Meta Tags for Product Detail
+      const canonicalTag = document.querySelector('link[rel="canonical"]');
+      if (canonicalTag) {
+        canonicalTag.setAttribute('href', `${window.location.origin}${window.location.pathname}?id=${encodeURIComponent(product.id)}`);
+      }
+      const metaDescTag = document.querySelector('meta[name="description"]');
+      if (metaDescTag) {
+        metaDescTag.setAttribute('content', `${product.name} sourcing guide by ${divisionTitle}. Commercial chemical supply and documentation on inquiry.`);
+      }
+      const ogTitleTag = document.querySelector('meta[property="og:title"]');
+      if (ogTitleTag) {
+        ogTitleTag.setAttribute('content', `${product.name} | ${divisionTitle}`);
+      }
 
       const mediaEl = document.getElementById('detailImage');
       if (mediaEl) {

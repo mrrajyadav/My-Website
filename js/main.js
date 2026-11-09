@@ -52,8 +52,17 @@
 
     configPromise = new Promise(async (resolve) => {
       try {
-        const isSubDir = window.location.pathname.includes('/fmcg/') || window.location.pathname.includes('/chemicals/');
-        const configPath = isSubDir ? '../data/company-config.json' : 'data/company-config.json';
+        const path = window.location.pathname;
+        let prefix = '';
+        if (path.includes('/textile-chemicals/')) {
+          const sub = path.split('/textile-chemicals/')[1] || '';
+          const depth = sub.split('/').filter(Boolean).length;
+          // depth 1 = category (e.g. /pretreatment-chemicals/), depth 2 = product
+          prefix = depth >= 2 ? '../../../../' : '../../../';
+        } else if (path.includes('/fmcg/') || path.includes('/chemicals/')) {
+          prefix = '../';
+        }
+        const configPath = `${prefix}data/company-config.json`;
         const response = await fetch(configPath, { cache: 'no-cache' });
         if (response.ok) {
           const json = await response.json();

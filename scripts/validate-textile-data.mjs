@@ -143,6 +143,29 @@ products.forEach((p, idx) => {
   }
 });
 
+// 3. Validate Legacy URLs
+const legacyPath = path.resolve('data/legacy-urls.json');
+if (fs.existsSync(legacyPath)) {
+  try {
+    const legacyUrls = JSON.parse(fs.readFileSync(legacyPath, 'utf8'));
+    if (!Array.isArray(legacyUrls) || legacyUrls.length === 0) {
+      errors.push('Legacy URLs dataset is empty or invalid array.');
+    } else {
+      legacyUrls.forEach((entry, lIdx) => {
+        const legacy = entry.legacyPath || entry.source;
+        const dest = entry.destinationPath || entry.destination;
+        if (!legacy || !dest) {
+          errors.push(`Legacy URL entry at index ${lIdx} is missing legacyPath or destinationPath.`);
+        }
+      });
+    }
+  } catch (err) {
+    errors.push(`Failed to parse legacy-urls.json: ${err.message}`);
+  }
+} else {
+  warnings.push('data/legacy-urls.json not found.');
+}
+
 console.log(`Audited ${products.length} products across ${categories.length} categories.`);
 
 if (warnings.length > 0) {

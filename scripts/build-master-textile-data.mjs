@@ -1718,6 +1718,329 @@ function slugify(text) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
+const categoryTechnicalProfiles = {
+  "CAT-A": {
+    selectionFactors: [
+      "Fibre-to-metal and fibre-to-fibre frictional coefficient control requirements",
+      "Emulsion stability at high processing, spinning, and texturing speeds",
+      "Ease of aqueous scouring washability and desizing compatibility",
+      "Compatibility with sizing starches, PVA, and acrylic synthetic binder polymers",
+      "Thermal stability and low volatility on texturing heaters and drying cylinders"
+    ],
+    compatibility: [
+      "Verify ionic compatibility with co-applied spinning surfactants before bulk bath mixing",
+      "Pre-dilute slowly with continuous mechanical agitation in soft water",
+      "Ensure compatibility with size box starches prior to slasher sizing runs"
+    ],
+    limitations: [
+      "Avoid excessive lubricant add-on to prevent package slippage and needle gumming",
+      "Maintain adequate desizing liquor temperatures to achieve complete film removal"
+    ],
+    storageAndHandling: "Store in original sealed containers in a sheltered warehouse between 10°C and 35°C. Protect from freezing and direct sunlight. Stir well before drawing from bulk containers.",
+    safetyNotes: "General industrial precautions: Wear safety goggles and nitrile gloves during handling. Avoid prolonged inhalation of fine oil mists during high-speed texturing. Consult manufacturer SDS.",
+    sources: [
+      "Technology of Textile Processing: Technology of Sizing (Shenai, V.A.)",
+      "Handbook of Weaving (Lord & Mohamed)",
+      "Standard Industrial Textile Chemical Dossiers"
+    ]
+  },
+  "CAT-B": {
+    selectionFactors: [
+      "Draves wetting speed and penetrating kinetics at operating bath temperatures",
+      "Chemical stability in concentrated alkaline caustic soda scouring liquors",
+      "Emulsification capacity for natural cotton waxes, pectins, and synthetic knitting oils",
+      "Low foaming profile under high-turbulence jet and winch machine liquor circulation",
+      "Surfactant biodegradability and compliance with regional wastewater discharge limits"
+    ],
+    compatibility: [
+      "Verify ionic compatibility (anionic vs nonionic) when pairing with enzymatic desizing agents",
+      "Stable across neutral to strongly alkaline liquor ranges (pH 6.0 to 12.5)",
+      "Compatible with simultaneous scouring and hydrogen peroxide bleaching formulations"
+    ],
+    limitations: [
+      "Overdosage in high-speed jet machines may induce foaming requiring defoamer addition",
+      "Ensure thorough post-scour hot water rinsing to prevent alkali carryover into dyeing baths"
+    ],
+    storageAndHandling: "Store in original drums in a cool, covered chemical depot away from direct frost and extreme heat. Reseal drum bungs tightly after sampling.",
+    safetyNotes: "Alkaline and surfactant wet processing auxiliaries: Wear chemical splash goggles, protective nitrile gloves, and chemical apron. In case of skin or eye contact, flush thoroughly with clean water. Consult manufacturer SDS.",
+    sources: [
+      "Technology of Textile Processing: Scouring & Bleaching (Shenai, V.A.)",
+      "AATCC Test Method 17: Wetting Agents, Evaluation of",
+      "Enzymes in Textile Processing (Cavaco-Paulo & Gubitz)"
+    ]
+  },
+  "CAT-C": {
+    selectionFactors: [
+      "Hydrogen peroxide stabilization efficiency under alkaline steam or exhaust bleaching",
+      "Silicate-free sequestering capability to prevent insoluble scale on fabric and machinery",
+      "Chelation capacity for polyvalent catalytic heavy metal ions (Fe, Cu, Mn)",
+      "Target CIE whiteness index attainment with minimal cellulose fiber depolymerisation",
+      "Controlled oxygen liberation kinetics matching continuous or exhaust dwell times"
+    ],
+    compatibility: [
+      "Compatible with standard caustic soda, hydrogen peroxide, and nonionic scouring wetters",
+      "Do not mix directly in undiluted concentrated state with strong mineral acids",
+      "Stable in high-pH alkaline bleaching liquors (pH 10.5 to 11.5)"
+    ],
+    limitations: [
+      "Inadequate stabilization can trigger catalytic oxycellulose localized pinhole holes",
+      "Excessive stabilizer concentration may retard bleaching kinetics and reduce whiteness"
+    ],
+    storageAndHandling: "Store in cool, well-ventilated chemical storage away from direct sunlight, reducing agents, strong acids, and combustible materials. Keep containers tightly closed.",
+    safetyNotes: "Bleaching auxiliaries: Wear chemical safety goggles, rubber protective gloves, and boots. Avoid skin exposure and vapor inhalation. Consult manufacturer Safety Data Sheet before handling.",
+    sources: [
+      "Technology of Bleaching and Mercerizing (Shenai, V.A.)",
+      "Bleaching of Textiles (Trotman, E.R.)",
+      "AATCC Test Method 110: Whiteness of Textiles"
+    ]
+  },
+  "CAT-D": {
+    selectionFactors: [
+      "Levelling and migration kinetic control on target substrate (polyester, cotton, nylon)",
+      "High-temperature dye dispersion stability (up to 135°C in HT jet machines)",
+      "Minimal retarding influence on final dyestuff exhaustion yield and color depth",
+      "Low foaming or active foam suppression under intense mechanical pump liquor shear",
+      "Buffer capacity to maintain stable operating pH throughout the heating cycle"
+    ],
+    compatibility: [
+      "Compatible with disperse, reactive, direct, or acid dyestuff classes as formulated",
+      "Check ionic compatibility before combining with cationic fixatives or after-clearing salts",
+      "Pre-dissolve or pre-dilute in warm water prior to injection into the main machine tank"
+    ],
+    limitations: [
+      "Excessive retarder dosage may diminish final shade yield and prolong cycle time",
+      "Always perform laboratory beaker dyeing trials to verify dye-auxiliary compatibility"
+    ],
+    storageAndHandling: "Store in original sealed containers in a cool, dry area protected from freezing and direct thermal sources. Reseal packaging immediately after dispensing.",
+    safetyNotes: "Industrial dyeing auxiliary handling: Wear protective eyewear, impervious gloves, and suitable workwear. In case of accidental spill, contain and wash down with water. Refer to manufacturer SDS.",
+    sources: [
+      "The Dyeing of Synthetic-Polymer and Acetate Fibres (Nunn, D.M., SDC)",
+      "Technology of Dyeing (Shenai, V.A.)",
+      "AATCC Test Method 148: Lightfastness and Dye Dispersibility"
+    ]
+  },
+  "CAT-E": {
+    selectionFactors: [
+      "Substrate affinity and exhaust build-up performance across light, medium, and heavy depths",
+      "Light fastness, wash fastness (ISO 105-C06), and perspiration fastness specifications",
+      "Fixation temperature window, electrolyte/alkali requirement, and wash-off efficiency",
+      "Tone reproducibility and minimization of shade metamerism under multiple light sources",
+      "Compliance with international eco-standards (free of banned carcinogenic aromatic amines)"
+    ],
+    compatibility: [
+      "Compatible with recommended class-specific dyeing auxiliaries, salts, and alkali donors",
+      "Do not blend incompatible dye classes (e.g. cationic basic dyes with anionic reactive dyes)",
+      "Filter dissolved dyestuff through fine mesh sieve before charging machine additions"
+    ],
+    limitations: [
+      "Shade reproducibility depends heavily on substrate preparation consistency and water hardness",
+      "Inadequate washing-off leaves hydrolysed surface dye resulting in poor wet rub fastness"
+    ],
+    storageAndHandling: "Store powder and liquid dyes in airtight containers in a cool, dry storeroom away from steam and moisture. Prevent dust cloud generation during weighing.",
+    safetyNotes: "Wear particulate dust masks (N95 or equivalent) during weighing of dry dye powders. Wear rubber gloves and goggles. Obtain and follow manufacturer SDS.",
+    sources: [
+      "Colour Index International (Society of Dyers and Colourists / AATCC)",
+      "Industrial Dyes: Chemistry, Properties, Applications (Hunger, K.)",
+      "ISO 105 Textile Fastness Standards"
+    ]
+  },
+  "CAT-F": {
+    selectionFactors: [
+      "Pseudoplastic rheological profile: high viscosity at rest, sharp shear-thinning under squeegee",
+      "Fine line print sharpness, pattern definition, and rotary screen release efficiency",
+      "Softness and flexibility of binder polymeric film without surface tackiness",
+      "High fastness to wet and dry rubbing (crocking) and repeated industrial laundering",
+      "Low VOC and formaldehyde-free formulation meeting modern green trade criteria"
+    ],
+    compatibility: [
+      "Compatible with synthetic thickeners, pigment dispersions, and crosslinking binders",
+      "Adjust paste viscosity using soft water before adding acid/catalyst donors",
+      "Ensure thorough thermal curing at recommended temperature and dwell schedule"
+    ],
+    limitations: [
+      "Insufficient oven curing temperature impairs wash and crock fastness performance",
+      "Excessive paste drying in rotary screen mesh will cause screen choking and pinholes"
+    ],
+    storageAndHandling: "Store emulsion binders and thickeners between 10°C and 30°C in sealed plastic containers. Protect from freezing which causes irreversible polymer coagulation.",
+    safetyNotes: "Ensure local exhaust ventilation at printing tables, rotary machines, and curing ovens. Wear protective gloves and safety glasses. Consult manufacturer SDS.",
+    sources: [
+      "Textile Printing (Miles, L.W.C., SDC)",
+      "Technology of Printing (Shenai, V.A.)",
+      "AATCC Test Method 8: Colorfastness to Crocking"
+    ]
+  },
+  "CAT-G": {
+    selectionFactors: [
+      "Efficiency in dispersing and eliminating hydrolysed unfixed surface reactive dyestuff molecules",
+      "Prevention of dye re-deposition and tint staining onto white grounds during soaping",
+      "Formaldehyde-free polycationic fixation delivering minimal shade tone alteration",
+      "Improvement of wash fastness, wet rubbing, and hot water perspiration ratings",
+      "Minimal adverse interference with subsequent handle softeners or functional finishes"
+    ],
+    compatibility: [
+      "Cationic dye fixing agents must never be added to residual anionic dyebaths",
+      "Rinse thoroughly to remove residual electrolytes and alkali before adding fixatives",
+      "Follow recommended progressive hot-water soaping and neutralization sequence"
+    ],
+    limitations: [
+      "Excessive cationic fixative application may decrease fabric light fastness or induce shade shift",
+      "Soft water is required during clearing to prevent precipitation of calcium-dye complexes"
+    ],
+    storageAndHandling: "Store in original HDPE carboys or drums in a covered warehouse away from strong oxidizing chemicals. Reseal drums after dispensing.",
+    safetyNotes: "Standard textile finishing PPE: Wear protective nitrile gloves, splash goggles, and chemical workwear. Avoid breathing hot clearing vapors. Review manufacturer SDS.",
+    sources: [
+      "Cellulosics Dyeing (Shore, J., SDC)",
+      "Technology of Dyeing: After-Treatment Auxiliaries (Shenai, V.A.)",
+      "ISO 105-C06: Colour Fastness to Domestic and Commercial Laundering"
+    ]
+  },
+  "CAT-H": {
+    selectionFactors: [
+      "Fluorescent tint cast profile: brilliant neutral white, bluish-violet, or greenish hue",
+      "Substrate affinity matching target fibre (cellulosic, polyester, polyamide, acrylic)",
+      "Chemical stability across alkaline hydrogen peroxide bleaching liquors and resin finishes",
+      "Light fastness and resistance to atmospheric phenolic gas yellowing during storage",
+      "Absence of greening effect threshold at recommended saturation dosage level"
+    ],
+    compatibility: [
+      "Cellulosic OBAs (stilbene derivatives) are anionic: incompatible with cationic softeners",
+      "Polyester OBAs (benzoxazole derivatives) require HT exhaust (130°C) or thermosol (180-210°C)"
+    ],
+    limitations: [
+      "Exceeding saturation concentration leads to self-quenching and dull greenish discoloration",
+      "Acid-sensitive stilbene types must not be applied below recommended bath pH limits"
+    ],
+    storageAndHandling: "Store in opaque, light-tight drums in a cool, dry area. Shield from direct sunlight and UV radiation to prevent photo-chemical degradation.",
+    safetyNotes: "Handle using safety glasses and protective gloves. Avoid skin contact and powder inhalation. Review manufacturer SDS before factory dispensing.",
+    sources: [
+      "Fluorescent Whitening Agents (Zollinger, H.)",
+      "AATCC Test Method 110: Reflectance, Whiteness and Yellowness of Textiles",
+      "Technology of Bleaching: Optical Brightening (Shenai, V.A.)"
+    ]
+  },
+  "CAT-I": {
+    selectionFactors: [
+      "Target fabric handle specification: silky-smooth, voluminous, drapeable, or crisp",
+      "Hydrophilicity retention on towels, knitwear, and moisture-absorbing apparel",
+      "Non-yellowing thermal resistance on white fabrics during stenter curing (up to 180°C)",
+      "Shear stability of silicone emulsions to prevent silicone oil spots on pad rollers",
+      "Improvement of fabric sewability and reduction of needle-cutting frictional damage"
+    ],
+    compatibility: [
+      "Cationic softeners are strictly incompatible with anionic wetters and fluorescent brighteners",
+      "Silicone micro-emulsions require clean pad troughs and stable, non-turbulent liquor circulation"
+    ],
+    limitations: [
+      "Over-application of hydrophobic silicone fluids severely diminishes fabric water absorbency",
+      "Excessive padder nip pressure or emulsion instability can cause difficult-to-remove silicone spots"
+    ],
+    storageAndHandling: "Store between 5°C and 35°C in original drums. Protect silicone and fatty emulsions from freezing. Stir thoroughly prior to dilution.",
+    safetyNotes: "Standard industrial precautions: Protective gloves and safety glasses. Clean any floor spills immediately to prevent severe slipping hazards. Consult manufacturer SDS.",
+    sources: [
+      "Textile Finishing (Heywood, D., SDC)",
+      "Technology of Finishing (Shenai, V.A.)",
+      "AATCC Test Method 79: Absorbency of Textiles"
+    ]
+  },
+  "CAT-J": {
+    selectionFactors: [
+      "Functional durability: retention of specified finish performance across 20-50 wash cycles",
+      "Initial performance rating (AATCC 22 spray rating, hydrostatic water head, flame rating)",
+      "Non-fluorinated (PFAS-free) chemical compliance where mandated by global buyers",
+      "Minimal adverse influence on fabric tensile strength, air permeability, and shade tone",
+      "Compatibility of curing temperature window with mill stenter heating line capacity"
+    ],
+    compatibility: [
+      "Substrate must be completely scoured, neutralized, and free of residual surfactant wetting agents",
+      "Compatible with designated crosslinking catalysts, extenders, and finishing resins",
+      "Maintain pad bath pH slightly acidic (pH 4.0 to 5.5) using dilute acetic acid"
+    ],
+    limitations: [
+      "Surfactant residues or alkaline carryover drastically degrade water and stain repellency",
+      "Precise stenter curing temperature and dwell time are mandatory to achieve polymer orientation"
+    ],
+    storageAndHandling: "Store in tightly sealed drums in a climate-controlled chemical depot (10°C to 28°C). Protect from freezing.",
+    safetyNotes: "Ensure high-volume exhaust ventilation at stenter exhaust chambers. Wear protective chemical suit, goggles, and gloves. Check manufacturer SDS.",
+    sources: [
+      "AATCC Test Method 22: Water Repellency - Spray Test",
+      "AATCC Test Method 100: Antibacterial Finishes on Textile Materials",
+      "Functional Finishes for Textiles (Paul, R.)"
+    ]
+  },
+  "CAT-K": {
+    selectionFactors: [
+      "Enzyme activity curve matching commercial washer temperature and pH operating range",
+      "Indigo contrast sharpness with effective anti-backstaining on white pocketing and weft",
+      "Controlled fabric weight loss and preservation of denim warp tensile strength",
+      "Compatibility with vintage wash aesthetics, laser engraving, and local fading techniques",
+      "Rapid wash-off and thermal/alkaline enzyme deactivation to halt fiber degradation"
+    ],
+    compatibility: [
+      "Acid cellulases require pH 4.5-5.5; neutral cellulases operate efficiently at pH 6.0-7.5",
+      "Avoid presence of heavy metals or residual chlorine bleaching agents which deactivate enzymes"
+    ],
+    limitations: [
+      "Over-dwell or failure to heat-kill cellulase enzymes triggers severe fabric strength loss",
+      "Precise liquor ratio and mechanical washer loading must be maintained per batch"
+    ],
+    storageAndHandling: "Store liquid and granular enzymes in cool conditions (5°C to 20°C). Avoid elevated storage temperatures that induce denaturation. Keep containers closed.",
+    safetyNotes: "Avoid generating or inhaling enzyme aerosols and dusts to prevent respiratory sensitization. Wear protective dust masks, eye goggles, and gloves. Refer to manufacturer SDS.",
+    sources: [
+      "Denim: Manufacture, Finishing and Applications (Paul, R.)",
+      "Enzyme Technology in Denim Washing (Cavaco-Paulo, A.)",
+      "AATCC Test Method 135: Dimensional Changes in Automatic Laundering"
+    ]
+  },
+  "CAT-L": {
+    selectionFactors: [
+      "Polymeric film tensile strength, elastic modulus, and elongation at break characteristics",
+      "Hydrostatic head water resistance and moisture vapor transmission rate (MVTR)",
+      "Interfacial adhesion tenacity to hydrophobic polyester and polyamide technical fabrics",
+      "Rheological viscosity response for knife-over-roll, foam, or rotary coating application",
+      "Weathering, thermal hydrolysis, and UV degradation resistance in outdoor technical end-uses"
+    ],
+    compatibility: [
+      "Coating resins are formulated for compatibility with crosslinkers (isocyanates) and thickeners",
+      "Substrate fabric must be heat-set and thoroughly cleaned of spinning oils prior to coating"
+    ],
+    limitations: [
+      "Under-curing in drying tunnels produces tacky coatings with poor wet scrub fastness",
+      "Excessive air humidity during polyurethane application can adversely affect curing kinetics"
+    ],
+    storageAndHandling: "Store between 10°C and 30°C in sealed containers. Protect aqueous polymers from freezing. Stir well prior to pumping into coating troughs.",
+    safetyNotes: "Operate coating ranges with continuous vapor extraction and flame-proof equipment. Wear protective gloves, respirators, and splash goggles. Consult manufacturer SDS.",
+    sources: [
+      "Coated and Laminated Textiles (Fung, W.)",
+      "Handbook of Technical Textiles (Horrocks, A.R. & Anand, S.C.)",
+      "ISO 811: Determination of Resistance to Water Penetration"
+    ]
+  },
+  "CAT-M": {
+    selectionFactors: [
+      "Jar-test coagulating velocity and optimum chemical dosing threshold per m³ effluent",
+      "Decolourization rate on water-soluble hydrolysed reactive, acid, and direct dyestuffs",
+      "Chemical Oxygen Demand (COD) and Biological Oxygen Demand (BOD) reduction performance",
+      "Floc settling velocity and dewatering cake compactibility on filter press equipment",
+      "Minimal impact on treated effluent discharge pH and total dissolved solids (TDS)"
+    ],
+    compatibility: [
+      "Dosed in sequential dual-system: primary coagulant (PAC/polymer) followed by PAM flocculant",
+      "Optimal coagulation performance is typically achieved in acidic to neutral range (pH 6.0 to 8.0)"
+    ],
+    limitations: [
+      "Overdosing coagulant can restabilize colloidal charges and increase effluent turbidity",
+      "Regular jar-testing is mandatory as dyehouse effluent composition fluctuates continuously"
+    ],
+    storageAndHandling: "Store in dedicated corrosion-resistant polymer tanks or HDPE drums. Keep dry polymer powders in dry conditions; powder spills create severe slipping hazards.",
+    safetyNotes: "Corrosive and polymer treatment auxiliaries: Wear chemical splash goggles, heavy-duty rubber gloves, and rubber boots. Treat powder spills with dry cleanup methods. Consult manufacturer SDS.",
+    sources: [
+      "Wastewater Treatment in the Textile Industry (Hung, Y.T. et al.)",
+      "CPCB Guidelines for Common Effluent Treatment Plants (CETPs)",
+      "Industrial Water Pollution Control (Eckenfelder, W.W.)"
+    ]
+  }
+};
+
 // Generate the master product structure with intelligent technical relationships
 const masterProducts = masterRawProducts.map(p => {
   const id = `CHEM-TEX-${String(p.num).padStart(3, '0')}`;
@@ -1725,6 +2048,7 @@ const masterProducts = masterRawProducts.map(p => {
   const cat = existingCategories.find(c => c.id === p.catId);
   const catSlug = cat ? cat.slug : 'pretreatment-chemicals';
   const catName = cat ? cat.name : 'Textile Processing Chemicals';
+  const techProfile = categoryTechnicalProfiles[p.catId] || categoryTechnicalProfiles["CAT-B"];
 
   // Smart Related Products Algorithm:
   // Rank other products by shared functions, compatible fibres, machinery, and sequential wet processing synergy
@@ -1809,32 +2133,20 @@ const masterProducts = masterRawProducts.map(p => {
       whenUsed: p.whenUsed,
       whyUsed: p.whyUsed,
       howItWorks: p.howWorks,
-      selectionFactors: [
-        "Substrate fibre compatibility and blend sensitivity",
-        "Operating bath pH tolerance and thermal stability window",
-        "Foaming behavior under high-shear machine circulation",
-        "Compatibility with adjacent bath auxiliaries and dyestuffs",
-        "Wastewater biodegradability and compliance with regional ETP limits"
-      ],
-      compatibility: [
-        "Verify ionic compatibility with co-applied surfactants before bath mixing",
-        "Maintain bath pH within recommended operational range specified in manufacturer TDS",
-        "Conduct lab dilution trial when combining with high electrolyte concentrations"
-      ],
-      limitations: [
-        "Do not mix directly in concentrated form with oppositely charged surfactants",
-        "Exact processing parameters must be optimized based on mill water hardness and liquor ratio"
-      ],
-      storageAndHandling: "Store in original sealed containers in a cool, dry, well-ventilated area away from direct sunlight and freezing temperatures. Standard shelf-life parameters and storage guidelines are specified in the manufacturer Technical Data Sheet.",
-      safetyNotes: "Refer to the manufacturer Safety Data Sheet (SDS) for complete health, safety, and personal protective equipment (PPE) requirements before handling in mill operations.",
+      selectionFactors: techProfile.selectionFactors,
+      compatibility: techProfile.compatibility,
+      limitations: techProfile.limitations,
+      storageAndHandling: techProfile.storageAndHandling,
+      safetyNotes: techProfile.safetyNotes,
+      disclaimer: "Technical information on this page is provided for general product education. Actual chemical composition, processing parameters, compatibility, storage conditions and safety requirements must be confirmed against the current manufacturer Technical Data Sheet (TDS) and Safety Data Sheet (SDS) for the offered grade.",
       faqs: [
         {
           q: `What is the primary wet processing function of ${p.name}?`,
           a: `${p.name} is formulated for the ${p.stages.join(' and ')} stage of textile wet processing, delivering targeted ${p.funcs.join(' and ')} across ${p.fibres.join(', ')} substrates.`
         },
         {
-          q: `What commercial documentation is provided when procuring ${p.name} through Om Sai Enterprise?`,
-          a: `Om Sai Enterprise operates as a specialized chemical sourcing desk in Surat. Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) issued by the original chemical manufacturers are provided per commercial consignment upon request.`
+          q: `What technical documentation is available for ${p.name}?`,
+          a: `Technical documents, including manufacturer Technical Data Sheets (TDS) and Safety Data Sheets (SDS), may be requested for the offered product and grade. Availability is subject to confirmation from the relevant manufacturer or supplier per commercial consignment.`
         }
       ]
     },
@@ -1844,9 +2156,9 @@ const masterProducts = masterRawProducts.map(p => {
       manufacturer: null,
       brand: null,
       grade: null,
-      packagingNotice: "Standard industrial trade packing: 50 kg Carbouys, 200 kg HDPE Drums, 1,000 kg IBC Totes. Exact container format confirmed upon commercial quotation.",
-      packaging: ["50 kg Carbouys", "200 kg HDPE Drums", "1,000 kg IBC Totes"],
-      minimumOrderQuantity: "Commercial Lot (Inquire for MOQ)",
+      packagingNotice: "Packaging subject to confirmation on quotation.",
+      packaging: ["Subject to confirmation on quotation"],
+      minimumOrderQuantity: "Minimum order quantity to be confirmed.",
       price: null,
       priceNotice: "Price provided upon commercial trade request based on volume and delivery terms",
       enquiryUrl: "https://www.indiamart.com/om-saienterprise-surat/"
@@ -1863,11 +2175,7 @@ const masterProducts = masterRawProducts.map(p => {
         `textile ${p.funcs[0].toLowerCase()} auxiliary`
       ]
     },
-    sources: [
-      "AATCC Technical Manual",
-      "Textile Processing Technology (Shenai)",
-      "Standard Textile Chemical Manufacturer Technical Dossiers"
-    ],
+    sources: techProfile.sources,
     relatedProductIds: relatedIds
   };
 });

@@ -165,7 +165,7 @@ categories.forEach(cat => {
        ======================================================================== -->
   <section class="section" style="background-color: #FFFFFF; border-bottom: 1px solid var(--chem-border, #D5DFEB);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+      <div class="chem-tex-category-overview-grid">
         <div style="background-color: var(--chem-bg, #F4F7FA); border: 1px solid var(--chem-border, #D5DFEB); border-radius: 12px; padding: 24px;">
           <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--chem-primary, #0754B5); margin-bottom: 14px;">
             Key Chemical Families

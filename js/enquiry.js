@@ -119,11 +119,15 @@
       newTab // Optional pre-opened blank window for popup-blocker safety
     } = options;
 
-    function showAlert(text, type) {
+    function showAlert(text, type, htmlContent) {
       if (alertElementId) {
         const el = document.getElementById(alertElementId);
         if (el) {
-          el.textContent = text;
+          if (htmlContent) {
+            el.innerHTML = htmlContent;
+          } else {
+            el.textContent = text;
+          }
           el.style.display = 'block';
           if (type === 'error') {
             el.style.backgroundColor = '#FDF2F2';
@@ -140,7 +144,7 @@
       }
     }
 
-    function abortSubmission(errorMsg) {
+    function abortSubmission(errorMsg, htmlContent) {
       if (newTab && typeof newTab.close === 'function') {
         try {
           newTab.close();
@@ -148,7 +152,7 @@
           // ignore
         }
       }
-      showAlert(errorMsg, 'error');
+      showAlert(errorMsg, 'error', htmlContent);
     }
 
     // Input Validation
@@ -167,7 +171,7 @@
       return false;
     }
     if (!trimmedPhone || trimmedPhone.replace(/\D/g, '').length < 8) {
-      abortSubmission('Please enter a valid phone number (at least 8 digits).');
+      abortSubmission('Please enter a valid phone number (minimum 8 digits, including country code if applicable).');
       return false;
     }
     if (trimmedEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
@@ -188,9 +192,22 @@
 
     if (!divConfig || !divConfig.isConfigured) {
       const displayBiz = divConfig ? divConfig.name : (divKey === 'baburamTrading' ? 'Baburam Trading' : 'Om Sai Enterprise');
-      abortSubmission(
-        `Direct digital enquiry for ${displayBiz} is currently paused while official business channels are being configured in company-config.json. Please check back shortly.`
-      );
+      const verifiedUrl = (divConfig && divConfig.verifiedTradeUrl) || (divKey === 'omSaiEnterprise' ? 'https://www.indiamart.com/om-saienterprise-surat/' : '');
+
+      const fallbackHtml = `
+        <div style="line-height: 1.55;">
+          <strong>Direct Enquiry Channels Pending Verification</strong><br />
+          Direct automated WhatsApp / Email routing for <strong>${displayBiz}</strong> is currently paused pending verification of official communication channels in <code>company-config.json</code>.<br />
+          ${verifiedUrl ? `
+            <div style="margin-top: 10px;">
+              <a href="${verifiedUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-sm" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                Connect via Verified IndiaMART Desk &rarr;
+              </a>
+            </div>
+          ` : ''}
+        </div>
+      `;
+      abortSubmission(`Direct digital enquiry for ${displayBiz} is currently paused while official business channels are being configured.`, fallbackHtml);
       return false;
     }
 
@@ -199,7 +216,7 @@
     if (channel === 'whatsapp') {
       const destNumber = (divConfig.whatsappNumber || '').replace(/\D/g, '');
       if (!destNumber) {
-        abortSubmission(`WhatsApp contact number for ${divisionName} is not yet configured. Please use email or contact directly.`);
+        abortSubmission(`WhatsApp contact number for ${divisionName} is not yet configured. Please use email or connect via our verified trade desk.`);
         return false;
       }
 
@@ -217,7 +234,7 @@
       const encoded = encodeURIComponent(lines.join('\n'));
       const whatsappUrl = `https://wa.me/${destNumber}?text=${encoded}`;
 
-      showAlert('WhatsApp application is opening with your pre-filled inquiry. Please review and click Send in WhatsApp.', 'success');
+      showAlert('WhatsApp is opening with your pre-formatted enquiry draft. Please review and manually press Send in WhatsApp.', 'success');
 
       if (newTab && typeof newTab.location !== 'undefined') {
         newTab.location.href = whatsappUrl;
@@ -229,7 +246,7 @@
     } else if (channel === 'email') {
       const destEmail = (divConfig.email || '').trim();
       if (!destEmail) {
-        abortSubmission(`Official email address for ${divisionName} is not yet configured. Please check back shortly.`);
+        abortSubmission(`Official email address for ${divisionName} is not yet configured. Please connect via our verified trade desk.`);
         return false;
       }
 
@@ -251,7 +268,7 @@ Note: Sent from corporate static trade desk.`;
 
       const mailtoUrl = `mailto:${destEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-      showAlert('Your email client is opening with a pre-filled draft. Please review and press Send.', 'success');
+      showAlert('Your email client is opening with a pre-filled draft. Please review and manually send.', 'success');
       setTimeout(() => {
         window.location.href = mailtoUrl;
       }, 250);
@@ -325,10 +342,41 @@ Note: Sent from corporate static trade desk.`;
     });
   };
 
-  // Keyboard accessibility: ESC key to close modal
+  // Keyboard accessibility: ESC key to close, Tab / Shift+Tab focus trap
   document.addEventListener('keydown', e => {
+    const modal = document.getElementById('enquiryModal');
+    if (!modal || !modal.classList.contains('is-open')) return;
+
     if (e.key === 'Escape') {
+      e.preventDefault();
       window.closeEnquiry();
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      const focusableEls = modal.querySelectorAll(
+        'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      const focusable = Array.prototype.filter.call(focusableEls, function (el) {
+        return el.offsetParent !== null;
+      });
+
+      if (focusable.length === 0) return;
+
+      const firstEl = focusable[0];
+      const lastEl = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstEl) {
+          e.preventDefault();
+          lastEl.focus();
+        }
+      } else {
+        if (document.activeElement === lastEl) {
+          e.preventDefault();
+          firstEl.focus();
+        }
+      }
     }
   });
 

@@ -58,10 +58,37 @@ const xmlLines = [
   `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 ];
 
+function getFileLastmod(relPath) {
+  try {
+    const full = path.resolve(relPath);
+    if (fs.existsSync(full)) {
+      return fs.statSync(full).mtime.toISOString().split('T')[0];
+    }
+  } catch {
+    // ignore
+  }
+  return null;
+}
+
 for (const item of allUrls) {
   xmlLines.push(`  <url>`);
   xmlLines.push(`    <loc>${item.loc}</loc>`);
-  xmlLines.push(`    <lastmod>${today}</lastmod>`);
+  
+  // Resolve disk path to get truthful lastmod
+  let diskFile = null;
+  const pathPart = item.loc.replace(baseUrl, '');
+  if (pathPart === '/' || pathPart === '') diskFile = 'index.html';
+  else if (pathPart.endsWith('.html')) diskFile = pathPart.replace(/^\//, '');
+  else if (pathPart.includes('/chemicals/textile-chemicals/')) {
+    diskFile = path.join(pathPart.replace(/^\//, ''), 'index.html');
+  } else if (pathPart.endsWith('/')) {
+    diskFile = path.join(pathPart.replace(/^\//, ''), 'index.html');
+  }
+
+  const lastmod = diskFile ? getFileLastmod(diskFile) : null;
+  if (lastmod) {
+    xmlLines.push(`    <lastmod>${lastmod}</lastmod>`);
+  }
   xmlLines.push(`    <changefreq>${item.changefreq}</changefreq>`);
   xmlLines.push(`    <priority>${item.priority}</priority>`);
   xmlLines.push(`  </url>`);

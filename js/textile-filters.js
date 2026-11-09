@@ -137,6 +137,7 @@
     if (state.fibre && state.fibre !== 'all') params.set('fibre', state.fibre);
     if (state.application && state.application !== 'all') params.set('app', state.application);
     if (state.machinery && state.machinery !== 'all') params.set('machine', state.machinery);
+    if (state.sort && state.sort !== 'cat-asc') params.set('sort', state.sort);
 
     const queryString = params.toString() ? '?' + params.toString() : '';
     const newUrl = `${window.location.pathname}${queryString}${window.location.hash}`;
@@ -318,6 +319,8 @@
     // Compile text blocks
     const nameStr = prod.name.toLowerCase();
     const idStr = prod.id.toLowerCase();
+    const casStr = (prod.casNumber || prod.cas || '').toLowerCase();
+    const identStr = (Array.isArray(prod.identifiers) ? prod.identifiers.join(' ') : (prod.identifiers || '')).toLowerCase();
     const familyStr = (prod.chemicalFamily || '').toLowerCase();
     const subcatStr = (prod.subcategory || '').toLowerCase();
     const catNameStr = (prod.categoryName || '').toLowerCase();
@@ -337,6 +340,7 @@
 
     // Exact full query bonus
     if (nameStr.includes(fullQuery)) totalScore += 120;
+    if (casStr && casStr === fullQuery) totalScore += 110;
     if (synStr.includes(fullQuery)) totalScore += 80;
     if (keyStr.includes(fullQuery)) totalScore += 60;
 
@@ -346,6 +350,14 @@
       if (nameStr.includes(token)) {
         tokenMatched = true;
         totalScore += 50;
+      }
+      if (casStr && casStr.includes(token)) {
+        tokenMatched = true;
+        totalScore += 50;
+      }
+      if (identStr && identStr.includes(token)) {
+        tokenMatched = true;
+        totalScore += 40;
       }
       if (idStr.includes(token)) {
         tokenMatched = true;
