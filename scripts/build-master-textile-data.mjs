@@ -2165,6 +2165,9 @@ const masterProducts = masterRawProducts.map(p => {
     },
     contentStatus: "educational-technical-guide",
     commercialStatus: "sourcing-on-inquiry",
+    publicationStatus: "published",
+    approvalStatus: "approved",
+    lifecycleStatus: "active",
     seo: {
       title: `${p.name} | Textile Chemical Sourcing | Om Sai Enterprise`,
       description: `${p.name} technical sourcing guide for textile wet processing. Sourced by Om Sai Enterprise, Surat for textile processing mills, dyeing units, and printing houses.`,

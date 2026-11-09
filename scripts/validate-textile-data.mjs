@@ -141,7 +141,20 @@ products.forEach((p, idx) => {
   if (!Array.isArray(p.technicalContent.faqs) || p.technicalContent.faqs.length < 2) {
     errors.push(`[${ref}] technicalContent.faqs must contain at least 2 Q&As.`);
   }
+
+  // Publication & Approval Status
+  if (!p.publicationStatus || p.publicationStatus !== 'published') {
+    errors.push(`[${ref}] publicationStatus must be "published" (found "${p.publicationStatus}").`);
+  }
+  if (!p.approvalStatus || p.approvalStatus !== 'approved') {
+    errors.push(`[${ref}] approvalStatus must be "approved" (found "${p.approvalStatus}").`);
+  }
 });
+
+// Calculate product status metrics
+const publishedCount = products.filter(p => p.publicationStatus === 'published').length;
+const approvedCount = products.filter(p => p.approvalStatus === 'approved').length;
+const draftCount = products.filter(p => p.publicationStatus === 'draft' || p.approvalStatus !== 'approved').length;
 
 // 3. Validate Legacy URLs
 const legacyPath = path.resolve('data/legacy-urls.json');
@@ -167,6 +180,10 @@ if (fs.existsSync(legacyPath)) {
 }
 
 console.log(`Audited ${products.length} products across ${categories.length} categories.`);
+console.log(`Product Lifecycle Metrics:`);
+console.log(`  - Published Products: ${publishedCount}`);
+console.log(`  - Approved Products:  ${approvedCount}`);
+console.log(`  - Draft Products:     ${draftCount}`);
 
 if (warnings.length > 0) {
   console.log(`\n⚠ Warnings (${warnings.length}):`);
