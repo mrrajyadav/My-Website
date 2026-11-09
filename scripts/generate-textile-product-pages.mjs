@@ -44,8 +44,8 @@ products.forEach(prod => {
     slug: catSlug
   };
 
-  const pageTitle = `${prod.name} | Textile Chemical Sourcing | Om Sai Enterprise Surat`;
-  const metaDesc = `${prod.name} (${prod.chemicalFamily}) for ${prod.processStages.join(', ')} in textile wet processing. Sourced by Om Sai Enterprise, Surat for mills, dyeing houses, and printing units.`;
+  const pageTitle = `${prod.name} | Textile Chemical Sourcing Guide | Om Sai Enterprise Surat`;
+  const metaDesc = `${prod.name} (${prod.chemicalFamily}) technical sourcing guide for ${prod.processStages.join(', ')} in textile wet processing. Sourced by Om Sai Enterprise, Surat.`;
   const canonicalUrl = `https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/${catSlug}/${prodSlug}/`;
   const categoryUrl = `https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/${catSlug}/`;
 
@@ -60,33 +60,28 @@ products.forEach(prod => {
       if (!relatedProds.some(rp => rp.id === p.id)) {
         relatedProds.push(p);
       }
-      if (relatedProds.length >= 4) break;
+      if (relatedProds.length >= 3) break;
     }
   }
 
-  // Schema JSON-LD
-  const productSchema = {
+  // Schema.org Structured Data: ItemPage + Product (Truthful B2B sourcing guide, no fake price or instant stock claims)
+  const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": prod.name,
-    "description": prod.shortDescription,
-    "category": prod.categoryName,
-    "brand": {
-      "@type": "Brand",
-      "name": "Om Sai Enterprise"
+    "@type": "ItemPage",
+    "name": pageTitle,
+    "description": metaDesc,
+    "url": canonicalUrl,
+    "publisher": {
+      "@type": "Organization",
+      "name": "Om Sai Enterprise",
+      "url": "https://mrrajyadav.github.io/My-Website/",
+      "description": "Textile & Industrial Chemical Sourcing Specialist, Surat, Gujarat"
     },
-    "offers": {
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "INR",
-      "price": "0.00",
-      "priceValidUntil": "2027-12-31",
-      "url": canonicalUrl,
-      "seller": {
-        "@type": "Organization",
-        "name": "Om Sai Enterprise",
-        "url": "https://mrrajyadav.github.io/My-Website/"
-      }
+    "about": {
+      "@type": "Product",
+      "name": prod.name,
+      "category": prod.categoryName,
+      "description": prod.shortDescription
     }
   };
 
@@ -129,6 +124,16 @@ products.forEach(prod => {
 
   const tc = prod.technicalContent || {};
   const comm = prod.commercial || {};
+  const faqs = tc.faqs || [
+    {
+      q: `What is the primary wet processing role of ${prod.name}?`,
+      a: `${prod.name} is applied during the ${prod.processStages.join(' and ')} stage of textile manufacturing to perform targeted ${prod.functions.join(' and ')} functions across ${prod.applicableFibres.join(', ')} substrates.`
+    },
+    {
+      q: `What documentation is provided when procuring ${prod.name} through Om Sai Enterprise?`,
+      a: `Om Sai Enterprise operates as an independent chemical trading and sourcing desk in Surat. Manufacturer Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) are provided on commercial enquiry per dispatch.`
+    }
+  ];
 
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">
@@ -156,7 +161,7 @@ products.forEach(prod => {
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
-  ${JSON.stringify(productSchema, null, 2)}
+  ${JSON.stringify(structuredData, null, 2)}
   </script>
   <script type="application/ld+json">
   ${JSON.stringify(breadcrumbSchema, null, 2)}
@@ -165,23 +170,23 @@ products.forEach(prod => {
 <body class="theme-chem page-chem-textile">
 
   <!-- ========================================================================
-       SITE HEADER
+       SITE HEADER (Deterministic 4-level relative paths)
        ======================================================================== -->
   <header class="site-header">
     <div class="container">
-      <a href="../../index.html" class="logo-item" title="Om Sai Enterprise - Chemicals Specialist">
+      <a href="../../../index.html" class="logo-item" title="Om Sai Enterprise - Chemicals Specialist">
         <div class="logo-container-dark">
           <img src="../../../../assets/logos/om-sai-enterprise.jpeg" alt="Om Sai Enterprise Logo" class="logo-img" />
         </div>
       </a>
       <nav class="main-nav" aria-label="Chemicals Navigation">
-        <a href="../../index.html" class="nav-link">Home</a>
-        <a href="../../about.html" class="nav-link">About Us</a>
-        <a href="../../products.html" class="nav-link">Products</a>
-        <a href="../../textile-chemicals.html" class="nav-link active">Textile Chemicals</a>
-        <a href="../../industrial-chemicals.html" class="nav-link">Industrial Chemicals</a>
-        <a href="../../contact.html#industries" class="nav-link">Industries We Serve</a>
-        <a href="../../contact.html" class="nav-link">Contact Us</a>
+        <a href="../../../index.html" class="nav-link">Home</a>
+        <a href="../../../about.html" class="nav-link">About Us</a>
+        <a href="../../../products.html" class="nav-link">Products</a>
+        <a href="../../../textile-chemicals.html" class="nav-link active">Textile Chemicals</a>
+        <a href="../../../industrial-chemicals.html" class="nav-link">Industrial Chemicals</a>
+        <a href="../../../contact.html#industries" class="nav-link">Industries We Serve</a>
+        <a href="../../../contact.html" class="nav-link">Contact Us</a>
         <a href="../../../../index.html" class="nav-link" style="color: var(--corporate-muted, #6C7D8E); font-size: 0.875rem;">&larr; Corporate Portal</a>
         <div class="mobile-cta-item">
           <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-block">Enquire on IndiaMART</a>
@@ -208,9 +213,9 @@ products.forEach(prod => {
       <ol class="chem-tex-breadcrumb-list">
         <li class="chem-tex-breadcrumb-item"><a href="../../../../index.html">Home</a></li>
         <li class="chem-tex-breadcrumb-sep">/</li>
-        <li class="chem-tex-breadcrumb-item"><a href="../../index.html">Chemicals</a></li>
+        <li class="chem-tex-breadcrumb-item"><a href="../../../index.html">Chemicals</a></li>
         <li class="chem-tex-breadcrumb-sep">/</li>
-        <li class="chem-tex-breadcrumb-item"><a href="../../textile-chemicals.html">Textile Chemicals</a></li>
+        <li class="chem-tex-breadcrumb-item"><a href="../../../textile-chemicals.html">Textile Chemicals</a></li>
         <li class="chem-tex-breadcrumb-sep">/</li>
         <li class="chem-tex-breadcrumb-item"><a href="../index.html">${esc(prod.categoryName)}</a></li>
         <li class="chem-tex-breadcrumb-sep">/</li>
@@ -220,7 +225,7 @@ products.forEach(prod => {
   </nav>
 
   <!-- ========================================================================
-       2. PRODUCT HERO & SUMMARY
+       2. PRODUCT HERO & TECHNICAL SUMMARY
        ======================================================================== -->
   <section class="chem-tex-pdetail-hero">
     <div class="container">
@@ -243,7 +248,7 @@ products.forEach(prod => {
               </svg>
               Enquire on IndiaMART
             </a>
-            <a href="../../contact.html" class="btn btn-outline btn-lg">Request TDS / Commercial Quote</a>
+            <a href="../../../contact.html" class="btn btn-outline btn-lg">Request TDS / Commercial Quote</a>
           </div>
 
           <!-- Quick Parameters Table -->
@@ -270,15 +275,15 @@ products.forEach(prod => {
                 <td>${esc(prod.fabricApplications.join(', '))}</td>
               </tr>
               <tr>
-                <th>Machinery Compatibility</th>
+                <th>Machinery Applications</th>
                 <td>${esc(prod.machineryApplications.join(', '))}</td>
               </tr>
               <tr>
-                <th>Commercial Packaging</th>
+                <th>Typical Packaging</th>
                 <td>${esc((comm.packaging || ['50 kg Carbouys', '200 kg HDPE Drums', '1,000 kg IBC Totes']).join(', '))}</td>
               </tr>
               <tr>
-                <th>Synonyms / Aliases</th>
+                <th>Synonyms &amp; Search Aliases</th>
                 <td>${esc(prod.synonyms.join(', '))}</td>
               </tr>
             </tbody>
@@ -288,26 +293,26 @@ products.forEach(prod => {
         <!-- Sourcing Card -->
         <aside class="chem-tex-pdetail-card">
           <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
-            <span style="display: inline-block; width: 10px; height: 10px; background-color: #10B981; border-radius: 50%;"></span>
-            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #047857;">Commercial Supply Ready</span>
+            <span style="display: inline-block; width: 10px; height: 10px; background-color: #2563EB; border-radius: 50%;"></span>
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #1E40AF;">B2B Sourcing on Inquiry</span>
           </div>
           <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--chem-primary, #0754B5); margin-bottom: 12px;">
-            Om Sai Enterprise Sourcing Desk
+            Commercial Sourcing Desk
           </h3>
           <p style="font-size: 0.875rem; color: #586A7D; line-height: 1.6; margin-bottom: 16px;">
-            Direct commercial supply to processing mills, dyeing houses, and export finishing plants across Surat and western India.
+            Om Sai Enterprise connects textile mills, dyeing units, and printing houses with verified chemical manufacturers.
           </p>
           <ul style="font-size: 0.8125rem; color: #3B4B5A; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; padding: 0;">
-            <li>&check; Authentic Technical Data Sheet (TDS) support</li>
-            <li>&check; Manufacturer Safety Data Sheet (SDS/MSDS)</li>
-            <li>&check; Batch Certificate of Analysis (COA) per delivery</li>
-            <li>&check; Bulk industrial drum and IBC container delivery</li>
-            <li>&check; Direct trade inquiries via IndiaMART</li>
+            <li>&check; Technical specification &amp; application support</li>
+            <li>&check; Manufacturer Technical Data Sheet (TDS) on request</li>
+            <li>&check; Batch Certificate of Analysis (COA) per dispatch</li>
+            <li>&check; Standard industrial carboy, drum, and IBC packing</li>
+            <li>&check; Transparent trade communication via IndiaMART</li>
           </ul>
           <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-block" style="margin-bottom: 10px;">
             Submit Inquiry on IndiaMART
           </a>
-          <a href="../../contact.html" class="btn btn-outline btn-block" style="font-size: 0.875rem;">
+          <a href="../../../contact.html" class="btn btn-outline btn-block" style="font-size: 0.875rem;">
             Contact Surat Sourcing Team
           </a>
         </aside>
@@ -371,7 +376,7 @@ products.forEach(prod => {
             5. Technical Selection Factors for Mill Buyers
           </h3>
           <p style="font-size: 0.95rem; color: #4A5B6D; line-height: 1.7;">
-            ${esc(tc.selectionFactors || 'Evaluation parameters include liquor pH stability, thermal resistance, electrolyte tolerance, and low foaming behavior under pump shear.')}
+            ${esc(Array.isArray(tc.selectionFactors) ? tc.selectionFactors.join('. ') : 'Key selection variables include bath pH stability, thermal tolerance, electrolyte compatibility, and low foaming behavior.')}
           </p>
         </div>
 
@@ -381,7 +386,7 @@ products.forEach(prod => {
             6. Chemical Compatibility &amp; Co-Auxiliary Synergy
           </h3>
           <p style="font-size: 0.95rem; color: #4A5B6D; line-height: 1.7;">
-            ${esc(tc.compatibility || 'Confirm ionic compatibility prior to combining in concentrated pre-mix baths. Compatible with standard dyeing and finishing formulations.')}
+            ${esc(Array.isArray(tc.compatibility) ? tc.compatibility.join('. ') : 'Confirm ionic compatibility prior to combining in concentrated pre-mix baths.')}
           </p>
         </div>
 
@@ -391,7 +396,7 @@ products.forEach(prod => {
             7. Process Limitations &amp; Operational Precautions
           </h3>
           <p style="font-size: 0.95rem; color: #4A5B6D; line-height: 1.7;">
-            ${esc(tc.limitations || 'Avoid severe over-dosing. Maintain recommended bath temperature and pH conditions to avoid premature precipitation.')}
+            ${esc(Array.isArray(tc.limitations) ? tc.limitations.join('. ') : 'Avoid severe over-dosing. Maintain recommended bath temperature and pH conditions.')}
           </p>
         </div>
 
@@ -401,17 +406,32 @@ products.forEach(prod => {
             8. Storage, Packaging &amp; Handling Protocol
           </h4>
           <p style="font-size: 0.9rem; color: #4A5B6D; line-height: 1.65; margin-bottom: 10px;">
-            ${esc(tc.storageAndHandling || 'Store in original tightly closed containers under sheltered conditions between 5°C and 35°C. Protect from direct frost and extreme solar radiation.')}
+            ${esc(tc.storageAndHandling || 'Store in original sealed containers under sheltered conditions between 5°C and 35°C.')}
           </p>
           <p style="font-size: 0.85rem; color: #6C7D8E; margin: 0;">
-            <strong>Standard Industrial Packing:</strong> ${esc((comm.packaging || ['50 kg Carbouys', '200 kg HDPE Drums', '1,000 kg IBC Totes']).join(', '))}
+            <strong>Standard Trade Packaging:</strong> ${esc((comm.packaging || ['50 kg Carbouys', '200 kg HDPE Drums', '1,000 kg IBC Totes']).join(', '))} (Subject to manufacturer dispatch format).
           </p>
         </div>
 
-        <!-- 9. Safety & Trader Disclaimer Notice -->
+        <!-- 9. Product-Specific FAQs -->
+        <div style="margin-bottom: 40px;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--chem-primary, #0754B5); margin-bottom: 16px;">
+            9. Frequently Asked Questions about ${esc(prod.name)}
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            ${faqs.map(faq => `
+              <div style="padding: 16px; background: #F8FAFD; border: 1px solid #E2E8F0; border-radius: 8px;">
+                <h4 style="font-size: 1rem; font-weight: 700; color: #0754B5; margin-bottom: 6px;">${esc(faq.q)}</h4>
+                <p style="font-size: 0.9rem; color: #4A5B6D; line-height: 1.6; margin: 0;">${esc(faq.a)}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- 10. Safety & Trader Disclaimer Notice -->
         <div class="chem-tex-doc-disclaimer">
-          <strong style="color: #92400E; display: block; margin-bottom: 6px;">Technical Documentation &amp; Trader Disclosure:</strong>
-          Om Sai Enterprise operates as an independent commercial chemical trading firm in Surat, Gujarat. Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) are issued by original chemical manufacturers. Material safety guidelines, hazard classifications, and personal protective equipment (PPE) recommendations outlined in the manufacturer SDS must be strictly followed by mill operating staff. Mill pre-trials are recommended before large-scale commercial application.
+          <strong style="color: #92400E; display: block; margin-bottom: 6px;">Technical Sourcing Guide &amp; Trader Disclosure:</strong>
+          Om Sai Enterprise operates as an independent commercial chemical trading and sourcing enterprise in Surat, Gujarat. Technical descriptions, process stages, and chemical mechanisms provided in this guide serve as technical orientation for mill managers, processing masters, and purchase officers. Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) are issued by original manufacturers. Material safety guidelines, hazard classifications, and personal protective equipment (PPE) recommendations outlined in manufacturer documentation must be strictly observed. Mill pre-trials are recommended prior to bulk production adoption.
         </div>
 
       </div>
@@ -424,17 +444,22 @@ products.forEach(prod => {
   <section class="section" style="background-color: #F8FAFD; border-bottom: 1px solid var(--chem-border, #D5DFEB);">
     <div class="container">
       <div style="margin-bottom: 32px;">
-        <span class="chem-tex-kicker">COMPLEMENTARY AUXILIARIES</span>
+        <span class="chem-tex-kicker">TECHNICAL SYNERGY</span>
         <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--chem-primary, #0754B5); margin-bottom: 8px;">
-          Related Products in ${esc(prod.categoryName)}
+          Complementary Auxiliaries &amp; Related Products
         </h2>
         <p style="font-size: 0.95rem; color: #586A7D;">
-          Explore other industrial chemicals frequently specified alongside ${esc(prod.name)} in mill processing programs.
+          Chemical products frequently evaluated alongside ${esc(prod.name)} in textile processing sequences.
         </p>
       </div>
 
       <div class="chem-tex-categories-grid">
-        ${relatedProds.slice(0, 3).map(rel => `
+        ${relatedProds.slice(0, 3).map(rel => {
+          const relUrl = rel.categorySlug === prod.categorySlug
+            ? `../${rel.slug}/index.html`
+            : `../../${rel.categorySlug}/${rel.slug}/index.html`;
+
+          return `
           <article class="chem-tex-category-card">
             <span class="chem-tex-cat-num">${esc(rel.categoryId)}</span>
             <h3 class="chem-tex-cat-title">${esc(rel.name)}</h3>
@@ -443,11 +468,11 @@ products.forEach(prod => {
               <strong>Function:</strong> ${esc(rel.functions[0] || 'Auxiliary')} &bull; <strong>Fibres:</strong> ${esc(rel.applicableFibres.slice(0, 2).join(', '))}
             </div>
             <div class="chem-tex-cat-action">
-              <a href="../${rel.slug}/index.html" class="btn btn-primary btn-sm">Product Profile &rarr;</a>
+              <a href="${relUrl}" class="btn btn-primary btn-sm">Product Profile &rarr;</a>
               <a href="https://www.indiamart.com/om-saienterprise-surat/" target="_blank" rel="noopener noreferrer" class="btn btn-indiamart btn-sm">Enquire</a>
             </div>
           </article>
-        `).join('')}
+        `;}).join('')}
       </div>
 
       <div style="text-align: center; margin-top: 36px;">
@@ -477,7 +502,7 @@ products.forEach(prod => {
             </svg>
             Enquire on IndiaMART
           </a>
-          <a href="../../contact.html" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.6);">
+          <a href="../../../contact.html" class="btn btn-outline btn-lg" style="color: #FFFFFF; border-color: rgba(255,255,255,0.6);">
             Contact Sourcing Desk
           </a>
         </div>
@@ -486,7 +511,7 @@ products.forEach(prod => {
   </section>
 
   <!-- ========================================================================
-       FOOTER
+       FOOTER (Deterministic 4-level relative paths)
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
@@ -508,4 +533,4 @@ products.forEach(prod => {
   generatedCount++;
 });
 
-console.log(`✓ Successfully generated all ${generatedCount} individual textile chemical product pages.`);
+console.log(`✓ Successfully generated all ${generatedCount} individual textile chemical product pages with verified routes.`);

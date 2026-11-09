@@ -1718,7 +1718,7 @@ function slugify(text) {
   return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 }
 
-// Generate the master product structure
+// Generate the master product structure with intelligent technical relationships
 const masterProducts = masterRawProducts.map(p => {
   const id = `CHEM-TEX-${String(p.num).padStart(3, '0')}`;
   const slug = slugify(p.name);
@@ -1726,15 +1726,56 @@ const masterProducts = masterRawProducts.map(p => {
   const catSlug = cat ? cat.slug : 'pretreatment-chemicals';
   const catName = cat ? cat.name : 'Textile Processing Chemicals';
 
-  // Calculate 3-4 related product IDs
-  // We relate products in the same category or adjacent stages
-  let relatedIds = [];
-  const sameCat = masterRawProducts.filter(o => o.catId === p.catId && o.num !== p.num);
-  if (sameCat.length >= 3) {
-    relatedIds = sameCat.slice(0, 3).map(o => `CHEM-TEX-${String(o.num).padStart(3, '0')}`);
-  } else {
-    const others = masterRawProducts.filter(o => o.num !== p.num);
-    relatedIds = sameCat.concat(others).slice(0, 3).map(o => `CHEM-TEX-${String(o.num).padStart(3, '0')}`);
+  // Smart Related Products Algorithm:
+  // Rank other products by shared functions, compatible fibres, machinery, and sequential wet processing synergy
+  const scoredOthers = masterRawProducts
+    .filter(o => o.num !== p.num)
+    .map(other => {
+      let score = 0;
+      // 1. Shared function (+4)
+      if (other.funcs.some(f => p.funcs.includes(f))) score += 4;
+      // 2. Shared fibres (+3)
+      if (other.fibres.some(f => p.fibres.includes(f))) score += 3;
+      // 3. Shared fabric applications (+2)
+      if (other.apps.some(a => p.apps.includes(a))) score += 2;
+      // 4. Same category (+2)
+      if (other.catId === p.catId) score += 2;
+      // 5. Shared machinery (+1)
+      if (other.machines.some(m => p.machines.includes(m))) score += 1;
+      return { num: other.num, score };
+    });
+
+  scoredOthers.sort((a, b) => b.score - a.score);
+  const relatedIds = scoredOthers.slice(0, 3).map(o => `CHEM-TEX-${String(o.num).padStart(3, '0')}`);
+
+  // Comprehensive search keywords
+  const keywordsSet = new Set([
+    p.name.toLowerCase(),
+    p.subcat.toLowerCase(),
+    p.chemFamily.toLowerCase(),
+    ...p.funcs.map(f => f.toLowerCase()),
+    ...p.stages.map(s => s.toLowerCase()),
+    ...p.fibres.map(f => f.toLowerCase()),
+    ...p.apps.map(a => a.toLowerCase()),
+    ...p.machines.map(m => m.toLowerCase())
+  ]);
+
+  // Add specific technical acronyms
+  if (p.machines.some(m => m.toLowerCase().includes('dissolved air') || m.toLowerCase().includes('etp'))) {
+    keywordsSet.add('daf');
+    keywordsSet.add('etp');
+    keywordsSet.add('effluent');
+  }
+  if (p.machines.some(m => m.toLowerCase().includes('jet'))) {
+    keywordsSet.add('jet dyeing');
+  }
+  if (p.subcat.toLowerCase().includes('wetting')) {
+    keywordsSet.add('rapid wetting');
+    keywordsSet.add('penetrator');
+  }
+  if (p.subcat.toLowerCase().includes('soaping') || p.funcs.includes('Washing-Off')) {
+    keywordsSet.add('wash-off');
+    keywordsSet.add('clearing');
   }
 
   return {
@@ -1748,20 +1789,14 @@ const masterProducts = masterRawProducts.map(p => {
     subcategory: p.subcat,
     productType: p.type,
     chemicalFamily: p.chemFamily,
+    catalogType: "technical-sourcing-guide",
     synonyms: [
       `${p.name} for Textile Processing`,
       `Industrial ${p.name}`,
       `Commercial ${p.name}`,
-      `${p.name} Sourcing`
+      `${p.name} Sourcing Surat`
     ],
-    searchKeywords: [
-      p.name.toLowerCase(),
-      p.subcat.toLowerCase(),
-      p.chemFamily.toLowerCase(),
-      ...p.funcs.map(f => f.toLowerCase()),
-      ...p.stages.map(s => s.toLowerCase()),
-      ...p.fibres.map(f => f.toLowerCase())
-    ],
+    searchKeywords: Array.from(keywordsSet),
     processStages: p.stages,
     functions: p.funcs,
     applicableFibres: p.fibres,
@@ -1790,27 +1825,40 @@ const masterProducts = masterRawProducts.map(p => {
         "Do not mix directly in concentrated form with oppositely charged surfactants",
         "Exact processing parameters must be optimized based on mill water hardness and liquor ratio"
       ],
-      storageAndHandling: "Store in original sealed containers in a cool, dry, well-ventilated area away from direct sunlight and freezing temperatures. Standard shelf life 12 months under recommended storage.",
-      safetyNotes: "Refer to the product-specific Safety Data Sheet (SDS) for complete health, safety, and personal protective equipment (PPE) requirements before handling."
+      storageAndHandling: "Store in original sealed containers in a cool, dry, well-ventilated area away from direct sunlight and freezing temperatures. Standard shelf-life parameters and storage guidelines are specified in the manufacturer Technical Data Sheet.",
+      safetyNotes: "Refer to the manufacturer Safety Data Sheet (SDS) for complete health, safety, and personal protective equipment (PPE) requirements before handling in mill operations.",
+      faqs: [
+        {
+          q: `What is the primary wet processing function of ${p.name}?`,
+          a: `${p.name} is formulated for the ${p.stages.join(' and ')} stage of textile wet processing, delivering targeted ${p.funcs.join(' and ')} across ${p.fibres.join(', ')} substrates.`
+        },
+        {
+          q: `What commercial documentation is provided when procuring ${p.name} through Om Sai Enterprise?`,
+          a: `Om Sai Enterprise operates as a specialized chemical sourcing desk in Surat. Technical Data Sheets (TDS), Safety Data Sheets (SDS), and batch Certificates of Analysis (COA) issued by the original chemical manufacturers are provided per commercial consignment upon request.`
+        }
+      ]
     },
     commercial: {
-      availabilityStatus: "availability-on-request",
+      availabilityStatus: "sourcing-on-inquiry",
+      sourcingRole: "Commercial Chemical Trading & Sourcing Specialist (Surat)",
       manufacturer: null,
       brand: null,
       grade: null,
+      packagingNotice: "Standard industrial trade packing: 50 kg Carbouys, 200 kg HDPE Drums, 1,000 kg IBC Totes. Exact container format confirmed upon commercial quotation.",
       packaging: ["50 kg Carbouys", "200 kg HDPE Drums", "1,000 kg IBC Totes"],
       minimumOrderQuantity: "Commercial Lot (Inquire for MOQ)",
       price: null,
+      priceNotice: "Price provided upon commercial trade request based on volume and delivery terms",
       enquiryUrl: "https://www.indiamart.com/om-saienterprise-surat/"
     },
-    contentStatus: "verified",
-    commercialStatus: "availability-on-request",
+    contentStatus: "educational-technical-guide",
+    commercialStatus: "sourcing-on-inquiry",
     seo: {
-      title: `${p.name} | Om Sai Enterprise`,
-      description: `${p.name} for textile wet processing. Sourced by Om Sai Enterprise, Surat for textile processing mills, dyeing units, and printing houses.`,
+      title: `${p.name} | Textile Chemical Sourcing | Om Sai Enterprise`,
+      description: `${p.name} technical sourcing guide for textile wet processing. Sourced by Om Sai Enterprise, Surat for textile processing mills, dyeing units, and printing houses.`,
       primaryKeyword: `${p.name} supplier Surat`,
       secondaryKeywords: [
-        `${p.name} price India`,
+        `${p.name} sourcing India`,
         `${p.subcat} for textile`,
         `textile ${p.funcs[0].toLowerCase()} auxiliary`
       ]

@@ -129,6 +129,18 @@ products.forEach((p, idx) => {
   if (!Array.isArray(p.applicableFibres) || p.applicableFibres.length === 0) {
     errors.push(`[${ref}] Missing 'applicableFibres' array.`);
   }
+  if (!Array.isArray(p.fabricApplications) || p.fabricApplications.length === 0) {
+    errors.push(`[${ref}] Missing 'fabricApplications' array.`);
+  }
+  if (!Array.isArray(p.machineryApplications) || p.machineryApplications.length === 0) {
+    errors.push(`[${ref}] Missing 'machineryApplications' array.`);
+  }
+  if (p.catalogType !== 'technical-sourcing-guide') {
+    errors.push(`[${ref}] catalogType must be "technical-sourcing-guide" (found "${p.catalogType}").`);
+  }
+  if (!Array.isArray(p.technicalContent.faqs) || p.technicalContent.faqs.length < 2) {
+    errors.push(`[${ref}] technicalContent.faqs must contain at least 2 Q&As.`);
+  }
 });
 
 console.log(`Audited ${products.length} products across ${categories.length} categories.`);

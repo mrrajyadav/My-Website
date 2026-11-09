@@ -26,8 +26,24 @@ categories.forEach(cat => {
   const catProducts = products.filter(p => p.categoryId === cat.id);
   const canonicalUrl = `https://mrrajyadav.github.io/My-Website/chemicals/textile-chemicals/${cat.slug}/`;
 
-  // Related categories (next 3 categories in sequence)
-  const otherCats = categories.filter(c => c.id !== cat.id).slice(0, 3);
+  // Logically sequential related categories based on industrial wet processing flow
+  const sequentialCategoryMap = {
+    'CAT-A': ['CAT-B', 'CAT-D', 'CAT-F'], // Yarn/Sizing -> Pretreatment, Dyeing, Printing
+    'CAT-B': ['CAT-C', 'CAT-D', 'CAT-M'], // Pretreatment -> Bleaching, Dyeing, ETP
+    'CAT-C': ['CAT-D', 'CAT-H', 'CAT-B'], // Bleaching -> Dyeing, Optical Brighteners, Pretreatment
+    'CAT-D': ['CAT-E', 'CAT-G', 'CAT-C'], // Dyeing Aux -> Dyes/Colourants, After-treatment, Bleaching
+    'CAT-E': ['CAT-D', 'CAT-F', 'CAT-G'], // Dyes -> Dyeing Aux, Printing, After-treatment
+    'CAT-F': ['CAT-E', 'CAT-G', 'CAT-L'], // Printing -> Dyes, After-treatment, Coating
+    'CAT-G': ['CAT-I', 'CAT-D', 'CAT-K'], // After-treatment -> Softening/Finishing, Dyeing Aux, Denim
+    'CAT-H': ['CAT-C', 'CAT-I', 'CAT-B'], // Optical Brighteners -> Bleaching, Softening, Pretreatment
+    'CAT-I': ['CAT-J', 'CAT-G', 'CAT-H'], // Softening -> Functional Finishes, After-treatment, Optical Brighteners
+    'CAT-J': ['CAT-I', 'CAT-L', 'CAT-K'], // Functional Finishes -> Softening, Coating/Technical, Denim
+    'CAT-K': ['CAT-G', 'CAT-B', 'CAT-I'], // Denim -> After-treatment, Pretreatment, Softening
+    'CAT-L': ['CAT-J', 'CAT-F', 'CAT-I'], // Coating/Technical -> Functional Finishes, Printing, Softening
+    'CAT-M': ['CAT-B', 'CAT-D', 'CAT-G']  // ETP/Water -> Pretreatment, Dyeing, After-treatment
+  };
+  const relatedCatIds = sequentialCategoryMap[cat.id] || [];
+  const otherCats = relatedCatIds.map(id => categories.find(c => c.id === id)).filter(Boolean);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
